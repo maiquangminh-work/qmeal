@@ -68,3 +68,10 @@ export function scaleCalories(calories, targetServings, baselineServings = 2) {
   if (!calories || typeof calories !== 'number') return calories;
   return Math.round((calories / baselineServings) * targetServings);
 }
+
+export function scaleMacro(val, targetServings, baselineServings = 2) {
+  if (typeof val !== 'number') return 0;
+  const ratio = targetServings / baselineServings;
+  const scaled = val * ratio;
+  return scaled % 1 === 0 ? scaled : Number(scaled.toFixed(1));
+}

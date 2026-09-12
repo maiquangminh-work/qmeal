@@ -62,11 +62,19 @@ export default function DishCard({
       {/* Content Container */}
       <div className="p-3 sm:p-5 flex-1 flex flex-col justify-between space-y-2 sm:space-y-3">
         <div>
-          {/* Rating */}
-          <div className="flex items-center gap-1 text-[10px] sm:text-xs text-amber-500 font-bold mb-0.5 sm:mb-1">
-            <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400 text-amber-400" />
-            <span>{dish.rating}</span>
-            <span className="text-stone-400 font-normal">({dish.reviewsCount})</span>
+          {/* Rating & Small Source Credit */}
+          <div className="flex items-center justify-between gap-1 mb-0.5 sm:mb-1">
+            <div className="flex items-center gap-1 text-[10px] sm:text-xs text-amber-500 font-bold">
+              <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400 text-amber-400" />
+              <span>{dish.rating}</span>
+              <span className="text-stone-400 font-normal hidden sm:inline">({dish.reviewsCount})</span>
+            </div>
+
+            {dish.recipeSource && (
+              <span className="text-[9px] font-semibold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded-sm truncate max-w-[110px]" title={dish.recipeSource.name}>
+                {dish.recipeSource.name.split('&')[0].trim()}
+              </span>
+            )}
           </div>
 
           {/* Title */}
