@@ -232,7 +232,7 @@ export default function App() {
         
         {/* CASE 1: SEARCH ACTIVE */}
         {searchTerm.trim() ? (
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+          <div key="search-view" className="animate-tab-enter max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
             <div className="flex items-center justify-between border-b border-stone-200 pb-4">
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-brand-600">Tìm kiếm</span>
@@ -273,7 +273,7 @@ export default function App() {
           </div>
         ) : (
           /* CASE 2: TAB ROUTING */
-          <div>
+          <div key={activeTab} className="animate-tab-enter">
             {/* TAB: 'all' (Full Rich Homepage) */}
             {activeTab === 'all' && (
               <div className="space-y-6">

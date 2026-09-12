@@ -49,3 +49,37 @@
 .animate-slideInLeft {
   animation: slideInLeft 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Smooth Tab Transition Animations */
+@keyframes tabEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-tab-enter {
+  animation: tabEnter 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: opacity, transform;
+}
+
+@keyframes indicatorPop {
+  0% {
+    transform: scaleX(0.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.animate-indicator-pop {
+  animation: indicatorPop 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: center;
+}
+

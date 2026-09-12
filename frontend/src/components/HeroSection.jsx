@@ -61,7 +61,7 @@ export default function HeroSection({ onOpenGacha, onOpenFridge, onExploreMeals 
 
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-stone-900 leading-[1.15] font-heading">
               Ăn Ngon Mỗi Ngày Với Các Món{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand-500 to-amber-500 underline decoration-amber-300 decoration-wavy decoration-2">
+              <span className="text-brand-600">
                 Dễ Làm
               </span>{' '}
               &{' '}
