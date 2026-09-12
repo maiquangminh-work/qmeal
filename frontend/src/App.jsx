@@ -111,6 +111,28 @@ export default function App() {
     });
   };
 
+  const handleAddDishIngredientsToGrocery = (dish, ingredientsList, servings) => {
+    setGroceryItems((prev) => {
+      const newItems = [...prev];
+      ingredientsList.forEach((ing) => {
+        const label = `${ing.name} (${dish.name})`;
+        const existing = newItems.find(
+          (item) => item.name.toLowerCase() === label.toLowerCase() || item.name.toLowerCase() === ing.name.toLowerCase()
+        );
+        if (!existing) {
+          newItems.push({
+            id: `grocery-${Date.now()}-${Math.random().toString(36).substr(2, 4)}`,
+            name: label,
+            amount: ing.amount,
+            category: 'Nguyên liệu nấu',
+            checked: false
+          });
+        }
+      });
+      return newItems;
+    });
+  };
+
   const handleToggleGroceryItem = (id) => {
     setGroceryItems((prev) =>
       prev.map((item) => (item.id === id ? { ...item, checked: !item.checked } : item))
@@ -155,12 +177,20 @@ export default function App() {
       } else if (activeTab === 'specialty') {
         if (!dish.tags.includes('specialty')) return false;
       } else if (activeTab === 'healthy') {
-        if (!dish.tags.includes('healthy')) return false;
+        if (!dish.tags.includes('healthy') && !dish.isHealthy) return false;
       }
 
       // 3. Sub-Tag Filter
       if (activeTag !== 'all') {
-        if (!dish.tags.includes(activeTag)) return false;
+        if (activeTag === 'quick') {
+          if (!dish.tags.includes('quick') && dish.cookTime > 20) return false;
+        } else if (activeTag === 'healthy') {
+          if (!dish.tags.includes('healthy') && !dish.isHealthy) return false;
+        } else if (activeTag === 'budget') {
+          if (!dish.tags.includes('budget') && dish.calories > 500) return false;
+        } else {
+          if (!dish.tags.includes(activeTag)) return false;
+        }
       }
 
       return true;
@@ -448,6 +478,7 @@ export default function App() {
           onClose={() => setSelectedDish(null)}
           isFavorite={favoriteIds.includes(selectedDish.id)}
           onToggleFavorite={toggleFavorite}
+          onAddIngredientsToGrocery={handleAddDishIngredientsToGrocery}
         />
       )}
 

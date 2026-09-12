@@ -38,6 +38,36 @@ export default function MapViewer({ dish }) {
         </a>
       </div>
 
+      {/* Quick Delivery Shortcuts (ShopeeFood / GrabFood) */}
+      <div className="bg-stone-50/90 border border-stone-200/80 rounded-2xl p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs">
+        <div className="flex items-center gap-2 text-xs text-stone-700">
+          <span className="text-lg">🛵</span>
+          <span className="font-semibold">Lười nấu? Đặt ship món <strong className="text-stone-900 font-bold">"{dish.name}"</strong> giao siêu tốc:</span>
+        </div>
+
+        <div className="flex items-center gap-2 flex-wrap">
+          <a
+            href={`https://shopeefood.vn/search?q=${encodeURIComponent(dish.name)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3.5 py-1.5 rounded-xl bg-[#ee4d2d] hover:bg-[#d73211] text-white font-bold text-xs flex items-center gap-1.5 transition-all shadow-xs active:scale-95"
+          >
+            <span>ShopeeFood</span>
+            <ExternalLink className="w-3 h-3" />
+          </a>
+
+          <a
+            href={`https://food.grab.com/vn/vi/restaurants?search=${encodeURIComponent(dish.name)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3.5 py-1.5 rounded-xl bg-[#00b14f] hover:bg-[#009643] text-white font-bold text-xs flex items-center gap-1.5 transition-all shadow-xs active:scale-95"
+          >
+            <span>GrabFood</span>
+            <ExternalLink className="w-3 h-3" />
+          </a>
+        </div>
+      </div>
+
       {/* Google Maps Embed Frame */}
       <div className="relative rounded-2xl overflow-hidden border border-stone-300 shadow-md bg-stone-100 aspect-[16/9] sm:aspect-[21/9]">
         <iframe
