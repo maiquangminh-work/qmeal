@@ -1,8 +1,9 @@
 import React from 'react';
-import { Home, Utensils, Dices, Refrigerator, Heart } from 'lucide-react';
+import { Home, Utensils, Dices, Refrigerator, Heart, Users } from 'lucide-react';
 
 export default function MobileBottomNav({
-  activeTab = 'home',
+  activeTab = 'all',
+  onSelectTab,
   onOpenGacha,
   onOpenFridge,
   onOpenFavorites,
@@ -11,35 +12,34 @@ export default function MobileBottomNav({
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-stone-200/90 px-3 py-2 shadow-2xl safe-bottom">
       <div className="flex items-center justify-around">
-        {/* Home */}
+        {/* Home Tab */}
         <button
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-          className="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-600 focus:text-brand-600 text-[10px] font-semibold"
+          onClick={() => onSelectTab('all')}
+          className={`flex flex-col items-center gap-1 text-[10px] font-semibold transition-colors ${
+            activeTab === 'all' ? 'text-brand-600 font-bold' : 'text-stone-500 hover:text-stone-800'
+          }`}
         >
-          <Home className="w-5 h-5 text-brand-600" />
+          <Home className={`w-5 h-5 ${activeTab === 'all' ? 'text-brand-600' : 'text-stone-500'}`} />
           <span>Trang chủ</span>
         </button>
 
-        {/* 4 Buổi */}
+        {/* Family Combos Tab */}
         <button
-          onClick={() => {
-            const el = document.getElementById('meals-section');
-            el?.scrollIntoView({ behavior: 'smooth' });
-          }}
-          className="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-600 text-[10px] font-semibold"
+          onClick={() => onSelectTab('combos')}
+          className={`flex flex-col items-center gap-1 text-[10px] font-semibold transition-colors ${
+            activeTab === 'combos' ? 'text-brand-600 font-bold' : 'text-stone-500 hover:text-stone-800'
+          }`}
         >
-          <Utensils className="w-5 h-5" />
-          <span>4 Bữa ăn</span>
+          <Users className={`w-5 h-5 ${activeTab === 'combos' ? 'text-brand-600' : 'text-stone-500'}`} />
+          <span>Mâm cơm</span>
         </button>
 
-        {/* Elevated Center Gacha Button */}
+        {/* Center Floating Gacha */}
         <button
           onClick={onOpenGacha}
           className="-mt-5 flex flex-col items-center group"
         >
-          <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-600 to-amber-500 text-white flex items-center justify-center shadow-warm-lg ring-4 ring-white group-active:scale-95 transition-transform">
+          <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-600 to-amber-500 text-white flex items-center justify-center shadow-warm-lg ring-4 ring-white active:scale-95 transition-transform">
             <Dices className="w-6 h-6 animate-pulse" />
           </div>
           <span className="text-[10px] font-bold text-brand-600 mt-1">Gacha</span>
@@ -48,7 +48,7 @@ export default function MobileBottomNav({
         {/* Fridge */}
         <button
           onClick={onOpenFridge}
-          className="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-600 text-[10px] font-semibold"
+          className="flex flex-col items-center gap-1 text-stone-500 hover:text-emerald-600 text-[10px] font-semibold transition-colors"
         >
           <Refrigerator className="w-5 h-5 text-emerald-600" />
           <span>Tủ lạnh</span>
@@ -57,7 +57,7 @@ export default function MobileBottomNav({
         {/* Favorites */}
         <button
           onClick={onOpenFavorites}
-          className="relative flex flex-col items-center gap-1 text-stone-600 hover:text-brand-600 text-[10px] font-semibold"
+          className="relative flex flex-col items-center gap-1 text-stone-500 hover:text-brand-600 text-[10px] font-semibold transition-colors"
         >
           <div className="relative">
             <Heart className="w-5 h-5 text-rose-500" />

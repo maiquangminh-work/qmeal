@@ -8,8 +8,6 @@ import {
   Dices,
   Refrigerator,
   ShoppingCart,
-  Users,
-  Utensils,
   ChevronRight
 } from 'lucide-react';
 
@@ -22,38 +20,26 @@ export default function Navbar({
   onOpenGroceryList,
   favoriteCount = 0,
   groceryCount = 0,
-  activeMealCategory,
-  onSelectMealCategory,
-  onSelectTag,
-  activeTag
+  activeTab = 'all',
+  onSelectTab
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navLinks = [
-    { id: 'all', label: 'Tất Cả', type: 'meal' },
-    { id: 'breakfast', label: 'Bữa Sáng', type: 'meal' },
-    { id: 'lunch', label: 'Bữa Trưa', type: 'meal' },
-    { id: 'snack', label: 'Ăn Vặt / Xế', type: 'meal' },
-    { id: 'dinner', label: 'Bữa Tối', type: 'meal' },
-    { id: 'family-combos', label: 'Mâm Cơm Gia Đình', type: 'scroll' },
-    { id: 'specialty', label: 'Đặc Sản 3 Miền', type: 'tag' },
-    { id: 'healthy', label: 'Món Healthy', type: 'tag' },
+  // Tab definitions (Tab-based SPA View Switcher)
+  const navTabs = [
+    { id: 'all', label: 'Tất Cả' },
+    { id: 'breakfast', label: 'Bữa Sáng' },
+    { id: 'lunch', label: 'Bữa Trưa' },
+    { id: 'snack', label: 'Ăn Vặt / Xế' },
+    { id: 'dinner', label: 'Bữa Tối' },
+    { id: 'combos', label: 'Mâm Cơm Gia Đình' },
+    { id: 'specialty', label: 'Đặc Sản 3 Miền' },
+    { id: 'healthy', label: 'Món Healthy' },
   ];
 
-  const handleNavClick = (item) => {
-    if (item.type === 'scroll') {
-      const el = document.getElementById(item.id);
-      el?.scrollIntoView({ behavior: 'smooth' });
-      return;
-    }
-    if (item.type === 'meal') {
-      onSelectMealCategory(item.id);
-      onSelectTag('all');
-    } else {
-      onSelectTag(item.id);
-    }
-    const el = document.getElementById('meals-section');
-    el?.scrollIntoView({ behavior: 'smooth' });
+  const handleTabClick = (tabId) => {
+    onSelectTab(tabId);
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -63,7 +49,7 @@ export default function Navbar({
           
           {/* LEFT: Mobile 3-bars Hamburger Menu + Brand Logo */}
           <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-            {/* Mobile Menu Button - PLACED ON THE LEFT */}
+            {/* Mobile Menu Button on the LEFT */}
             <button
               onClick={() => setMobileMenuOpen(true)}
               className="md:hidden p-2 -ml-1 rounded-xl text-stone-700 hover:text-brand-600 hover:bg-stone-100 transition-colors"
@@ -76,17 +62,15 @@ export default function Navbar({
             <div 
               className="cursor-pointer"
               onClick={() => {
-                onSelectMealCategory('all');
-                onSelectTag('all');
+                onSelectTab('all');
                 setSearchTerm('');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
             >
               <Logo size="md" />
             </div>
           </div>
 
-          {/* Centered Spacious Search Bar (Desktop only, mobile has it below) */}
+          {/* Centered Spacious Search Bar (Desktop) */}
           <div className="hidden md:flex flex-1 max-w-xl mx-auto">
             <div className="relative w-full">
               <input
@@ -189,24 +173,22 @@ export default function Navbar({
           </div>
         </div>
 
-        {/* 2. Desktop Sub-Nav Bar (Clean horizontal link row) */}
-        <nav className="hidden md:flex items-center justify-center gap-8 py-3 border-t border-stone-100 text-xs sm:text-sm font-medium text-stone-600">
-          {navLinks.map((item) => {
-            const isActive = item.type === 'meal' 
-              ? activeMealCategory === item.id && activeTag === 'all'
-              : activeTag === item.id;
+        {/* 2. Sub-Nav Tabs Row (Clean Tab-based Switcher without Auto-Scroll) */}
+        <nav className="flex items-center gap-4 sm:gap-8 overflow-x-auto no-scrollbar py-2.5 sm:py-3 border-t border-stone-100 text-xs sm:text-sm font-medium text-stone-600">
+          {navTabs.map((tab) => {
+            const isActive = activeTab === tab.id;
 
             return (
               <button
-                key={item.id}
-                onClick={() => handleNavClick(item)}
-                className={`relative py-1 hover:text-stone-900 transition-colors ${
+                key={tab.id}
+                onClick={() => handleTabClick(tab.id)}
+                className={`relative py-1 flex-shrink-0 hover:text-stone-900 transition-colors whitespace-nowrap ${
                   isActive ? 'text-brand-600 font-bold' : 'text-stone-600'
                 }`}
               >
-                <span>{item.label}</span>
+                <span>{tab.label}</span>
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-600 rounded-full -mb-3"></span>
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-600 rounded-full -mb-2.5 sm:-mb-3"></span>
                 )}
               </button>
             );
@@ -284,24 +266,28 @@ export default function Navbar({
                 </button>
               </div>
 
-              {/* Nav Links in Drawer */}
+              {/* Tab Navigation in Drawer */}
               <div className="p-4 space-y-1">
                 <div className="text-[11px] font-bold text-stone-400 uppercase tracking-wider px-2 py-1">
-                  Danh Mục Bữa Ăn
+                  Chọn Chế Độ Xem
                 </div>
-                {navLinks.map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => {
-                      setMobileMenuOpen(false);
-                      handleNavClick(item);
-                    }}
-                    className="w-full text-left px-3 py-2.5 rounded-xl font-medium text-xs sm:text-sm text-stone-700 hover:bg-brand-50 hover:text-brand-600 transition-colors flex items-center justify-between"
-                  >
-                    <span>{item.label}</span>
-                    <ChevronRight className="w-3.5 h-3.5 text-stone-300" />
-                  </button>
-                ))}
+                {navTabs.map((tab) => {
+                  const isSelected = activeTab === tab.id;
+                  return (
+                    <button
+                      key={tab.id}
+                      onClick={() => handleTabClick(tab.id)}
+                      className={`w-full text-left px-3 py-2.5 rounded-xl font-medium text-xs sm:text-sm transition-colors flex items-center justify-between ${
+                        isSelected
+                          ? 'bg-brand-50 text-brand-600 font-bold'
+                          : 'text-stone-700 hover:bg-stone-50'
+                      }`}
+                    >
+                      <span>{tab.label}</span>
+                      <ChevronRight className={`w-3.5 h-3.5 ${isSelected ? 'text-brand-600' : 'text-stone-300'}`} />
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
