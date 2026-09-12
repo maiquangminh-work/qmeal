@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dices, Refrigerator, Sparkles, Clock, Flame, ArrowRight } from 'lucide-react';
 
-export default function HeroSection({ onOpenGacha, onOpenFridge, onExploreMeals }) {
+export default function HeroSection({ onOpenGacha, onOpenFridge, onExploreMeals, timeContext }) {
   return (
     <section className="relative overflow-hidden pt-3 pb-4 md:pt-10 md:pb-16 bg-gradient-to-b from-brand-50/50 via-white to-[#faf9f6]">
       {/* Decorative Warm Background Blobs */}
@@ -14,16 +14,16 @@ export default function HeroSection({ onOpenGacha, onOpenFridge, onExploreMeals 
         {/* 1. MOBILE APP-LIKE HERO (Compact, 1-touch for Phone Users) */}
         {/* ======================================================== */}
         <div className="md:hidden bg-gradient-to-br from-brand-500 to-amber-500 rounded-3xl p-5 text-white shadow-warm-md space-y-4">
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <span className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider bg-white/20 px-2.5 py-0.5 rounded-full backdrop-blur-xs">
               <Sparkles className="w-3 h-3 text-amber-200" />
-              Gợi ý hôm nay
+              {timeContext?.badgeText || 'Gợi ý hôm nay'}
             </span>
-            <h1 className="text-2xl font-extrabold tracking-tight leading-tight">
-              Hôm nay bạn thèm ăn gì? 👋
+            <h1 className="text-xl font-extrabold tracking-tight leading-snug">
+              {timeContext?.greeting || 'Hôm nay bạn thèm ăn gì? 👋'}
             </h1>
             <p className="text-xs text-brand-50 leading-relaxed">
-              Giải quyết nhanh câu hỏi "Hôm nay ăn gì?" cho cả 4 bữa trong ngày.
+              {timeContext?.subGreeting || 'Giải quyết nhanh câu hỏi "Hôm nay ăn gì?" cho cả 4 bữa trong ngày.'}
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export default function HeroSection({ onOpenGacha, onOpenFridge, onExploreMeals 
           <div className="col-span-7 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/80 border border-brand-200 text-brand-800 text-xs font-bold uppercase tracking-wider shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-brand-600 animate-spin-slow" />
-              Nền tảng ẩm thực Việt Nam toàn diện
+              {timeContext?.badgeText || 'Nền tảng ẩm thực Việt Nam toàn diện'}
             </div>
 
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-stone-900 leading-[1.15] font-heading">

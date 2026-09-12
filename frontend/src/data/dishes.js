@@ -1,31 +1,584 @@
 export const DISHES_DATA = [
+  // =========================================================================
+  // 1. MÓN CƠM GIA ĐÌNH: MÓN MẶN CHỦ ĐẠO (ĐẬM ĐÀ, ĐƯA CƠM)
+  // =========================================================================
+  {
+    id: 'thit-kho-tau',
+    name: 'Thịt Kho Tàu Nước Dừa Trứng Cút',
+    englishName: 'Braised Pork Belly with Eggs in Coconut Water',
+    mealCategory: 'dinner',
+    dishType: 'man',
+    prepTime: 20,
+    cookTime: 40,
+    difficulty: 'Dễ',
+    calories: 580,
+    popularityScore: 99,
+    isHomeCooked: true,
+    isRecipeOfDay: true,
+    isPopular: true,
+    isHealthy: false,
+    tags: ['home', 'dry', 'specialty'],
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
+    author: 'Mẹ Nấu',
+    description: 'Thịt ba chỉ thái vuông vức kho mềm rục cùng nước dừa xiêm béo ngọt thanh, ngấm đều vào từng quả trứng cút nâu bóng đậm đà đưa cơm.',
+    ingredients: [
+      { name: 'Thịt ba chỉ rút sườn', quantity: 400, unit: 'g', isCore: true, key: 'thit_heo' },
+      { name: 'Trứng cút (hoặc trứng vịt)', quantity: 12, unit: 'quả', isCore: true, key: 'trung' },
+      { name: 'Nước dừa tươi', quantity: 1, unit: 'trái (350ml)', isCore: true, key: 'nuoc_dua' },
+      { name: 'Hành tím, tỏi băm', quantity: 3, unit: 'củ', isCore: false, key: 'toi_ot' },
+      { name: 'Nước mắm ngon, hạt tiêu, đường màu', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Thịt ba chỉ bóp muối giấm rửa sạch, thái miếng vuông dày chừng 3cm. Luộc sơ qua nước sôi 2 phút rồi vớt ra xả sạch.',
+      'Ướp thịt với 2 thìa nước mắm ngon, 1 thìa đường, tiêu, hành tỏi băm nhuyễn trong ít nhất 30 phút.',
+      'Luộc chín trứng cút, ngâm nước lạnh cho dễ bóc sạch vỏ.',
+      'Thắng nước màu cánh gián từ 1 thìa đường, trút thịt vào đảo săn đều cho ngấm màu.',
+      'Đổ nước dừa tươi ngập mặt thịt, đun sôi rồi hạ nhỏ lửa đun liu riu 30 phút cho thịt mềm.',
+      'Thả trứng cút vào kho thêm 10 phút cho trứng ngấm màu nâu óng, nêm lại chút nước mắm cho vừa khẩu vị rồi tắt bếp.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Quán Cơm Niêu Sài Gòn',
+        address: '27 Tú Xương, P.7, Q.3, TP.HCM',
+        distance: '1.2 km',
+        priceRange: '60.000đ - 120.000đ',
+        rating: 4.8,
+        openHours: '10:00 - 22:00'
+      },
+      {
+        name: 'Bếp Cơm Gia Đình Cô Ba',
+        address: '15 Huỳnh Thúc Kháng, Đống Đa, Hà Nội',
+        distance: '0.9 km',
+        priceRange: '45.000đ - 70.000đ',
+        rating: 4.6,
+        openHours: '10:30 - 21:00'
+      }
+    ]
+  },
+
+  {
+    id: 'suon-xao-chua-ngot',
+    name: 'Sườn Xào Chua Ngọt Miền Bắc',
+    englishName: 'Sweet and Sour Pork Ribs',
+    mealCategory: 'dinner',
+    dishType: 'man',
+    prepTime: 15,
+    cookTime: 25,
+    difficulty: 'Dễ',
+    calories: 520,
+    popularityScore: 98,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: false,
+    tags: ['home', 'dry', 'specialty'],
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
+    author: 'Chef Bếp Việt',
+    description: 'Từng miếng sườn non chặt khúc vàng rộm, áo lớp sốt dấm đường cà chua sánh kẹo, chua thanh ngọt dịu kích thích vị giác cả người lớn lẫn trẻ nhỏ.',
+    ingredients: [
+      { name: 'Sườn non heo tươi', quantity: 500, unit: 'g', isCore: true, key: 'suon_heo' },
+      { name: 'Cà chua chín mọng', quantity: 2, unit: 'quả', isCore: true, key: 'ca_chua' },
+      { name: 'Hành khô, tỏi băm', quantity: 2, unit: 'củ', isCore: false, key: 'toi_ot' },
+      { name: 'Nước mắm, giấm gạo (hoặc chanh)', quantity: 2, unit: 'thìa canh', isCore: false, key: 'gia_vi' },
+      { name: 'Đường cát, tương cà, tiêu xay', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Sườn non chặt khúc vừa ăn chừng 3-4cm, chần qua nước sôi cùng chút muối để khử mùi hôi, rửa lại sạch sẽ.',
+      'Ướp sườn với chút hạt nêm, nước mắm và tiêu trong 15 phút.',
+      'Cho sườn vào chảo rán lửa vừa cho vàng đều hai mặt, vớt ra đĩa để ráo dầu.',
+      'Pha nước sốt chua ngọt: 2 thìa nước mắm, 2 thìa đường, 2 thìa giấm gạo, 1 thìa tương cà và 3 thìa nước lọc, khuấy tan.',
+      'Phi thơm hành tỏi băm, xào cà chua cho nhuyễn mịn rồi trút sườn đã rán và bát nước sốt vào đảo đều.',
+      'Đun nhỏ lửa đến khi nước sốt sệt lại bao phủ óng ánh quanh từng miếng sườn là hoàn tất.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Cơm Niêu Thúy Nga',
+        address: '110 B2 Nguyễn Chí Thanh, Ba Đình, Hà Nội',
+        distance: '1.5 km',
+        priceRange: '65.000đ - 110.000đ',
+        rating: 4.7,
+        openHours: '10:00 - 21:30'
+      }
+    ]
+  },
+
+  {
+    id: 'ca-loc-kho-to',
+    name: 'Cá Lóc Kho Tộ Tiêu Sọ Nam Bộ',
+    englishName: 'Claypot Braised Snakehead Fish with Peppercorns',
+    mealCategory: 'dinner',
+    dishType: 'man',
+    prepTime: 20,
+    cookTime: 30,
+    difficulty: 'Vừa',
+    calories: 420,
+    popularityScore: 96,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: true,
+    tags: ['home', 'dry', 'specialty'],
+    image: 'https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1000&q=80',
+    author: 'Má Bảy Miền Tây',
+    description: 'Thịt cá lóc chắc nịch, ướp nước mắm cốt đậm đà, kho trong tộ đất riu riu cùng thịt mỡ và tiêu xanh cay nồng thơm lừng.',
+    ingredients: [
+      { name: 'Cá lóc đồng (cắt khúc)', quantity: 500, unit: 'g', isCore: true, key: 'ca_loc' },
+      { name: 'Thịt ba chỉ (thái con chì)', quantity: 100, unit: 'g', isCore: true, key: 'thit_heo' },
+      { name: 'Hành tím, tỏi, ớt hiểm', quantity: 3, unit: 'củ', isCore: false, key: 'toi_ot' },
+      { name: 'Tiêu sọ đập dập & hành lá', quantity: 1, unit: 'nhánh', isCore: false, key: 'hanh_la' },
+      { name: 'Nước mắm cá cơm, nước màu dừa, đường', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Cá lóc đánh vảy, làm sạch ruột, xát muối và chanh khử sạch nhớt, cắt khúc dày 2.5cm.',
+      'Ướp cá với nước mắm, đường, hạt tiêu, nước màu dừa, hành tỏi băm trong 25 phút.',
+      'Xào thịt ba chỉ cho ra bớt mỡ trong tộ đất, vớt thịt ra giữ lại mỡ.',
+      'Xếp khúc cá vào tộ đất, trút nước ướp cá và thịt ba chỉ vào đun sôi lửa lớn 5 phút.',
+      'Hạ lửa nhỏ liu riu, rải thêm ớt hiểm và hạt tiêu sọ, kho đến khi nước kho cạn sánh sệt.',
+      'Rắc nhiều hành lá thái nhỏ và tiêu xay lên trên, dùng nóng cùng cơm trắng và đĩa rau luộc.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Quán Bụi - Hương Vị Quê Nhà',
+        address: '19 Ngô Văn Năm, Bến Nghé, Q.1, TP.HCM',
+        distance: '2.1 km',
+        priceRange: '75.000đ - 140.000đ',
+        rating: 4.8,
+        openHours: '09:00 - 22:30'
+      }
+    ]
+  },
+
+  {
+    id: 'dau-phu-nhoi-thit',
+    name: 'Đậu Phụ Nhồi Thịt Sốt Cà Chua',
+    englishName: 'Tofu Stuffed with Minced Pork in Tomato Sauce',
+    mealCategory: 'lunch',
+    dishType: 'man',
+    prepTime: 15,
+    cookTime: 15,
+    difficulty: 'Dễ',
+    calories: 390,
+    popularityScore: 95,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: true,
+    tags: ['home', 'quick', 'budget'],
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80',
+    author: 'Bếp Nhà Tôi',
+    description: 'Miếng đậu phụ vàng ươm nhồi đầy ắp nhân thịt băm nấm mộc nhĩ giòn sần sật, áo đẫm nước sốt cà chua đỏ au thơm ngát mùi hành ngò.',
+    ingredients: [
+      { name: 'Đậu phụ mơ (đậu trắng)', quantity: 4, unit: 'miếng', isCore: true, key: 'dau_phu' },
+      { name: 'Thịt heo xay nhuyễn', quantity: 200, unit: 'g', isCore: true, key: 'thit_heo' },
+      { name: 'Cà chua chín', quantity: 3, unit: 'quả', isCore: true, key: 'ca_chua' },
+      { name: 'Mộc nhĩ ngâm nở băm nhỏ', quantity: 2, unit: 'tai', isCore: false, key: 'nam' },
+      { name: 'Hành lá, hạt nêm, tiêu', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'hanh_la' }
+    ],
+    steps: [
+      'Trộn đều thịt xay với mộc nhĩ băm, hành hoa thái nhỏ, 1 thìa hạt nêm, chút tiêu trong 10 phút.',
+      'Cắt đậu phụ làm đôi, rạch một đường giữa hoặc khoét bớt ruột, nhồi nhân thịt vào vừa vặn.',
+      'Bắc chảo dầu nóng, rán vàng mặt đậu phụ có nhân thịt để cố định nhân, vớt ra đĩa.',
+      'Phi thơm hành khô, cho cà chua thái hạt lựu vào xào nhuyễn cùng chút gia vị tạo thành sốt sệt.',
+      'Xếp các miếng đậu nhồi thịt vào chảo sốt, đậy vung đun nhỏ lửa 10 phút cho đậu ngấm sốt.',
+      'Rắc hành lá thái nhỏ và chút tiêu xay lên trên, tắt bếp và gắp ra đĩa sâu lòng.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Cơm Bình Dân 88',
+        address: '88 Thái Thịnh, Đống Đa, Hà Nội',
+        distance: '0.5 km',
+        priceRange: '35.000đ - 50.000đ',
+        rating: 4.5,
+        openHours: '10:00 - 20:30'
+      }
+    ]
+  },
+
+  {
+    id: 'trung-duc-thit',
+    name: 'Trứng Chiên Thịt Băm Mộc Nhĩ',
+    englishName: 'Vietnamese Minced Pork Fried Omelette',
+    mealCategory: 'lunch',
+    dishType: 'man',
+    prepTime: 5,
+    cookTime: 10,
+    difficulty: 'Dễ',
+    calories: 340,
+    popularityScore: 97,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: false,
+    tags: ['home', 'quick', 'budget'],
+    image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80',
+    author: 'Cơm Sinh Viên',
+    description: 'Món ăn siêu nhanh chỉ mất 15 phút: trứng vịt hoặc gà đánh bông cùng thịt băm thơm phức, mộc nhĩ giòn dai, viền mép vàng ruộm béo ngậy.',
+    ingredients: [
+      { name: 'Trứng gà hoặc trứng vịt', quantity: 4, unit: 'quả', isCore: true, key: 'trung' },
+      { name: 'Thịt heo xay', quantity: 150, unit: 'g', isCore: true, key: 'thit_heo' },
+      { name: 'Mộc nhĩ ngâm nở thái sợi', quantity: 2, unit: 'tai', isCore: false, key: 'nam' },
+      { name: 'Hành tím băm, hành lá', quantity: 1, unit: 'nhánh', isCore: false, key: 'hanh_la' },
+      { name: 'Nước mắm ngon, hạt nêm, tiêu', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Đập 4 quả trứng vào tô, thêm thịt băm, mộc nhĩ thái nhỏ, hành hoa, 1 thìa nước mắm và tiêu.',
+      'Dùng đũa đánh bông đều hỗn hợp cho thịt tơi và tan đều trong trứng.',
+      'Đun nóng chảo với 2 thìa canh dầu ăn, đổ toàn bộ hỗn hợp trứng thịt vào dàn đều chảo.',
+      'Hạ lửa nhỏ vừa, đậy vung chừng 4-5 phút cho thịt bên trong chín đều.',
+      'Mở vung, khéo léo lật mặt trứng rán thêm 2 phút cho cả hai mặt vàng ruộm thơm lừng.',
+      'Cắt miếng tam giác hoặc vuông vừa ăn, chấm cùng nước mắm tỏi ớt ăn với cơm nóng.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Quán Cơm Sinh Viên Bách Khoa',
+        address: 'Tạ Quang Bửu, Hai Bà Trưng, Hà Nội',
+        distance: '0.8 km',
+        priceRange: '25.000đ - 40.000đ',
+        rating: 4.6,
+        openHours: '10:00 - 21:00'
+      }
+    ]
+  },
+
+  {
+    id: 'thit-rang-chay-canh',
+    name: 'Thịt Ba Chỉ Rang Cháy Cạnh Lá Chanh',
+    englishName: 'Crispy Caramelized Pork Belly with Lime Leaves',
+    mealCategory: 'dinner',
+    dishType: 'man',
+    prepTime: 10,
+    cookTime: 15,
+    difficulty: 'Dễ',
+    calories: 510,
+    popularityScore: 96,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: false,
+    tags: ['home', 'dry', 'quick'],
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
+    author: 'Bếp Cơm Bắc',
+    description: 'Thịt ba chỉ thái mỏng đảo sém vàng giòn rụm cạnh, tươm mỡ béo ngậy quyện nước mắm đường mặn ngọt và thoang thoảng hương lá chanh tươi nức mũi.',
+    ingredients: [
+      { name: 'Thịt ba chỉ heo tươi', quantity: 400, unit: 'g', isCore: true, key: 'thit_heo' },
+      { name: 'Lá chanh tươi thái chỉ', quantity: 6, unit: 'lá', isCore: false, key: 'hanh_la' },
+      { name: 'Hành khô băm', quantity: 2, unit: 'củ', isCore: false, key: 'toi_ot' },
+      { name: 'Nước mắm cốt, đường cát, tiêu xay', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Thịt ba chỉ rửa sạch, thái lát mỏng vừa ăn.',
+      'Cho thịt vào chảo không cần dầu, đảo lửa vừa cho thịt tự tiết mỡ và sém cạnh vàng giòn.',
+      'Múc bớt mỡ thừa ra chén, cho hành khô băm vào phi thơm cùng thịt.',
+      'Cho 2 thìa nước mắm ngon và 1 thìa đường vào đảo thật nhanh tay trên lửa lớn cho đường keo lại.',
+      'Tắt bếp, rắc lá chanh thái chỉ và hạt tiêu xay vào đảo đều rồi múc ra đĩa ăn kèm dưa chua.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Quán Cơm Bắc Phố Cổ',
+        address: '32 Hàng Bè, Hoàn Kiếm, Hà Nội',
+        distance: '1.8 km',
+        priceRange: '45.000đ - 80.000đ',
+        rating: 4.7,
+        openHours: '10:30 - 21:00'
+      }
+    ]
+  },
+
+  // =========================================================================
+  // 2. MÓN CƠM GIA ĐÌNH: MÓN CANH THANH MÁT & BỔ DƯỠNG
+  // =========================================================================
+  {
+    id: 'canh-cua-rau-day',
+    name: 'Canh Cua Đồng Nấu Rau Đay Mướp Mồng Tơi',
+    englishName: 'Crab Meat Soup with Malabar Spinach and Jute Leaves',
+    mealCategory: 'dinner',
+    dishType: 'canh',
+    prepTime: 20,
+    cookTime: 15,
+    difficulty: 'Vừa',
+    calories: 220,
+    popularityScore: 99,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: true,
+    tags: ['home', 'soup', 'healthy', 'specialty'],
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
+    author: 'Bếp Cơm Mẹ Nấu',
+    description: 'Món canh linh hồn của mâm cơm hè miền Bắc: riêu cua đóng bánh chắc nịch, nước canh ngọt lịm từ cua đồng xay cùng rau đay mướp hương mướt mát, ăn kèm cà pháo giòn rụm.',
+    ingredients: [
+      { name: 'Cua đồng tươi giã/xay', quantity: 300, unit: 'g', isCore: true, key: 'cua_dong' },
+      { name: 'Rau đay & mồng tơi', quantity: 1, unit: 'bó (250g)', isCore: true, key: 'muop_rau_day' },
+      { name: 'Mướp hương tươi', quantity: 1, unit: 'trái', isCore: true, key: 'muop_rau_day' },
+      { name: 'Hành khô phi thơm', quantity: 1, unit: 'củ', isCore: false, key: 'toi_ot' },
+      { name: 'Mắm tôm Bắc ngon, muối hạt', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Hòa cua xay với 800ml nước lọc và 1/2 thìa muối, bóp kỹ rồi lọc qua rây 2-3 lần lấy nước cốt trong, bỏ bã xác.',
+      'Rau đay, mồng tơi nhặt lá non, rửa sạch thái nhỏ. Mướp gọt vỏ chẻ đôi thái vát xéo.',
+      'Đổ nước cua vào nồi, bật lửa vừa đun liu riu, khuấy nhẹ vòng tròn để gạch cua không bén đáy.',
+      'Khi nước sôi lăn tăn, mảng thịt riêu cua sẽ kết tảng nổi lên mặt, khéo léo gạt riêu cua sang một bên.',
+      'Thả mướp hương và rau thái nhỏ vào, nêm chút mắm tôm ngon và hạt nêm cho vừa miệng.',
+      'Canh sôi bùng lại chừng 1-2 phút là rau chín xanh mướt, múc ra tô lớn thưởng thức cùng cà pháo muối chua.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Nhà Hàng Cơm Quê Ánh Tuyết',
+        address: '25 Mã Mây, Hàng Buồm, Hoàn Kiếm, Hà Nội',
+        distance: '1.4 km',
+        priceRange: '60.000đ - 110.000đ',
+        rating: 4.8,
+        openHours: '10:00 - 22:00'
+      }
+    ]
+  },
+
+  {
+    id: 'canh-chua-ca-loc',
+    name: 'Canh Chua Cá Lóc Nam Bộ',
+    englishName: 'Southern Vietnamese Sour Fish Soup',
+    mealCategory: 'dinner',
+    dishType: 'canh',
+    prepTime: 20,
+    cookTime: 15,
+    difficulty: 'Vừa',
+    calories: 280,
+    popularityScore: 98,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: true,
+    tags: ['home', 'soup', 'healthy', 'specialty'],
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
+    author: 'Má Bảy Miền Tây',
+    description: 'Vị chua thanh mát của nước me hòa cùng vị ngọt tự nhiên của khóm dứa, cà chua, dọc mùng giòn xốp và cá lóc đồng tươi roi rói thơm lừng ngò om ngò gai.',
+    ingredients: [
+      { name: 'Cá lóc đồng (đầu + đuôi)', quantity: 400, unit: 'g', isCore: true, key: 'ca_loc' },
+      { name: 'Cà chua & dứa (khóm)', quantity: 2, unit: 'quả/miếng', isCore: true, key: 'ca_chua' },
+      { name: 'Dọc mùng (bạc hà), đậu bắp', quantity: 150, unit: 'g', isCore: true, key: 'rau_muong' },
+      { name: 'Me vắt chín chua', quantity: 50, unit: 'g', isCore: false, key: 'gia_vi' },
+      { name: 'Ngò gai, ngò om, ớt sừng, tỏi phi', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'hanh_la' }
+    ],
+    steps: [
+      'Cá lóc xát muối chanh rửa sạch nhớt, cắt khúc vừa ăn.',
+      'Dọc mùng tước vỏ thái vát, bóp muối rửa sạch vắt ráo. Đậu bắp cắt vát. Dứa thái lát tam giác.',
+      'Dầm me với 1 bát nước ấm, lọc lấy nước cốt me chua.',
+      'Phi thơm tỏi băm với chút dầu, xào sơ cà chua và dứa cho ra màu đỏ đẹp mắt.',
+      'Đổ 1 lít nước lọc và nước cốt me vào đun sôi, thả cá lóc vào nấu chín trong 7-8 phút, hớt sạch bọt.',
+      'Cho đậu bắp, dọc mùng vào đun thêm 2 phút, nêm nước mắm, đường cho cân bằng vị chua ngọt.',
+      'Múc ra tô, rắc ngò gai, ngò om, ớt cay và tỏi phi vàng thơm lừng lên trên.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Quán Đồng Quê Nam Bộ',
+        address: '45 Đinh Tiên Hoàng, Đa Kao, Q.1, TP.HCM',
+        distance: '1.9 km',
+        priceRange: '70.000đ - 130.000đ',
+        rating: 4.8,
+        openHours: '10:00 - 22:00'
+      }
+    ]
+  },
+
+  {
+    id: 'canh-ngao-nau-chua',
+    name: 'Canh Ngao Nấu Chua Dứa Cà Chua',
+    englishName: 'Sour Clam Soup with Pineapple and Tomatoes',
+    mealCategory: 'lunch',
+    dishType: 'canh',
+    prepTime: 15,
+    cookTime: 10,
+    difficulty: 'Dễ',
+    calories: 180,
+    popularityScore: 95,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: true,
+    tags: ['home', 'soup', 'quick', 'budget'],
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
+    author: 'Bếp Cơm Nhanh',
+    description: 'Món canh chua thanh tao nhẹ bụng: nước ngao luộc ngọt lịm tự nhiên hòa cùng dứa thơm và cà chua, thêm chút thì là hành hoa thơm lừng.',
+    ingredients: [
+      { name: 'Ngao sống (nghêu tươi)', quantity: 800, unit: 'g', isCore: true, key: 'ngao' },
+      { name: 'Cà chua chín', quantity: 2, unit: 'quả', isCore: true, key: 'ca_chua' },
+      { name: 'Dứa tươi thái lát', quantity: 1/4, unit: 'trái', isCore: false, key: 'ca_chua' },
+      { name: 'Hành hoa, rau răm hoặc thì là', quantity: 1, unit: 'nhánh', isCore: false, key: 'hanh_la' },
+      { name: 'Hành khô, nước mắm ngon', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Ngao ngâm nước vo gạo cùng vài lát ớt 1 tiếng để nhả sạch cát, rửa sạch vỏ ngoài.',
+      'Cho ngao vào nồi với 800ml nước đun sôi đến khi ngao há miệng thì tắt bếp.',
+      'Vớt ngao ra nhặt lấy ruột, nước luộc ngao để lắng rồi gạn lấy phần nước trong.',
+      'Phi thơm hành khô, xào cà chua và ruột ngao với chút hạt nêm cho đậm đà.',
+      'Đổ nước luộc ngao và dứa vào đun sôi 3 phút, nêm nếm lại vừa miệng.',
+      'Tắt bếp, cho hành hoa, rau răm thái nhỏ vào rồi múc ra bát ăn nóng.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Quán Cơm Văn Phòng Cầu Giấy',
+        address: '52 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội',
+        distance: '0.7 km',
+        priceRange: '35.000đ - 60.000đ',
+        rating: 4.6,
+        openHours: '10:30 - 20:30'
+      }
+    ]
+  },
+
+  {
+    id: 'canh-cai-thit-bam',
+    name: 'Canh Cải Ngọt Thịt Băm Gừng Tươi',
+    englishName: 'Sweet Mustard Green Soup with Minced Pork',
+    mealCategory: 'dinner',
+    dishType: 'canh',
+    prepTime: 10,
+    cookTime: 10,
+    difficulty: 'Dễ',
+    calories: 160,
+    popularityScore: 97,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: true,
+    tags: ['home', 'soup', 'quick', 'healthy'],
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
+    author: 'Cơm Gia Đình',
+    description: 'Món canh nhanh gọn 10 phút ấm bụng: cải ngọt xanh giòn nấu thịt nạc băm ngọt nước, điểm xuyết vài lát gừng tươi thơm nồng ấm áp.',
+    ingredients: [
+      { name: 'Rau cải ngọt tươi', quantity: 300, unit: 'g', isCore: true, key: 'rau_cai' },
+      { name: 'Thịt heo nạc băm', quantity: 150, unit: 'g', isCore: true, key: 'thit_heo' },
+      { name: 'Gừng tươi đập dập', quantity: 1, unit: 'nhánh nhỏ', isCore: false, key: 'toi_ot' },
+      { name: 'Hành khô, nước mắm, hạt nêm', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Rau cải nhặt gốc rửa sạch, thái khúc dài 3cm. Gừng đập dập.',
+      'Ướp thịt băm với chút hạt nêm và tiêu.',
+      'Phi thơm hành khô, xào săn thịt băm rồi đổ 800ml nước lọc vào đun sôi.',
+      'Hớt sạch bọt cho nước canh trong, thả vài lát gừng đập dập vào.',
+      'Nước sôi bùng thả rau cải vào đun nhanh trên lửa lớn 2 phút cho rau chín xanh mướt.',
+      'Nêm lại chút nước mắm cho dậy mùi thơm rồi tắt bếp múc ra tô.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Quán Cơm Gia Đình Bách Khoa',
+        address: '18 Lê Thanh Nghị, Hai Bà Trưng, Hà Nội',
+        distance: '1.0 km',
+        priceRange: '30.000đ - 55.000đ',
+        rating: 4.5,
+        openHours: '10:00 - 21:00'
+      }
+    ]
+  },
+
+  // =========================================================================
+  // 3. MÓN CƠM GIA ĐÌNH: MÓN XÀO & RAU LUỘC (CÂN BẰNG CHẤT XƠ)
+  // =========================================================================
+  {
+    id: 'rau-muong-xao-toi',
+    name: 'Rau Muống Xào Tỏi Giòn Xanh',
+    englishName: 'Stir-Fried Morning Glory with Garlic',
+    mealCategory: 'dinner',
+    dishType: 'xao',
+    prepTime: 10,
+    cookTime: 5,
+    difficulty: 'Dễ',
+    calories: 140,
+    popularityScore: 99,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: true,
+    tags: ['home', 'quick', 'budget', 'healthy'],
+    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80',
+    author: 'Bếp Cơm Việt',
+    description: 'Món rau xào quốc dân xuất hiện trên mọi bàn ăn Việt: cọng rau muống giòn sần sật, xanh ngắt óng ả, ngập tràn tỏi phi thơm nức mũi.',
+    ingredients: [
+      { name: 'Rau muống non ngắt ngọn', quantity: 1, unit: 'bó (350g)', isCore: true, key: 'rau_muong' },
+      { name: 'Tỏi ta tươi đập dập', quantity: 2, unit: 'củ', isCore: true, key: 'toi_ot' },
+      { name: 'Dầu ăn, nước mắm ngon, hạt nêm', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Rau muống nhặt bỏ lá già và cọng cứng, rửa sạch ngâm nước muối loãng 5 phút rồi vớt ráo.',
+      'Đun nồi nước sôi với chút muối, chần nhanh rau muống trong 30 giây rồi vớt ngay vào âu nước đá để rau giòn và xanh ngắt.',
+      'Bắc chảo lên bếp với 2 thìa dầu ăn, phi thơm 1/2 lượng tỏi đập dập.',
+      'Bật lửa lớn tối đa, trút rau muống vào đảo thật nhanh tay, nêm 1 thìa nước mắm ngon và chút hạt nêm.',
+      'Cho nốt phần tỏi còn lại vào đảo thêm 30 giây rồi tắt bếp trút ra đĩa thưởng thức ngay.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Quán Cơm Bình Dân Phố Huế',
+        address: '122 Phố Huế, Hai Bà Trưng, Hà Nội',
+        distance: '1.2 km',
+        priceRange: '25.000đ - 45.000đ',
+        rating: 4.6,
+        openHours: '10:00 - 21:00'
+      }
+    ]
+  },
+
+  {
+    id: 'bap-cai-xao-ca-chua',
+    name: 'Bắp Cải Xào Cà Chua Chín Mọng',
+    englishName: 'Stir-Fried Cabbage with Ripe Tomatoes',
+    mealCategory: 'lunch',
+    dishType: 'xao',
+    prepTime: 8,
+    cookTime: 7,
+    difficulty: 'Dễ',
+    calories: 120,
+    popularityScore: 94,
+    isHomeCooked: true,
+    isPopular: true,
+    isHealthy: true,
+    tags: ['home', 'quick', 'budget', 'healthy'],
+    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80',
+    author: 'Cơm Gia Đình',
+    description: 'Món rau xào thanh đạm giá rẻ: bắp cải thái sợi giòn ngọt tự nhiên quyện vị chua thanh của cà chua, thơm mùi hành hoa tươi rói.',
+    ingredients: [
+      { name: 'Bắp cải tươi', quantity: 350, unit: 'g', isCore: true, key: 'bap_cai' },
+      { name: 'Cà chua chín', quantity: 2, unit: 'quả', isCore: true, key: 'ca_chua' },
+      { name: 'Hành tím, hành lá', quantity: 1, unit: 'nhánh', isCore: false, key: 'hanh_la' },
+      { name: 'Dầu ăn, hạt nêm, tiêu xay', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
+    ],
+    steps: [
+      'Bắp cải rửa sạch, thái sợi dày chừng 0.8cm. Cà chua bổ múi cau.',
+      'Phi thơm hành khô băm với dầu ăn, trút cà chua vào xào cho mềm ra màu đỏ.',
+      'Cho bắp cải vào xào đều trên lửa lớn, nêm 1.5 thìa hạt nêm.',
+      'Đảo nhanh tay trong 3-4 phút cho bắp cải vừa chín tới vẫn giữ độ giòn ngọt.',
+      'Rắc hành lá thái khúc và tiêu xay vào đảo đều rồi tắt bếp múc ra đĩa.'
+    ],
+    nearbyRestaurants: [
+      {
+        name: 'Cơm Niêu Sinh Viên',
+        address: '60 Chùa Láng, Đống Đa, Hà Nội',
+        distance: '1.5 km',
+        priceRange: '25.000đ - 40.000đ',
+        rating: 4.5,
+        openHours: '10:00 - 20:30'
+      }
+    ]
+  },
+
+  // =========================================================================
+  // 4. MÓN ĂN SÁNG & ĐẶC SẢN QUỐC HỒN QUỐC TÚY
+  // =========================================================================
   {
     id: 'pho-bo-tai-lan',
     name: 'Phở Bò Tái Lăn Hà Nội',
     englishName: 'Hanoi Stir-fried Rare Beef Pho',
     mealCategory: 'breakfast',
-    tags: ['soup', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1000&q=80',
+    dishType: 'an_sang',
+    prepTime: 20,
     cookTime: 35,
     difficulty: 'Vừa',
     calories: 520,
-    rating: 4.9,
-    reviewsCount: 246,
-    author: 'Chef Tuấn Hưng',
-    description: 'Thịt bò tươi xào lăn nhanh trên lửa lớn cùng tỏi thơm nức, chan nước dùng ninh xương đậm đà thơm mùi quế hồi và ngập tràn hành hoa tươi rói.',
-    isRecipeOfDay: true,
+    popularityScore: 99,
+    isHomeCooked: false,
+    isRecipeOfDay: false,
     isPopular: true,
     isHealthy: false,
+    tags: ['soup', 'specialty'],
+    image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1000&q=80',
+    author: 'Chef Tuấn Hưng',
+    description: 'Thịt bò tươi xào lăn nhanh trên lửa lớn cùng tỏi thơm nức, chan nước dùng ninh xương đậm đà thơm mùi quế hồi và ngập tràn hành hoa tươi rói.',
     ingredients: [
-      { name: 'Bánh phở tươi', amount: '500g' },
-      { name: 'Thịt bò phi lê hoặc thăn mềm', amount: '300g' },
-      { name: 'Xương ống bò (nấu nước dùng)', amount: '1kg' },
-      { name: 'Hành lá, hành tây, ngò gai', amount: '100g' },
-      { name: 'Gừng, tỏi tươi đập dập', amount: '50g' },
-      { name: 'Hoa hồi, thảo quả, quế thanh', amount: '1 gói nhỏ' },
-      { name: 'Gia vị: Nước mắm cốt, hạt nêm, tiêu sọ, giấm tỏi ớt', amount: 'Vừa đủ' }
+      { name: 'Bánh phở tươi', quantity: 500, unit: 'g', isCore: true, key: 'bun' },
+      { name: 'Thịt bò phi lê hoặc thăn mềm', quantity: 300, unit: 'g', isCore: true, key: 'thit_bo' },
+      { name: 'Hành lá, hành tây, ngò gai', quantity: 100, unit: 'g', isCore: true, key: 'hanh_la' },
+      { name: 'Gừng, tỏi tươi đập dập', quantity: 50, unit: 'g', isCore: false, key: 'toi_ot' },
+      { name: 'Nước dùng ninh xương bò, quế hồi', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
     ],
-    ingredientKeys: ['thit_bo', 'hanh_la', 'toi_ot', 'bun'],
     steps: [
       'Ninh xương bò cùng gừng nướng, hành nướng, hồi quế trong ít nhất 2 giờ để lấy nước dùng trong và ngọt thanh.',
       'Thái thịt bò mỏng tang ngang thớ, ướp với chút tỏi băm, tiêu và hạt nêm trong 15 phút.',
@@ -40,8 +593,7 @@ export const DISHES_DATA = [
         distance: '0.8 km',
         priceRange: '70.000đ - 90.000đ',
         rating: 4.8,
-        openHours: '06:00 - 20:30',
-        mapQuery: 'Pho Thin Lo Duc Hanoi'
+        openHours: '06:00 - 20:30'
       },
       {
         name: 'Phở Bò Gia Truyền Bát Đàn',
@@ -49,54 +601,42 @@ export const DISHES_DATA = [
         distance: '1.4 km',
         priceRange: '60.000đ - 85.000đ',
         rating: 4.7,
-        openHours: '06:00 - 10:30 & 18:00 - 20:30',
-        mapQuery: 'Pho Bat Dan Hanoi'
-      },
-      {
-        name: 'Phở Lý Quốc Sư',
-        address: '10 Lý Quốc Sư, Hàng Trống, Hà Nội',
-        distance: '1.9 km',
-        priceRange: '65.000đ - 95.000đ',
-        rating: 4.6,
-        openHours: '06:30 - 22:00',
-        mapQuery: 'Pho Ly Quoc Su Hanoi'
+        openHours: '06:00 - 10:30 & 18:00 - 20:30'
       }
     ]
   },
+
   {
     id: 'com-tam-suon-bi-cha',
     name: 'Cơm Tấm Sườn Bì Chả Trứng',
     englishName: 'Saigon Broken Rice with Grilled Pork Chop',
     mealCategory: 'lunch',
-    tags: ['dry', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 40,
+    dishType: 'man',
+    prepTime: 25,
+    cookTime: 20,
     difficulty: 'Vừa',
     calories: 680,
-    rating: 4.9,
-    reviewsCount: 312,
-    author: 'Cô Ba Sài Gòn',
-    description: 'Hạt cơm tấm thơm dẻo ăn cùng sườn cốt lết nướng than hoa vàng óng ngấm gia vị sả mật ong, chả trứng hấp béo ngậy, bì dai giòn và nước mắm kẹo pha chuẩn vị miền Nam.',
-    isRecipeOfDay: false,
+    popularityScore: 99,
+    isHomeCooked: false,
     isPopular: true,
     isHealthy: false,
+    tags: ['dry', 'specialty'],
+    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80',
+    author: 'Cô Ba Sài Gòn',
+    description: 'Hạt cơm tấm thơm dẻo ăn cùng sườn cốt lết nướng than hoa vàng óng ngấm gia vị sả mật ong, chả trứng hấp béo ngậy, bì dai giòn và nước mắm kẹo pha chuẩn vị miền Nam.',
     ingredients: [
-      { name: 'Gạo tấm thơm', amount: '300g' },
-      { name: 'Sườn cốt lết heo tươi', amount: '4 miếng (500g)' },
-      { name: 'Thịt heo xay + nấm mèo (làm chả trứng)', amount: '150g' },
-      { name: 'Trứng gà (1 quả trộn, 1 lòng đỏ phết mặt)', amount: '3 quả' },
-      { name: 'Bì heo luộc thái sợi + thính gạo', amount: '100g' },
-      { name: 'Sả băm, hành tím, tỏi, mật ong, dầu hào, sữa đặc', amount: 'Vừa đủ' },
-      { name: 'Mỡ hành, đồ chua (củ cải, cà rốt), dưa leo, cà chua', amount: 'Ăn kèm' }
+      { name: 'Gạo tấm thơm', quantity: 300, unit: 'g', isCore: true, key: 'gao' },
+      { name: 'Sườn cốt lết heo tươi', quantity: 4, unit: 'miếng (500g)', isCore: true, key: 'thit_heo' },
+      { name: 'Trứng gà (chả trứng + ốp la)', quantity: 3, unit: 'quả', isCore: true, key: 'trung' },
+      { name: 'Mỡ hành, dưa leo, cà chua', quantity: 1, unit: 'phần', isCore: false, key: 'hanh_la' },
+      { name: 'Nước mắm kẹo chua ngọt, đồ chua', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
     ],
-    ingredientKeys: ['thit_heo', 'trung', 'gao', 'ca_chua', 'dua_leo', 'hanh_la', 'toi_ot'],
     steps: [
-      'Ướp sườn với sả băm, tỏi băm, mật ong, nước mắm, chút sữa đặc và dầu ăn trong ít nhất 1-2 tiếng (hoặc qua đêm).',
+      'Ướp sườn với sả băm, tỏi băm, mật ong, nước mắm, chút sữa đặc và dầu ăn trong ít nhất 1-2 tiếng.',
       'Làm chả trứng: Trộn thịt xay, nấm mèo băm, miến, trứng gà, hạt nêm rồi hấp 20 phút. Quết lòng đỏ lên mặt và hấp tiếp 5 phút không đậy nắp.',
       'Nấu cơm tấm bằng nồi cơm điện với lượng nước vừa phải để hạt cơm tơi xốp.',
-      'Nướng sườn trên than hồng hoặc nồi chiên không dầu ở 180°C trong 15 phút, trở mặt quết sốt ướp nướng thêm 7 phút.',
-      'Làm mỡ hành xèo thơm. Pha nước mắm chua ngọt sệt kẹo.',
-      'Xới cơm tấm ra đĩa, đặt sườn nướng, chả trứng, bì, trứng ốp la, dưa leo cà chua, rưới mỡ hành và chén nước mắm ớt.'
+      'Nướng sườn trên than hồng hoặc nồi chiên không dầu ở 180°C trong 15 phút, trở mặt quết sốt nướng thêm 7 phút.',
+      'Xới cơm tấm ra đĩa, đặt sườn nướng, chả trứng, bì, trứng ốp la, dưa leo cà chua, rưới mỡ hành thơm phức.'
     ],
     nearbyRestaurants: [
       {
@@ -105,8 +645,7 @@ export const DISHES_DATA = [
         distance: '1.1 km',
         priceRange: '65.000đ - 110.000đ',
         rating: 4.8,
-        openHours: '07:00 - 21:00',
-        mapQuery: 'Com Tam Ba Ghien Ho Chi Minh'
+        openHours: '07:00 - 21:00'
       },
       {
         name: 'Cơm Tấm Phúc Lộc Thọ',
@@ -114,483 +653,96 @@ export const DISHES_DATA = [
         distance: '0.6 km',
         priceRange: '45.000đ - 70.000đ',
         rating: 4.6,
-        openHours: '06:00 - 22:00',
-        mapQuery: 'Com Tam Phuc Loc Tho'
+        openHours: '06:00 - 22:00'
       }
     ]
   },
+
   {
     id: 'banh-mi-chao-dac-biet',
     name: 'Bánh Mì Chảo Thập Cẩm Pa Tê Trứng',
     englishName: 'Vietnamese Pan-Fried Combo Banh Mi',
     mealCategory: 'breakfast',
-    tags: ['quick', 'budget'],
-    image: 'https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 15,
+    dishType: 'an_sang',
+    prepTime: 5,
+    cookTime: 10,
     difficulty: 'Dễ',
     calories: 460,
-    rating: 4.8,
-    reviewsCount: 189,
-    author: 'Bếp Cụ Rùa',
-    description: 'Chiếc chảo gang nóng xèo xèo với trứng ốp la lòng đào, pate béo ngậy rán cháy cạnh, xúc xích, bò lát mềm mọng cùng sốt cà chua tiêu đen đậm đà chấm cùng bánh mì giòn rụm.',
-    isRecipeOfDay: false,
+    popularityScore: 94,
+    isHomeCooked: true,
     isPopular: true,
     isHealthy: false,
+    tags: ['quick', 'budget'],
+    image: 'https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=1000&q=80',
+    author: 'Bếp Cụ Rùa',
+    description: 'Chiếc chảo gang nóng xèo xèo với trứng ốp la lòng đào, pate béo ngậy rán cháy cạnh, xúc xích, bò lát mềm mọng cùng sốt cà chua tiêu đen đậm đà chấm cùng bánh mì giòn rụm.',
     ingredients: [
-      { name: 'Bánh mì nóng giòn', amount: '2 ổ' },
-      { name: 'Trứng gà', amount: '2 quả' },
-      { name: 'Pate gan heo béo', amount: '60g' },
-      { name: 'Xúc xích hoặc lạp xưởng', amount: '1 cây' },
-      { name: 'Thịt bò thái mỏng (nếu thích)', amount: '60g' },
-      { name: 'Cà chua chín mọng làm sốt', amount: '2 quả' },
-      { name: 'Bơ thực vật, tỏi băm, tiêu đen, dưa leo', amount: 'Vừa đủ' }
+      { name: 'Bánh mì nóng giòn', quantity: 2, unit: 'ổ', isCore: true, key: 'banh_mi' },
+      { name: 'Trứng gà tươi', quantity: 2, unit: 'quả', isCore: true, key: 'trung' },
+      { name: 'Pa tê gan heo', quantity: 80, unit: 'g', isCore: true, key: 'thit_heo' },
+      { name: 'Thịt bò thái mỏng', quantity: 60, unit: 'g', isCore: false, key: 'thit_bo' },
+      { name: 'Sốt cà chua tiêu đen, dưa leo', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'ca_chua' }
     ],
-    ingredientKeys: ['banh_mi', 'trung', 'thit_heo', 'thit_bo', 'ca_chua', 'dua_leo', 'toi_ot'],
     steps: [
-      'Xào cà chua băm nhuyễn với chút bơ, tỏi băm, tương cà, dầu hào và tiêu để có nước sốt sánh mịn đỏ tươi.',
-      'Bắc chảo gang lên bếp, cho chút bơ tan chảy, đập trứng gà làm ốp la giữ nguyên lòng đào.',
-      'Cho pate, xúc xích khía vát và thịt bò vào chiên xém các cạnh quanh chảo.',
-      'Rưới 2-3 thìa sốt cà chua sôi sùng sục vào giữa chảo, rắc tiêu đen và cọng ngò tươi.',
-      'Dọn ra chảo khi còn sôi réo rắt, xé bánh mì chấm ngập sốt và lòng đỏ trứng béo bùi.'
+      'Làm nóng chảo gang trên bếp với chút bơ thơm.',
+      'Đập 2 quả trứng gà vào chảo làm ốp la lòng đào.',
+      'Cho miếng pate gan, lát bò ướp tiêu vào đảo nhanh tay quanh chảo.',
+      'Rưới 2 muỗng canh sốt cà chua tiêu đen sôi lục bục vào chảo.',
+      'Rắc ngò rí, tiêu xay và mang ra ăn nóng ngay cùng bánh mì giòn giòn.'
     ],
     nearbyRestaurants: [
       {
         name: 'Bánh Mì Chảo Cột Điện Quán',
-        address: '71 Đặng Văn Ngữ, Trung Tự, Đống Đa, Hà Nội',
-        distance: '0.9 km',
+        address: '71 Đặng Văn Ngữ, Đống Đa, Hà Nội',
+        distance: '1.2 km',
         priceRange: '35.000đ - 55.000đ',
         rating: 4.6,
-        openHours: '08:00 - 21:30',
-        mapQuery: 'Banh Mi Chao Cot Dien Quan Hanoi'
-      },
-      {
-        name: 'Bánh Mì Chảo Chảo Cười',
-        address: '103 Nam Đồng, Đống Đa, Hà Nội',
-        distance: '1.2 km',
-        priceRange: '40.000đ - 60.000đ',
-        rating: 4.5,
-        openHours: '07:00 - 22:00',
-        mapQuery: 'Banh Mi Chao Cuoi Hanoi'
+        openHours: '07:00 - 22:00'
       }
     ]
   },
-  {
-    id: 'bun-bo-hue',
-    name: 'Bún Bò Huế Cố Đô Chuẩn Vị',
-    englishName: 'Hue Royal Spicy Beef Noodle Soup',
-    mealCategory: 'lunch',
-    tags: ['soup', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1576577445504-6af96477db52?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 50,
-    difficulty: 'Khó',
-    calories: 590,
-    rating: 4.9,
-    reviewsCount: 380,
-    author: 'Mệ Kéo Cố Đô',
-    description: 'Nước dùng nồng nàn hương sả cây quyện cùng mắm ruốc Huế trứ danh, ớt sa tế cay cay bốc khói, hòa cùng sợi bún to, thịt bắp bò giòn sần sật, chả cua và tiết luộc mềm mướt.',
-    isRecipeOfDay: false,
-    isPopular: true,
-    isHealthy: false,
-    ingredients: [
-      { name: 'Bún sợi to Huế', amount: '500g' },
-      { name: 'Bắp bò hoa, nạm bò', amount: '400g' },
-      { name: 'Xương ống hoặc giò heo', amount: '500g' },
-      { name: 'Mắm ruốc Huế chuẩn', amount: '2 thìa canh' },
-      { name: 'Sả cây đập dập', amount: '6 cây' },
-      { name: 'Hạt điều màu làm dầu màu, ớt sa tế', amount: 'Vừa đủ' },
-      { name: 'Rau sống: Hoa chuối bào, giá đỗ, húng quế, chanh', amount: 'Ăn kèm' }
-    ],
-    ingredientKeys: ['thit_bo', 'thit_heo', 'bun', 'hanh_la', 'toi_ot'],
-    steps: [
-      'Khuấy mắm ruốc với nước lạnh, để lắng lấy phần nước trong ngọt thơm mùi ruốc bỏ cặn.',
-      'Hầm xương heo, bắp bò cùng sả đập dập và nước ruốc đã lọc trong khoảng 1 giờ cho ngọt nước.',
-      'Vớt bắp bò ra ngâm nước lạnh rồi thái lát mỏng vừa ăn.',
-      'Phi thơm ớt màu điều, sả băm cho vào nồi nước dùng để tạo màu đỏ cam lóng lánh đặc trưng.',
-      'Xếp bún vào tô, bày bắp bò, chả cua, giò heo, rắc hành ngò thái nhỏ rồi chan nước dùng sôi sùng sục cay nồng.'
-    ],
-    nearbyRestaurants: [
-      {
-        name: 'Bún Bò Huế Mụ Rơi',
-        address: 'Nguyễn Chí Thanh, TP. Huế / Chi nhánh Hà Nội & TP.HCM',
-        distance: '1.5 km',
-        priceRange: '50.000đ - 70.000đ',
-        rating: 4.8,
-        openHours: '06:30 - 21:00',
-        mapQuery: 'Bun Bo Hue Quan'
-      },
-      {
-        name: 'Bún Bò Gốc Huế O Xuân',
-        address: 'Quang Trung, Hoàn Kiếm, Hà Nội',
-        distance: '2.0 km',
-        priceRange: '55.000đ - 75.000đ',
-        rating: 4.7,
-        openHours: '07:00 - 21:30',
-        mapQuery: 'Bun Bo O Xuan Hanoi'
-      }
-    ]
-  },
-  {
-    id: 'trung-chien-ca-chua',
-    name: 'Trứng Xào Cà Chua Hành Hoa',
-    englishName: 'Scrambled Eggs with Fresh Tomatoes',
-    mealCategory: 'dinner',
-    tags: ['quick', 'budget', 'healthy'],
-    image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 10,
-    difficulty: 'Dễ',
-    calories: 240,
-    rating: 4.7,
-    reviewsCount: 154,
-    author: 'Cơm Nhà Mẹ Nấu',
-    description: 'Món ăn quốc dân nhanh gọn cứu đói khi tủ lạnh chỉ còn trứng và cà chua. Miếng trứng mềm xốp, sốt cà chua chua ngọt dịu nhẹ quyện cùng hành hoa thơm lừng đưa cơm vô cùng.',
-    isRecipeOfDay: false,
-    isPopular: true,
-    isHealthy: true,
-    ingredients: [
-      { name: 'Trứng gà tươi', amount: '3 - 4 quả' },
-      { name: 'Cà chua chín đỏ', amount: '2 quả' },
-      { name: 'Hành lá, hành khô băm', amount: '3 nhánh' },
-      { name: 'Nước mắm ngon, tiêu sọ, hạt nêm', amount: 'Vừa đủ' }
-    ],
-    ingredientKeys: ['trung', 'ca_chua', 'hanh_la', 'toi_ot'],
-    steps: [
-      'Đập trứng ra bát, nêm 1 thìa nước mắm ngon, tiêu và chút hành hoa thái nhỏ rồi đánh tan đều.',
-      'Cà chua thái múi cau hoặc băm hạt lựu.',
-      'Phi thơm hành khô, cho trứng vào chảo đảo nhanh tay ở lửa vừa cho trứng chín tới mềm mịn rồi trút ra đĩa riêng.',
-      'Xào cà chua trong chảo với chút gia vị cho nhừ ra nước sốt sền sệt đỏ đẹp.',
-      'Đổ đĩa trứng vào đảo nhẹ tay cùng sốt cà chua trong 1 phút, rắc hành hoa tươi rồi tắt bếp.'
-    ],
-    nearbyRestaurants: [
-      {
-        name: 'Quán Cơm Bình Dân & Gia Đình',
-        address: 'Các phố ẩm thực gần bạn',
-        distance: '0.3 km',
-        priceRange: '25.000đ - 35.000đ',
-        rating: 4.5,
-        openHours: '10:30 - 14:00 & 17:30 - 20:30',
-        mapQuery: 'Com Binh Dan gan day'
-      }
-    ]
-  },
+
   {
     id: 'goi-cuon-tom-thit',
-    name: 'Gỏi Cuốn Tôm Thịt Chấm Tương Bơ Đậu Phộng',
-    englishName: 'Fresh Vietnamese Spring Rolls with Peanut Dip',
+    name: 'Gỏi Cuốn Tôm Thịt Chấm Tương Đậu',
+    englishName: 'Fresh Vietnamese Spring Rolls with Shrimp and Pork',
     mealCategory: 'snack',
-    tags: ['healthy', 'quick', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 20,
-    difficulty: 'Dễ',
-    calories: 280,
-    rating: 4.9,
-    reviewsCount: 220,
-    author: 'Chef Linh Đan',
-    description: 'Tôm luộc đỏ au, thịt ba chỉ ngọt mềm cuộn cùng bún tươi, hẹ lá và rau thơm xanh mát trong lớp bánh tráng dẻo dai. Chấm cùng sốt tương đen bơ đậu phộng béo bùi say đắm.',
-    isRecipeOfDay: false,
-    isPopular: true,
-    isHealthy: true,
-    ingredients: [
-      { name: 'Bánh tráng dẻo cuộn gỏi', amount: '1 xấp' },
-      { name: 'Tôm tươi luộc bóc vỏ chẻ đôi', amount: '200g' },
-      { name: 'Thịt ba chỉ heo luộc thái mỏng', amount: '200g' },
-      { name: 'Bún tươi sợi nhỏ', amount: '200g' },
-      { name: 'Hẹ lá, xà lách, rau thơm các loại', amount: '150g' },
-      { name: 'Tương hột đen, bơ đậu phộng, tỏi phi', amount: 'Làm nước chấm' }
-    ],
-    ingredientKeys: ['tom', 'thit_heo', 'bun', 'hanh_la', 'toi_ot'],
-    steps: [
-      'Luộc tôm với chút muối, bóc vỏ bỏ chỉ đen rồi chẻ đôi theo chiều dọc.',
-      'Luộc thịt ba chỉ chín tới, ngâm nước đá cho giòn rồi thái lát mỏng.',
-      'Thấm ướt nhẹ bánh tráng, xếp lần lượt xà lách, rau thơm, bún, thịt luộc.',
-      'Gấp hai mép bánh tráng lại, đặt 2-3 con tôm mặt đỏ úp xuống và cọng hẹ thò ra ngoài rồi cuộn chặt tay.',
-      'Nấu tương đen với bơ đậu phộng, chút đường và nước cho sánh mịn, rắc đậu phộng rang giã dập và ớt băm.'
-    ],
-    nearbyRestaurants: [
-      {
-        name: 'Gỏi Cuốn Tôm Nhảy & Nem Nướng',
-        address: '356 Lê Văn Sỹ, P.14, Q.3, TP.HCM',
-        distance: '1.2 km',
-        priceRange: '10.000đ - 12.000đ / cuốn',
-        rating: 4.7,
-        openHours: '10:00 - 21:00',
-        mapQuery: 'Goi Cuon Sai Gon'
-      }
-    ]
-  },
-  {
-    id: 'bun-cha-ha-noi',
-    name: 'Bún Chả Nướng Than Hoa Hà Nội',
-    englishName: 'Hanoi Char-grilled Pork with Rice Noodles',
-    mealCategory: 'lunch',
-    tags: ['dry', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 45,
-    difficulty: 'Vừa',
-    calories: 610,
-    rating: 4.9,
-    reviewsCount: 420,
-    author: 'Nghệ Nhân Hà Nội',
-    description: 'Chả băm viên nặn tròn béo ngậy và chả miếng ba chỉ ướp gia vị nước hàng thốt nốt, nướng xém cạnh trên than hoa đỏ rực. Thả vào bát nước mắm ấm chua ngọt điểm xuyết đu đủ xanh giòn tan.',
-    isRecipeOfDay: false,
-    isPopular: true,
-    isHealthy: false,
-    ingredients: [
-      { name: 'Bún tươi lá hoặc sợi nhỏ', amount: '500g' },
-      { name: 'Thịt ba chỉ heo thái lát mỏng', amount: '300g' },
-      { name: 'Thịt nạc vai heo băm nhỏ', amount: '300g' },
-      { name: 'Nước hàng thắng màu cánh gián', amount: '2 thìa canh' },
-      { name: 'Hành khô, sả, tỏi băm, hạt tiêu, nước mắm', amount: 'Vừa đủ' },
-      { name: 'Đu đủ xanh, cà rốt tỉa hoa làm dưa góp', amount: '1 bát nhỏ' },
-      { name: 'Rau kinh giới, tía tô, xà lách, mùi ta', amount: 'Ăn kèm' }
-    ],
-    ingredientKeys: ['thit_heo', 'bun', 'ca_rot', 'toi_ot', 'hanh_la'],
-    steps: [
-      'Ướp riêng thịt ba chỉ và thịt băm với nước mắm, hành tỏi băm, tiêu, nước hàng thốt nốt ít nhất 1 giờ.',
-      'Viên thịt băm thành từng viên tròn dẹt vừa ăn. Xếp thịt lên vỉ nướng trên than hoa đỏ hồng.',
-      'Quạt lửa đều tay, lật trở liên tục đến khi chả chín vàng ươm, xém cạnh thơm nức mũi.',
-      'Pha nước mắm: Nước ấm + đường + chanh + nước mắm theo tỷ lệ 5:1:1:1, thêm tỏi ớt băm và dưa góp đu đủ.',
-      'Bày bún ra đĩa, rau sống ra rổ, thả chả nướng nóng hổi ngập vào bát nước chấm chua ngọt.'
-    ],
-    nearbyRestaurants: [
-      {
-        name: 'Bún Chả Hương Liên (Bún Chả Obama)',
-        address: '24 Lê Văn Hưu, Phan Chu Trinh, Hai Bà Trưng, Hà Nội',
-        distance: '1.6 km',
-        priceRange: '50.000đ - 70.000đ',
-        rating: 4.6,
-        openHours: '08:00 - 20:30',
-        mapQuery: 'Bun Cha Huong Lien Hanoi'
-      },
-      {
-        name: 'Bún Chả Đắc Kim',
-        address: 'Số 1 Hàng Mành, Hoàn Kiếm, Hà Nội',
-        distance: '2.1 km',
-        priceRange: '60.000đ - 90.000đ',
-        rating: 4.5,
-        openHours: '08:30 - 21:00',
-        mapQuery: 'Bun Cha Dac Kim Hang Manh'
-      }
-    ]
-  },
-  {
-    id: 'canh-chua-ca-loc',
-    name: 'Canh Chua Cá Lóc Nam Bộ',
-    englishName: 'Southern Vietnamese Sour Fish Soup',
-    mealCategory: 'dinner',
-    tags: ['soup', 'healthy', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 30,
-    difficulty: 'Vừa',
-    calories: 340,
-    rating: 4.8,
-    reviewsCount: 198,
-    author: 'Má Bảy Miền Tây',
-    description: 'Vị chua thanh mát từ me dốt chín hòa cùng vị ngọt thơm của cá lóc đồng, dứa chín, đậu bắp giòn rụm, giá đỗ và bạc hà (dọc mùng), rắc thêm ngò gai ngò om thơm nức mũi.',
-    isRecipeOfDay: false,
-    isPopular: false,
-    isHealthy: true,
-    ingredients: [
-      { name: 'Cá lóc đồng làm sạch cắt khúc', amount: '500g' },
-      { name: 'Dứa (thơm) gọt vỏ cắt lát', amount: '1/4 quả' },
-      { name: 'Cà chua cắt múi cau', amount: '2 quả' },
-      { name: 'Đậu bắp, bạc hà (dọc mùng)', amount: '100g' },
-      { name: 'Giá đỗ, me chín lấy nước cốt', amount: '100g' },
-      { name: 'Ngò gai, rau om (ngổ), ớt sừng, tỏi phi', amount: 'Vừa đủ' }
-    ],
-    ingredientKeys: ['ca_chua', 'toi_ot', 'hanh_la'],
-    steps: [
-      'Nấu sôi nước me lọc lấy nước chua thanh.',
-      'Phi tỏi thơm trút cá lóc vào xào săn nhẹ các mặt rồi trút nước sôi vào đun.',
-      'Khi cá vừa chín tới, hớt bọt rồi lần lượt cho dứa, cà chua, đậu bắp, bạc hà vào nấu sôi 3 phút.',
-      'Nêm nếm nước mắm ngon, đường phèn sao cho có vị chua ngọt cân bằng đặc trưng Nam Bộ.',
-      'Tắt bếp, cho giá đỗ, rắc rau om ngò gai thái nhỏ, ớt lát và tỏi phi thơm lên trên mặt.'
-    ],
-    nearbyRestaurants: [
-      {
-        name: 'Quán Cơm Niêu Sài Gòn',
-        address: '59 Hồ Xuân Hương, P.6, Q.3, TP.HCM',
-        distance: '1.8 km',
-        priceRange: '80.000đ - 150.000đ',
-        rating: 4.7,
-        openHours: '10:00 - 22:00',
-        mapQuery: 'Com Nieu Sai Gon'
-      }
-    ]
-  },
-  {
-    id: 'banh-xeo-mien-tay',
-    name: 'Bánh Xèo Giòn Rụm Miền Tây Tôm Thịt',
-    englishName: 'Crispy Southern Vietnamese Crepe',
-    mealCategory: 'snack',
-    tags: ['specialty'],
-    image: 'https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 35,
-    difficulty: 'Vừa',
-    calories: 520,
-    rating: 4.8,
-    reviewsCount: 275,
-    author: 'Bếp Bánh Xèo Bà Dưỡng',
-    description: 'Vỏ bánh vàng ươm mỏng giòn rụm thơm nức mùi nước cốt dừa và bột nghệ, bên trong ôm trọn tôm tươi, thịt ba rọi ngọt béo, giá đỗ giòn ngọt, cuốn cùng cả rổ rau rừng tươi xanh.',
-    isRecipeOfDay: false,
-    isPopular: true,
-    isHealthy: false,
-    ingredients: [
-      { name: 'Bột bánh xèo pha sẵn + bột nghệ', amount: '400g' },
-      { name: 'Nước cốt dừa béo ngậy', amount: '200ml' },
-      { name: 'Tôm đất nhỏ hoặc tôm sú', amount: '250g' },
-      { name: 'Thịt ba rọi heo thái mỏng', amount: '250g' },
-      { name: 'Giá đỗ, hành tây, hành lá cắt nhỏ', amount: '200g' },
-      { name: 'Rau ăn kèm: Cải bẹ xanh, xà lách, rau thơm', amount: '1 rổ lớn' }
-    ],
-    ingredientKeys: ['tom', 'thit_heo', 'hanh_la', 'toi_ot'],
-    steps: [
-      'Pha bột bánh xèo với nước cốt dừa, nước lọc, hành lá cắt nhỏ và chút bia cho vỏ giòn lâu.',
-      'Xào sơ tôm, thịt ba chỉ nêm chút gia vị cho đậm đà rồi múc ra đĩa riêng.',
-      'Làm nóng chảo sâu lòng, láng một lớp dầu mỏng. Múc 1 vá bột tráng tròn mỏng đều khắp mặt chảo.',
-      'Xếp tôm thịt và giá đỗ lên một nửa bánh, đậy nắp trong 2-3 phút cho bột chín và viền bánh giòn cong lên.',
-      'Gấp đôi bánh xèo lại, gắp ra đĩa lót lá chuối. Dùng kéo cắt miếng cuốn rau cải xanh chấm nước mắm tỏi ớt.'
-    ],
-    nearbyRestaurants: [
-      {
-        name: 'Bánh Xèo Mười Xiềm',
-        address: '204 Nguyễn Trãi, P. Phạm Ngũ Lão, Q.1, TP.HCM',
-        distance: '2.3 km',
-        priceRange: '60.000đ - 110.000đ',
-        rating: 4.6,
-        openHours: '09:30 - 22:00',
-        mapQuery: 'Banh Xeo Muoi Xiem'
-      }
-    ]
-  },
-  {
-    id: 'bo-luc-lac',
-    name: 'Bò Lúc Lắc Khoai Tây Chiên Giòn',
-    englishName: 'Vietnamese Shaking Beef with Crispy Fries',
-    mealCategory: 'dinner',
-    tags: ['dry', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 25,
-    difficulty: 'Dễ',
-    calories: 550,
-    rating: 4.8,
-    reviewsCount: 168,
-    author: 'Chef David Thái',
-    description: 'Những viên thịt bò mềm ngọt thái quân cờ được áp chảo lắc đều tay với sốt bơ tỏi dầu hào đậm vị, ăn cùng ớt chuông, hành tây giòn ngọt và đĩa khoai tây chiên vàng ruộm.',
-    isRecipeOfDay: false,
-    isPopular: true,
-    isHealthy: false,
-    ingredients: [
-      { name: 'Thịt thăn bò mềm thái vuông 2x2cm', amount: '400g' },
-      { name: 'Ớt chuông xanh đỏ, hành tây', amount: '150g' },
-      { name: 'Khoai tây cắt que chiên giòn', amount: '200g' },
-      { name: 'Bơ nhạt, tỏi băm, xì dầu, dầu hào, tiêu đen', amount: 'Vừa đủ' }
-    ],
-    ingredientKeys: ['thit_bo', 'toi_ot', 'hanh_la'],
-    steps: [
-      'Ướp bò viên với dầu hào, xì dầu, tỏi băm và chút tiêu xay trong 20 phút.',
-      'Chiên vàng khoai tây que ngập dầu cho giòn tan ráo dầu.',
-      'Phi thơm tỏi trong chảo gang lửa lớn, trút bò vào lắc chảo liên tục trong 2 phút để bề mặt xém vàng mà bên trong vẫn mềm ngọt hồng hào.',
-      'Thêm hành tây, ớt chuông và chút bơ nhạt vào đảo nhanh 1 phút rồi tắt bếp.',
-      'Trút bò ra đĩa cùng khoai tây chiên, chấm muối tiêu chanh tươi chua cay.'
-    ],
-    nearbyRestaurants: [
-      {
-        name: 'Quán Bò Beefsteak & Bò Lúc Lắc',
-        address: 'Khu phố Tây Bùi Viện / Tạ Hiện',
-        distance: '1.7 km',
-        priceRange: '80.000đ - 140.000đ',
-        rating: 4.7,
-        openHours: '11:00 - 23:00',
-        mapQuery: 'Bo Luc Lac Gan Day'
-      }
-    ]
-  },
-  {
-    id: 'banh-trang-nuong',
-    name: 'Bánh Tráng Nướng Đà Lạt "Pizza Việt Nam"',
-    englishName: 'Dalat Crispy Grilled Rice Paper Pizza',
-    mealCategory: 'snack',
-    tags: ['quick', 'budget'],
-    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=80',
+    dishType: 'an_vat',
+    prepTime: 20,
     cookTime: 10,
     difficulty: 'Dễ',
-    calories: 310,
-    rating: 4.9,
-    reviewsCount: 290,
-    author: 'Bé Bánh Tráng Đà Lạt',
-    description: 'Món ăn vặt đường phố siêu hot: Bánh tráng nướng giòn rụm trên than hồng quết trứng cút, bơ thơm, tép khô, khô bò xé sợi, xúc xích và sốt mayonnaise tương ớt cay nồng.',
-    isRecipeOfDay: false,
-    isPopular: true,
-    isHealthy: false,
-    ingredients: [
-      { name: 'Bánh tráng nướng loại dày', amount: '5 cái' },
-      { name: 'Trứng cút hoặc trứng gà', amount: '5 quả' },
-      { name: 'Tép khô rim cay ngọt, ruốc thịt', amount: '50g' },
-      { name: 'Khô bò xé, xúc xích thái mỏng', amount: '50g' },
-      { name: 'Hành lá phi, sốt mayonnaise, tương ớt', amount: 'Vừa đủ' }
-    ],
-    ingredientKeys: ['trung', 'thit_heo', 'hanh_la', 'toi_ot'],
-    steps: [
-      'Đặt bánh tráng lên vỉ nướng than hoặc chảo chống dính ở lửa nhỏ.',
-      'Đập 1-2 quả trứng cút vào giữa bánh, dùng thìa quết đều trứng cùng chút bơ và hành hoa khắp mặt bánh.',
-      'Rắc tép khô, xúc xích, ruốc thịt và khô bò xé sợi lên trên.',
-      'Nướng xoay tròn bánh tráng cho giòn đều đến khi trứng chín vàng thơm phức.',
-      'Xịt đều sốt tương ớt và sốt mayonnaise zigzag, gấp đôi bánh lại và cắn ngay khi còn nóng hổi giòn rụm.'
-    ],
-    nearbyRestaurants: [
-      {
-        name: 'Bánh Tráng Nướng Đà Lạt Hoàng Diệu',
-        address: 'Gần trường đại học & khu phố ăn vặt',
-        distance: '0.5 km',
-        priceRange: '20.000đ - 30.000đ',
-        rating: 4.8,
-        openHours: '15:00 - 22:30',
-        mapQuery: 'Banh Trang Nuong Da Lat'
-      }
-    ]
-  },
-  {
-    id: 'lau-ga-la-e',
-    name: 'Lẩu Gà Lá É Phú Yên - Đà Lạt',
-    englishName: 'Chicken Hotpot with Holy Basil Leaves',
-    mealCategory: 'dinner',
-    tags: ['soup', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
-    cookTime: 40,
-    difficulty: 'Vừa',
-    calories: 580,
-    rating: 4.9,
-    reviewsCount: 340,
-    author: 'Lẩu Gà Tao Ngộ',
-    description: 'Nồi lẩu bốc khói nghi ngút với nước dùng thơm cay the mát độc đáo từ lá é tươi dập nhỏ và ớt hiểm xanh, thịt gà ta chắc ngọt dai ngon cùng nấm sò và măng tươi chua giòn.',
-    isRecipeOfDay: false,
+    calories: 260,
+    popularityScore: 96,
+    isHomeCooked: true,
     isPopular: true,
     isHealthy: true,
+    tags: ['healthy', 'quick', 'specialty'],
+    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80',
+    author: 'Healthy Kitchen',
+    description: 'Thanh đạm, ít calo, nhiều chất xơ: tôm sú luộc đỏ au chẻ đôi cùng lát thịt ba chỉ mỏng tang, bún tươi và ngập tràn rau sống cuốn trong bánh tráng dẻo thơm, chấm tương đen xay bùi béo.',
     ingredients: [
-      { name: 'Gà ta thả vườn chặt miếng vừa ăn', amount: '1.2 kg' },
-      { name: 'Lá é tươi rửa sạch để ráo', amount: '300g' },
-      { name: 'Ớt hiểm xanh giã dập', amount: '10 quả' },
-      { name: 'Măng củ luộc thái lát, nấm sò (nấm bào ngư)', amount: '200g' },
-      { name: 'Nước dừa tươi', amount: '1 quả' },
-      { name: 'Bún tươi hoặc mì ăn kèm', amount: '500g' }
+      { name: 'Tôm sú tươi', quantity: 200, unit: 'g', isCore: true, key: 'tom' },
+      { name: 'Thịt ba chỉ heo luộc', quantity: 200, unit: 'g', isCore: true, key: 'thit_heo' },
+      { name: 'Bánh tráng dẻo & Bún tươi', quantity: 200, unit: 'g', isCore: true, key: 'bun' },
+      { name: 'Xà lách, rau thơm, hẹ lá', quantity: 150, unit: 'g', isCore: true, key: 'rau_muong' },
+      { name: 'Tương đen, bơ đậu phộng, ớt xay', quantity: 0, unit: 'Vừa đủ', isCore: false, key: 'gia_vi' }
     ],
-    ingredientKeys: ['thit_ga', 'nam', 'bun', 'toi_ot'],
     steps: [
-      'Giã dập một nửa phần lá é cùng ớt hiểm xanh và chút muối hạt để ướp thịt gà trong 30 phút.',
-      'Phi tỏi thơm xào săn thịt gà cho ngấm đều gia vị cay the nồng nàn.',
-      'Đổ nước dừa tươi và nước lọc vào nồi nấu sôi, hạ nhỏ lửa ninh gà trong 20 phút cho mềm ngọt.',
-      'Cho măng chua và nấm sò vào nồi lẩu đun sôi sùng sục.',
-      'Đặt nồi lên bếp lẩu mini giữa bàn ăn, nhúng từng nắm lá é tươi vào nồi nước sôi trong 5 giây rồi vớt ra ăn liền cùng bún.'
+      'Luộc tôm với chút giấm cho ngọt thịt, bóc vỏ bỏ chỉ đen, chẻ đôi theo chiều dọc.',
+      'Thịt ba chỉ luộc chín tới cùng củ hành tím, ngâm nước lạnh rồi thái lát thật mỏng.',
+      'Nhúng nhẹ bánh tráng qua nước ấm cho dẻo, trải lên thớt phẳng.',
+      'Xếp xà lách, rau thơm, bún tươi, thịt ba chỉ, đặt 2-3 nửa con tôm ngửa mặt đỏ xuống dưới và cọng hẹ thò ra ngoài.',
+      'Gấp hai mép bánh tráng và cuộn tròn thật chặt tay.',
+      'Pha tương đen với bơ đậu phộng, chút tỏi ớt băm phi thơm và rắc đậu phộng rang giã dập lên trên chấm kèm.'
     ],
     nearbyRestaurants: [
       {
-        name: 'Lẩu Gà Lá É Tao Ngộ',
-        address: 'Đường 3 Tháng 4, TP. Đà Lạt / Các chi nhánh Hà Nội & TP.HCM',
+        name: 'Gỏi Cuốn Tôm Nhảy',
+        address: '424 Lạc Long Quân, P.5, Q.11, TP.HCM',
         distance: '2.5 km',
-        priceRange: '200.000đ - 300.000đ / nồi (3-4 người)',
-        rating: 4.9,
-        openHours: '10:00 - 22:00',
-        mapQuery: 'Lau Ga La E Tao Ngo'
+        priceRange: '10.000đ - 15.000đ / cuốn',
+        rating: 4.7,
+        openHours: '11:00 - 20:00'
       }
     ]
   }

@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 import MapViewer from './MapViewer';
 import CookingModeModal from './CookingModeModal';
-import { scaleIngredientAmount, scaleCalories } from '../utils/recipeScaler';
+import { formatScaledIngredient, scaleIngredientAmount, scaleCalories } from '../utils/recipeScaler';
 
 export default function DishDetailModal({
   dish,
@@ -38,6 +38,7 @@ export default function DishDetailModal({
   if (!dish) return null;
 
   const currentCalories = scaleCalories(dish.calories, servings, 2);
+  const totalTime = (dish.prepTime || 0) + (dish.cookTime || 0);
 
   const toggleCheck = (idx) => {
     setCheckedIngredients((prev) => ({
@@ -50,8 +51,8 @@ export default function DishDetailModal({
     if (onAddIngredientsToGrocery) {
       const itemsToAdd = dish.ingredients.map((ing) => ({
         name: ing.name,
-        amount: scaleIngredientAmount(ing.amount, servings, 2),
-        category: 'Nguyên liệu nấu'
+        amount: formatScaledIngredient(ing, servings, 2),
+        category: ing.isCore ? 'Nguyên liệu chính' : 'Gia vị & Phụ'
       }));
       onAddIngredientsToGrocery(dish, itemsToAdd, servings);
       setAddedGroceryToast(true);
@@ -153,26 +154,36 @@ export default function DishDetailModal({
               /* TAB 1: TỰ NẤU */
               <div className="space-y-6">
                 
-                {/* Quick Specs Bar with Dynamic Calories */}
-                <div className="grid grid-cols-3 gap-3 p-3.5 rounded-2xl bg-brand-50/70 border border-brand-100 text-center">
+                {/* Quick Specs Bar with Prep, Cook & Calories */}
+                <div className="grid grid-cols-3 gap-2 sm:gap-3 p-3.5 rounded-2xl bg-brand-50/70 border border-brand-100 text-center">
                   <div>
-                    <p className="text-[10px] text-stone-500 font-bold uppercase">Thời gian nấu</p>
-                    <p className="text-base font-extrabold text-brand-700 flex items-center justify-center gap-1 mt-0.5">
+                    <p className="text-[10px] text-stone-500 font-bold uppercase">Thời gian thực tế</p>
+                    <p className="text-sm sm:text-base font-extrabold text-brand-700 flex items-center justify-center gap-1 mt-0.5">
                       <Clock className="w-4 h-4" />
-                      {dish.cookTime} phút
+                      {totalTime} phút
+                    </p>
+                    <p className="text-[10px] text-stone-500 mt-0.5">
+                      {dish.prepTime ? `${dish.prepTime}p sơ chế + ${dish.cookTime}p nấu` : `${dish.cookTime}p nấu`}
                     </p>
                   </div>
                   <div>
                     <p className="text-[10px] text-stone-500 font-bold uppercase">Năng lượng ({servings}P)</p>
-                    <p className="text-base font-extrabold text-brand-700 flex items-center justify-center gap-1 mt-0.5">
+                    <p className="text-sm sm:text-base font-extrabold text-brand-700 flex items-center justify-center gap-1 mt-0.5">
                       <Flame className="w-4 h-4" />
                       {currentCalories} kcal
                     </p>
+                    <p className="text-[10px] text-stone-500 mt-0.5">
+                      Độ khó: <strong>{dish.difficulty}</strong>
+                    </p>
                   </div>
                   <div>
-                    <p className="text-[10px] text-stone-500 font-bold uppercase">Độ khó</p>
-                    <p className="text-base font-extrabold text-brand-700 mt-0.5">
-                      {dish.difficulty}
+                    <p className="text-[10px] text-stone-500 font-bold uppercase">Mức độ phổ biến</p>
+                    <p className="text-sm sm:text-base font-extrabold text-brand-700 mt-0.5 flex items-center justify-center gap-1">
+                      <Sparkles className="w-4 h-4 text-amber-500" />
+                      {dish.popularityScore ? `${dish.popularityScore}%` : 'Món Ngon'}
+                    </p>
+                    <p className="text-[10px] text-stone-500 mt-0.5">
+                      {dish.isHomeCooked ? '🏠 Cơm gia đình' : 'Quán đặc sản'}
                     </p>
                   </div>
                 </div>
@@ -270,7 +281,7 @@ export default function DishDetailModal({
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {dish.ingredients.map((ing, idx) => {
                       const isDone = checkedIngredients[idx];
-                      const scaledAmount = scaleIngredientAmount(ing.amount, servings, 2);
+                      const scaledAmount = formatScaledIngredient(ing, servings, 2);
 
                       return (
                         <div

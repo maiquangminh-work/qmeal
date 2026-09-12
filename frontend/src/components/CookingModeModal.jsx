@@ -12,7 +12,7 @@ import {
   Users
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { scaleIngredientAmount } from '../utils/recipeScaler';
+import { formatScaledIngredient, scaleIngredientAmount } from '../utils/recipeScaler';
 
 export default function CookingModeModal({ dish, servings = 2, onClose }) {
   const steps = dish?.steps || [];
@@ -289,7 +289,7 @@ export default function CookingModeModal({ dish, servings = 2, onClose }) {
                 >
                   <span className="text-stone-200 font-medium">{ing.name}</span>
                   <span className="font-bold text-brand-400 bg-stone-900/80 px-2 py-0.5 rounded-md">
-                    {scaleIngredientAmount(ing.amount, servings, 2)}
+                    {formatScaledIngredient(ing, servings, 2)}
                   </span>
                 </div>
               ))}

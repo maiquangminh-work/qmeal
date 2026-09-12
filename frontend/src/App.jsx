@@ -15,9 +15,11 @@ import GroceryListModal from './components/GroceryListModal';
 import Footer from './components/Footer';
 import { DISHES_DATA } from './data/dishes';
 import { QUICK_TAGS } from './data/categories';
+import { getTimeContext } from './utils/timeContext';
 import { Sparkles, UtensilsCrossed, ArrowRight, ChevronRight } from 'lucide-react';
 
 export default function App() {
+  const timeContext = useMemo(() => getTimeContext(), []);
   const [searchTerm, setSearchTerm] = useState('');
   // Top-level View Tab: 'all' | 'breakfast' | 'lunch' | 'snack' | 'dinner' | 'combos' | 'specialty' | 'healthy'
   const [activeTab, setActiveTab] = useState('all');
@@ -125,6 +127,28 @@ export default function App() {
             name: label,
             amount: ing.amount,
             category: 'Nguyên liệu nấu',
+            checked: false
+          });
+        }
+      });
+      return newItems;
+    });
+  };
+
+  const handleAddMissingIngredientsToGrocery = (missingIngredients, dishName) => {
+    setGroceryItems((prev) => {
+      const newItems = [...prev];
+      missingIngredients.forEach((name) => {
+        const label = `${name} (cho ${dishName})`;
+        const existing = newItems.find(
+          (item) => item.name.toLowerCase() === label.toLowerCase() || item.name.toLowerCase() === name.toLowerCase()
+        );
+        if (!existing) {
+          newItems.push({
+            id: `grocery-${Date.now()}-${Math.random().toString(36).substr(2, 4)}`,
+            name: label,
+            amount: '1 phần',
+            category: 'Cần mua thêm',
             checked: false
           });
         }
@@ -310,7 +334,8 @@ export default function App() {
                 <HeroSection
                   onOpenGacha={() => setIsGachaOpen(true)}
                   onOpenFridge={() => setIsFridgeOpen(true)}
-                  onExploreMeals={() => handleSelectTab('breakfast')}
+                  onExploreMeals={() => handleSelectTab(timeContext?.suggestedTab || 'breakfast')}
+                  timeContext={timeContext}
                 />
 
                 <RecipeOfDay dish={recipeOfDayDish} onSelectDish={handleSelectDish} />
@@ -497,6 +522,7 @@ export default function App() {
           dishes={DISHES_DATA}
           onClose={() => setIsFridgeOpen(false)}
           onSelectDish={handleSelectDish}
+          onAddMissingToGrocery={handleAddMissingIngredientsToGrocery}
         />
       )}
 

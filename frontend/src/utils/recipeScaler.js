@@ -1,11 +1,7 @@
 /**
  * Scales ingredient quantity based on target servings vs baseline servings (default 2).
- * e.g., "500g" -> 4 servings -> "1000 g"
- * "300g" -> 3 servings -> "450 g"
- * "2 quả" -> 4 servings -> "4 quả"
- * "1 gói nhỏ" -> "2 gói nhỏ"
- * "Vừa đủ" -> "Vừa đủ"
  */
+
 export function scaleIngredientAmount(amountStr, targetServings, baselineServings = 2) {
   if (!amountStr || typeof amountStr !== 'string') return amountStr;
   const ratio = targetServings / baselineServings;
@@ -43,6 +39,29 @@ export function scaleIngredientAmount(amountStr, targetServings, baselineServing
   }
 
   return amountStr;
+}
+
+/**
+ * Formats a normalized ingredient object { quantity, unit } or fallback string amount.
+ */
+export function formatScaledIngredient(ingredient, targetServings, baselineServings = 2) {
+  if (!ingredient) return '';
+  const ratio = targetServings / baselineServings;
+
+  if (typeof ingredient.quantity === 'number') {
+    if (ingredient.quantity === 0) {
+      return ingredient.unit || 'Vừa đủ';
+    }
+    const scaledQty = ingredient.quantity * ratio;
+    const formattedQty = scaledQty % 1 === 0 ? scaledQty : Number(scaledQty.toFixed(1));
+    return `${formattedQty} ${ingredient.unit || ''}`.trim();
+  }
+
+  if (ingredient.amount) {
+    return scaleIngredientAmount(ingredient.amount, targetServings, baselineServings);
+  }
+
+  return '';
 }
 
 export function scaleCalories(calories, targetServings, baselineServings = 2) {
