@@ -2,76 +2,41 @@ import React from 'react';
 
 export default function Logo({ className = '', size = 'md' }) {
   const iconSizes = {
-    sm: 'w-7 h-7',
-    md: 'w-9 h-9',
-    lg: 'w-12 h-12',
+    sm: 'w-6 h-6',
+    md: 'w-8 h-8',
+    lg: 'w-10 h-10',
   };
 
   const textSizes = {
-    sm: 'text-lg',
+    sm: 'text-xl',
     md: 'text-2xl',
     lg: 'text-3xl',
   };
 
   return (
-    <div className={`flex items-center gap-2.5 select-none cursor-pointer group ${className}`}>
-      {/* Dynamic Animated Logo Badge */}
-      <div className={`relative ${iconSizes[size]} bg-gradient-to-tr from-brand-600 to-brand-400 rounded-2xl flex items-center justify-center shadow-warm-md group-hover:scale-105 transition-transform duration-300`}>
+    <div className={`flex items-center gap-2 select-none cursor-pointer group ${className}`}>
+      {/* Sleek Minimalist Culinary Cloche Icon */}
+      <div className={`relative ${iconSizes[size]} bg-gradient-to-tr from-brand-600 to-amber-500 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-300`}>
         <svg
-          viewBox="0 0 36 36"
+          viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-3/4 h-3/4 text-white drop-shadow-sm"
+          className="w-5 h-5 text-white"
         >
-          {/* Steaming Cloche / Bowl */}
           <path
-            d="M6 24C6 24 9 27 18 27C27 27 30 24 30 24"
+            d="M4 18H20M5 15C5 11.134 8.13401 8 12 8C15.866 8 19 11.134 19 15H5ZM12 8V5"
             stroke="currentColor"
-            strokeWidth="2.5"
+            strokeWidth="2"
             strokeLinecap="round"
-          />
-          <path
-            d="M8 22C8 16.4772 12.4772 12 18 12C23.5228 12 28 16.4772 28 22H8Z"
-            fill="currentColor"
-          />
-          {/* Chef's Hat Top Puff */}
-          <circle cx="18" cy="10" r="3" fill="currentColor" />
-          <circle cx="13" cy="11.5" r="2.5" fill="currentColor" />
-          <circle cx="23" cy="11.5" r="2.5" fill="currentColor" />
-          {/* Aromatic Steam Waves */}
-          <path
-            d="M13 6C13 4.5 15 4 15 2"
-            stroke="#fed7aa"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-          />
-          <path
-            d="M18 5C18 3.5 20 3 20 1"
-            stroke="#fed7aa"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-          />
-          <path
-            d="M23 6C23 4.5 25 4 25 2"
-            stroke="#fed7aa"
-            strokeWidth="1.8"
-            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
-        <span className="absolute -bottom-1 -right-1 w-3 h-3 bg-amber-400 border-2 border-white rounded-full"></span>
       </div>
 
-      <div className="flex flex-col">
-        <div className="flex items-center gap-1">
-          <span className={`font-extrabold tracking-tight text-stone-900 ${textSizes[size]} font-heading`}>
-            Q<span className="text-brand-600">Meal</span>
-          </span>
-          <span className="px-1.5 py-0.5 text-[9px] font-bold tracking-wider uppercase bg-brand-100 text-brand-700 rounded-md">
-            VN
-          </span>
-        </div>
-        <span className="text-[10px] font-semibold text-stone-400 tracking-wider -mt-1 hidden sm:block">
-          HÔM NAY ĂN GÌ?
+      {/* Modern High-end Wordmark (inspired by NomNom & Cook.) */}
+      <div className="flex items-baseline">
+        <span className={`font-black tracking-tight text-stone-900 ${textSizes[size]}`}>
+          QMeal<span className="text-brand-600">.</span>
         </span>
       </div>
     </div>

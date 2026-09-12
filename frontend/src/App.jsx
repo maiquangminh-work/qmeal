@@ -6,10 +6,12 @@ import RecipeOfDay from './components/RecipeOfDay';
 import CategoryBanners from './components/CategoryBanners';
 import MealTabs from './components/MealTabs';
 import DishCard from './components/DishCard';
+import MealCombosSection from './components/MealCombosSection';
 import DishDetailModal from './components/DishDetailModal';
 import GachaModal from './components/GachaModal';
 import FridgeModal from './components/FridgeModal';
 import FavoritesModal from './components/FavoritesModal';
+import GroceryListModal from './components/GroceryListModal';
 import Footer from './components/Footer';
 import { DISHES_DATA } from './data/dishes';
 import { Sparkles, UtensilsCrossed } from 'lucide-react';
@@ -25,6 +27,7 @@ export default function App() {
   const [isGachaOpen, setIsGachaOpen] = useState(false);
   const [isFridgeOpen, setIsFridgeOpen] = useState(false);
   const [isFavoritesOpen, setIsFavoritesOpen] = useState(false);
+  const [isGroceryOpen, setIsGroceryOpen] = useState(false);
 
   // Favorites in LocalStorage
   const [favoriteIds, setFavoriteIds] = useState(() => {
@@ -36,6 +39,16 @@ export default function App() {
     }
   });
 
+  // Grocery List in LocalStorage
+  const [groceryItems, setGroceryItems] = useState(() => {
+    try {
+      const saved = localStorage.getItem('qmeal_grocery_list');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
   useEffect(() => {
     try {
       localStorage.setItem('qmeal_favorites', JSON.stringify(favoriteIds));
@@ -43,6 +56,14 @@ export default function App() {
       console.error(e);
     }
   }, [favoriteIds]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('qmeal_grocery_list', JSON.stringify(groceryItems));
+    } catch (e) {
+      console.error(e);
+    }
+  }, [groceryItems]);
 
   // Listen to custom footer events if triggered
   useEffect(() => {
@@ -66,6 +87,44 @@ export default function App() {
 
   const removeFavorite = (dishId) => {
     setFavoriteIds((prev) => prev.filter((id) => id !== dishId));
+  };
+
+  // Grocery List Actions
+  const handleAddComboToGrocery = (combo) => {
+    setGroceryItems((prev) => {
+      const newItems = [...prev];
+      combo.ingredients.forEach((ing) => {
+        const existing = newItems.find((item) => item.name.toLowerCase() === ing.name.toLowerCase());
+        if (!existing) {
+          newItems.push({
+            id: `grocery-${Date.now()}-${Math.random().toString(36).substr(2, 4)}`,
+            name: ing.name,
+            amount: ing.amount,
+            category: ing.category || 'Khác',
+            checked: false
+          });
+        }
+      });
+      return newItems;
+    });
+  };
+
+  const handleToggleGroceryItem = (id) => {
+    setGroceryItems((prev) =>
+      prev.map((item) => (item.id === id ? { ...item, checked: !item.checked } : item))
+    );
+  };
+
+  const handleRemoveGroceryItem = (id) => {
+    setGroceryItems((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  const handleAddCustomGroceryItem = (item) => {
+    setGroceryItems((prev) => [item, ...prev]);
+  };
+
+  const handleClearGrocery = () => {
+    setGroceryItems([]);
   };
 
   // Recipe of the day dish
@@ -120,13 +179,17 @@ export default function App() {
         onOpenGacha={() => setIsGachaOpen(true)}
         onOpenFridge={() => setIsFridgeOpen(true)}
         onOpenFavorites={() => setIsFavoritesOpen(true)}
+        onOpenGroceryList={() => setIsGroceryOpen(true)}
         favoriteCount={favoriteIds.length}
+        groceryCount={groceryItems.length}
         activeMealCategory={activeMealCategory}
         onSelectMealCategory={setActiveMealCategory}
+        activeTag={activeTag}
+        onSelectTag={setActiveTag}
       />
 
       {/* Main Content Sections */}
-      <main className="flex-1 space-y-4">
+      <main className="flex-1 space-y-6">
         {/* 1. Hero Section (Inspired by Cook. mockup) */}
         <HeroSection
           onOpenGacha={() => setIsGachaOpen(true)}
@@ -154,7 +217,15 @@ export default function App() {
           />
         )}
 
-        {/* 4. Meal Tabs & Filter Pills (Per BRD: 4 Buổi ăn) */}
+        {/* 4. MÂM CƠM GIA ĐÌNH (Family Meal Combos - New Feature) */}
+        {!searchTerm && (
+          <MealCombosSection
+            onAddComboToGrocery={handleAddComboToGrocery}
+            onOpenGroceryList={() => setIsGroceryOpen(true)}
+          />
+        )}
+
+        {/* 5. Meal Tabs & Filter Pills (Per BRD: 4 Buổi ăn) */}
         <MealTabs
           activeCategory={activeMealCategory}
           onSelectCategory={(cat) => setActiveMealCategory(cat)}
@@ -163,7 +234,7 @@ export default function App() {
           dishCount={filteredDishes.length}
         />
 
-        {/* 5. Dish Cards Grid */}
+        {/* 6. Dish Cards Grid */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
           {filteredDishes.length === 0 ? (
             <div className="text-center py-16 bg-white rounded-3xl border border-dashed border-stone-300 p-8">
@@ -247,6 +318,18 @@ export default function App() {
           onClose={() => setIsFavoritesOpen(false)}
           onSelectDish={handleSelectDish}
           onRemoveFavorite={removeFavorite}
+        />
+      )}
+
+      {/* 5. Smart Grocery List Modal */}
+      {isGroceryOpen && (
+        <GroceryListModal
+          items={groceryItems}
+          onClose={() => setIsGroceryOpen(false)}
+          onToggleItem={handleToggleGroceryItem}
+          onRemoveItem={handleRemoveGroceryItem}
+          onAddItem={handleAddCustomGroceryItem}
+          onClearAll={handleClearGrocery}
         />
       )}
     </div>
