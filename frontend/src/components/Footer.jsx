@@ -4,11 +4,11 @@ import { Heart, Send, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-stone-900 text-stone-300 pt-16 pb-24 md:pb-12 border-t border-stone-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <footer className="bg-stone-900 text-stone-300 pt-8 sm:pt-16 pb-24 md:pb-12 border-t border-stone-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
         
-        {/* Newsletter Section (Inspired by NomNom / Cook mockup) */}
-        <div className="bg-gradient-to-r from-brand-900/60 via-stone-800 to-amber-950/40 rounded-3xl p-6 sm:p-10 border border-brand-800/40 flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* Newsletter Section (Shown on Desktop/Tablet only) */}
+        <div className="hidden md:flex bg-gradient-to-r from-brand-900/60 via-stone-800 to-amber-950/40 rounded-3xl p-6 sm:p-10 border border-brand-800/40 flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
             <span className="inline-flex items-center gap-1 text-xs font-bold text-brand-400 uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
