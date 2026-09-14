@@ -9,12 +9,19 @@ interface UserAvatarProps {
 }
 
 const sizeClasses = {
-  xs: 'w-7 h-7 text-sm',
-  sm: 'w-8 h-8 text-base',
-  md: 'w-9 h-9 text-lg',
-  lg: 'w-14 h-14 text-2xl',
-  xl: 'w-20 h-20 text-4xl',
+  xs: 'w-7 h-7 text-xs',
+  sm: 'w-8 h-8 text-xs',
+  md: 'w-9 h-9 text-sm',
+  lg: 'w-14 h-14 text-xl',
+  xl: 'w-20 h-20 text-2xl',
 };
+
+function getInitials(name: string): string {
+  if (!name) return 'QM';
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
 
 export default function UserAvatar({
   className = '',
@@ -32,12 +39,13 @@ export default function UserAvatar({
     }
   };
 
-  const isCustom = userProfile.avatarType === 'custom' && userProfile.avatarValue?.startsWith('http') || userProfile.avatarValue?.startsWith('data:image');
+  const isCustom = userProfile.avatarType === 'custom' && (userProfile.avatarValue?.startsWith('http') || userProfile.avatarValue?.startsWith('data:image'));
+  const isPersona = userProfile.avatarType === 'persona' || (!isCustom && userProfile.avatarValue?.startsWith('/avatars/'));
 
   return (
     <div 
       onClick={handleClick}
-      className={`relative rounded-full overflow-hidden border-2 border-orange-500/80 hover:border-orange-600 transition-all cursor-pointer shadow-xs hover:scale-105 active:scale-95 flex-shrink-0 select-none ${sizeClasses[size]} ${className}`}
+      className={`relative rounded-full overflow-hidden border border-stone-300/80 hover:border-orange-500 transition-all cursor-pointer shadow-2xs hover:shadow-xs hover:scale-102 active:scale-98 flex-shrink-0 select-none bg-stone-100 ${sizeClasses[size]} ${className}`}
       title="Tùy chỉnh hồ sơ & Avatar"
     >
       {isCustom ? (
@@ -46,13 +54,19 @@ export default function UserAvatar({
           alt={userProfile.name} 
           className="w-full h-full object-cover"
           onError={(e) => {
-            // fallback if custom url breaks
             e.currentTarget.style.display = 'none';
           }}
         />
+      ) : isPersona ? (
+        <img 
+          src={userProfile.avatarValue || '/avatars/chef-minh.svg'} 
+          alt={userProfile.name} 
+          className="w-full h-full object-cover bg-stone-100"
+        />
       ) : (
-        <div className={`w-full h-full flex items-center justify-center bg-gradient-to-tr ${userProfile.avatarBg || 'from-orange-500 to-amber-500'} text-white font-bold`}>
-          <span>{userProfile.avatarValue || '👨‍🍳'}</span>
+        /* Initials Monogram Avatar (Apple/Notion style) */
+        <div className="w-full h-full flex items-center justify-center bg-stone-800 text-stone-100 font-bold tracking-wider">
+          <span>{getInitials(userProfile.name)}</span>
         </div>
       )}
 

@@ -20,10 +20,9 @@ export interface GroceryItem {
 
 export interface UserProfile {
   name: string;
-  avatarType: 'emoji' | 'custom';
+  avatarType: 'persona' | 'initials' | 'custom';
   avatarValue: string;
-  avatarBg: string;
-  roleBadge: string;
+  roleTitle: string;
 }
 
 interface UserState {
@@ -142,11 +141,10 @@ export const useStore = create<UserState>()(
       }),
 
       userProfile: {
-        name: 'Bếp Trưởng QMeal',
-        avatarType: 'emoji',
-        avatarValue: '👨‍🍳',
-        avatarBg: 'from-orange-500 to-amber-500',
-        roleBadge: 'Yêu Bếp Việt',
+        name: 'Quang Minh',
+        avatarType: 'persona',
+        avatarValue: '/avatars/chef-minh.svg',
+        roleTitle: 'Bếp trưởng đam mê',
       },
       setUserProfile: (patch) => set((state) => ({
         userProfile: { ...state.userProfile, ...patch }

@@ -281,19 +281,19 @@ export default function AppSidebar() {
               {/* User Profile Mini Card */}
               <div 
                 onClick={() => setProfileModalOpen(true)}
-                className="p-2 rounded-2xl bg-white border border-stone-200/80 hover:border-orange-400 flex items-center gap-2.5 cursor-pointer transition-all shadow-xs hover:shadow-sm group"
-                title="Bấm để tùy chỉnh hồ sơ & Avatar"
+                className="p-2 rounded-2xl bg-white border border-stone-200/80 hover:border-orange-400 flex items-center gap-2.5 cursor-pointer transition-all shadow-2xs hover:shadow-xs group"
+                title="Tùy chỉnh hồ sơ & Avatar"
               >
                 <UserAvatar size="sm" showBadge={true} />
                 <div className="min-w-0 flex-1">
                   <p className="text-xs font-bold text-stone-900 truncate group-hover:text-orange-600 transition-colors">
                     {userProfile.name}
                   </p>
-                  <p className="text-[10px] font-bold text-orange-600">
-                    {userProfile.roleBadge}
+                  <p className="text-[10px] font-semibold text-stone-500 truncate">
+                    {userProfile.roleTitle}
                   </p>
                 </div>
-                <span className="text-[11px] text-stone-400 group-hover:text-orange-600 font-medium pr-1">⚙️</span>
+                <span className="text-[10px] text-stone-400 group-hover:text-orange-600 font-semibold px-1.5 py-0.5 rounded bg-stone-100 group-hover:bg-orange-50 transition-colors">Sửa</span>
               </div>
 
               <div className="flex items-center justify-between text-[11px] px-1 text-stone-500">
