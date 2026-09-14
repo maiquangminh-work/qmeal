@@ -261,13 +261,13 @@ export default function GachaPage() {
                 >
                   <div className="relative h-28 rounded-xl overflow-hidden bg-stone-900">
                     <img
-                      src={item.image}
+                      src={item.image?.includes('wikimedia.org') || item.image?.includes('wikipedia.org') ? `/api/image-proxy?url=${encodeURIComponent(item.image)}` : item.image}
                       alt={item.title[language] || item.title.vi}
                       referrerPolicy="no-referrer"
                       crossOrigin="anonymous"
                       className="w-full h-full object-cover"
                       onError={(e) => {
-                        e.currentTarget.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80';
+                        e.currentTarget.src = '/api/image-proxy';
                       }}
                     />
                     <span className="absolute top-1.5 left-1.5 text-[10px] font-bold px-2 py-0.5 rounded-md bg-black/70 text-amber-300">
@@ -302,13 +302,13 @@ export default function GachaPage() {
               {/* Winning Card Preview */}
               <div className="max-w-md mx-auto p-4 rounded-2xl bg-stone-800/90 border-2 border-orange-500 shadow-2xl flex items-center gap-4 text-left">
                 <img
-                  src={winningDish.image}
+                  src={winningDish.image?.includes('wikimedia.org') || winningDish.image?.includes('wikipedia.org') ? `/api/image-proxy?url=${encodeURIComponent(winningDish.image)}` : winningDish.image}
                   alt={winningDish.title[language] || winningDish.title.vi}
                   referrerPolicy="no-referrer"
                   crossOrigin="anonymous"
                   className="w-24 h-24 rounded-xl object-cover shadow-md flex-shrink-0"
                   onError={(e) => {
-                    e.currentTarget.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80';
+                    e.currentTarget.src = '/api/image-proxy';
                   }}
                 />
                 <div className="space-y-1.5 min-w-0 flex-1">

@@ -36,8 +36,15 @@ interface UserState {
   selectedRegion: 'north' | 'central' | 'south' | 'all';
   setRegion: (region: 'north' | 'central' | 'south' | 'all') => void;
 
+  userLocationName: string;
+  isLocationAuto: boolean;
+  setUserLocation: (region: 'north' | 'central' | 'south' | 'all', cityName?: string, isAuto?: boolean) => void;
+
   selectedDiningMode: 'all' | 'home_cook' | 'eat_out';
   setDiningMode: (mode: 'all' | 'home_cook' | 'eat_out') => void;
+
+  viewHistory: string[];
+  recordRecipeView: (id: string | number) => void;
 }
 
 export const useStore = create<UserState>()(
@@ -93,10 +100,25 @@ export const useStore = create<UserState>()(
       setLanguage: (lang) => set({ language: lang }),
 
       selectedRegion: 'north',
-      setRegion: (region) => set({ selectedRegion: region }),
+      setRegion: (region) => set({ selectedRegion: region, isLocationAuto: false }),
+
+      userLocationName: 'Hà Nội & Bắc Bộ',
+      isLocationAuto: true,
+      setUserLocation: (region, cityName, isAuto = true) => set({
+        selectedRegion: region,
+        userLocationName: cityName || (region === 'north' ? 'Hà Nội & Bắc Bộ' : region === 'central' ? 'Đà Nẵng & Miền Trung' : region === 'south' ? 'Sài Gòn & Nam Bộ' : 'Toàn Quốc'),
+        isLocationAuto: isAuto
+      }),
 
       selectedDiningMode: 'all',
       setDiningMode: (mode) => set({ selectedDiningMode: mode }),
+
+      viewHistory: [],
+      recordRecipeView: (id) => set((state) => {
+        const idStr = String(id);
+        const filtered = state.viewHistory.filter(hId => hId !== idStr);
+        return { viewHistory: [idStr, ...filtered].slice(0, 20) };
+      }),
     }),
     {
       name: 'qmeal-user-preferences',

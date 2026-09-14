@@ -23,7 +23,7 @@ import {
 
 export default function RecipeDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const unwrappedParams = use(params);
-  const { language: lang, addIngredientsToGrocery } = useStore();
+  const { language: lang, addIngredientsToGrocery, recordRecipeView } = useStore();
   const [activeTab, setActiveTab] = useState<'cook' | 'eat-out'>('cook');
   const [servings, setServings] = useState(4);
   const [cookingMode, setCookingMode] = useState(false);
@@ -62,6 +62,7 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
         if(json.success) {
           setRecipe(json.data);
           if (json.data.servings) setServings(json.data.servings);
+          if (json.data.id) recordRecipeView(json.data.id);
         }
         setLoading(false);
         setIsTranslating(false);
@@ -466,13 +467,15 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
       {/* Hero Banner Image */}
       <div className="relative w-full h-[40vh] md:h-[50vh] bg-stone-900">
         <img 
-          src={recipe.image} 
+          src={recipe.image?.includes('wikimedia.org') || recipe.image?.includes('wikipedia.org')
+            ? `/api/image-proxy?url=${encodeURIComponent(recipe.image)}`
+            : recipe.image} 
           alt={recipe.title} 
           referrerPolicy="no-referrer"
           crossOrigin="anonymous"
           className="w-full h-full object-cover opacity-70"
           onError={(e) => {
-            e.currentTarget.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80';
+            e.currentTarget.src = '/api/image-proxy';
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/40 to-transparent"></div>

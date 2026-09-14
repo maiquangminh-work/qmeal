@@ -68,6 +68,14 @@ export default function RecipeCard(props: RecipeCardProps) {
     national: 'Cơm Nhà'
   };
 
+  const getSafeImageUrl = (url: string) => {
+    if (!url) return '/api/image-proxy';
+    if (url.includes('wikimedia.org') || url.includes('wikipedia.org')) {
+      return `/api/image-proxy?url=${encodeURIComponent(url)}`;
+    }
+    return url;
+  };
+
   return (
     <Link 
       href={`/recipe/${id}`} 
@@ -76,7 +84,7 @@ export default function RecipeCard(props: RecipeCardProps) {
       {/* Image Container with aspect ratio */}
       <div className="relative w-full pt-[70%] overflow-hidden bg-stone-100">
         <img 
-          src={hasError ? 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80' : imgSrc} 
+          src={hasError ? '/api/image-proxy' : getSafeImageUrl(imgSrc)} 
           alt={title} 
           referrerPolicy="no-referrer"
           crossOrigin="anonymous"
@@ -85,7 +93,6 @@ export default function RecipeCard(props: RecipeCardProps) {
           onError={() => {
             if (!hasError) {
               setHasError(true);
-              setImgSrc('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80');
             }
           }}
         />

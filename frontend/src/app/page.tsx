@@ -7,7 +7,7 @@ import { vietnameseRecipes } from '@/data/vietnameseRecipes';
 import { ChefHat, Store, Sparkles, Filter } from 'lucide-react';
 
 export default function Home() {
-  const { language, selectedRegion, selectedDiningMode } = useStore();
+  const { language, selectedRegion, selectedDiningMode, userLocationName } = useStore();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const regionNames: Record<string, string> = {
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-4">
             <div>
               <h2 className="text-xl font-bold text-stone-900 tracking-tight">
-                Khám phá thực đơn {regionNames[selectedRegion]}
+                Khám phá thực đơn {userLocationName || regionNames[selectedRegion]}
               </h2>
               <p className="text-xs text-stone-500 mt-0.5">
                 {contextualRecipes.length} món ăn phù hợp với lựa chọn của bạn
@@ -166,7 +166,7 @@ export default function Home() {
                       <span className="text-xs font-bold text-orange-800 uppercase tracking-wider">Cơm Nhà Dễ Nấu</span>
                     </div>
                     <h2 className="text-xl md:text-2xl font-bold text-stone-900 tracking-tight">
-                      Món Mặn & Canh Đưa Cơm {regionNames[selectedRegion]}
+                      Món Mặn & Canh Đưa Cơm {userLocationName || regionNames[selectedRegion]}
                     </h2>
                     <p className="text-xs text-stone-500 mt-0.5">
                       Nguyên liệu dễ tìm tại chợ dân sinh • Công thức chuẩn vị gia đình
@@ -207,7 +207,7 @@ export default function Home() {
                       <span className="text-xs font-bold text-orange-800 uppercase tracking-wider">Hàng Quán & Ăn Ngoài</span>
                     </div>
                     <h2 className="text-xl md:text-2xl font-bold text-stone-900 tracking-tight">
-                      Món Ngon Phố Xá & Quán Ăn {regionNames[selectedRegion]}
+                      Món Ngon Phố Xá & Quán Ăn {userLocationName || regionNames[selectedRegion]}
                     </h2>
                     <p className="text-xs text-stone-500 mt-0.5">
                       Bún, phở, bánh mì và các món ăn ngoài nổi tiếng • Có bản đồ chỉ đường & đặt ship

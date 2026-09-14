@@ -1,6 +1,6 @@
 # TÀI LIỆU YÊU CẦU NGHIỆP VỤ (BRD) & KIẾN TRÚC KỸ THUẬT DỰ ÁN QMEAL
 > **Dự án:** QMeal - Nền Tảng Gợi Ý Món Ăn & Dinh Dưỡng Chuẩn Vị Việt Nam  
-> **Phiên bản:** 2.2.0 (Hệ Thống Gợi Ý Thông Minh Theo Vùng Miền, Phân Định Tự Nấu/Ăn Quán & Chuẩn Thiết Kế Impeccable)  
+> **Phiên bản:** 2.3.0 (Tự Động Nhận Diện Vị Trí Thiết Bị, Giao Diện Gợi Ý 3 Món Cá Nhân Hóa/Phổ Biến & Image Proxy Bất Tử)  
 > **Cập nhật lần cuối:** 14/09/2026  
 > **Tác giả:** Đội ngũ phát triển QMeal  
 > **Mục đích tài liệu:** Lưu trữ toàn bộ tri thức nghiệp vụ, thuật toán gợi ý (Recommendation Engine), kiến trúc hệ thống, bản đồ hóa ẩm thực vùng miền và quy chuẩn giao diện để bất kỳ máy tính hoặc kỹ sư nào đọc vào cũng có thể nắm bắt 100% nghiệp vụ và triển khai/vận hành hệ thống một cách chính xác kể cả khi chưa kéo mã nguồn.
@@ -175,43 +175,42 @@
 ---
 
 ### 3.11. Hệ Thống Gợi Ý Thông Minh Đa Chiều (Smart Recommendation Engine - `SmartRecommendationHero.tsx`)
-- **Vấn đề giải quyết:** Người dùng không muốn thấy danh sách món ăn ngẫu nhiên hoặc món ăn không thể tìm/nấu được ở khu vực sinh sống của mình (ví dụ người ở Hà Nội lại bị gợi ý món ăn chỉ có ở Sài Gòn/Miền Tây). Đồng thời, nhu cầu tự nấu tại nhà khác biệt hoàn toàn với nhu cầu đi ăn quán/gọi ship.
+- **Vấn đề giải quyết:** Người dùng không muốn mất thời gian chọn lọc thủ công. Hệ thống cần tự động nhận diện người dùng đang ở đâu, khung giờ nào và sở thích ăn uống ra sao để gợi ý ngay **3 món ăn tối ưu nhất**.
+- **Định dạng hiển thị 3 món chuẩn (Editorial 3-Dish Grid):**
+  - Chuyển đổi từ 4 cột sang **3 cột (`grid-cols-1 md:grid-cols-3`)** tạo sự nổi bật, hình ảnh ẩm thực to rõ, tỉ lệ hoàn hảo và không gây ngợp mắt cho người dùng.
 - **Mô hình Chấm điểm Phù hợp Đa chiều (Multi-factor Scoring Engine):**
   Tổng điểm $S$ của một món ăn được tính theo hàm mục tiêu:
-  $$S = S_{\text{time}} + S_{\text{region}} + S_{\text{dining}} + S_{\text{criteria}}$$
-  1. **Khớp Bữa Ăn Theo Giờ Sinh Học ($S_{\text{time}}$ - Trọng số: 30 điểm):**
-     - Bữa sáng (06:00 - 10:00), Bữa trưa (10:00 - 14:00), Xế chiều (14:00 - 17:00), Bữa tối (17:00 - 21:00), Ăn đêm (21:00 - 05:00).
-     - Nếu món ăn có chứa tag bữa ăn tương ứng trong `mealType`: $+30$ điểm.
-  2. **Khớp Vị Trí Địa Lý & Khẩu Vị Vùng Miền ($S_{\text{region}}$ - Trọng số quyết định):**
-     - Mặc định toàn hệ thống ưu tiên: `north` (Hà Nội & Bắc Bộ).
-     - Món đúng vùng đã chọn (`recipe.region === selectedRegion`): $+40$ điểm.
+  $$S = S_{\text{region}} + S_{\text{taste\_or\_pop}} + S_{\text{time}} + S_{\text{dining}} + S_{\text{criteria}}$$
+  1. **Khớp Vị Trí Địa Lý Tự Động ($S_{\text{region}}$ - Trọng số: 40 điểm):**
+     - Món đúng vùng đã nhận diện (`recipe.region === selectedRegion`): $+40$ điểm.
      - Món quốc dân phổ biến cả nước (`recipe.region === 'national'`): $+25$ điểm.
-     - Món thuộc vùng miền khác (ví dụ đang ở Hà Nội nhưng món thuộc Miền Nam): $-50$ điểm (trừ phạt nặng để không xuất hiện sai lệch).
-  3. **Khớp Phương Thức Dùng Bữa ($S_{\text{dining}}$ - Trọng số: 25 điểm):**
-     - Người dùng chọn "Tự nấu tại nhà" (`home_cook`) hoặc "Ra quán / Đặt ship" (`eat_out`):
-       - Món có hỗ trợ phương thức: $+25$ điểm.
-       - Món không hỗ trợ (ví dụ món nước lèo phức tạp không phù hợp tự nấu): $-40$ điểm.
-  4. **Khớp Tiêu Chí Dinh Dưỡng & Thời Gian Nấu ($S_{\text{criteria}}$ - Trọng số: 20 điểm):**
-     - **Nấu nhanh $\le 25$ phút:** Món có thời lượng chế biến $\le 25\text{p} \rightarrow +20$ điểm.
-     - **Thanh đạm ít calo:** Calo $\le 450\text{ kcal}$ hoặc có tag "Thanh đạm"/"Ít béo" $\rightarrow +20$ điểm.
-     - **Giàu đạm protein:** Protein $\ge 25\text{g}$ hoặc có tag "Giàu đạm" $\rightarrow +20$ điểm.
-     - **Món mặn đưa cơm:** Thuộc nhóm "Cơm Gia Đình", "Món Kho", "Món Xào" $\rightarrow +20$ điểm.
-- **Trình diễn kết quả (Editorial Hero Display):**
-  - Trích xuất Top 4 món ăn có điểm số $S$ cao nhất.
-  - Tự động sinh dòng lý do gợi ý biên tập cá nhân hóa (Personalized Match Reason), ví dụ:
-    - *"Chuẩn vị Hà Nội & Bắc Bộ • Dễ nấu tại nhà"*
-    - *"Món ngon phố xá Hà Nội • Phù hợp ăn trưa nhanh"*
-  - Cho phép người dùng chuyển đổi nhanh giữa các vùng miền (`Hà Nội & Bắc Bộ`, `Đà Nẵng & Miền Trung`, `Sài Gòn & Nam Bộ`, `Toàn Quốc`) và phương thức dùng bữa ngay tại Hero Header.
+     - Món thuộc vùng miền khác (ví dụ đang ở Hà Nội nhưng món thuộc Miền Nam): $-60$ điểm (loại trừ ngay món sai khu vực).
+  2. **Cá Nhân Hóa hoặc Độ Phổ Biến ($S_{\text{taste\_or\_pop}}$ - Trọng số: 35 điểm):**
+     - **Trường hợp đã có dữ liệu người dùng (Món yêu thích / Lịch sử xem):** Phân tích danh mục (`category`) và nhãn ăn kiêng (`dietaryTags`) mà người dùng quan tâm. Món ăn thuộc sở thích quen thuộc được cộng $+30 \rightarrow +50$ điểm $\rightarrow$ Gắn nhãn: `"Hợp khẩu vị của bạn"`.
+     - **Trường hợp người dùng mới (Chưa có dữ liệu):** Tự động kích hoạt cơ chế chấm điểm phổ biến (`recipe.isPopular` hoặc `popularityScore >= 90`). Các món đặc sản kinh điển của địa phương (như Phở Bò, Bún Chả, Bún Thang tại Hà Nội) được cộng $+30$ điểm $\rightarrow$ Gắn nhãn: `"Món ngon phổ biến tại Hà Nội"`.
+  3. **Khớp Bữa Ăn Theo Giờ Sinh Học ($S_{\text{time}}$ - Trọng số: 25 điểm):**
+     - Bữa sáng (06:00 - 10:00), Bữa trưa (10:00 - 14:00), Xế chiều (14:00 - 17:00), Bữa tối (17:00 - 21:00), Ăn đêm (21:00 - 05:00).
+     - Món ăn có tag bữa tương ứng: $+25$ điểm $\rightarrow$ Lý do: `"Chuẩn [Tên bữa]"`.
+  4. **Khớp Phương Thức Dùng Bữa ($S_{\text{dining}}$ - Trọng số: 20 điểm):**
+     - Món phù hợp tự nấu hoặc ăn quán theo lựa chọn: $+20$ điểm; không hỗ trợ: $-40$ điểm.
+  5. **Khớp Tiêu Chí Dinh Dưỡng ($S_{\text{criteria}}$ - Trọng số: 20 điểm):**
+     - Nấu nhanh $\le 25$p, Thanh đạm ít calo, Giàu đạm protein, Món mặn đưa cơm.
+- **Trình diễn kết quả (Top 3 Highlights):**
+  - Trích xuất Top 3 món có điểm $S$ cao nhất.
+  - Hiển thị nhãn vị trí kèm huy hiệu: `Gợi ý #1 • Hợp khẩu vị của bạn` hoặc `Gợi ý #1 • Món ngon phổ biến`.
 
 ---
 
-### 3.12. Quy Chuẩn Phân Định Vùng Miền & Phương Thức Dùng Bữa
-- **Dữ liệu 123 món ăn được gắn nhãn độc quyền:**
-  - `region`: `'north'` (32 món đặc trưng Bắc Bộ), `'central'` (12 món miền Trung), `'south'` (25 món Nam Bộ), `'national'` (54 món quốc dân phổ biến rộng rãi).
-  - `diningType`: `home_cook` (69 món dễ nấu tại gia), `eat_out` (67 món ăn quán/gọi ship tiện lợi). Nhiều món có cả 2 nhãn.
-- **Đồng bộ hóa toàn bộ các tính năng:**
-  - **Trang chủ (`/`):** Tự động lọc toàn bộ các hàng danh mục món mặn, món quán xá theo đúng Vùng miền và Phương thức đang chọn.
-  - **Vòng quay Gacha (`/gacha`):** Tự động lọc hồ bơi món ăn (Dish Pool) theo vùng miền của người dùng, đảm bảo khi người ở Hà Nội quay hòm sẽ không bao giờ ra món ăn chỉ có ở miền Nam.
+### 3.12. Cơ Chế Tự Động Định Vị Vị Trí Thiết Bị (Geolocation Engine - `geolocation.ts`)
+- **Tự động nhận diện không cần chọn vùng thủ công:**
+  1. Trình duyệt gọi `navigator.geolocation.getCurrentPosition()`:
+     - Vĩ độ $\ge 19.5^\circ\text{N} \rightarrow$ Gán vùng `north` (Hà Nội & Bắc Bộ).
+     - $14.5^\circ\text{N} \le$ Vĩ độ $< 19.5^\circ\text{N} \rightarrow$ Gán vùng `central` (Đà Nẵng & Miền Trung).
+     - Vĩ độ $< 14.5^\circ\text{N} \rightarrow$ Gán vùng `south` (Sài Gòn & Nam Bộ).
+  2. Fallback qua IP Geolocation API với timeout 2 giây nếu người dùng không bật GPS.
+  3. Fallback mặc định an toàn: Hà Nội & Bắc Bộ (`north`).
+- **Giao diện tinh gọn:**
+  - Hiển thị chấm xanh pulse sống động: `📍 Hà Nội & Bắc Bộ (Tự động)` kèm nút `[Đổi]` nhỏ cho phép người dùng chuyển vùng thủ công khi cần.
 
 ---
 
@@ -225,14 +224,14 @@
 
 ---
 
-### 3.14. Cơ Chế Ảnh Chống Lỗi Tuyệt Đối (Zero Broken Image Architecture)
-- **Bối cảnh nguyên nhân:** Các máy chủ lưu trữ ảnh công cộng (như Wikimedia Commons) thường kích hoạt tính năng kiểm tra HTTP `Referer` từ trình duyệt của người dùng để chống hotlinking, dẫn đến mã lỗi HTTP 403 Forbidden hoặc làm vỡ ảnh trên `localhost:3000` và các tên miền triển khai.
-- **Giải pháp kiên cố 3 tầng (3-Tier Resilience):**
-  1. **Tầng 1 - CDN Ẩm thực Tốc độ Cao:** Chuyển đổi toàn bộ đường dẫn ảnh sang máy chủ CDN ẩm thực Unsplash đã được kiểm định chất lượng cao, hỗ trợ chuẩn nén WebP và không chặn Referer.
-  2. **Tầng 2 - Xóa Referer Trình Duyệt:** Toàn bộ các thẻ `<img>` trên hệ thống đều được trang bị `referrerPolicy="no-referrer"` và `crossOrigin="anonymous"`. Trình duyệt sẽ gửi request ẩn danh, vô hiệu hóa hoàn toàn cơ chế chặn hotlink của mọi server ngoài.
-  3. **Tầng 3 - Tự Động Hoán Đổi Ảnh Dự Phòng (Stateful onError Fallback):** Trang bị state `hasError` trong Component `RecipeCard` và `GachaPage`. Khi có bất kỳ sự cố mạng hoặc hình ảnh nào không tải được, component ngay lập tức hoán đổi sang ảnh ẩm thực chuẩn đã lưu trữ mà không bao giờ để lộ khung ảnh vỡ khó chịu cho người dùng.
-
----
+### 3.14. Hạ Tầng Ảnh Món Ăn Chuẩn Xác 100% & Image Proxy Route (`/api/image-proxy`)
+- **Khắc phục triệt để vấn đề ảnh:**
+  - Loại bỏ toàn bộ các ảnh không liên quan (mặt người, sườn nướng kiểu Tây, burger, khoai tây chiên).
+  - 100% 123 món ăn sử dụng ảnh ẩm thực thật đã nấu chín của Việt Nam (Phở Bò, Bún Chả, Bún Riêu Cua, Nem Rán, v.v.).
+- **Serverless Image Proxy Route (`/api/image-proxy`):**
+  - Nhận tham số `?url=...` và tải ảnh về qua backend Next.js với đầy đủ User-Agent và Referer hợp lệ.
+  - Gắn header caching mạnh mẽ: `Cache-Control: public, max-age=604800, stale-while-revalidate=86400`.
+  - Nếu ảnh nguồn gặp bất kỳ sự cố mạng nào, proxy tự động trả về ảnh SVG ẩm thực trang nhã với mã HTTP 200 $\rightarrow$ **Tuyệt đối không bao giờ xuất hiện khung ảnh vỡ trên giao diện người dùng**.
 
 ## 4. MÔ HÌNH DỮ LIỆU & SCHEMA (DATA STRUCTURES)
 

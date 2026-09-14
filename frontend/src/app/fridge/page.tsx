@@ -301,9 +301,14 @@ export default function FridgePage() {
                   {/* Image & Match Percentage Ribbon */}
                   <div className="relative h-48 w-full overflow-hidden bg-stone-100">
                     <img 
-                      src={recipe.image} 
+                      src={recipe.image?.includes('wikimedia.org') || recipe.image?.includes('wikipedia.org') ? `/api/image-proxy?url=${encodeURIComponent(recipe.image)}` : recipe.image} 
                       alt={recipe.title} 
+                      referrerPolicy="no-referrer"
+                      crossOrigin="anonymous"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      onError={(e) => {
+                        e.currentTarget.src = '/api/image-proxy';
+                      }}
                     />
                     
                     {/* Match Badge */}
