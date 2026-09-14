@@ -37,8 +37,11 @@ interface UserState {
   setRegion: (region: 'north' | 'central' | 'south' | 'all') => void;
 
   userLocationName: string;
+  userDistrict?: string;
+  userWard?: string;
   isLocationAuto: boolean;
   setUserLocation: (region: 'north' | 'central' | 'south' | 'all', cityName?: string, isAuto?: boolean) => void;
+  setDetailedLocation: (region: 'north' | 'central' | 'south' | 'all', fullAddress: string, district?: string, ward?: string, isAuto?: boolean) => void;
 
   selectedDiningMode: 'all' | 'home_cook' | 'eat_out';
   setDiningMode: (mode: 'all' | 'home_cook' | 'eat_out') => void;
@@ -102,11 +105,20 @@ export const useStore = create<UserState>()(
       selectedRegion: 'north',
       setRegion: (region) => set({ selectedRegion: region, isLocationAuto: false }),
 
-      userLocationName: 'Hà Nội & Bắc Bộ',
+      userLocationName: 'Phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội',
+      userDistrict: 'Quận Cầu Giấy',
+      userWard: 'Phường Dịch Vọng Hậu',
       isLocationAuto: true,
       setUserLocation: (region, cityName, isAuto = true) => set({
         selectedRegion: region,
         userLocationName: cityName || (region === 'north' ? 'Hà Nội & Bắc Bộ' : region === 'central' ? 'Đà Nẵng & Miền Trung' : region === 'south' ? 'Sài Gòn & Nam Bộ' : 'Toàn Quốc'),
+        isLocationAuto: isAuto
+      }),
+      setDetailedLocation: (region, fullAddress, district, ward, isAuto = false) => set({
+        selectedRegion: region,
+        userLocationName: fullAddress,
+        userDistrict: district,
+        userWard: ward,
         isLocationAuto: isAuto
       }),
 

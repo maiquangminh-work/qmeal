@@ -3,8 +3,8 @@ import { useState, useMemo, useEffect } from 'react';
 import { useStore } from '@/store/useStore';
 import { vietnameseRecipes } from '@/data/vietnameseRecipes';
 import RecipeCard from '@/components/ui/RecipeCard';
-import { detectUserLocation } from '@/utils/geolocation';
-import { MapPin, Clock, ChefHat, Store, Utensils, CheckCircle2, Sparkles, Navigation } from 'lucide-react';
+import { detectUserLocation, VIETNAM_LOCATIONS } from '@/utils/geolocation';
+import { MapPin, Clock, ChefHat, Store, Utensils, CheckCircle2, Sparkles, Navigation, X, Compass, ChevronRight, Search } from 'lucide-react';
 
 interface SmartRecommendationHeroProps {
   language: 'vi' | 'en';
@@ -15,8 +15,11 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
     selectedRegion, 
     setRegion, 
     userLocationName,
+    userDistrict,
+    userWard,
     isLocationAuto,
     setUserLocation,
+    setDetailedLocation,
     selectedDiningMode, 
     setDiningMode,
     favorites,
@@ -25,21 +28,25 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
 
   const [activeCriteria, setActiveCriteria] = useState<'all' | 'quick' | 'healthy' | 'protein' | 'comfort'>('all');
   const [currentHour, setCurrentHour] = useState(12);
-  const [showLocationOverride, setShowLocationOverride] = useState(false);
+  const [showLocationModal, setShowLocationModal] = useState(false);
   const [isLocating, setIsLocating] = useState(false);
 
-  // Auto-detect location on mount
+  // Location selector modal state
+  const [modalCityKey, setModalCityKey] = useState<string>('hanoi');
+  const [modalDistrict, setModalDistrict] = useState<string>('Quận Cầu Giấy');
+  const [locationSearch, setLocationSearch] = useState<string>('');
+
+  // Auto-detect location on mount if user hasn't set one yet
   useEffect(() => {
     setCurrentHour(new Date().getHours());
 
     let isMounted = true;
     const runAutoLocation = async () => {
-      // Only auto-detect if the user hasn't manually overridden
       if (isLocationAuto) {
         setIsLocating(true);
         const loc = await detectUserLocation();
         if (isMounted) {
-          setUserLocation(loc.region, loc.cityName, true);
+          setDetailedLocation(loc.region, loc.fullAddress, loc.district, loc.ward, true);
           setIsLocating(false);
         }
       }
@@ -50,6 +57,15 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
       isMounted = false;
     };
   }, []);
+
+  // Handle GPS Auto detection button
+  const handleTriggerGPS = async () => {
+    setIsLocating(true);
+    const loc = await detectUserLocation();
+    setDetailedLocation(loc.region, loc.fullAddress, loc.district, loc.ward, true);
+    setIsLocating(false);
+    setShowLocationModal(false);
+  };
 
   // Time context determination
   const timeContext = useMemo(() => {
@@ -262,53 +278,220 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
           </p>
         </div>
 
-        {/* Automatic Geolocation Badge with sleek override switch */}
+        {/* Automatic Geolocation Badge with full location picker trigger */}
         <div className="flex flex-col items-start md:items-end gap-2 self-start md:self-auto">
-          <div className="flex items-center gap-2 bg-stone-800/90 px-3.5 py-2 rounded-xl border border-stone-700/80 text-xs shadow-xs">
-            <span className="relative flex h-2 w-2">
+          <button
+            onClick={() => setShowLocationModal(true)}
+            className="group flex items-center gap-2 bg-stone-800/90 hover:bg-stone-800 px-3.5 py-2 rounded-xl border border-stone-700/80 hover:border-orange-500/50 text-xs shadow-xs transition-all cursor-pointer text-left"
+            title="Nhấn để đổi vị trí cụ thể theo Phường, Quận, Tỉnh thành"
+          >
+            <span className="relative flex h-2 w-2 flex-shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
             <MapPin className="w-3.5 h-3.5 text-orange-400 flex-shrink-0" />
-            <span className="font-semibold text-stone-100">
-              {isLocating ? 'Đang xác định vị trí...' : userLocationName}
+            <span className="font-semibold text-stone-100 max-w-[220px] sm:max-w-[300px] truncate">
+              {isLocating ? 'Đang xác định GPS...' : userLocationName}
             </span>
             {isLocationAuto && (
-              <span className="text-[10px] text-emerald-300 bg-emerald-950/80 border border-emerald-800/50 px-1.5 py-0.5 rounded font-medium">
-                Tự động
+              <span className="text-[10px] text-emerald-300 bg-emerald-950/80 border border-emerald-800/50 px-1.5 py-0.5 rounded font-medium flex-shrink-0">
+                GPS
               </span>
             )}
-            <button 
-              onClick={() => setShowLocationOverride(!showLocationOverride)}
-              className="ml-1 text-[11px] text-stone-400 hover:text-orange-400 underline cursor-pointer transition-colors"
-            >
-              {showLocationOverride ? 'Đóng' : 'Đổi'}
-            </button>
-          </div>
-
-          {/* Optional inline region override buttons (hidden by default to avoid clutter) */}
-          {showLocationOverride && (
-            <div className="bg-stone-800 p-1.5 rounded-xl border border-stone-700 flex flex-wrap gap-1 animate-in fade-in slide-in-from-top-2 duration-200">
-              {regionOptions.map(opt => (
-                <button
-                  key={opt.key}
-                  onClick={() => {
-                    setUserLocation(opt.key, opt.labelVi, false);
-                    setShowLocationOverride(false);
-                  }}
-                  className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                    selectedRegion === opt.key
-                      ? 'bg-orange-600 text-white shadow-xs'
-                      : 'text-stone-300 hover:text-white hover:bg-stone-700'
-                  }`}
-                >
-                  {opt.labelVi}
-                </button>
-              ))}
-            </div>
-          )}
+            <span className="ml-1 text-[11px] font-bold text-orange-400 group-hover:text-orange-300 underline flex-shrink-0">
+              Đổi ▾
+            </span>
+          </button>
         </div>
       </div>
+
+      {/* Comprehensive Location Selection Modal */}
+      {showLocationModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-950/70 backdrop-blur-xs animate-in fade-in duration-200">
+          <div 
+            className="bg-white w-full max-w-2xl rounded-2xl shadow-2xl border border-stone-200 overflow-hidden flex flex-col max-h-[90vh] animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="px-6 py-4 bg-stone-900 text-white flex items-center justify-between border-b border-stone-800">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-lg bg-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-base text-white">Chọn Vị Trí Ẩm Thực Của Bạn</h3>
+                  <p className="text-xs text-stone-400">Gợi ý món ăn chuẩn hương vị theo từng Phường, Quận & Thành phố</p>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowLocationModal(false)}
+                className="w-8 h-8 rounded-lg bg-stone-800 hover:bg-stone-700 text-stone-300 hover:text-white flex items-center justify-center cursor-pointer transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Modal Body: Scrollable */}
+            <div className="p-6 overflow-y-auto space-y-6 text-stone-800">
+              {/* Current Active Location Display */}
+              <div className="bg-stone-50 border border-stone-200/90 rounded-xl p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-2.5 text-xs">
+                  <span className="font-bold text-stone-500 uppercase tracking-wider">Hiện tại:</span>
+                  <span className="font-bold text-stone-900 bg-white px-2.5 py-1 rounded-lg border border-stone-200 shadow-2xs">
+                    📍 {userLocationName}
+                  </span>
+                </div>
+                <button
+                  onClick={handleTriggerGPS}
+                  disabled={isLocating}
+                  className="flex items-center justify-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white text-xs font-bold transition-all shadow-xs cursor-pointer disabled:opacity-50"
+                >
+                  <Compass className={`w-3.5 h-3.5 ${isLocating ? 'animate-spin' : ''}`} />
+                  <span>{isLocating ? 'Đang định vị...' : 'Định vị GPS tự động'}</span>
+                </button>
+              </div>
+
+              {/* Quick Preset Hubs */}
+              <div>
+                <span className="block text-xs font-bold text-stone-500 uppercase tracking-wider mb-2.5">
+                  Điểm nóng ẩm thực phổ biến
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { label: 'Cầu Giấy, Hà Nội', region: 'north' as const, district: 'Quận Cầu Giấy', ward: 'Phường Dịch Vọng Hậu', city: 'Hà Nội' },
+                    { label: 'Hoàn Kiếm (Phố Cổ), HN', region: 'north' as const, district: 'Quận Hoàn Kiếm', ward: 'Phường Hàng Trống', city: 'Hà Nội' },
+                    { label: 'Đống Đa, Hà Nội', region: 'north' as const, district: 'Quận Đống Đa', ward: 'Phường Láng Hạ', city: 'Hà Nội' },
+                    { label: 'Quận 1, TP. Hồ Chí Minh', region: 'south' as const, district: 'Quận 1', ward: 'Phường Bến Nghé', city: 'TP. Hồ Chí Minh' },
+                    { label: 'Quận 3, TP. Hồ Chí Minh', region: 'south' as const, district: 'Quận 3', ward: 'Phường Võ Thị Sáu', city: 'TP. Hồ Chí Minh' },
+                    { label: 'Hải Châu, Đà Nẵng', region: 'central' as const, district: 'Quận Hải Châu', ward: 'Phường Thạch Thang', city: 'Đà Nẵng' },
+                    { label: 'TP. Huế', region: 'central' as const, district: 'TP. Huế', ward: 'Phường Vĩnh Ninh', city: 'Thừa Thiên Huế' }
+                  ].map((preset, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => {
+                        const fullAddr = `${preset.ward}, ${preset.district}, ${preset.city}`;
+                        setDetailedLocation(preset.region, fullAddr, preset.district, preset.ward, false);
+                        setShowLocationModal(false);
+                      }}
+                      className="px-3 py-1.5 rounded-lg text-xs font-medium bg-stone-100 hover:bg-orange-50 hover:text-orange-700 hover:border-orange-200 border border-stone-200/80 transition-colors cursor-pointer"
+                    >
+                      📍 {preset.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Step 1: Chọn Tỉnh / Thành Phố */}
+              <div>
+                <span className="block text-xs font-bold text-stone-500 uppercase tracking-wider mb-2.5">
+                  1. Chọn Tỉnh / Thành Phố
+                </span>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+                  {Object.entries(VIETNAM_LOCATIONS).map(([key, cityData]) => {
+                    const isSelected = modalCityKey === key;
+                    return (
+                      <button
+                        key={key}
+                        onClick={() => {
+                          setModalCityKey(key);
+                          const firstDistrict = cityData.districts[0]?.name || '';
+                          setModalDistrict(firstDistrict);
+                        }}
+                        className={`p-2.5 rounded-xl text-center text-xs font-bold transition-all border cursor-pointer ${
+                          isSelected
+                            ? 'bg-stone-900 text-white border-stone-900 shadow-xs'
+                            : 'bg-white text-stone-700 hover:bg-stone-100 border-stone-200'
+                        }`}
+                      >
+                        {cityData.name}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Step 2: Chọn Quận / Huyện */}
+              <div>
+                <div className="flex items-center justify-between mb-2.5">
+                  <span className="text-xs font-bold text-stone-500 uppercase tracking-wider">
+                    2. Chọn Quận / Huyện ({VIETNAM_LOCATIONS[modalCityKey]?.name})
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-40 overflow-y-auto pr-1">
+                  {VIETNAM_LOCATIONS[modalCityKey]?.districts.map((d) => {
+                    const isSelected = modalDistrict === d.name;
+                    return (
+                      <button
+                        key={d.name}
+                        onClick={() => setModalDistrict(d.name)}
+                        className={`p-2 rounded-lg text-xs text-left font-semibold transition-all border cursor-pointer truncate ${
+                          isSelected
+                            ? 'bg-orange-600 text-white border-orange-600 shadow-xs'
+                            : 'bg-stone-50 text-stone-700 hover:bg-orange-50 hover:border-orange-200 border-stone-200/80'
+                        }`}
+                        title={d.name}
+                      >
+                        {d.name}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Step 3: Chọn Phường / Xã Cụ Thể */}
+              <div>
+                <div className="flex items-center justify-between mb-2.5">
+                  <span className="text-xs font-bold text-stone-500 uppercase tracking-wider">
+                    3. Chọn Phường / Xã ({modalDistrict})
+                  </span>
+                  <button
+                    onClick={() => {
+                      const city = VIETNAM_LOCATIONS[modalCityKey];
+                      const fullAddr = `${modalDistrict}, ${city.name}`;
+                      setDetailedLocation(city.region, fullAddr, modalDistrict, undefined, false);
+                      setShowLocationModal(false);
+                    }}
+                    className="text-xs font-bold text-orange-600 hover:text-orange-700 underline cursor-pointer"
+                  >
+                    Chọn toàn {modalDistrict} →
+                  </button>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-48 overflow-y-auto pr-1">
+                  {VIETNAM_LOCATIONS[modalCityKey]?.districts
+                    .find(d => d.name === modalDistrict)?.wards.map((wardName) => (
+                      <button
+                        key={wardName}
+                        onClick={() => {
+                          const city = VIETNAM_LOCATIONS[modalCityKey];
+                          const fullAddr = `${wardName}, ${modalDistrict}, ${city.name}`;
+                          setDetailedLocation(city.region, fullAddr, modalDistrict, wardName, false);
+                          setShowLocationModal(false);
+                        }}
+                        className="p-2 rounded-lg text-xs text-left font-medium bg-white text-stone-700 hover:bg-orange-50 hover:text-orange-900 hover:border-orange-300 border border-stone-200 transition-all cursor-pointer truncate"
+                        title={wardName}
+                      >
+                        {wardName}
+                      </button>
+                    ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="px-6 py-3.5 bg-stone-50 border-t border-stone-200 flex items-center justify-between">
+              <span className="text-xs text-stone-500">
+                Lựa chọn sẽ được lưu tự động cho các lần truy cập tiếp theo.
+              </span>
+              <button
+                onClick={() => setShowLocationModal(false)}
+                className="px-4 py-1.5 rounded-lg bg-stone-200 hover:bg-stone-300 text-stone-700 text-xs font-semibold cursor-pointer transition-colors"
+              >
+                Đóng
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Controls Bar: Dining Mode & Criteria Chips */}
       <div className="p-5 md:p-6 bg-stone-50 border-b border-stone-200/80 flex flex-col lg:flex-row lg:items-center justify-between gap-4">

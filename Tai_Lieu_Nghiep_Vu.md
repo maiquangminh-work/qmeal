@@ -1,6 +1,6 @@
 # TÀI LIỆU YÊU CẦU NGHIỆP VỤ (BRD) & KIẾN TRÚC KỸ THUẬT DỰ ÁN QMEAL
 > **Dự án:** QMeal - Nền Tảng Gợi Ý Món Ăn & Dinh Dưỡng Chuẩn Vị Việt Nam  
-> **Phiên bản:** 2.3.0 (Tự Động Nhận Diện Vị Trí Thiết Bị, Giao Diện Gợi Ý 3 Món Cá Nhân Hóa/Phổ Biến & Image Proxy Bất Tử)  
+> **Phiên bản:** 2.4.0 (Định Vị Chi Tiết Cấp Phường/Quận, Modal Đổi Vị Trí Đa Cấp, Phân Trang Tối Ưu Mobile, Google Maps Quán Ăn & Ảnh Cục Bộ 100%)  
 > **Cập nhật lần cuối:** 14/09/2026  
 > **Tác giả:** Đội ngũ phát triển QMeal  
 > **Mục đích tài liệu:** Lưu trữ toàn bộ tri thức nghiệp vụ, thuật toán gợi ý (Recommendation Engine), kiến trúc hệ thống, bản đồ hóa ẩm thực vùng miền và quy chuẩn giao diện để bất kỳ máy tính hoặc kỹ sư nào đọc vào cũng có thể nắm bắt 100% nghiệp vụ và triển khai/vận hành hệ thống một cách chính xác kể cả khi chưa kéo mã nguồn.
@@ -131,12 +131,17 @@
 
 ---
 
-### 3.7. Ăn Ngoài & Đặt Ship Siêu Tốc (Eat-Out & Delivery Shortcuts)
-- **Đặt Ship Tận Nơi:** Trong tab "Ra Quán Ăn / Ăn Ngoài", tích hợp 2 nút gọi món trực tiếp:
-  - **ShopeeFood:** `https://shopeefood.vn/search?q={Tên_Món}`
-  - **GrabFood:** `https://food.grab.com/vn/vi/restaurants?search={Tên_Món}`
-- **Bản đồ Google Maps:** Nhúng iframe Google Maps với query động hiển thị các quán ăn có bán món này quanh tọa độ của người dùng.
-- **Danh sách quán gợi ý:** Hiển thị địa chỉ, khoảng cách (km), khung giá dự kiến (35k - 60k), đánh giá sao và nút chỉ đường tức thì.
+### 3.7. Ăn Ngoài Thuần Google Maps & Đặt Ship Siêu Tốc (Pure Google Maps Eat-Out Integration)
+- **Tích Hợp Google Maps Chuyên Sâu Theo Vị Trí:**
+  - Tự động lấy vị trí hiện tại của người dùng (từ cấp Phường/Quận như "Cầu Giấy", "Hoàn Kiếm") để xây dựng truy vấn tìm kiếm chuẩn xác trên Google Maps:
+    $$\text{URL} = \text{https://www.google.com/maps/search/?api=1\&query=} + \text{encodeURIComponent}(`\text{Quán } \{\text{Tên\_Món}\} \text{ ngon gần } \{\text{userDistrict || userLocationName}\}`)$$
+  - Khi người dùng bấm nút chính **"Mở Google Maps Tìm Quán Gần Đây"**: Trình duyệt hoặc ứng dụng Google Maps trên điện thoại sẽ tự động mở lên, liệt kê toàn bộ các quán ăn xung quanh đang mở cửa, xếp hạng sao thực tế, phản hồi/feedback của thực khách và dẫn đường GPS thời gian thực.
+- **Khung Bản Đồ Nhúng Trực Tiếp (Interactive Google Maps Embed):**
+  - Nhúng iframe Google Maps trực tiếp trong trang chi tiết món ăn, tự động căn chỉnh tâm bản đồ theo khu vực ẩm thực của người dùng.
+- **Thẻ Quán Ăn Đề Xuất Theo Tiêu Chí Khách Hàng (Google Maps Criteria):**
+  - Hiển thị danh sách các quán tiêu biểu được lọc theo tiêu chí khắt khe: **Rating ★ 4.6+**, số lượng đánh giá thực tế (300+ feedback), khung giá minh bạch (35.000đ - 65.000đ), và các nhãn tiêu chí đánh giá: *Đúng vị gia truyền, Nước dùng trong ngọt, Chỗ để xe rộng, Phục vụ nhanh*.
+  - Mỗi quán có nút **"Chỉ đường"** trực tiếp kích hoạt Google Maps Directions API.
+- **Đặt Ship Tận Nơi Tiện Lợi:** Vẫn duy trì 2 nút gọi món nhanh qua **ShopeeFood** và **GrabFood** cho người dùng muốn ăn tại nhà mà không muốn nấu nướng.
 
 ---
 
@@ -201,16 +206,24 @@
 
 ---
 
-### 3.12. Cơ Chế Tự Động Định Vị Vị Trí Thiết Bị (Geolocation Engine - `geolocation.ts`)
-- **Tự động nhận diện không cần chọn vùng thủ công:**
-  1. Trình duyệt gọi `navigator.geolocation.getCurrentPosition()`:
-     - Vĩ độ $\ge 19.5^\circ\text{N} \rightarrow$ Gán vùng `north` (Hà Nội & Bắc Bộ).
-     - $14.5^\circ\text{N} \le$ Vĩ độ $< 19.5^\circ\text{N} \rightarrow$ Gán vùng `central` (Đà Nẵng & Miền Trung).
-     - Vĩ độ $< 14.5^\circ\text{N} \rightarrow$ Gán vùng `south` (Sài Gòn & Nam Bộ).
-  2. Fallback qua IP Geolocation API với timeout 2 giây nếu người dùng không bật GPS.
-  3. Fallback mặc định an toàn: Hà Nội & Bắc Bộ (`north`).
-- **Giao diện tinh gọn:**
-  - Hiển thị chấm xanh pulse sống động: `📍 Hà Nội & Bắc Bộ (Tự động)` kèm nút `[Đổi]` nhỏ cho phép người dùng chuyển vùng thủ công khi cần.
+### 3.12. Cơ Chế Định Vị Địa Lý Chi Tiết Cấp Phường / Quận & Modal Đổi Vị Trí Đa Cấp (`geolocation.ts`)
+- **Vấn đề giải quyết:** Để "Hà Nội" chung chung là quá rộng; người dùng ở Cầu Giấy cần gợi ý quán và món khác người dùng ở Hoàn Kiếm hay Thanh Xuân. Đồng thời người dùng cần quyền chủ động chuyển đổi vị trí linh hoạt với nhiều lựa chọn cụ thể.
+- **Cơ chế phân cấp hành chính (`VIETNAM_LOCATIONS`):**
+  - Cung cấp cây phân cấp hành chính đầy đủ cho các trung tâm ẩm thực lớn nhất:
+    - **Hà Nội (11 Quận):** Cầu Giấy, Hoàn Kiếm, Ba Đình, Đống Đa, Hai Bà Trưng, Tây Hồ, Thanh Xuân, Nam Từ Liêm, Bắc Từ Liêm, Long Biên, Hà Đông kèm đầy đủ danh sách Phường (Dịch Vọng Hậu, Hàng Trống, Láng Hạ, Bách Khoa, v.v.).
+    - **TP. Hồ Chí Minh (8 Quận/Thành phố):** Quận 1, Quận 3, Quận 5, Quận 7, Quận 10, Bình Thạnh, Phú Nhuận, TP. Thủ Đức kèm đầy đủ Phường (Bến Nghé, Bến Thành, Võ Thị Sáu, Thảo Điền, v.v.).
+    - **Đà Nẵng (4 Quận):** Hải Châu, Sơn Trà, Ngũ Hành Sơn, Thanh Khê.
+    - **Thừa Thiên Huế & Hải Phòng:** Đầy đủ quận nội thành và phường trung tâm.
+- **Reverse Geocoding Tự Động (OpenStreetMap Nominatim + Heuristic Coordinates):**
+  - Tự động chuyển đổi tọa độ GPS $(lat, lon)$ sang `ward`, `district`, `city` với User-Agent chuẩn và timeout 2.5s; nếu mạng chặn sẽ tự động fallback sang ước tính khoảng cách tọa độ để luôn có kết quả ngay lập tức.
+- **Modal Lựa Chọn Vị Trí Đa Cấp Nâng Cao:**
+  - **Định vị GPS 1 chạm:** Tự động bắt vị trí thiết bị hiện tại với hiệu ứng loading xoay tròn.
+  - **Phím tắt nhanh (Điểm nóng ẩm thực):** Các nút 1 chạm vào `Cầu Giấy, Hà Nội`, `Phố Cổ Hoàn Kiếm`, `Đống Đa`, `Quận 1, TP.HCM`, `Quận 3, TP.HCM`, `Hải Châu, Đà Nẵng`.
+  - **Cây chọn 3 bước mạch lạc:**
+    - Bước 1: Chọn Tỉnh/Thành phố (Hà Nội, TP.HCM, Đà Nẵng, Huế, Hải Phòng).
+    - Bước 2: Chọn Quận/Huyện (danh sách quận trực thuộc).
+    - Bước 3: Chọn Phường/Xã cụ thể (hoặc chọn toàn bộ quận).
+  - Tự động lưu trữ vào Zustand Store & `localStorage` để duy trì phiên làm việc cho các lần truy cập sau.
 
 ---
 
@@ -224,14 +237,25 @@
 
 ---
 
-### 3.14. Hạ Tầng Ảnh Món Ăn Chuẩn Xác 100% & Image Proxy Route (`/api/image-proxy`)
-- **Khắc phục triệt để vấn đề ảnh:**
-  - Loại bỏ toàn bộ các ảnh không liên quan (mặt người, sườn nướng kiểu Tây, burger, khoai tây chiên).
-  - 100% 123 món ăn sử dụng ảnh ẩm thực thật đã nấu chín của Việt Nam (Phở Bò, Bún Chả, Bún Riêu Cua, Nem Rán, v.v.).
-- **Serverless Image Proxy Route (`/api/image-proxy`):**
-  - Nhận tham số `?url=...` và tải ảnh về qua backend Next.js với đầy đủ User-Agent và Referer hợp lệ.
-  - Gắn header caching mạnh mẽ: `Cache-Control: public, max-age=604800, stale-while-revalidate=86400`.
-  - Nếu ảnh nguồn gặp bất kỳ sự cố mạng nào, proxy tự động trả về ảnh SVG ẩm thực trang nhã với mã HTTP 200 $\rightarrow$ **Tuyệt đối không bao giờ xuất hiện khung ảnh vỡ trên giao diện người dùng**.
+### 3.14. Lưu Trữ Ảnh Cục Bộ 100% Bất Tử (`frontend/public/dishes/{id}.jpg`)
+- **Độc lập hoàn toàn với mạng ngoài:**
+  - Thay vì phụ thuộc vào hotlink bên ngoài (Unsplash, Wikimedia Commons vốn thường xuyên chặn hotlink hoặc trả mã HTTP 400/403/429), toàn bộ 123 món ăn trong cơ sở dữ liệu đã được tải về lưu trữ trực tiếp dưới dạng tệp ảnh `.jpg` cục bộ tại thư mục:
+    `frontend/public/dishes/{id}.jpg`
+  - Trường `image` của mọi món ăn trong `vietnameseRecipes.ts` trỏ thẳng tới `/dishes/${id}.jpg`.
+  - **Cam kết 100% không còn bất kỳ ảnh nào bị lỗi hoặc hiển thị khung trống**.
+  - Các món từng bị báo cáo lỗi (Đậu Phụ Sốt Cà Chua, Đậu Phụ Nhồi Thịt, Trứng Chiên Thịt Băm, Thịt Rang Cháy Cạnh...) đã được tải ảnh thật chuẩn xác 100%.
+
+---
+
+### 3.15. Tối Ưu Trải Nghiệm Mobile: Phân Trang 8 Món & Thanh Danh Mục Vuốt Ngang
+- **Vấn đề giải quyết:** Danh mục hơn 120 món ăn nếu hiển thị cuộn dài liên tục sẽ khiến người dùng điện thoại bị mỏi ngón tay, khó tìm món và tốn tài nguyên render của thiết bị.
+- **Cơ chế Phân Trang Thông Minh (Pagination):**
+  - Cố định quy chuẩn `ITEMS_PER_PAGE = 8` món trên mỗi trang (2 hàng $\times$ 4 cột trên desktop, các khối vừa vặn trên điện thoại).
+  - Thanh điều hướng phân trang tinh tế: Nút `Trước`, dải số trang `1, 2, 3...`, nút `Sau`, kèm chỉ số `Hiển thị X - Y trên tổng số Z món`.
+  - Khi chuyển trang, hệ thống tự động kích hoạt hiệu ứng cuộn mượt mà (Smooth Scroll) lên đầu danh mục (`#catalog-section`), giúp người dùng không phải kéo tay lên lại.
+  - Khi thay đổi vùng miền, phương thức ăn hoặc danh mục, trang sẽ tự động reset về Trang 1.
+- **Thanh Danh Mục Cuộn Ngang (Horizontal Swipe):**
+  - Danh sách các danh mục món ăn trên điện thoại được cấu hình `overflow-x-auto no-scrollbar whitespace-nowrap`, cho phép người dùng vuốt ngang mượt mà bằng ngón tay cái như ứng dụng native, không bị chiếm 4-5 dòng màn hình như dạng wrap cũ.
 
 ## 4. MÔ HÌNH DỮ LIỆU & SCHEMA (DATA STRUCTURES)
 

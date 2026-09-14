@@ -56,7 +56,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Phở Bò Tái Chín Hà Nội",
       "en": "Traditional Hanoi Beef Pho"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Ph%E1%BB%9F_b%C3%B2%2C_C%E1%BA%A7u_Gi%E1%BA%A5y%2C_H%C3%A0_N%E1%BB%99i.jpg/1280px-Ph%E1%BB%9F_b%C3%B2%2C_C%E1%BA%A7u_Gi%E1%BA%A5y%2C_H%C3%A0_N%E1%BB%99i.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-pho-bo.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -185,7 +185,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Bò Huế Đậm Vị Cố Đô",
       "en": "Hue Style Spicy Beef Noodle Soup"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Bun-Bo-Hue-from-Huong-Giang-2011.jpg/1280px-Bun-Bo-Hue-from-Huong-Giang-2011.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-bun-bo-hue.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -313,7 +313,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cơm Tấm Sườn Bì Chả Sài Gòn",
       "en": "Saigon Broken Rice with Grilled Pork Chop"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/C%C6%A1m_T%E1%BA%A5m%2C_San_Jose%2C_California.jpg/1280px-C%C6%A1m_T%E1%BA%A5m%2C_San_Jose%2C_California.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-com-tam.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Rice Dishes"
@@ -434,7 +434,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Chả Nướng Than Hoa Hà Nội",
       "en": "Hanoi Charcoal Grilled Pork Patties with Rice Noodles"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/B%C3%BAn_ch%E1%BA%A3_Th%E1%BB%A5y_Khu%C3%AA.jpg/1280px-B%C3%BAn_ch%E1%BA%A3_Th%E1%BB%A5y_Khu%C3%AA.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-bun-cha.jpg",
     "category": {
       "vi": "Đồ Nướng",
       "en": "Grilled Dishes"
@@ -553,7 +553,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Mì Thịt Nguội Pâté Giòn Rụm",
       "en": "Vietnamese Crispy Baguette with Pâté & Ham"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/1280px-B%C3%B1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-mi.jpg",
     "category": {
       "vi": "Ăn Nhanh",
       "en": "Street Food"
@@ -673,7 +673,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Gỏi Cuốn Tôm Thịt Thanh Mát",
       "en": "Fresh Summer Rolls with Shrimp & Pork"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/G%E1%BB%8Fi_cu%E1%BB%91n.jpg/1280px-G%E1%BB%8Fi_cu%E1%BB%91n.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-goi-cuon.jpg",
     "category": {
       "vi": "Khai Vị",
       "en": "Appetizers"
@@ -791,7 +791,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Chua Cá Lóc Đồng Miền Tây",
       "en": "Mekong Delta Sour Fish Soup with Snakehead Fish"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Canhchua.jpg/1280px-Canhchua.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-canh-chua-ca.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Soup"
@@ -915,7 +915,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cá Kho Tộ Đậm Đà Cơm Mẹ Nấu",
       "en": "Caramelized Catfish in Clay Pot"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/C%C3%A1_kho_t%E1%BB%99.jpg/1280px-C%C3%A1_kho_t%E1%BB%99.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-ca-kho-to.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -1031,7 +1031,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Xèo Miền Tây Giòn Tan Vàng Ruộm",
       "en": "Crispy Vietnamese Turmeric Crepe"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/B%C3%A1nh_x%C3%A8o.jpg/1280px-B%C3%A1nh_x%C3%A8o.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-xeo.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Crispy Crepes"
@@ -1153,7 +1153,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Thịt Kho Tàu Trứng Cút Nước Dừa",
       "en": "Vietnamese Caramelized Pork with Quail Eggs & Coconut Water"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Th%E1%BB%8Bt_kho_h%E1%BB%99t_v%E1%BB%8Bt.jpg/1280px-Th%E1%BB%8Bt_kho_h%E1%BB%99t_v%E1%BB%8Bt.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-thit-kho-tau.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -1269,7 +1269,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Riêu Cua Đồng Đậm Đà",
       "en": "Traditional Vietnamese Crab Paste Noodle Soup"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/B%C3%BAn_ri%C3%AAu_cua_n%C6%B0%E1%BB%9Bc_d%C3%B9ng.jpg/1280px-B%C3%BAn_ri%C3%AAu_cua_n%C6%B0%E1%BB%9Bc_d%C3%B9ng.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-bun-rieu.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -1399,7 +1399,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bò Kho Tiêu Thảo Mộc Bánh Mì",
       "en": "Vietnamese Lemongrass Beef Stew with Baguette"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bo_kho_mien_Bac.jpg/1280px-Bo_kho_mien_Bac.jpg",
+    "image": "/dishes/vn-bo-kho.jpg",
     "category": {
       "vi": "Món Hầm",
       "en": "Stew"
@@ -1524,7 +1524,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nem Rán Hà Nội (Chả Giò Giòn Rụm)",
       "en": "Crispy Traditional Vietnamese Fried Spring Rolls"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Cha_gio.jpg/1280px-Cha_gio.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-nem-ran.jpg",
     "category": {
       "vi": "Khai Vị",
       "en": "Appetizers"
@@ -1653,7 +1653,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Cuốn Nóng Hành Phi Nhân Thịt",
       "en": "Steamed Vietnamese Rice Rolls with Minced Pork & Crispy Shallots"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/B%C3%A1nh_cu%E1%BB%91n_t%E1%BA%A1i_Gia_An.jpg/1280px-B%C3%A1nh_cu%E1%BB%91n_t%E1%BA%A1i_Gia_An.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-cuon.jpg",
     "category": {
       "vi": "Bữa Sáng",
       "en": "Breakfast"
@@ -1774,7 +1774,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Mì Quảng Tôm Thịt Đậm Đà Xứ Quảng",
       "en": "Quang Style Turmeric Rice Noodles with Shrimp & Pork"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/M%C3%AC_Qu%E1%BA%A3ng_Ph%C3%BA_Chi%C3%AAm.jpg/1280px-M%C3%AC_Qu%E1%BA%A3ng_Ph%C3%BA_Chi%C3%AAm.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-mi-quang.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -1905,7 +1905,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Phở Gà Ta Hà Nội Lá Chanh",
       "en": "Traditional Hanoi Free-Range Chicken Pho with Kaffir Lime Leaves"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ph%E1%BB%9F_g%C3%A0_H%C3%A0_N%E1%BB%99i.jpg/1280px-Ph%E1%BB%9F_g%C3%A0_H%C3%A0_N%E1%BB%99i.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-pho-ga.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -2027,7 +2027,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cao Lầu Phố Cổ Hội An",
       "en": "Hoi An Signature Cao Lau Pork Noodles"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Cao_l%E1%BA%A7u_H%E1%BB%99i_An.jpg/1280px-Cao_l%E1%BA%A7u_H%E1%BB%99i_An.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-cao-lau.jpg",
     "category": {
       "vi": "Món Trộn",
       "en": "Dry Noodles"
@@ -2141,7 +2141,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Hủ Tiếu Nam Vang Tôm Thịt Đậm Đà",
       "en": "Nam Vang Clear Pork & Seafood Noodle Soup"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/H%E1%BB%A7_ti%E1%BA%BFu_Nam_Vang.jpg/1280px-H%E1%BB%A7_ti%E1%BA%BFu_Nam_Vang.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-hu-tieu.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -2270,7 +2270,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Bèo Chén Tôm Chấy Xứ Huế",
       "en": "Hue Savory Steamed Rice Cakes with Toasted Shrimp"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/B%C3%A1nh_b%C3%A8o_Hu%E1%BA%BF.jpg/1280px-B%C3%A1nh_b%C3%A8o_Hu%E1%BA%BF.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-beo.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -2377,7 +2377,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Khọt Tôm Giòn Rụm Vũng Tàu",
       "en": "Vung Tau Crispy Mini Turmeric Shrimp Pancakes"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/B%C3%A1nh_kh%E1%BB%8Dt_V%C5%A9ng_T%C3%A0u.jpg/1280px-B%C3%A1nh_kh%E1%BB%8Dt_V%C5%A9ng_T%C3%A0u.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-khot.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -2492,7 +2492,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Thang Thanh Nhã Phố Cổ Hà Nội",
       "en": "Hanoi Elegant Bun Thang Noodle Soup"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/B%C3%BAn_thang_H%C3%A0_N%E1%BB%99i.jpg/1280px-B%C3%BAn_thang_H%C3%A0_N%E1%BB%99i.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-bun-thang.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -2620,7 +2620,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Thịt Ba Chỉ Rang Cháy Cạnh",
       "en": "Crispy Caramelized Pork Belly with Fish Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Thit-kho-tieu-1.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+    "image": "/dishes/vn-thit-rang-chay-canh.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -2718,7 +2718,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Gà Kho Sả Ớt Đậm Vị Nam Bộ",
       "en": "Braised Lemongrass & Chili Chicken"
     },
-    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-ga-kho-sa-ot.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -2816,7 +2816,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Gà Kho Gừng Truyền Thống",
       "en": "Traditional Vietnamese Ginger Braised Chicken"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/BeiQieJi-WhiteCutChicken.jpg/1280px-BeiQieJi-WhiteCutChicken.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-ga-kho-gung.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -2907,7 +2907,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Sườn Xào Chua Ngọt Hà Nội",
       "en": "Sweet & Sour Glazed Pork Ribs"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E6%BA%AB%E8%8E%8E%E5%A4%A7%E5%BB%88_Windsor_House_mall_shop_%E7%A8%BB%E9%A6%99%E9%85%92%E5%AE%B6_Tao_Heung_Restaurant_%E7%B3%96%E9%86%8B%E6%8E%92%E9%AA%A8_Sweet_and_Sour_Ribs_September_2022_Px3_01.jpg",
+    "image": "/dishes/vn-suon-xao-chua-ngot.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -2999,7 +2999,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Đậu Phụ Rán Sốt Cà Chua",
       "en": "Crispy Tofu in Rich Tomato Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Stuffed_Tofu_in_Tomato_Sauce.jpg/1280px-Stuffed_Tofu_in_Tomato_Sauce.jpg",
+    "image": "/dishes/vn-dau-phu-sot-ca-chua.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -3098,7 +3098,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Đậu Phụ Nhồi Thịt Sốt Cà Chua",
       "en": "Stuffed Tofu with Minced Pork in Tomato Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Yong_tau_foo_sweet.jpg",
+    "image": "/dishes/vn-dau-phu-nhoi-thit.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -3203,7 +3203,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Trứng Chiên Thịt Băm Hành Hoa",
       "en": "Vietnamese Fluffy Minced Pork Omelet"
     },
-    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-trung-chien-thit.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -3302,7 +3302,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Tôm Rim Thịt Ba Chỉ Mặn Ngọt",
       "en": "Caramelized Shrimp & Pork Belly"
     },
-    "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-tom-rim-thit.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -3400,7 +3400,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Thịt Băm Chưng Mắm Tép Hàng Bè",
       "en": "Hanoi Braised Pork with Fermented Rice Shrimp Paste"
     },
-    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-thit-bam-chung-mam-tep.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -3491,7 +3491,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Thịt Bò Xào Cần Tỏi",
       "en": "Stir-Fried Beef with Celery & Garlic"
     },
-    "image": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-bo-xao-can-toi.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -3589,7 +3589,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Rau Ngót Nấu Thịt Băm",
       "en": "Katuk Leaf Soup with Minced Pork"
     },
-    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-rau-ngot-thit-bam.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -3682,7 +3682,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Cua Mồng Tơi Rau Đay Mướp Hương",
       "en": "Field Crab Soup with Malabar Spinach & Jute Leaves"
     },
-    "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-cua-mong-toi.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -3780,7 +3780,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Cà Chua Trứng (Canh Mây)",
       "en": "Tomato Egg Drop Soup (Canh Mây)"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Tomato_and_egg_soup_%281%29.jpg/1280px-Tomato_and_egg_soup_%281%29.jpg",
+    "image": "/dishes/vn-canh-ca-chua-trung.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -3880,7 +3880,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Khổ Qua Nhồi Thịt Thanh Nhiệt",
       "en": "Stuffed Bitter Melon Soup with Minced Pork"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/MyPlate_gov_Cultural_Food_%2820241025-USDA-FNS-UNK-0085%29.jpg",
+    "image": "/dishes/vn-canh-kho-qua-nhoi-thit.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -3978,7 +3978,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Bí Đao Nấu Sườn Non",
       "en": "Winter Melon Soup with Pork Spare Ribs"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Donggua_tang_02.jpg/1280px-Donggua_tang_02.jpg",
+    "image": "/dishes/vn-canh-bi-dao-suon.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -4076,7 +4076,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Rau Muống Xào Tỏi Xanh Mướt Giòn Rụm",
       "en": "Stir-Fried Morning Glory with Crispy Garlic"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Tumis_kangkung_Makassar.JPG/1280px-Tumis_kangkung_Makassar.JPG",
+    "image": "/dishes/vn-rau-muong-xao-toi.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -4167,7 +4167,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Rau Củ Luộc Chấm Kho Quẹt Tóp Mỡ Tôm Khô",
       "en": "Steamed Vegetables with Caramelized Pork Rind & Dried Shrimp Dip (Kho Quẹt)"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Kho_qu%E1%BA%B9t_rau_lu%E1%BB%99c.jpg/1280px-Kho_qu%E1%BA%B9t_rau_lu%E1%BB%99c.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-kho-quet-rau-luoc.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -4273,7 +4273,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Thịt Ba Chỉ Luộc Cà Pháo Mắm Tôm",
       "en": "Boiled Pork Belly with Pickled Eggplants & Shrimp Paste"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/B%C3%BAn_m%E1%BA%AFm_th%E1%BB%8Bt_heo_lu%E1%BB%99c_%E1%BB%9F_%C4%90%C3%A0_N%E1%BA%B5ng.jpg",
+    "image": "/dishes/vn-thit-luoc-ca-phao.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -4371,7 +4371,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Đậu Mắm Tôm Mẹt Thập Cẩm Hà Nội",
       "en": "Hanoi Fried Tofu & Rice Vermicelli Platter with Shrimp Paste"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m.jpg/1280px-B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-bun-dau-mam-tom.jpg",
     "category": {
       "vi": "Món Cuốn & Trộn",
       "en": "Platters"
@@ -4490,7 +4490,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Thịt Nướng Chả Giò Sài Gòn",
       "en": "Saigon Grilled Pork & Crispy Spring Roll Noodle Bowl"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Bun_thit_nuong.jpg/1280px-Bun_thit_nuong.jpg",
+    "image": "/dishes/vn-bun-thit-nuong.jpg",
     "category": {
       "vi": "Món Trộn",
       "en": "Dry Noodles"
@@ -4604,7 +4604,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Ốc Nguội Giấm Bỗng Cổ Truyền Hà Nội",
       "en": "Traditional Hanoi Snails Noodle Soup with Fermented Rice Broth"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/B%C3%BAn_%E1%BB%91c_H%C3%A0_N%E1%BB%99i.jpg/1280px-B%C3%BAn_%E1%BB%91c_H%C3%A0_N%E1%BB%99i.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-bun-oc-ha-noi.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -4709,7 +4709,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Canh Cua Giò Heo Nước Dùng Sệt",
       "en": "Thick Tapioca Noodle Soup with Fresh Crab Meat"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/B%C3%A1nh_canh_cua.jpg/1280px-B%C3%A1nh_canh_cua.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-canh-cua.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -4823,7 +4823,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cơm Rang Dưa Bò Phố Cổ Hà Nội",
       "en": "Hanoi Fried Rice with Pickled Mustard Greens & Beef"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Fried_rice_with_chicken_%2817234644521%29.jpg/1280px-Fried_rice_with_chicken_%2817234644521%29.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-com-chien-dua-bo.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -4928,7 +4928,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cháo Sườn Sụn Quẩy Giòn Hà Nội",
       "en": "Hanoi Silky Pork Cartilage Congee with Crispy Crullers"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Ch%C3%A1o_s%C6%B0%E1%BB%9Dn_H%C3%A0_N%E1%BB%99i.jpg/1280px-Ch%C3%A1o_s%C6%B0%E1%BB%9Dn_H%C3%A0_N%E1%BB%99i.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-chao-suon-sun.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -5034,7 +5034,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Xôi Xéo Hà Nội Mỡ Hành Đậu Xanh Bào",
       "en": "Hanoi Turmeric Sticky Rice with Mung Bean & Crispy Shallots"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/X%C3%B4i_x%C3%A9o_H%C3%A0_N%E1%BB%99i.jpg/1280px-X%C3%B4i_x%C3%A9o_H%C3%A0_N%E1%BB%99i.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-xoi-xeo-ha-noi.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -5139,7 +5139,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Phở Cuốn Thịt Bò Hà Nội",
       "en": "Hanoi Beef & Herb Rolled Pho"
     },
-    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-pho-cuon.jpg",
     "category": {
       "vi": "Khai Vị & Cuốn",
       "en": "Rolls & Appetizers"
@@ -5238,7 +5238,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Giò Nóng Thịt Băm Mộc Nhĩ Hà Nội",
       "en": "Hanoi Steamed Pyramid Rice Cake with Minced Pork & Wood-Ear"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/B%C3%A1nh_gi%C3%B2_H%C3%A0_N%E1%BB%99i.jpg/1280px-B%C3%A1nh_gi%C3%B2_H%C3%A0_N%E1%BB%99i.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-gio.jpg",
     "category": {
       "vi": "Bữa Sáng & Ăn Vặt",
       "en": "Street Food"
@@ -5344,7 +5344,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Bột Lọc Tôm Thịt Gói Lá Xứ Huế",
       "en": "Hue Clear Tapioca Dumplings with Shrimp & Pork"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/B%C3%A1nh_b%C3%A8o%2C_b%E1%BB%99t_l%E1%BB%8Dc%2C_nem_chua.jpg/1280px-B%C3%A1nh_b%C3%A8o%2C_b%E1%BB%99t_l%E1%BB%8Dc%2C_nem_chua.jpg",
+    "image": "/dishes/vn-banh-bot-loc.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -5450,7 +5450,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Tráng Nướng Trứng Xúc Xích Đà Lạt",
       "en": "Dalat Crispy Grilled Rice Paper (Vietnamese Pizza)"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/B%C3%A1nh_tr%C3%A1ng_n%C6%B0%E1%BB%9Bng_%C4%90%C3%A0_L%E1%BA%A1t.jpg/1280px-B%C3%A1nh_tr%C3%A1ng_n%C6%B0%E1%BB%9Bng_%C4%90%C3%A0_L%E1%BA%A1t.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-trang-nuong.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -5555,7 +5555,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Tráng Trộn Sài Gòn Đầy Đủ Topping",
       "en": "Saigon Shredded Rice Paper Salad with Quail Eggs & Mango"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/B%C3%A1nh_tr%C3%A1ng_tr%E1%BB%99n_S%C3%A0i_G%C3%B2n.jpg/1280px-B%C3%A1nh_tr%C3%A1ng_tr%E1%BB%99n_S%C3%A0i_G%C3%B2n.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-banh-trang-tron.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -5666,7 +5666,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nem Nướng Nha Trang Mẹt Cuốn Bánh Tráng",
       "en": "Nha Trang Grilled Pork Sausage Rice Paper Rolls"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Nem_n%C6%B0%E1%BB%9Bng.jpg",
+    "image": "/dishes/vn-nem-nuong-nha-trang.jpg",
     "category": {
       "vi": "Món Cuốn & Trộn",
       "en": "Platters"
@@ -5771,7 +5771,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cơm Chiên Dương Châu Đầy Đủ Tôm Lạp Xưởng",
       "en": "Yangzhou Style Vietnamese Fried Rice"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg/1280px-Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-com-chien-duong-chau.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -5884,7 +5884,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Gỏi Ngó Sen Tôm Thịt Giòn Chua Ngọt",
       "en": "Lotus Root Salad with Shrimp & Pork"
     },
-    "image": "https://images.unsplash.com/photo-1551248429-40975aa4de74?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-goi-ngo-sen-tom-thit.jpg",
     "category": {
       "vi": "Khai Vị & Gỏi",
       "en": "Salads & Starters"
@@ -5997,7 +5997,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cá Bống Kho Tiêu Đậm Vị Miền Trung",
       "en": "Central Style Goby Fish Braised with Black Pepper"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/C%C3%A1_kho_t%E1%BB%99.JPG",
+    "image": "/dishes/vn-ca-bong-kho-tieu.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6086,7 +6086,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cá Nục Kho Cà Chua Mềm Rục Xương",
       "en": "Braised Scad Fish in Rich Tomato Sauce"
     },
-    "image": "https://images.unsplash.com/photo-1535473877914-a059b0730b0b?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-ca-nuc-kho-ca.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6175,7 +6175,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cá Diêu Hồng Chiên Xù Mắm Tỏi",
       "en": "Crispy Fried Red Tilapia with Garlic Fish Sauce"
     },
-    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-ca-dieu-hong-chien-xu.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6264,7 +6264,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Sườn Non Rim Mặn Ngọt Óng Ả",
       "en": "Caramelized Savory Sweet Pork Ribs"
     },
-    "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-suon-rim-man-ngot.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6353,7 +6353,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bò Lúc Lắc Khoai Tây Chiên Bơ Tỏi",
       "en": "Shaking Beef Tenderloin with Garlic Butter Fries"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Product_Shots_of_Food-Bo_Luc_Lac.jpg",
+    "image": "/dishes/vn-bo-luc-lac.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6443,7 +6443,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Thịt Ba Chỉ Kho Tiêu Phú Quốc",
       "en": "Phu Quoc Black Pepper Braised Pork Belly"
     },
-    "image": "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-thit-kho-tieu.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6532,7 +6532,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Giò Lụa Rim Nước Mắm Tiêu Sọ",
       "en": "Caramelized Vietnamese Ham with Pepper Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/B%C3%A1nh_ch%C6%B0ng_v%C3%A0_gi%C3%B2_l%E1%BB%A5a.jpg",
+    "image": "/dishes/vn-gio-lua-rim-mam.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6621,7 +6621,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Tôm Đồng Rim Mặn Ngọt Giòn Vỏ",
       "en": "Sweet & Salty Crisp Wild River Shrimp"
     },
-    "image": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-tom-rim-man-ngot.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6710,7 +6710,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Mực Ống Tươi Xào Cần Tỏi",
       "en": "Stir-Fried Squid with Celery & Leeks"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/C%C6%A1m_T%E1%BA%A5m%2C_San_Jose%2C_California.jpg/1280px-C%C6%A1m_T%E1%BA%A5m%2C_San_Jose%2C_California.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-muc-xao-can-toi.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6799,7 +6799,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Mực Ống Nhồi Thịt Sốt Cà Chua",
       "en": "Stuffed Squid with Pork in Savory Tomato Glaze"
     },
-    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-muc-nhoi-thit.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6888,7 +6888,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Xíu Mại Thịt Băm Sốt Cà Bánh Mì",
       "en": "Vietnamese Meatballs in Tomato Sauce with Baguette"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Shao_mai_at_Golden_Unicorn%2C_Chinatown%2C_NYC%2C_April_2009.jpg/1280px-Shao_mai_at_Golden_Unicorn%2C_Chinatown%2C_NYC%2C_April_2009.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-xiu-mai-sot-ca.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6977,7 +6977,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Trứng Cuộn Hành Hoa Nấm Mèo",
       "en": "Rolled Egg Crepe with Scallions & Wood-Ear"
     },
-    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-trung-cuon-hanh.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -7066,7 +7066,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Sườn Khoai Tây Cà Rốt Ngọt Lịm",
       "en": "Pork Ribs Soup with Potatoes & Carrots"
     },
-    "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-suon-khoai-tay.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7155,7 +7155,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Bầu Nấu Tôm Đồng Ngọt Mát",
       "en": "Calabash Gourd Soup with Sweet Wild Shrimp"
     },
-    "image": "https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-bau-nau-tom.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7244,7 +7244,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Cải Bẹ Xanh Nấu Cá Thác Lác",
       "en": "Mustard Greens Soup with Featherback Fish Paste"
     },
-    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-cai-ca-thac-lac.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7333,7 +7333,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Ngao Chua Nấu Dứa Thì Là",
       "en": "Sour Clam Soup with Pineapple & Fresh Dill"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Korean_clam_soup-Jaecheopguk-01.jpg",
+    "image": "/dishes/vn-canh-ngao-chua.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7422,7 +7422,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Hến Nấu Hoa Thiên Lý Xứ Huế",
       "en": "Baby River Clam Soup with Telosma Flowers"
     },
-    "image": "https://images.unsplash.com/photo-1514944298352-b43063f25603?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-hen-hoa-thien-ly.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7511,7 +7511,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Rong Biển Nấu Thịt Bò Thanh Ngọt",
       "en": "Seaweed Soup with Tender Sliced Beef"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Korea.food-Miyeok.guk-01.jpg",
+    "image": "/dishes/vn-canh-rong-bien-thit-bo.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7600,7 +7600,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Bắp Cải Cuộn Thịt Thắt Nơ Hành",
       "en": "Cabbage Rolls Stuffed with Pork in Clear Broth"
     },
-    "image": "https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-bap-cai-cuon-thit.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7689,7 +7689,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Măng Chua Nấu Bắp Bò",
       "en": "Sour Bamboo Shoot Soup with Beef Shank"
     },
-    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-mang-chua-bo.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7778,7 +7778,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Chua Tôm Tươi Miền Tây",
       "en": "Mekong Sour Shrimp Soup with Tamarind & Okra"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Canh_chua_t%C3%B4m_01.jpg/1280px-Canh_chua_t%C3%B4m_01.jpg",
+    "image": "/dishes/vn-canh-chua-tom.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7867,7 +7867,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Khoai Mỡ Nấu Tôm Băm Tím Biếc",
       "en": "Purple Yam Soup with Minced Shrimp & Rice Paddy Herb"
     },
-    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-khoai-mo.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7956,7 +7956,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Củ Sen Hầm Sườn Bổ Dưỡng",
       "en": "Lotus Root & Pork Ribs Nourishing Clear Soup"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Lotus_root_soup.jpg/1280px-Lotus_root_soup.jpg",
+    "image": "/dishes/vn-canh-cu-sen-suon.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -8045,7 +8045,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Súp Rau Củ Thanh Đạm Chay",
       "en": "Vegetarian Sweet Garden Broth with Sweet Corn"
     },
-    "image": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-sup-rau-cu.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -8134,7 +8134,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Xà Lách Xoong Thịt Băm",
       "en": "Watercress Soup with Minced Pork"
     },
-    "image": "https://images.unsplash.com/photo-1607532941433-304659e8198a?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-xa-lach-xoong.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -8223,7 +8223,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Rau Lang Xào Tỏi Xanh Giòn",
       "en": "Stir-Fried Sweet Potato Greens with Golden Garlic"
     },
-    "image": "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-rau-lang-xao-toi.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8312,7 +8312,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bắp Cải Xào Cà Chua Chín Tới",
       "en": "Stir-Fried Cabbage with Fresh Tomatoes"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Stir_Fried_Cabbage_and_Bacon_%E5%9F%B9%E6%A0%B9%E9%AB%98%E4%B8%BD%E8%8F%9C.jpg",
+    "image": "/dishes/vn-bap-cai-xao-ca.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8401,7 +8401,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Đậu Cô Ve Xào Thịt Bò Mềm",
       "en": "Stir-Fried Green String Beans with Beef"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Chicken_and_snow_peas_with_stir_fried_green_beans_%2815666974844%29.jpg",
+    "image": "/dishes/vn-dau-cove-xao-bo.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8490,7 +8490,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Su Su Bào Xào Thịt Bò",
       "en": "Stir-Fried Chayote with Sliced Beef"
     },
-    "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-su-su-xao-bo.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8579,7 +8579,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Măng Tây Xào Tôm Tươi Giòn Ngọt",
       "en": "Stir-Fried Asparagus with Tiger Prawns"
     },
-    "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-mang-tay-xao-tom.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8668,7 +8668,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bông Cải Xanh Xào Thịt Bò Dầu Hào",
       "en": "Stir-Fried Broccoli with Beef in Savory Oyster Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Broccoli_beef_%285457397534%29.jpg",
+    "image": "/dishes/vn-bong-cai-xao-bo.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8757,7 +8757,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Khổ Qua Xào Trứng Vịt Bùi Béo",
       "en": "Stir-Fried Bitter Melon with Scrambled Eggs"
     },
-    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-kho-qua-xao-trung.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8846,7 +8846,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Giá Đỗ Xào Huyết Heo & Hẹ Lá",
       "en": "Stir-Fried Bean Sprouts with Blood Pudding & Chives"
     },
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-gia-do-xao-huyet.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8935,7 +8935,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nấm Đùi Gà Xào Bơ Tỏi Đậm Vị",
       "en": "King Oyster Mushrooms Sautéed in Garlic Butter"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Mmmm_-_cremini_and_king_oyster_mushrooms_with_tagliatelle.jpg",
+    "image": "/dishes/vn-nam-dui-ga-xao-bo.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -9024,7 +9024,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Gà Ta Luộc Lá Chanh Da Giòn Vàng",
       "en": "Traditional Poached Chicken with Kaffir Lime Leaves"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BeiQieJi-WhiteCutChicken.jpg/1280px-BeiQieJi-WhiteCutChicken.jpg",
+    "image": "/dishes/vn-ga-luoc-la-chanh.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -9113,7 +9113,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bắp Bò Luộc Sả Gừng Chấm Mắm Gừng",
       "en": "Tender Boiled Beef Shank with Ginger Fish Sauce"
     },
-    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-bap-bo-luoc-sa.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -9202,7 +9202,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Đậu Bắp Luộc Chấm Chao Béo Ngậy",
       "en": "Boiled Crisp Okra with Fermented Bean Curd Dip"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/BOILED_OR_STEAMED_OKRA_FROM_GARDEN_TO_TABLE.jpg",
+    "image": "/dishes/vn-dau-bap-luoc-chao.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -9291,7 +9291,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Mắm Miền Tây Đậm Đà Sông Nước",
       "en": "Mekong Fermented Fish Noodle Soup with Seafood & Roasted Pork"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/B%C3%BAn_M%E1%BA%AFm_S%C3%B3c_Tr%C4%83ng.jpg",
+    "image": "/dishes/vn-bun-mam-mien-tay.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9380,7 +9380,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Cá Cay Hải Phòng Nước Dùng Thanh",
       "en": "Hai Phong Spicy Fish Noodle Soup with Crispy Fish & Taro Stems"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Nh%C3%A0_m%C3%ACnh_d%E1%BB%8Bp_L%E1%BB%85_2th9n2023_%28b%C3%BAn_c%C3%A1_cay_%C4%90%C3%B4ng_H%C3%A0%29_%281%29.jpg",
+    "image": "/dishes/vn-bun-ca-cay-hai-phong.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9469,7 +9469,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Mọc Sườn Non Nước Dùng Trong Ngọt",
       "en": "Pork Meatball & Spare Rib Noodle Soup with Shiitake"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/B%C3%BAn_m%E1%BB%8Dc_s%C6%B0%E1%BB%9Dn.jpg",
+    "image": "/dishes/vn-bun-moc-suon-non.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9558,7 +9558,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Chả Cá Đà Nẵng Đậm Đà Xứ Biển",
       "en": "Da Nang Fish Cake Noodle Soup with Pumpkin & Bamboo Shoots"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/B%C3%BAn_ch%E1%BA%A3_c%C3%A1%2C_th%C3%A1ng_8_n%C4%83m_2018.JPG",
+    "image": "/dishes/vn-bun-cha-ca-da-nang.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9647,7 +9647,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Hủ Tiếu Mỹ Tho Sợi Dai Nước Trong",
       "en": "My Tho Signature Chewy Clear Noodle Soup"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/H%E1%BB%A7_ti%E1%BA%BFu_th%E1%BA%ADp_c%E1%BA%A9m.jpg/1280px-H%E1%BB%A7_ti%E1%BA%BFu_th%E1%BA%ADp_c%E1%BA%A9m.jpg",
+    "image": "/dishes/vn-hu-tieu-my-tho.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9736,7 +9736,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Hủ Tiếu Gõ Xá Xíu Bò Viên Đêm Sài Gòn",
       "en": "Saigon Street Cart Noodle Soup with Char Siu & Beef Meatballs"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/H%E1%BB%A7_ti%E1%BA%BFu_g%C3%B5_S%C3%A0i_G%C3%B2n.jpg/1280px-H%E1%BB%A7_ti%E1%BA%BFu_g%C3%B5_S%C3%A0i_G%C3%B2n.jpg",
+    "image": "/dishes/vn-hu-tieu-go.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9825,7 +9825,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Canh Ghẹ Tươi Nước Cốt Dừa",
       "en": "Blue Crab Tapioca Noodle Soup with Coconut Broth"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Banh-Canh-Noodle-Soup.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+    "image": "/dishes/vn-banh-canh-ghe.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9914,7 +9914,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Canh Chả Cá Nha Trang",
       "en": "Nha Trang Fried Fish Cake Noodle Soup"
     },
-    "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-banh-canh-cha-ca.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -10003,7 +10003,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Miến Măng Gà Ta Nước Dùng Ngọt Thanh",
       "en": "Chicken Glass Noodle Soup with Dried Bamboo Shoots"
     },
-    "image": "https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-mien-mang-ga.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -10092,7 +10092,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Miến Lươn Giòn Nghệ An Thơm Nồng Rau Răm",
       "en": "Nghe An Crispy Eel Glass Noodle Soup"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Mien_luon_Hang_Dieu.JPG/1280px-Mien_luon_Hang_Dieu.JPG?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-mien-luon-gion.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -10181,7 +10181,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Miến Xào Cua Bể Tươi Ráo Sợi",
       "en": "Stir-Fried Glass Noodles with Fresh Sea Crab Meat"
     },
-    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-mien-xao-cua.jpg",
     "category": {
       "vi": "Món Trộn",
       "en": "Dry Noodles"
@@ -10270,7 +10270,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Nậm Tôm Thịt Lá Chuối Xứ Huế",
       "en": "Hue Flat Rice Dumpling with Minced Shrimp & Pork in Banana Leaves"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/B%C3%A1nh_n%E1%BA%ADm_Th%E1%BB%A7_%C4%90%E1%BB%A9c.jpg",
+    "image": "/dishes/vn-banh-nam-hue.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -10359,7 +10359,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Căn Tôm Trứng Chấm Nước Mắm Cá",
       "en": "Phan Thiet Mini Rice Cakes with Shrimp & Rich Fish Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/B%C3%A1nh_c%C4%83n_1.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+    "image": "/dishes/vn-banh-can-phan-thiet.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -10448,7 +10448,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bò Bía Ngọt Dừa Nạo Mạch Nha Tuổi Thơ",
       "en": "Sweet Coconut & Maltose Crepe Rolls"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Popiah_stall.JPG/1280px-Popiah_stall.JPG?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-bo-bia-ngot.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -10537,7 +10537,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nem Lụi Nướng Sả Cây Phố Cổ Huế",
       "en": "Hue Grilled Pork Skewers on Lemongrass Stalks"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Nh%C3%A0_m%C3%ACnh_L%E1%BB%85_30th4n2023_%28ch%E1%BA%A1o_nem_l%E1%BB%A5i%29_%282%29.jpg",
+    "image": "/dishes/vn-nem-lui-nuong-sa.jpg",
     "category": {
       "vi": "Món Cuốn & Trộn",
       "en": "Platters"
@@ -10626,7 +10626,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Gỏi Gà Xé Phay Bắp Cải Chua Ngọt",
       "en": "Shredded Chicken & Crunchy Cabbage Herb Salad"
     },
-    "image": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-goi-ga-bap-cai.jpg",
     "category": {
       "vi": "Khai Vị & Gỏi",
       "en": "Salads & Starters"
@@ -10716,7 +10716,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nộm Bò Khô Đu Đủ Bờ Hồ Hà Nội",
       "en": "Hanoi Green Papaya Salad with Sweet-Savory Beef Jerky"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Ph%E1%BB%93ng_t%C3%B4m.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+    "image": "/dishes/vn-nom-bo-kho.jpg",
     "category": {
       "vi": "Khai Vị & Gỏi",
       "en": "Salads & Starters"
@@ -10805,7 +10805,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Chả Ram Tôm Đất Giòn Rụm Xứ Nẫu Bình Định",
       "en": "Binh Dinh Crunchy Mini Shrimp Spring Rolls"
     },
-    "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-cha-ram-tom-dat.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -10894,7 +10894,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cơm Gà Tam Kỳ Vàng Ươm Nước Dùng Gà",
       "en": "Tam Ky Turmeric Chicken Rice with Shredded Herb Salad"
     },
-    "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-com-ga-tam-ky.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -10983,7 +10983,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cháo Gà Ta Nấm Hương Hạt Sen Ấm Bụng",
       "en": "Chicken Congee with Shiitake Mushrooms & Lotus Seeds"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Chinese_rice_congee.jpg",
+    "image": "/dishes/vn-chao-ga-nam-huong.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -11072,7 +11072,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cháo Lòng Tiết Huyết Phố Cổ Hà Nội",
       "en": "Traditional Hanoi Pork Offal & Blood Congee"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Ch%C3%A1o_l%C3%B2ng.jpg",
+    "image": "/dishes/vn-chao-long-ha-noi.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -11161,7 +11161,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cháo Cá Lóc Đồng Rau Đắng Miền Tây",
       "en": "Mekong Snakehead Fish Congee with Bitter Greens"
     },
-    "image": "https://images.unsplash.com/photo-1540189549386-042236c786f8?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-chao-ca-loc-rau-dang.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -11250,7 +11250,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Xôi Nếp Nương Gà Xé Nấm Hương Mỡ Hành",
       "en": "Sticky Rice with Shredded Chicken & Fragrant Scallion Oil"
     },
-    "image": "https://images.unsplash.com/photo-1539136788836-5699e78bfc75?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-xoi-ga-xe.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -11339,7 +11339,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Xôi Khúc Lá Khúc Nhân Thịt Đậu Xanh Hà Nội",
       "en": "Traditional Hanoi Cudweed Rice Cakes with Pork & Mung Bean"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/X%C3%B4i_kh%C3%BAc.jpg",
+    "image": "/dishes/vn-xoi-khuc-ha-noi.jpg",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -11428,7 +11428,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cá Chép Om Dưa Thì Là Chua Dịu",
       "en": "Braised Carp with Pickled Mustard Greens & Dill"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Cyprinus_carpio_2008_G1_%28cropped%29.jpg/1280px-Cyprinus_carpio_2008_G1_%28cropped%29.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-ca-chep-om-dua.jpg",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Family Meal"
@@ -11542,7 +11542,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Sườn Nấu Sấu Chua Thanh Mát Hà Nội",
       "en": "Hanoi Pork Rib Soup with Dracontomelon (Sấu)"
     },
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-suon-chua-sau.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -11649,7 +11649,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Cá Điêu Hồng Nấu Ngót Cần Nước Nam Bộ",
       "en": "Southern Sweet & Sour Tilapia Soup with Celery & Tomato"
     },
-    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-canh-ca-nau-ngot.jpg",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -11756,7 +11756,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cải Ngồng Xào Tỏi Giòn Ngọt Xanh Mướt",
       "en": "Stir-Fried Choy Sum Greens with Crispy Garlic"
     },
-    "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-rau-cai-ngong-xao-toi.jpg",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -11847,7 +11847,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Phở Bò Sốt Vang Rượu Vang Gấc Đỏ Hà Nội",
       "en": "Hanoi Beef Stew Pho with Red Wine & Annatto (Sốt Vang)"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Ph%E1%BB%9F_b%C3%B2%2C_C%E1%BA%A7u_Gi%E1%BA%A5y%2C_H%C3%A0_N%E1%BB%99i.jpg/1280px-Ph%E1%BB%9F_b%C3%B2%2C_C%E1%BA%A7u_Gi%E1%BA%A5y%2C_H%C3%A0_N%E1%BB%99i.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-pho-sot-vang.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -11962,7 +11962,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Ốc Nấu Chuối Đậu Tía Tô Nghệ Vàng",
       "en": "Hanoi Snail Noodle Soup with Green Bananas & Fried Tofu"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/B%C3%BAn_%E1%BB%91c.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+    "image": "/dishes/vn-bun-oc-chuoi-dau.jpg",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -12077,7 +12077,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Chè Hạt Sen Long Nhãn Phố Hiến Thanh Mát",
       "en": "Lotus Seed & Longan Sweet Soup (Pho Hien Style)"
     },
-    "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80",
+    "image": "/dishes/vn-che-sen-long-nhan.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Snacks & Desserts"
@@ -12176,7 +12176,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Chè Bưởi An Giang Cùi Bưởi Giòn Giòn Cốt Dừa",
       "en": "Vietnamese Pomelo Sweet Soup with Crispy Pith & Coconut Cream"
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Coc_che_buoi.jpeg/1280px-Coc_che_buoi.jpeg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "/dishes/vn-che-buoi.jpg",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Snacks & Desserts"

@@ -1,14 +1,22 @@
 'use client';
 import { useStore } from '@/store/useStore';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import RecipeCard from '@/components/ui/RecipeCard';
 import SmartRecommendationHero from '@/components/home/SmartRecommendationHero';
 import { vietnameseRecipes } from '@/data/vietnameseRecipes';
-import { ChefHat, Store, Sparkles, Filter } from 'lucide-react';
+import { ChefHat, Store, Sparkles, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
+
+const ITEMS_PER_PAGE = 8;
 
 export default function Home() {
   const { language, selectedRegion, selectedDiningMode, userLocationName } = useStore();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Reset pagination to page 1 whenever region, dining mode, or category changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedRegion, selectedDiningMode, selectedCategory]);
 
   const regionNames: Record<string, string> = {
     north: 'Hà Nội & Bắc Bộ',
@@ -41,6 +49,22 @@ export default function Home() {
     });
   }, [selectedRegion, selectedDiningMode, selectedCategory, language]);
 
+  // Total pages and sliced dishes for the catalog
+  const totalPages = Math.ceil(contextualRecipes.length / ITEMS_PER_PAGE) || 1;
+  const paginatedRecipes = useMemo(() => {
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    return contextualRecipes.slice(start, start + ITEMS_PER_PAGE);
+  }, [contextualRecipes, currentPage]);
+
+  const handlePageChange = (newPage: number) => {
+    if (newPage < 1 || newPage > totalPages) return;
+    setCurrentPage(newPage);
+    const el = document.getElementById('catalog-section');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   // Unique categories within current regional scope
   const categories = useMemo(() => {
     const scopedDishes = selectedRegion === 'all' 
@@ -49,13 +73,13 @@ export default function Home() {
     return Array.from(new Set(scopedDishes.map(r => r.category[language])));
   }, [selectedRegion, language]);
 
-  // Split into Home Cooking and Eat Out for structured display
+  // Split into Home Cooking and Eat Out for structured preview display
   const homeCookingDishes = useMemo(() => {
-    return contextualRecipes.filter(r => r.diningType.includes('home_cook')).slice(0, 8);
+    return contextualRecipes.filter(r => r.diningType.includes('home_cook')).slice(0, 4);
   }, [contextualRecipes]);
 
   const streetFoodDishes = useMemo(() => {
-    return contextualRecipes.filter(r => r.diningType.includes('eat_out')).slice(0, 8);
+    return contextualRecipes.filter(r => r.diningType.includes('eat_out')).slice(0, 4);
   }, [contextualRecipes]);
 
   return (
@@ -87,17 +111,17 @@ export default function Home() {
             )}
           </div>
 
-          {/* Category Chips */}
-          <div className="flex flex-wrap gap-2">
+          {/* Category Chips: Horizontal Scrollable on mobile, flex-wrap on desktop */}
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 sm:flex-wrap">
             <button
               onClick={() => setSelectedCategory(null)}
-              className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              className={`px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer flex-shrink-0 ${
                 selectedCategory === null
                   ? 'bg-stone-900 text-white shadow-xs'
                   : 'bg-white text-stone-700 hover:bg-stone-100 border border-stone-200/80 shadow-2xs'
               }`}
             >
-              Tất cả danh mục ({contextualRecipes.length})
+              Tất cả ({contextualRecipes.length})
             </button>
             {categories.map((cat) => {
               const count = contextualRecipes.filter(r => r.category[language] === cat).length;
@@ -106,7 +130,7 @@ export default function Home() {
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(selectedCategory === cat ? null : cat)}
-                  className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+                  className={`px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer flex-shrink-0 ${
                     selectedCategory === cat
                       ? 'bg-orange-600 text-white shadow-xs'
                       : 'bg-white text-stone-700 hover:bg-stone-100 border border-stone-200/80 shadow-2xs'
@@ -119,22 +143,25 @@ export default function Home() {
           </div>
         </section>
 
-        {/* If a category is selected: show direct results */}
+        {/* Catalog Section with ID for smooth scroll-to-top */}
+        <div id="catalog-section" className="scroll-mt-6"></div>
+
+        {/* If a category is selected: show paginated category results */}
         {selectedCategory ? (
           <section className="mb-16">
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-2">
               <div>
                 <h3 className="text-xl font-bold text-stone-900 tracking-tight">
                   {selectedCategory}
                 </h3>
                 <p className="text-xs text-stone-500 mt-0.5">
-                  Tìm thấy {contextualRecipes.length} món ăn kiểm định NIN
+                  Tìm thấy {contextualRecipes.length} món ăn • Trang {currentPage} / {totalPages}
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {contextualRecipes.map((recipe) => (
+              {paginatedRecipes.map((recipe) => (
                 <RecipeCard 
                   key={recipe.id} 
                   recipe={{
@@ -153,12 +180,56 @@ export default function Home() {
                 />
               ))}
             </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-white rounded-2xl border border-stone-200/80 shadow-2xs">
+                <div className="text-xs text-stone-500 font-medium">
+                  Hiển thị {(currentPage - 1) * ITEMS_PER_PAGE + 1} - {Math.min(currentPage * ITEMS_PER_PAGE, contextualRecipes.length)} trên {contextualRecipes.length} món
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-stone-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                  >
+                    <ChevronLeft className="w-3.5 h-3.5" />
+                    <span>Trước</span>
+                  </button>
+
+                  <div className="flex items-center gap-1">
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => (
+                      <button
+                        key={pageNum}
+                        onClick={() => handlePageChange(pageNum)}
+                        className={`w-8 h-8 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                          currentPage === pageNum
+                            ? 'bg-orange-600 text-white shadow-xs'
+                            : 'bg-stone-50 text-stone-700 hover:bg-stone-100'
+                        }`}
+                      >
+                        {pageNum}
+                      </button>
+                    ))}
+                  </div>
+
+                  <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-stone-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                  >
+                    <span>Sau</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              </div>
+            )}
           </section>
         ) : (
           <>
-            {/* Section 1: Home Cooking Section (Cơm Nhà) */}
+            {/* Section 1: Home Cooking Section (Cơm Nhà) Preview */}
             {selectedDiningMode !== 'eat_out' && homeCookingDishes.length > 0 && (
-              <section className="mb-16">
+              <section className="mb-14">
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
@@ -197,9 +268,9 @@ export default function Home() {
               </section>
             )}
 
-            {/* Section 2: Eat Out / Street Food Section */}
+            {/* Section 2: Eat Out / Street Food Section Preview */}
             {selectedDiningMode !== 'home_cook' && streetFoodDishes.length > 0 && (
-              <section className="mb-16">
+              <section className="mb-14">
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
@@ -238,21 +309,21 @@ export default function Home() {
               </section>
             )}
 
-            {/* Section 3: All Regional Dishes Grid */}
+            {/* Section 3: All Regional Dishes Grid with Pagination (8 items/page) */}
             <section className="mb-16">
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-2">
                 <div>
                   <h2 className="text-xl md:text-2xl font-bold text-stone-900 tracking-tight">
                     Tất Cả Món Ăn {regionNames[selectedRegion]} ({contextualRecipes.length})
                   </h2>
                   <p className="text-xs text-stone-500 mt-0.5">
-                    Được kiểm định dinh dưỡng bởi Viện Dinh Dưỡng Quốc Gia (NIN)
+                    Được kiểm định dinh dưỡng bởi Viện Dinh Dưỡng Quốc Gia (NIN) • Trang {currentPage} / {totalPages}
                   </p>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {contextualRecipes.map((recipe) => (
+                {paginatedRecipes.map((recipe) => (
                   <RecipeCard 
                     key={recipe.id} 
                     recipe={{
@@ -271,6 +342,62 @@ export default function Home() {
                   />
                 ))}
               </div>
+
+              {/* Clean Pagination Bar (8 items per page) */}
+              {totalPages > 1 && (
+                <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-white rounded-2xl border border-stone-200/80 shadow-2xs">
+                  <div className="text-xs text-stone-500 font-medium">
+                    Hiển thị {(currentPage - 1) * ITEMS_PER_PAGE + 1} - {Math.min(currentPage * ITEMS_PER_PAGE, contextualRecipes.length)} trên {contextualRecipes.length} món
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <button
+                      onClick={() => handlePageChange(currentPage - 1)}
+                      disabled={currentPage === 1}
+                      className="flex items-center gap-1 px-3.5 py-2 rounded-xl text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-stone-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                    >
+                      <ChevronLeft className="w-3.5 h-3.5" />
+                      <span>Trước</span>
+                    </button>
+
+                    <div className="flex items-center gap-1">
+                      {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => {
+                        // Display concise range if too many pages
+                        if (totalPages > 7) {
+                          if (pageNum !== 1 && pageNum !== totalPages && Math.abs(pageNum - currentPage) > 1) {
+                            if (pageNum === 2 || pageNum === totalPages - 1) {
+                              return <span key={pageNum} className="px-1 text-xs text-stone-400">...</span>;
+                            }
+                            return null;
+                          }
+                        }
+
+                        return (
+                          <button
+                            key={pageNum}
+                            onClick={() => handlePageChange(pageNum)}
+                            className={`w-8 h-8 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                              currentPage === pageNum
+                                ? 'bg-orange-600 text-white shadow-xs'
+                                : 'bg-stone-50 text-stone-700 hover:bg-stone-100 border border-stone-200/60'
+                            }`}
+                          >
+                            {pageNum}
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    <button
+                      onClick={() => handlePageChange(currentPage + 1)}
+                      disabled={currentPage === totalPages}
+                      className="flex items-center gap-1 px-3.5 py-2 rounded-xl text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-stone-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                    >
+                      <span>Sau</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+              )}
             </section>
           </>
         )}

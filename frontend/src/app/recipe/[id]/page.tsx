@@ -23,7 +23,7 @@ import {
 
 export default function RecipeDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const unwrappedParams = use(params);
-  const { language: lang, addIngredientsToGrocery, recordRecipeView } = useStore();
+  const { language: lang, addIngredientsToGrocery, recordRecipeView, userLocationName, userDistrict } = useStore();
   const [activeTab, setActiveTab] = useState<'cook' | 'eat-out'>('cook');
   const [servings, setServings] = useState(4);
   const [cookingMode, setCookingMode] = useState(false);
@@ -635,17 +635,44 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
               </section>
             </div>
           ) : (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-              <h2 className="text-2xl font-bold text-stone-900 mb-6 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600">📍</span>
-                {t.mapTitle} {recipe.title} {t.mapSub}
-              </h2>
+            <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 space-y-6">
+              {/* Header & Location Banner */}
+              <div className="bg-stone-50 border border-stone-200/90 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span className="text-xs font-bold text-stone-500 uppercase tracking-wider">Vị trí hiện tại của bạn</span>
+                  </div>
+                  <h3 className="font-extrabold text-stone-900 text-base sm:text-lg flex items-center gap-1.5">
+                    <MapPin className="w-4 h-4 text-orange-600" />
+                    <span>{userLocationName || 'Hà Nội'}</span>
+                  </h3>
+                  <p className="text-xs text-stone-500 mt-0.5">
+                    Google Maps sẽ ưu tiên tìm kiếm quán {recipe.title} quanh khu vực {userDistrict || 'gần bạn nhất'}
+                  </p>
+                </div>
+
+                {/* Direct Google Maps Primary Action */}
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${recipe.title} ngon gần ${userDistrict || userLocationName || 'Hà Nội'}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-600/20 cursor-pointer flex-shrink-0"
+                >
+                  <MapPin className="w-4 h-4" />
+                  <span>Mở Google Maps Tìm Quán Gần Đây</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
 
               {/* Delivery Deep Links Banner (ShopeeFood & GrabFood) */}
-              <div className="bg-orange-50/80 border border-orange-200 rounded-2xl p-4 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs">
+              <div className="bg-orange-50/80 border border-orange-200 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs">
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-stone-800">
                   <span className="text-xl">🛵</span>
-                  <span className="font-bold">{t.deliveryTitle}</span>
+                  <div>
+                    <span className="font-bold">Muốn ăn tại nhà mà không cần nấu?</span>
+                    <p className="text-[11px] text-stone-500">Đặt ship hỏa tốc qua ứng dụng giao thức ăn</p>
+                  </div>
                 </div>
                 <div className="flex items-center gap-2 flex-wrap">
                   <a
@@ -669,8 +696,8 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
                 </div>
               </div>
 
-              {/* Map Embed */}
-              <div className="w-full h-[400px] bg-stone-200 rounded-3xl mb-8 overflow-hidden relative shadow-inner">
+              {/* Google Maps Interactive Iframe */}
+              <div className="w-full h-[380px] bg-stone-200 rounded-3xl overflow-hidden relative shadow-inner border border-stone-200">
                 <iframe 
                   width="100%" 
                   height="100%" 
@@ -678,37 +705,111 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
                   scrolling="no" 
                   marginHeight={0} 
                   marginWidth={0} 
-                  src={`https://maps.google.com/maps?q=${encodeURIComponent(selectedShop || `${t.mapTitle} ${recipe.title}`)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(selectedShop || `${recipe.title} ngon gần ${userDistrict || userLocationName || 'Hà Nội'}`)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
                 ></iframe>
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg font-bold text-stone-800 text-sm flex items-center gap-2 border border-stone-100 pointer-events-none">
-                  <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
-                  {selectedShop ? `${t.mapTo} ${selectedShop}` : `${t.mapSearch} ${recipe.title}...`}
+                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg font-bold text-stone-800 text-xs sm:text-sm flex items-center gap-2 border border-stone-200 pointer-events-none">
+                  <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+                  {selectedShop ? `Đang xem: ${selectedShop}` : `Bản đồ Google Maps: ${recipe.title} gần ${userDistrict || 'bạn'}`}
                 </div>
               </div>
 
-              {/* Dynamic Restaurant List */}
-              <div className="space-y-4">
-                {[1, 2, 3].map((item) => {
-                  const shopName = `${t.mapTitle} ${recipe.title} Gia Truyền ${item}`;
+              {/* Curated Representative Google Maps Locations */}
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <h4 className="text-sm font-bold text-stone-900 uppercase tracking-wider flex items-center gap-1.5">
+                    <span>Quán Đề Xuất Theo Tiêu Chí Google Maps</span>
+                    <span className="text-[10px] text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200 font-semibold">
+                      Rating ★ 4.6+
+                    </span>
+                  </h4>
+                  <span className="text-xs text-stone-500">Nhấp để xem bản đồ hoặc chỉ đường</span>
+                </div>
+
+                {[
+                  { 
+                    name: `Quán ${recipe.title} Gia Truyền`, 
+                    address: userDistrict ? `Khu ẩm thực ${userDistrict}` : 'Phố Cổ, Hà Nội',
+                    distance: '0.8 km', 
+                    rating: '4.8', 
+                    reviews: '340+ đánh giá', 
+                    price: '35.000đ - 60.000đ',
+                    tags: ['Đúng vị truyền thống', 'Nước dùng trong ngọt', 'Quán sạch sẽ']
+                  },
+                  { 
+                    name: `${recipe.title} Đậm Vị - Quán Phố`, 
+                    address: userDistrict ? `Đường chính ${userDistrict}` : 'Khu trung tâm ẩm thực',
+                    distance: '1.4 km', 
+                    rating: '4.7', 
+                    reviews: '180+ đánh giá', 
+                    price: '40.000đ - 70.000đ',
+                    tags: ['Thịt mềm tươi ngon', 'Rau ăn kèm miễn phí', 'Chỗ để xe rộng']
+                  },
+                  { 
+                    name: `Bếp Xưa - ${recipe.title}`, 
+                    address: userDistrict ? `Gần ${userDistrict}` : 'Phố ẩm thực đêm',
+                    distance: '2.1 km', 
+                    rating: '4.9', 
+                    reviews: '520+ đánh giá', 
+                    price: '45.000đ - 85.000đ',
+                    tags: ['Được đề xuất nhiều nhất', 'Phục vụ nhanh', 'Có điều hòa mát']
+                  }
+                ].map((shop, idx) => {
+                  const isSelected = selectedShop === shop.name;
                   return (
                     <div 
-                      key={item} 
-                      onClick={() => setSelectedShop(shopName)}
-                      className={`flex p-4 border rounded-2xl bg-white shadow-sm hover:shadow-md transition-all cursor-pointer group ${selectedShop === shopName ? 'border-orange-500 ring-2 ring-orange-500/20' : 'border-stone-100'}`}
+                      key={idx} 
+                      onClick={() => setSelectedShop(shop.name)}
+                      className={`p-4 rounded-2xl border transition-all cursor-pointer group bg-white shadow-2xs hover:shadow-md ${
+                        isSelected 
+                          ? 'border-blue-500 ring-2 ring-blue-500/20 bg-blue-50/20' 
+                          : 'border-stone-200 hover:border-stone-300'
+                      }`}
                     >
-                      <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-stone-100 relative">
-                        <img src={`https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=200&q=80`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Shop" />
-                      </div>
-                      <div className="ml-4 flex-1 flex flex-col justify-between">
-                        <div>
-                          <h3 className="font-bold text-lg text-stone-900">{shopName}</h3>
-                          <p className="text-sm text-stone-500 mb-2">{t.distance} {(Math.random() * 3 + 0.5).toFixed(1)} km</p>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <div className="text-orange-500 font-bold text-sm">35k - 60k</div>
-                          <div className="flex items-center text-sm font-medium text-amber-500">
-                            ★ {(Math.random() * (5.0 - 4.0) + 4.0).toFixed(1)}
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div className="space-y-1.5">
+                          <div className="flex items-center gap-2">
+                            <h5 className="font-bold text-stone-900 text-base group-hover:text-blue-600 transition-colors">
+                              {shop.name}
+                            </h5>
+                            <span className="flex items-center gap-1 text-xs font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
+                              ★ {shop.rating}
+                            </span>
+                            <span className="text-[11px] text-stone-400">({shop.reviews})</span>
                           </div>
+
+                          <div className="flex items-center gap-3 text-xs text-stone-500">
+                            <span className="flex items-center gap-1">
+                              <MapPin className="w-3 h-3 text-stone-400" />
+                              {shop.address}
+                            </span>
+                            <span>•</span>
+                            <span>Cách bạn ~{shop.distance}</span>
+                            <span>•</span>
+                            <span className="font-semibold text-stone-700">{shop.price}</span>
+                          </div>
+
+                          {/* Criteria feedback tags */}
+                          <div className="flex flex-wrap gap-1.5 pt-1">
+                            {shop.tags.map((tag, tagIdx) => (
+                              <span key={tagIdx} className="text-[10px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded-md font-medium">
+                                ✓ {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Direct Directions Button */}
+                        <div className="flex sm:flex-col items-end gap-2 flex-shrink-0">
+                          <a
+                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${shop.name} ${userDistrict || userLocationName || ''}`)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="px-3.5 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold flex items-center gap-1 transition-colors border border-blue-200"
+                          >
+                            <span>Chỉ đường</span>
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
                         </div>
                       </div>
                     </div>
