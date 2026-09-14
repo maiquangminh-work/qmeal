@@ -19,6 +19,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import { useMemo } from 'react';
+import UserAvatar from '@/components/ui/UserAvatar';
 
 export default function AppSidebar() {
   const pathname = usePathname();
@@ -32,7 +33,9 @@ export default function AppSidebar() {
     groceryItems,
     pantryIngredients,
     viewHistory,
-    toggleGroceryItem
+    toggleGroceryItem,
+    userProfile,
+    setProfileModalOpen
   } = useStore();
 
   // Find recent dishes from viewHistory
@@ -271,18 +274,38 @@ export default function AppSidebar() {
           )}
         </div>
 
-        {/* Sidebar Footer */}
-        <div className="p-3 border-t border-stone-100 bg-stone-50/60 text-xs text-stone-600 flex-shrink-0">
+        {/* Sidebar Footer with User Profile */}
+        <div className="p-3 border-t border-stone-200/80 bg-stone-50/80 text-xs text-stone-600 flex-shrink-0 space-y-2.5">
           {!isSidebarCollapsed ? (
-            <div className="flex items-center justify-between text-[11px]">
-              <span className="flex items-center gap-1 font-medium">
-                <Sparkles className="w-3 h-3 text-orange-600" /> Dữ liệu chuẩn NIN
-              </span>
-              <span className="text-stone-600 font-semibold">123 Món Việt</span>
-            </div>
+            <>
+              {/* User Profile Mini Card */}
+              <div 
+                onClick={() => setProfileModalOpen(true)}
+                className="p-2 rounded-2xl bg-white border border-stone-200/80 hover:border-orange-400 flex items-center gap-2.5 cursor-pointer transition-all shadow-xs hover:shadow-sm group"
+                title="Bấm để tùy chỉnh hồ sơ & Avatar"
+              >
+                <UserAvatar size="sm" showBadge={true} />
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-bold text-stone-900 truncate group-hover:text-orange-600 transition-colors">
+                    {userProfile.name}
+                  </p>
+                  <p className="text-[10px] font-bold text-orange-600">
+                    {userProfile.roleBadge}
+                  </p>
+                </div>
+                <span className="text-[11px] text-stone-400 group-hover:text-orange-600 font-medium pr-1">⚙️</span>
+              </div>
+
+              <div className="flex items-center justify-between text-[11px] px-1 text-stone-500">
+                <span className="flex items-center gap-1 font-medium">
+                  <Sparkles className="w-3 h-3 text-orange-600" /> Dữ liệu chuẩn NIN
+                </span>
+                <span className="text-stone-600 font-semibold">123 Món Việt</span>
+              </div>
+            </>
           ) : (
-            <div className="flex justify-center text-orange-600">
-              <Sparkles className="w-4 h-4" />
+            <div className="flex flex-col items-center gap-2">
+              <UserAvatar size="xs" showBadge={false} />
             </div>
           )}
         </div>

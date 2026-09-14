@@ -18,6 +18,14 @@ export interface GroceryItem {
   checked: boolean;
 }
 
+export interface UserProfile {
+  name: string;
+  avatarType: 'emoji' | 'custom';
+  avatarValue: string;
+  avatarBg: string;
+  roleBadge: string;
+}
+
 interface UserState {
   favorites: SavedRecipe[];
   toggleFavorite: (recipe: SavedRecipe | { id: number | string; [key: string]: any }) => void;
@@ -33,6 +41,11 @@ interface UserState {
   pantryIngredients: string[];
   setPantryIngredients: (list: string[]) => void;
   togglePantryIngredient: (item: string) => void;
+
+  userProfile: UserProfile;
+  setUserProfile: (patch: Partial<UserProfile>) => void;
+  isProfileModalOpen: boolean;
+  setProfileModalOpen: (open: boolean) => void;
 
   isSidebarOpen: boolean;
   setSidebarOpen: (open: boolean) => void;
@@ -127,6 +140,19 @@ export const useStore = create<UserState>()(
           return { pantryIngredients: [...state.pantryIngredients, item] };
         }
       }),
+
+      userProfile: {
+        name: 'Bếp Trưởng QMeal',
+        avatarType: 'emoji',
+        avatarValue: '👨‍🍳',
+        avatarBg: 'from-orange-500 to-amber-500',
+        roleBadge: 'Yêu Bếp Việt',
+      },
+      setUserProfile: (patch) => set((state) => ({
+        userProfile: { ...state.userProfile, ...patch }
+      })),
+      isProfileModalOpen: false,
+      setProfileModalOpen: (open) => set({ isProfileModalOpen: open }),
 
       isSidebarOpen: false,
       setSidebarOpen: (open) => set({ isSidebarOpen: open }),

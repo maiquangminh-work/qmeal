@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useStore } from '@/store/useStore';
 import { useEffect, useState, useRef } from 'react';
 import { Menu } from 'lucide-react';
+import UserAvatar from '@/components/ui/UserAvatar';
 
 export default function Navbar() {
   const router = useRouter();
@@ -247,9 +248,7 @@ export default function Navbar() {
         </div>
 
         {/* User Profile Avatar */}
-        <div className="w-9 h-9 rounded-full bg-stone-200 overflow-hidden border-2 border-orange-500 cursor-pointer shadow-sm flex-shrink-0">
-          <img src="https://i.pravatar.cc/150?img=11" alt="User Avatar" className="w-full h-full object-cover" />
-        </div>
+        <UserAvatar size="md" showBadge={true} />
       </div>
     </nav>
   );

@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import AppSidebar from "@/components/layout/AppSidebar";
 import ClientFooter from "@/components/layout/ClientFooter";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
+import UserProfileModal from "@/components/ui/UserProfileModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,6 +48,7 @@ export default function RootLayout({
         </main>
         <ClientFooter />
         <MobileBottomNav />
+        <UserProfileModal />
       </body>
     </html>
   );
