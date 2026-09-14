@@ -1,0 +1,93 @@
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
+
+export interface SavedRecipe {
+  id: number | string;
+  title: string;
+  image: string;
+  time: string;
+  rating: number | string;
+  tags: string[];
+}
+
+export interface GroceryItem {
+  id: string;
+  name: string;
+  amount: string;
+  recipeTitle: string;
+  checked: boolean;
+}
+
+interface UserState {
+  favorites: SavedRecipe[];
+  toggleFavorite: (recipe: SavedRecipe | { id: number | string; [key: string]: any }) => void;
+  isFavorite: (id: number | string) => boolean;
+  
+  groceryItems: GroceryItem[];
+  addIngredientsToGrocery: (recipeTitle: string, ingredients: { name: string; measure?: string; amount?: string }[]) => void;
+  toggleGroceryItem: (id: string) => void;
+  removeGroceryItem: (id: string) => void;
+  clearCompletedGrocery: () => void;
+  clearAllGrocery: () => void;
+
+  language: 'vi' | 'en';
+  setLanguage: (lang: 'vi' | 'en') => void;
+}
+
+export const useStore = create<UserState>()(
+  persist(
+    (set, get) => ({
+      favorites: [],
+      toggleFavorite: (item) => set((state) => {
+        const idStr = String(item.id);
+        const exists = state.favorites.some(f => String(f.id) === idStr);
+        if (exists) {
+          return { favorites: state.favorites.filter(f => String(f.id) !== idStr) };
+        } else {
+          const newFav: SavedRecipe = {
+            id: item.id,
+            title: item.title || 'Món ăn ngon',
+            image: item.image || '',
+            time: item.time || '30 min',
+            rating: item.rating || 4.8,
+            tags: item.tags || []
+          };
+          return { favorites: [...state.favorites, newFav] };
+        }
+      }),
+      isFavorite: (id) => get().favorites.some(f => String(f.id) === String(id)),
+
+      groceryItems: [],
+      addIngredientsToGrocery: (recipeTitle, ingredients) => set((state) => {
+        const newItems: GroceryItem[] = ingredients
+          .filter(ing => ing.name && ing.name.trim() !== '')
+          .map((ing, idx) => ({
+            id: `${Date.now()}-${idx}-${Math.random().toString(36).substr(2, 4)}`,
+            name: ing.name.trim(),
+            amount: ing.measure || ing.amount || 'Đủ dùng',
+            recipeTitle: recipeTitle || 'Món ăn',
+            checked: false,
+          }));
+        return { groceryItems: [...state.groceryItems, ...newItems] };
+      }),
+      toggleGroceryItem: (id) => set((state) => ({
+        groceryItems: state.groceryItems.map(item =>
+          item.id === id ? { ...item, checked: !item.checked } : item
+        )
+      })),
+      removeGroceryItem: (id) => set((state) => ({
+        groceryItems: state.groceryItems.filter(item => item.id !== id)
+      })),
+      clearCompletedGrocery: () => set((state) => ({
+        groceryItems: state.groceryItems.filter(item => !item.checked)
+      })),
+      clearAllGrocery: () => set({ groceryItems: [] }),
+
+      language: 'vi',
+      setLanguage: (lang) => set({ language: lang }),
+    }),
+    {
+      name: 'qmeal-user-preferences',
+    }
+  )
+);
