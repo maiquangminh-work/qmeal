@@ -32,6 +32,12 @@ interface UserState {
 
   language: 'vi' | 'en';
   setLanguage: (lang: 'vi' | 'en') => void;
+
+  selectedRegion: 'north' | 'central' | 'south' | 'all';
+  setRegion: (region: 'north' | 'central' | 'south' | 'all') => void;
+
+  selectedDiningMode: 'all' | 'home_cook' | 'eat_out';
+  setDiningMode: (mode: 'all' | 'home_cook' | 'eat_out') => void;
 }
 
 export const useStore = create<UserState>()(
@@ -85,6 +91,12 @@ export const useStore = create<UserState>()(
 
       language: 'vi',
       setLanguage: (lang) => set({ language: lang }),
+
+      selectedRegion: 'north',
+      setRegion: (region) => set({ selectedRegion: region }),
+
+      selectedDiningMode: 'all',
+      setDiningMode: (mode) => set({ selectedDiningMode: mode }),
     }),
     {
       name: 'qmeal-user-preferences',

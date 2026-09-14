@@ -1,9 +1,9 @@
 # TÀI LIỆU YÊU CẦU NGHIỆP VỤ (BRD) & KIẾN TRÚC KỸ THUẬT DỰ ÁN QMEAL
 > **Dự án:** QMeal - Nền Tảng Gợi Ý Món Ăn & Dinh Dưỡng Chuẩn Vị Việt Nam  
-> **Phiên bản:** 2.1.0 (Bản Hợp Nhất Hoàn Chỉnh - 123 Món Ăn Kiểm Định NIN & Trực Quan Hóa Nguồn)  
+> **Phiên bản:** 2.2.0 (Hệ Thống Gợi Ý Thông Minh Theo Vùng Miền, Phân Định Tự Nấu/Ăn Quán & Chuẩn Thiết Kế Impeccable)  
 > **Cập nhật lần cuối:** 14/09/2026  
 > **Tác giả:** Đội ngũ phát triển QMeal  
-> **Mục đích tài liệu:** Lưu trữ toàn bộ tri thức nghiệp vụ, thuật toán, kiến trúc hệ thống và quy chuẩn dữ liệu để bất kỳ máy tính hoặc kỹ sư nào đọc vào cũng có thể nắm bắt 100% nghiệp vụ và triển khai/vận hành hệ thống một cách chính xác kể cả khi chưa kéo mã nguồn.
+> **Mục đích tài liệu:** Lưu trữ toàn bộ tri thức nghiệp vụ, thuật toán gợi ý (Recommendation Engine), kiến trúc hệ thống, bản đồ hóa ẩm thực vùng miền và quy chuẩn giao diện để bất kỳ máy tính hoặc kỹ sư nào đọc vào cũng có thể nắm bắt 100% nghiệp vụ và triển khai/vận hành hệ thống một cách chính xác kể cả khi chưa kéo mã nguồn.
 
 ---
 
@@ -18,6 +18,8 @@
 3. **Minh bạch dinh dưỡng khoa học & Nguồn công thức:** 100% số liệu calo, protein, fat, carbs được đối chiếu từ **Viện Dinh Dưỡng Quốc Gia Việt Nam (NIN)**; công thức có trích dẫn di sản ẩm thực rõ ràng hiển thị trực tiếp trên thẻ món ăn và trang chi tiết.
 4. **Hình ảnh thực tế chuẩn xác 100%:** Toàn bộ 123 món ăn đều có ảnh thật đã nấu chín, tuyệt đối không trùng lặp, không lấy ảnh sinh học/thực vật thô, có cơ chế tự động fallback chống lỗi mạng.
 5. **Chuẩn hóa cho người Việt & Khách quốc tế:** Hỗ trợ song ngữ hoàn hảo (Tiếng Việt & English), tôn vinh văn hóa ẩm thực 3 miền.
+6. **Hệ thống Gợi Ý Thông Minh Đa Chiều (Smart Recommendation Engine):** Tự động tính toán điểm phù hợp kết hợp Khung giờ sinh học, Khẩu vị & Vị trí địa lý (Hà Nội & Bắc Bộ là trọng tâm mặc định), Phương thức dùng bữa (Tự nấu vs Ăn ngoài/Đặt ship), và Mục tiêu dinh dưỡng.
+7. **Trải nghiệm Giao diện Impeccable (Editorial UI/UX):** Loại bỏ triệt để các emoji vụn vặt và phong cách template AI; xây dựng giao diện sang trọng, phân cấp thông tin chuẩn tạp chí ẩm thực, tối ưu thao tác một tay.
 
 ### 1.2. Chân dung người dùng mục tiêu (User Personas)
 - **Persona A - Dân văn phòng bận rộn:** Cần quyết định nhanh bữa trưa trong 3 phút, ưu tiên quán ăn gần công ty hoặc đặt ship giao tận nơi.
@@ -172,6 +174,66 @@
 
 ---
 
+### 3.11. Hệ Thống Gợi Ý Thông Minh Đa Chiều (Smart Recommendation Engine - `SmartRecommendationHero.tsx`)
+- **Vấn đề giải quyết:** Người dùng không muốn thấy danh sách món ăn ngẫu nhiên hoặc món ăn không thể tìm/nấu được ở khu vực sinh sống của mình (ví dụ người ở Hà Nội lại bị gợi ý món ăn chỉ có ở Sài Gòn/Miền Tây). Đồng thời, nhu cầu tự nấu tại nhà khác biệt hoàn toàn với nhu cầu đi ăn quán/gọi ship.
+- **Mô hình Chấm điểm Phù hợp Đa chiều (Multi-factor Scoring Engine):**
+  Tổng điểm $S$ của một món ăn được tính theo hàm mục tiêu:
+  $$S = S_{\text{time}} + S_{\text{region}} + S_{\text{dining}} + S_{\text{criteria}}$$
+  1. **Khớp Bữa Ăn Theo Giờ Sinh Học ($S_{\text{time}}$ - Trọng số: 30 điểm):**
+     - Bữa sáng (06:00 - 10:00), Bữa trưa (10:00 - 14:00), Xế chiều (14:00 - 17:00), Bữa tối (17:00 - 21:00), Ăn đêm (21:00 - 05:00).
+     - Nếu món ăn có chứa tag bữa ăn tương ứng trong `mealType`: $+30$ điểm.
+  2. **Khớp Vị Trí Địa Lý & Khẩu Vị Vùng Miền ($S_{\text{region}}$ - Trọng số quyết định):**
+     - Mặc định toàn hệ thống ưu tiên: `north` (Hà Nội & Bắc Bộ).
+     - Món đúng vùng đã chọn (`recipe.region === selectedRegion`): $+40$ điểm.
+     - Món quốc dân phổ biến cả nước (`recipe.region === 'national'`): $+25$ điểm.
+     - Món thuộc vùng miền khác (ví dụ đang ở Hà Nội nhưng món thuộc Miền Nam): $-50$ điểm (trừ phạt nặng để không xuất hiện sai lệch).
+  3. **Khớp Phương Thức Dùng Bữa ($S_{\text{dining}}$ - Trọng số: 25 điểm):**
+     - Người dùng chọn "Tự nấu tại nhà" (`home_cook`) hoặc "Ra quán / Đặt ship" (`eat_out`):
+       - Món có hỗ trợ phương thức: $+25$ điểm.
+       - Món không hỗ trợ (ví dụ món nước lèo phức tạp không phù hợp tự nấu): $-40$ điểm.
+  4. **Khớp Tiêu Chí Dinh Dưỡng & Thời Gian Nấu ($S_{\text{criteria}}$ - Trọng số: 20 điểm):**
+     - **Nấu nhanh $\le 25$ phút:** Món có thời lượng chế biến $\le 25\text{p} \rightarrow +20$ điểm.
+     - **Thanh đạm ít calo:** Calo $\le 450\text{ kcal}$ hoặc có tag "Thanh đạm"/"Ít béo" $\rightarrow +20$ điểm.
+     - **Giàu đạm protein:** Protein $\ge 25\text{g}$ hoặc có tag "Giàu đạm" $\rightarrow +20$ điểm.
+     - **Món mặn đưa cơm:** Thuộc nhóm "Cơm Gia Đình", "Món Kho", "Món Xào" $\rightarrow +20$ điểm.
+- **Trình diễn kết quả (Editorial Hero Display):**
+  - Trích xuất Top 4 món ăn có điểm số $S$ cao nhất.
+  - Tự động sinh dòng lý do gợi ý biên tập cá nhân hóa (Personalized Match Reason), ví dụ:
+    - *"Chuẩn vị Hà Nội & Bắc Bộ • Dễ nấu tại nhà"*
+    - *"Món ngon phố xá Hà Nội • Phù hợp ăn trưa nhanh"*
+  - Cho phép người dùng chuyển đổi nhanh giữa các vùng miền (`Hà Nội & Bắc Bộ`, `Đà Nẵng & Miền Trung`, `Sài Gòn & Nam Bộ`, `Toàn Quốc`) và phương thức dùng bữa ngay tại Hero Header.
+
+---
+
+### 3.12. Quy Chuẩn Phân Định Vùng Miền & Phương Thức Dùng Bữa
+- **Dữ liệu 123 món ăn được gắn nhãn độc quyền:**
+  - `region`: `'north'` (32 món đặc trưng Bắc Bộ), `'central'` (12 món miền Trung), `'south'` (25 món Nam Bộ), `'national'` (54 món quốc dân phổ biến rộng rãi).
+  - `diningType`: `home_cook` (69 món dễ nấu tại gia), `eat_out` (67 món ăn quán/gọi ship tiện lợi). Nhiều món có cả 2 nhãn.
+- **Đồng bộ hóa toàn bộ các tính năng:**
+  - **Trang chủ (`/`):** Tự động lọc toàn bộ các hàng danh mục món mặn, món quán xá theo đúng Vùng miền và Phương thức đang chọn.
+  - **Vòng quay Gacha (`/gacha`):** Tự động lọc hồ bơi món ăn (Dish Pool) theo vùng miền của người dùng, đảm bảo khi người ở Hà Nội quay hòm sẽ không bao giờ ra món ăn chỉ có ở miền Nam.
+
+---
+
+### 3.13. Triết Lý Thiết Kế Impeccable UI (Editorial Culinary Interface)
+- **Đoạn tuyệt với "AI Template Clutter":**
+  - Loại bỏ hoàn toàn việc nhồi nhét icon cảm xúc vô tội vạ (`🔥`, `⚡`, `🛒`, `🏛️`, `📖`, `🎯`, `✨`) ở các tiêu đề và nút bấm.
+  - Chuyển đổi sang phong cách **Tạp chí Ẩm thực Đương đại (Contemporary Culinary Editorial)**: Tập trung vào typography sắc nét, viền mỏng tinh tế (`border-stone-200/80`), nền kem ấm (`bg-stone-50`), màu xanh ngọc lục bảo nhã nhặn (`emerald-700/800`) và cam đất ấm áp (`orange-600`).
+- **Phân cấp thị giác chuẩn mực:**
+  - Tiêu đề sử dụng font Serif/Sans kết hợp hài hòa, tiêu đề phụ hiển thị ngữ cảnh văn hóa và xuất xứ vùng miền trang nhã.
+  - Thẻ món ăn (Recipe Card) có tỉ lệ khung hình `aspect-[16/10]` hiển thị món ăn đầy đặn, chân thực; huy hiệu xuất xứ và nguồn kiểm định Viện Dinh Dưỡng NIN được bố trí dạng viên thuốc (pill badge) thanh lịch, không gây rối mắt.
+
+---
+
+### 3.14. Cơ Chế Ảnh Chống Lỗi Tuyệt Đối (Zero Broken Image Architecture)
+- **Bối cảnh nguyên nhân:** Các máy chủ lưu trữ ảnh công cộng (như Wikimedia Commons) thường kích hoạt tính năng kiểm tra HTTP `Referer` từ trình duyệt của người dùng để chống hotlinking, dẫn đến mã lỗi HTTP 403 Forbidden hoặc làm vỡ ảnh trên `localhost:3000` và các tên miền triển khai.
+- **Giải pháp kiên cố 3 tầng (3-Tier Resilience):**
+  1. **Tầng 1 - CDN Ẩm thực Tốc độ Cao:** Chuyển đổi toàn bộ đường dẫn ảnh sang máy chủ CDN ẩm thực Unsplash đã được kiểm định chất lượng cao, hỗ trợ chuẩn nén WebP và không chặn Referer.
+  2. **Tầng 2 - Xóa Referer Trình Duyệt:** Toàn bộ các thẻ `<img>` trên hệ thống đều được trang bị `referrerPolicy="no-referrer"` và `crossOrigin="anonymous"`. Trình duyệt sẽ gửi request ẩn danh, vô hiệu hóa hoàn toàn cơ chế chặn hotlink của mọi server ngoài.
+  3. **Tầng 3 - Tự Động Hoán Đổi Ảnh Dự Phòng (Stateful onError Fallback):** Trang bị state `hasError` trong Component `RecipeCard` và `GachaPage`. Khi có bất kỳ sự cố mạng hoặc hình ảnh nào không tải được, component ngay lập tức hoán đổi sang ảnh ẩm thực chuẩn đã lưu trữ mà không bao giờ để lộ khung ảnh vỡ khó chịu cho người dùng.
+
+---
+
 ## 4. MÔ HÌNH DỮ LIỆU & SCHEMA (DATA STRUCTURES)
 
 ### 4.1. TypeScript Interface Chuẩn (`vietnameseRecipes.ts`)
@@ -182,12 +244,14 @@ export interface MasterRecipe {
     vi: string;                       // Tên tiếng Việt (VD: "Phở Bò Hà Nội")
     en: string;                       // Tên tiếng Anh (VD: "Hanoi Beef Pho")
   };
-  image: string;                      // Link ảnh chất lượng cao đã kiểm định (HTTP 200)
+  image: string;                      // Link ảnh chất lượng cao đã kiểm định (HTTP 200, Unsplash CDN)
   category: {
     vi: string;                       // "Món Nước", "Cơm Gia Đình", "Món Cuốn"...
     en: string;                       // "Noodle Soups", "Rice Dishes", "Rolls"...
   };
   mealType: ('breakfast' | 'lunch' | 'dinner' | 'snack')[]; // Khung bữa ăn phù hợp
+  region?: 'north' | 'central' | 'south' | 'national';      // Phân vùng ẩm thực (Bắc, Trung, Nam, Toàn quốc)
+  diningType?: ('home_cook' | 'eat_out')[];                 // Thích hợp tự nấu tại nhà hay ra quán/ship
   dietaryTags: {
     vi: string[];                     // ["Giàu đạm", "Ít béo", "Nước dùng trong"]
     en: string[];                     // ["High Protein", "Low Fat", "Clear Broth"]
@@ -226,6 +290,10 @@ export interface MasterRecipe {
 interface AppState {
   language: 'vi' | 'en';
   setLanguage: (lang: 'vi' | 'en') => void;
+  selectedRegion: 'all' | 'north' | 'central' | 'south'; // Vùng miền mặc định: 'north'
+  setRegion: (region: 'all' | 'north' | 'central' | 'south') => void;
+  selectedDiningMode: 'all' | 'home_cook' | 'eat_out';    // Phương thức: 'all' | 'home_cook' | 'eat_out'
+  setDiningMode: (mode: 'all' | 'home_cook' | 'eat_out') => void;
   favorites: string[];                // Danh sách recipe IDs yêu thích
   toggleFavorite: (id: string) => void;
   groceryList: {
@@ -268,12 +336,13 @@ Cooking_Choosing/
         │   └── api/               # Serverless API Routes (/gacha, /fridge, /recipe, /search)
         ├── components/            # UI Components tái sử dụng
         │   ├── home/HeroSection.tsx
+        │   ├── home/SmartRecommendationHero.tsx # Hero Gợi Ý Thông Minh Đa Chiều (Vùng miền, Giờ sinh học, Dining Mode)
         │   ├── layout/Navbar.tsx
         │   ├── layout/MobileBottomNav.tsx
         │   ├── layout/Footer.tsx
-        │   └── ui/RecipeCard.tsx
+        │   └── ui/RecipeCard.tsx  # Thẻ món ăn Impeccable UI, chống vỡ ảnh 3 tầng, badge nguồn NIN
         ├── data/
-        │   └── vietnameseRecipes.ts # 21 Món ăn Việt Nam chuẩn hóa dữ liệu Viện Dinh Dưỡng NIN
+        │   └── vietnameseRecipes.ts # 123 Món ăn Việt Nam chuẩn hóa dữ liệu Viện Dinh Dưỡng NIN, gắn nhãn vùng & cách dùng bữa
         ├── store/
         │   └── useStore.ts        # Zustand Global State (ngôn ngữ, giỏ hàng, yêu thích)
         └── utils/

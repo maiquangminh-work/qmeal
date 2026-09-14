@@ -10,7 +10,7 @@ import { Dices, Volume2, VolumeX, Sparkles, ChefHat, RotateCcw, Flame, Clock, Ar
 const CARD_WIDTH = 190;
 
 export default function GachaPage() {
-  const { language } = useStore();
+  const { language, selectedRegion } = useStore();
   const reelRef = useRef<HTMLDivElement>(null);
 
   const [isSpinning, setIsSpinning] = useState(false);
@@ -22,30 +22,32 @@ export default function GachaPage() {
   const t = {
     vi: {
       back: 'Quay lại Trang Chủ',
-      title: 'Vòng Quay Gacha Ẩm Thực',
+      backBtn: '← Quay lại Trang Chủ',
+      title: 'Hôm Nay Ăn Gì?',
       badge: 'Vòng Quay May Mắn',
-      desc: 'Không biết hôm nay ăn gì? Hãy để vòng quay chọn giúp bạn bữa ăn chuẩn vị!',
+      desc: 'Băng chuyền ẩm thực tự động lướt và dừng lại ở món ăn hoàn hảo nhất cho bữa ăn của bạn!',
       filterMeal: 'Bữa ăn:',
       all: 'Tất cả',
-      breakfast: 'Sáng',
-      lunch: 'Trưa',
-      snack: 'Xế / Vặt',
-      dinner: 'Tối',
-      spinBtn: '🎲 QUAY CHỌN MÓN NGAY',
-      spinning: 'ĐANG QUAY SỐ MÓN ĂN...',
-      soundHint: 'Âm thanh lách cách hồi hộp & pháo hoa chúc mừng',
-      congrats: 'Chúc mừng! Món trúng thưởng hôm nay:',
-      cookNow: 'Xem Cách Nấu Ngay',
+      breakfast: 'Bữa Sáng',
+      lunch: 'Bữa Trưa',
+      snack: 'Ăn Vặt',
+      dinner: 'Bữa Tối',
+      spinBtn: '🎲 QUAY NGAY ĐỂ CHỌN MÓN',
+      spinning: 'ĐANG QUAY VÒNG MAY MẮN...',
+      soundHint: 'Âm thanh cơ học lách cách hồi hộp & pháo hoa chúc mừng',
+      congrats: 'Chúc mừng bạn! Bữa ăn hôm nay là:',
+      cookNow: 'Xem Công Thức Ngay',
       spinAgain: 'Quay Lại Lần Nữa',
       calUnit: 'kcal (Chuẩn NIN)',
       difficulty: 'Độ khó:',
-      time: 'thời gian',
+      time: 'phút',
     },
     en: {
       back: 'Back to Home',
-      title: 'Lucky Meal Reel',
-      badge: 'Lucky Meal Box',
-      desc: "Don't know what to eat today? Let the lucky reel pick your authentic Vietnamese meal!",
+      backBtn: '← Back to Home',
+      title: 'What To Eat Today?',
+      badge: 'Lucky Meal Reel',
+      desc: 'Watch the culinary reel spin smoothly and lock onto your perfect winning meal!',
       filterMeal: 'Meal:',
       all: 'All',
       breakfast: 'Breakfast',
@@ -64,10 +66,16 @@ export default function GachaPage() {
     }
   }[language];
 
-  // Filter pool by meal type
+  // Filter pool by meal type and selected region
   const getFilteredPool = () => {
-    if (mealFilter === 'all') return vietnameseRecipes;
-    return vietnameseRecipes.filter(r => r.mealType.includes(mealFilter));
+    let pool = vietnameseRecipes;
+    if (selectedRegion !== 'all') {
+      pool = pool.filter(r => r.region === selectedRegion || r.region === 'national');
+    }
+    if (mealFilter !== 'all') {
+      pool = pool.filter(r => r.mealType.includes(mealFilter));
+    }
+    return pool.length > 0 ? pool : vietnameseRecipes;
   };
 
   // Prepare a randomized reel of 45 items
@@ -255,7 +263,12 @@ export default function GachaPage() {
                     <img
                       src={item.image}
                       alt={item.title[language] || item.title.vi}
+                      referrerPolicy="no-referrer"
+                      crossOrigin="anonymous"
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80';
+                      }}
                     />
                     <span className="absolute top-1.5 left-1.5 text-[10px] font-bold px-2 py-0.5 rounded-md bg-black/70 text-amber-300">
                       {item.time}
@@ -291,7 +304,12 @@ export default function GachaPage() {
                 <img
                   src={winningDish.image}
                   alt={winningDish.title[language] || winningDish.title.vi}
+                  referrerPolicy="no-referrer"
+                  crossOrigin="anonymous"
                   className="w-24 h-24 rounded-xl object-cover shadow-md flex-shrink-0"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80';
+                  }}
                 />
                 <div className="space-y-1.5 min-w-0 flex-1">
                   <h3 className="text-lg font-extrabold text-white truncate">

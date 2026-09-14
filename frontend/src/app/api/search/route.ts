@@ -35,6 +35,8 @@ export async function GET(request: NextRequest) {
       time: r.time,
       rating: 4.9,
       calories: r.calories,
+      region: r.region,
+      diningType: r.diningType,
       verified: true,
       nutritionSource: r.nutritionSource[lang] || r.nutritionSource.vi,
       recipeSource: r.recipeSource[lang] || r.recipeSource.vi

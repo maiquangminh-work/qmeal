@@ -10,6 +10,8 @@ export interface MasterRecipe {
     en: string;
   };
   mealType: ('breakfast' | 'lunch' | 'dinner' | 'snack')[];
+  region: 'north' | 'central' | 'south' | 'national';
+  diningType: ('home_cook' | 'eat_out')[];
   dietaryTags: {
     vi: string[];
     en: string[];
@@ -52,7 +54,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Phở Bò Tái Chín Hà Nội",
       "en": "Traditional Hanoi Beef Pho"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Ph%E1%BB%9F_b%C3%B2%2C_C%E1%BA%A7u_Gi%E1%BA%A5y%2C_H%C3%A0_N%E1%BB%99i.jpg/1280px-Ph%E1%BB%9F_b%C3%B2%2C_C%E1%BA%A7u_Gi%E1%BA%A5y%2C_H%C3%A0_N%E1%BB%99i.jpg",
+    "image": "https://images.unsplash.com/photo-1548946526-f69e2424cf45?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -167,7 +169,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Season broth with premium fish sauce, sea salt, and rock sugar for natural balanced sweetness.",
         "Blanch rice noodles in hot water, place into bowls, top with thinly sliced fresh beef and scallions, then ladle boiling aromatic broth over."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-bo-hue",
@@ -175,7 +181,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Bò Huế Đậm Vị Cố Đô",
       "en": "Hue Style Spicy Beef Noodle Soup"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bun-Bo-Hue-from-Huong-Giang-2011.jpg/1280px-Bun-Bo-Hue-from-Huong-Giang-2011.jpg",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -289,7 +295,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Once beef shank is tender, remove and plunge into cold water to firm up before slicing thin.",
         "Assemble thick noodles in bowls with beef shank, pork hock, crab balls, and ladle the fiery, fragrant lemongrass broth over."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-com-tam",
@@ -297,7 +307,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cơm Tấm Sườn Bì Chả Sài Gòn",
       "en": "Saigon Broken Rice with Grilled Pork Chop"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/C%C6%A1m_T%E1%BA%A5m%2C_Da_Nang%2C_Vietnam.jpg/1280px-C%C6%A1m_T%E1%BA%A5m%2C_Da_Nang%2C_Vietnam.jpg",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Rice Dishes"
@@ -404,7 +414,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Grill pork chops over hot coals until caramelized, golden-brown, and slightly charred at edges.",
         "Plate broken rice, place savory pork chop, egg meatloaf slice, shredded pork skin, drizzle scallion oil, and serve with sweet-sour fish sauce."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-cha",
@@ -412,7 +426,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Chả Nướng Than Hoa Hà Nội",
       "en": "Hanoi Charcoal Grilled Pork Patties with Rice Noodles"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/B%C3%BAn_ch%E1%BA%A3_Th%E1%BB%A5y_Khu%C3%AA.jpg/1280px-B%C3%BAn_ch%E1%BA%A3_Th%E1%BB%A5y_Khu%C3%AA.jpg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Đồ Nướng",
       "en": "Grilled Dishes"
@@ -517,7 +531,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Whisk warm dipping sauce: 1 fish sauce : 1 mild vinegar : 1 sugar : 5 warm water; add minced garlic, chili, and crunchy green papaya pickles.",
         "Drop sizzling hot grilled pork into the warm dipping sauce bowl, served alongside fresh vermicelli and garden herbs."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-mi",
@@ -525,7 +543,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Mì Thịt Nguội Pâté Giòn Rụm",
       "en": "Vietnamese Crispy Baguette with Pâté & Ham"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Ăn Nhanh",
       "en": "Street Food"
@@ -631,7 +649,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Layer in Vietnamese ham, savory roast pork slices, refreshing cucumber spears, and tangy pickled vegetables.",
         "Top with fresh cilantro sprigs, chili slices, and a dash of savory seasoning sauce before serving hot and crispy."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-goi-cuon",
@@ -639,7 +661,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Gỏi Cuốn Tôm Thịt Thanh Mát",
       "en": "Fresh Summer Rolls with Shrimp & Pork"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Homemade_spring_rolls_%287010969349%29.jpg/1280px-Homemade_spring_rolls_%287010969349%29.jpg",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Khai Vị",
       "en": "Appetizers"
@@ -742,7 +764,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Roll upward firmly once, then place shrimp halves pink-side down with a fresh chive blade protruding.",
         "Fold in both sides and roll tightly until sealed. Serve with warm, savory hoisin-peanut dipping sauce topped with roasted crushed peanuts."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-canh-chua-ca",
@@ -750,7 +777,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Chua Cá Lóc Đồng Miền Tây",
       "en": "Mekong Delta Sour Fish Soup with Snakehead Fish"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Canhchua2.jpg",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Soup"
@@ -859,7 +886,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add elephant ear stalks, okra, and bean sprouts; boil rapidly for 1 minute, then turn off heat.",
         "Ladle fragrant soup into bowls, place tender fish on top, garnish with rice paddy herbs, saw-tooth coriander, and crispy golden garlic."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-ca-kho-to",
@@ -867,7 +899,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cá Kho Tộ Đậm Đà Cơm Mẹ Nấu",
       "en": "Caramelized Catfish in Clay Pot"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/C%C3%A1_kho_t%E1%BB%99%2C_c%C3%A1_h%C3%BA.jpg",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -968,7 +1000,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Pour in half a cup of hot water or fresh coconut water; lower heat to a gentle simmer for 25-30 minutes until sauce reduces to a rich, glossy glaze.",
         "Garnish with bird-eye chilies, generous coarse black pepper, and fresh scallions; best served piping hot with steamed jasmine rice."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-xeo",
@@ -976,7 +1013,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Xèo Miền Tây Giòn Tan Vàng Ruộm",
       "en": "Crispy Vietnamese Turmeric Crepe"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/B%C3%A1nh_x%C3%A8o_with_n%C6%B0%E1%BB%9Bc_m%E1%BA%AFm.jpg",
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Crispy Crepes"
@@ -1083,7 +1120,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Uncover, drizzle oil around the edges, and crisp over low heat until the rim turns lacy and paper-crisp.",
         "Fold in half into a golden crescent; wrap in fresh mustard greens and herbs, dipping into zesty sweet-sour garlic fish sauce."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-thit-kho-tau",
@@ -1091,7 +1133,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Thịt Kho Tàu Trứng Cút Nước Dừa",
       "en": "Vietnamese Caramelized Pork with Quail Eggs & Coconut Water"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Th%E1%BB%8Bt_kho_T%C3%A0u.jpg/1280px-Th%E1%BB%8Bt_kho_T%C3%A0u.jpg",
+    "image": "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -1192,7 +1234,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add boiled peeled eggs into the pot; simmer uncovered for 45-60 minutes until pork is fork-tender and the broth turns golden-brown.",
         "Serve hot with steamed rice and tangy pickled bean sprouts to balance the rich savory sauce."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-rieu",
@@ -1200,7 +1247,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Riêu Cua Đồng Đậm Đà",
       "en": "Traditional Vietnamese Crab Paste Noodle Soup"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/B%C3%BAn_ri%C3%AAu_%C4%91%E1%BA%B7c_bi%E1%BB%87t.jpg/1280px-B%C3%BAn_ri%C3%AAu_%C4%91%E1%BA%B7c_bi%E1%BB%87t.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -1316,7 +1363,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add crispy fried tofu cubes and blood pudding cubes; simmer gently to keep piping hot.",
         "Assemble vermicelli in bowls, top with fluffy crab soufflé, tofu, and ladle simmering tangy broth over, served with crisp herb platter."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bo-kho",
@@ -1324,7 +1375,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bò Kho Tiêu Thảo Mộc Bánh Mì",
       "en": "Vietnamese Lemongrass Beef Stew with Baguette"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bo_kho_mien_Bac.jpg/1280px-Bo_kho_mien_Bac.jpg",
+    "image": "https://images.unsplash.com/photo-1548946526-f69e2424cf45?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Hầm",
       "en": "Stew"
@@ -1434,7 +1485,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add carrot chunks and simmer another 15 minutes until carrots are sweet and tender.",
         "Garnish with Thai basil and saw-tooth coriander; serve steaming hot with crusty baguettes or rice noodles."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-nem-ran",
@@ -1442,7 +1498,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nem Rán Hà Nội (Chả Giò Giòn Rụm)",
       "en": "Crispy Traditional Vietnamese Fried Spring Rolls"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nem_r%C3%A1n_H%C3%A0_N%E1%BB%99i.jpg/1280px-Nem_r%C3%A1n_H%C3%A0_N%E1%BB%99i.jpg",
+    "image": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Khai Vị",
       "en": "Appetizers"
@@ -1556,7 +1612,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Drain on paper towels, slice into bite-sized segments.",
         "Serve hot with authentic sweet-sour dipping sauce with pickled green papaya and fresh lettuce."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-cuon",
@@ -1564,7 +1625,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Cuốn Nóng Hành Phi Nhân Thịt",
       "en": "Steamed Vietnamese Rice Rolls with Minced Pork & Crispy Shallots"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Banh_cuon.jpg/1280px-Banh_cuon.jpg",
+    "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Bữa Sáng",
       "en": "Breakfast"
@@ -1671,7 +1732,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Plate steaming rolls, generously top with fragrant crunchy fried shallots.",
         "Serve with cinnamon pork ham, fresh herbs, and warm zesty sweet-sour dipping fish sauce."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-mi-quang",
@@ -1679,7 +1744,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Mì Quảng Tôm Thịt Đậm Đà Xứ Quảng",
       "en": "Quang Style Turmeric Rice Noodles with Shrimp & Pork"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Mi_Quang_1A_Danang.jpg/1280px-Mi_Quang_1A_Danang.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -1796,7 +1861,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Layer crisp herbs in bowl, top with golden turmeric noodles, arrange shrimp, pork, quail eggs, and ladle shallow rich broth over noodles.",
         "Garnish with toasted crushed peanuts, scallions, and break crispy sesame crackers over before tossing."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-pho-ga",
@@ -1804,7 +1873,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Phở Gà Ta Hà Nội Lá Chanh",
       "en": "Traditional Hanoi Free-Range Chicken Pho with Kaffir Lime Leaves"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Pho_ga_%28noodle_soup_with_chicken%29%2C_Hanoi_%286945821707%29.jpg/1280px-Pho_ga_%28noodle_soup_with_chicken%29%2C_Hanoi_%286945821707%29.jpg",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -1912,7 +1981,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Season clear aromatic broth with pure fish sauce and a hint of rock sugar.",
         "Blanch noodles in bowls, arrange golden chicken slices on top, sprinkle whisper-thin lime leaf shreds and scallions, then ladle boiling broth over."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-cao-lau",
@@ -1920,7 +1993,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cao Lầu Phố Cổ Hội An",
       "en": "Hoi An Signature Cao Lau Pork Noodles"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Cao_lau_noodles.jpg/1280px-Cao_lau_noodles.jpg",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Trộn",
       "en": "Dry Noodles"
@@ -2020,7 +2093,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Layer crisp bean sprouts in bowl, add warm chewy Cao Lau noodles, top with char siu slices and crispy croutons.",
         "Drizzle a few spoonfuls of concentrated savory pork sauce over, tossed with crisp Tra Que herb greens."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-hu-tieu",
@@ -2028,7 +2105,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Hủ Tiếu Nam Vang Tôm Thịt Đậm Đà",
       "en": "Nam Vang Clear Pork & Seafood Noodle Soup"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/H%E1%BB%A7_ti%E1%BA%BFu_Nam_Vang.jpg/1280px-H%E1%BB%A7_ti%E1%BA%BFu_Nam_Vang.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -2143,7 +2220,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Arrange noodles in bowl with prawns, savory minced pork, sliced pork liver, quail eggs, Chinese celery, and chives.",
         "Ladle boiling clear sweet broth over and crown with a generous spoonful of crispy garlic."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-beo",
@@ -2151,7 +2232,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Bèo Chén Tôm Chấy Xứ Huế",
       "en": "Hue Savory Steamed Rice Cakes with Toasted Shrimp"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/B%C3%A1nh_b%C3%A8o.jpg",
+    "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -2244,7 +2325,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Drizzle glistening scallion oil, scatter toasted shrimp floss, and top with a crunchy pork rind.",
         "Spoon spicy fish sauce directly into cups and enjoy while warm."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-khot",
@@ -2252,7 +2337,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Khọt Tôm Giòn Rụm Vũng Tàu",
       "en": "Vung Tau Crispy Mini Turmeric Shrimp Pancakes"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/B%C3%A1nh_kh%E1%BB%8Dt.jpg",
+    "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -2353,7 +2438,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Lift cakes onto plate, brush with scallion oil and dust with savory orange shrimp powder.",
         "Wrap hot crispy cakes in mustard greens and lettuce with pickled papaya, dip into sweet-sour garlic sauce."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-thang",
@@ -2361,7 +2450,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Thang Thanh Nhã Phố Cổ Hà Nội",
       "en": "Hanoi Elegant Bun Thang Noodle Soup"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/B%C3%BAn_thang.JPG/1280px-B%C3%BAn_thang.JPG",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -2475,7 +2564,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Top center with minced scallions and Vietnamese coriander.",
         "Ladle boiling clear broth along bowl rim; accent with a hint of water bug essence and savory shrimp paste."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-thit-rang-chay-canh",
@@ -2567,7 +2660,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Pour in fish sauce and sugar mixture, glaze over high heat until caramelized and sticky.",
         "Toss with fresh scallions and coarse black pepper, serve hot with jasmine rice."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-ga-kho-sa-ot",
@@ -2659,7 +2756,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add a splash of water, simmer over low heat for 20 mins until tender.",
         "Reduce sauce until glossy and deeply caramelized, coating each piece."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-ga-kho-gung",
@@ -2744,7 +2845,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Simmer covered on low heat for 20-25 mins so the chicken juices meld with ginger warmth.",
         "Uncover to reduce sauce to a glistening glaze, top with coarse black pepper."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-suon-xao-chua-ngot",
@@ -2752,7 +2857,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Sườn Xào Chua Ngọt Hà Nội",
       "en": "Sweet & Sour Glazed Pork Ribs"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E6%BA%AB%E8%8E%8E%E5%A4%A7%E5%BB%88_Windsor_House_mall_shop_%E7%A8%BB%E9%A6%99%E9%85%92%E5%AE%B6_Tao_Heung_Restaurant_%E7%B3%96%E9%86%8B%E6%8E%92%E9%AA%A8_Sweet_and_Sour_Ribs_September_2022_Px3_01.jpg",
+    "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -2829,7 +2934,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add fried ribs, simmer on low heat for 15 minutes to absorb flavors.",
         "Toss on high heat until the glaze turns sticky, shiny, and thick."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-dau-phu-sot-ca-chua",
@@ -2837,7 +2947,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Đậu Phụ Rán Sốt Cà Chua",
       "en": "Crispy Tofu in Rich Tomato Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Stuffed_Tofu_in_Tomato_Sauce.jpg/1280px-Stuffed_Tofu_in_Tomato_Sauce.jpg",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -2922,7 +3032,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Gently fold in crispy tofu cubes, simmering for 5 minutes so tofu absorbs the tangy sauce.",
         "Garnish with generous fresh scallions and black pepper."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-dau-phu-nhoi-thit",
@@ -2930,7 +3044,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Đậu Phụ Nhồi Thịt Sốt Cà Chua",
       "en": "Stuffed Tofu with Minced Pork in Tomato Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Yong_tau_foo_sweet.jpg",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -3021,7 +3135,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook tomatoes into a rich sauce, nestle stuffed tofu blocks inside, and simmer for 15 minutes until meat is cooked through.",
         "Spoon glistening tomato glaze over, top with chopped scallions."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-trung-chien-thit",
@@ -3114,7 +3232,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook over medium-low heat until bottom is golden and puffy; flip to finish.",
         "Slice into wedges and serve steaming hot with jasmine rice."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-tom-rim-thit",
@@ -3206,7 +3328,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Season with fish sauce, sugar, and pepper, simmering until deeply caramelized.",
         "Toss vigorously until sauce glazes the shrimp and pork with a mahogany sheen."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-thit-bam-chung-mam-tep",
@@ -3291,7 +3417,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Simmer over gentle flame for 20 minutes until the mixture turns deep mahogany and fragrant.",
         "Serve warm alongside hot steamed rice and crisp cucumber slices."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-bo-xao-can-toi",
@@ -3383,7 +3513,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Return beef to wok, toss vigorously for 30 seconds to harmonize flavors.",
         "Finish with cracked black pepper and serve immediately steaming hot."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-rau-ngot-thit-bam",
@@ -3470,7 +3604,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add bruised katuk leaves, simmering for 3-4 minutes until tender yet vibrant green.",
         "Season with fish sauce to taste and serve with steamed rice."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-cua-mong-toi",
@@ -3562,7 +3700,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Season with fish sauce and a touch of shrimp paste for authentic rural flavor.",
         "Ladle into bowl keeping crab soufflé intact, enjoyed with pickled crunchy eggplants."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-ca-chua-trung",
@@ -3570,7 +3712,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Cà Chua Trứng (Canh Mây)",
       "en": "Tomato Egg Drop Soup (Canh Mây)"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Tomato_and_egg_soup_%281%29.jpg/1280px-Tomato_and_egg_soup_%281%29.jpg",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -3656,7 +3798,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Top with fresh scallions and cilantro, removing from heat immediately.",
         "Serve steaming hot with a delicate sweet-sour balance."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-kho-qua-nhoi-thit",
@@ -3664,7 +3810,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Khổ Qua Nhồi Thịt Thanh Nhiệt",
       "en": "Stuffed Bitter Melon Soup with Minced Pork"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/MyPlate_gov_Cultural_Food_%2820241025-USDA-FNS-UNK-0085%29.jpg",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -3748,7 +3894,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Simmer uncovered on low heat for 25-30 minutes so broth stays crystal clear.",
         "Season with fish sauce, ladle into bowls, garnished with cilantro and white pepper."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-bi-dao-suon",
@@ -3756,7 +3906,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Bí Đao Nấu Sườn Non",
       "en": "Winter Melon Soup with Pork Spare Ribs"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Donggua_tang_02.jpg/1280px-Donggua_tang_02.jpg",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -3840,7 +3990,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Season with fish sauce for natural savoriness.",
         "Garnish with fresh scallions, cilantro, and cracked pepper."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-rau-muong-xao-toi",
@@ -3848,7 +4002,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Rau Muống Xào Tỏi Xanh Mướt Giòn Rụm",
       "en": "Stir-Fried Morning Glory with Crispy Garlic"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Tumis_kangkung_Makassar.JPG/1280px-Tumis_kangkung_Makassar.JPG",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -3925,7 +4079,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Season with premium fish sauce and toss in remaining raw garlic for aroma punch.",
         "Plate immediately for ultra-crunchy, vibrant greens."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-kho-quet-rau-luoc",
@@ -3933,7 +4091,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Rau Củ Luộc Chấm Kho Quẹt Tóp Mỡ Tôm Khô",
       "en": "Steamed Vegetables with Caramelized Pork Rind & Dried Shrimp Dip (Kho Quẹt)"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Kho_qu%E1%BA%B9t_2.jpg",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -4024,7 +4182,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Stir in crispy pork rinds, fresh green peppercorns, and whole bird-eye chilies.",
         "Blanch assorted vegetables until tender-crisp; serve alongside bubbling savory clay pot dip."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-thit-luoc-ca-phao",
@@ -4032,7 +4195,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Thịt Ba Chỉ Luộc Cà Pháo Mắm Tôm",
       "en": "Boiled Pork Belly with Pickled Eggplants & Shrimp Paste"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/B%C3%BAn_m%E1%BA%AFm_th%E1%BB%8Bt_heo_lu%E1%BB%99c_%E1%BB%9F_%C4%90%C3%A0_N%E1%BA%B5ng.jpg",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -4116,7 +4279,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Thinly slice pork belly and arrange onto plate.",
         "Whisk shrimp paste vigorously with fresh lime juice, sugar, and chilies until frothy; serve with crunchy pickled eggplants."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-bun-dau-mam-tom",
@@ -4124,7 +4291,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Đậu Mắm Tôm Mẹt Thập Cẩm Hà Nội",
       "en": "Hanoi Fried Tofu & Rice Vermicelli Platter with Shrimp Paste"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m_%282019%29.jpg",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Cuốn & Trộn",
       "en": "Platters"
@@ -4229,7 +4396,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Arrange pressed noodles, hot fried tofu, green rice patties, sliced pork, cucumber, and fresh perilla on a banana-leaf platter.",
         "Whisk fermented shrimp paste with calamansi juice, sugar, chili, and a ladle of sizzling hot frying oil until thick and foamy."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-thit-nuong",
@@ -4237,7 +4408,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Thịt Nướng Chả Giò Sài Gòn",
       "en": "Saigon Grilled Pork & Crispy Spring Roll Noodle Bowl"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Bun_thit_nuong.jpg/1280px-Bun_thit_nuong.jpg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Trộn",
       "en": "Dry Noodles"
@@ -4337,7 +4508,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Drizzle warm scallion oil, scatter crushed peanuts, and add tangy pickles.",
         "Pour sweet-sour garlic fish sauce over and toss thoroughly."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-oc-ha-noi",
@@ -4345,7 +4520,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Ốc Nguội Giấm Bỗng Cổ Truyền Hà Nội",
       "en": "Traditional Hanoi Snails Noodle Soup with Fermented Rice Broth"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/B%C3%BAn_%E1%BB%91c_%E1%BB%9F_H%C3%A0_N%E1%BB%99i.jpg/1280px-B%C3%BAn_%E1%BB%91c_%E1%BB%9F_H%C3%A0_N%E1%BB%99i.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -4436,7 +4611,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Simmer with fragrant fermented rice wine vinegar and fish sauce for a delicate sour note.",
         "Assemble vermicelli in bowls, top with crisp snail meat, shredded perilla leaves, ladle piping hot broth over with fiery roasted chili oil."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-canh-cua",
@@ -4444,7 +4623,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Canh Cua Giò Heo Nước Dùng Sệt",
       "en": "Thick Tapioca Noodle Soup with Fresh Crab Meat"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/B%C3%A1nh_Canh_Cua.jpg",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -4544,7 +4723,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Ladle into bowls with sweet crab meat, tender pork hock, and quail eggs.",
         "Garnish with black pepper, scallions, and serve with crispy crullers."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-com-chien-dua-bo",
@@ -4643,7 +4826,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Toss beef and pickled greens back into the rice for 1 minute with soy sauce and pepper.",
         "Plate steaming hot with a side of clear broth and chili sauce."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-chao-suon-sun",
@@ -4651,7 +4838,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cháo Sườn Sụn Quẩy Giòn Hà Nội",
       "en": "Hanoi Silky Pork Cartilage Congee with Crispy Crullers"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Congee_with_Youtiao.jpg/1280px-Congee_with_Youtiao.jpg",
+    "image": "https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -4743,7 +4930,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Ladle boiling silky congee into bowls, top with savory pork floss and sliced crispy crullers.",
         "Dust generously with coarse black pepper and chili powder."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-xoi-xeo-ha-noi",
@@ -4751,7 +4942,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Xôi Xéo Hà Nội Mỡ Hành Đậu Xanh Bào",
       "en": "Hanoi Turmeric Sticky Rice with Mung Bean & Crispy Shallots"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/X%C3%B4i_x%C3%A9o.jpg",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -4842,7 +5033,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Drizzle rich chicken fat generously over top.",
         "Shower with crunchy golden fried shallots and savory pork floss."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-pho-cuon",
@@ -4935,7 +5130,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Roll snugly into neat white rolls.",
         "Serve with zesty garlic-chili dipping fish sauce."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-gio",
@@ -4943,7 +5142,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Giò Nóng Thịt Băm Mộc Nhĩ Hà Nội",
       "en": "Hanoi Steamed Pyramid Rice Cake with Minced Pork & Wood-Ear"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/B%C3%A1nh_gi%C3%B2.jpg",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Bữa Sáng & Ăn Vặt",
       "en": "Street Food"
@@ -5035,7 +5234,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Wrap tightly into pyramid bundles and steam for 30 minutes.",
         "Serve piping hot with Vietnamese ham, pickles, and sriracha chili sauce."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-bot-loc",
@@ -5043,7 +5246,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Bột Lọc Tôm Thịt Gói Lá Xứ Huế",
       "en": "Hue Clear Tapioca Dumplings with Shrimp & Pork"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/B%C3%A1nh_b%C3%A8o%2C_b%E1%BB%99t_l%E1%BB%8Dc%2C_nem_chua.jpg/1280px-B%C3%A1nh_b%C3%A8o%2C_b%E1%BB%99t_l%E1%BB%8Dc%2C_nem_chua.jpg",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -5135,7 +5338,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Wrap in oiled banana leaf strips and steam for 20 minutes until translucent.",
         "Dip into fiery Hue fish sauce studded with fresh bird-eye chilies."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-trang-nuong",
@@ -5143,7 +5350,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Tráng Nướng Trứng Xúc Xích Đà Lạt",
       "en": "Dalat Crispy Grilled Rice Paper (Vietnamese Pizza)"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Pizzabanhtrangnuong2.jpg",
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -5234,7 +5441,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Rotate continuously over medium-low flame until crisp and golden.",
         "Drizzle zigzags of creamy mayonnaise and spicy sriracha; fold in half and eat while shattering crisp."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-trang-tron",
@@ -5242,7 +5453,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Tráng Trộn Sài Gòn Đầy Đủ Topping",
       "en": "Saigon Shredded Rice Paper Salad with Quail Eggs & Mango"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Vietnamese_%22banh_trang_tron%22.JPG/1280px-Vietnamese_%22banh_trang_tron%22.JPG",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -5339,7 +5550,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Top with quail eggs, crunchy fried shallots, and roasted peanuts.",
         "Enjoy the explosive sweet, sour, savory, and spicy street sensation."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-nem-nuong-nha-trang",
@@ -5347,7 +5562,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nem Nướng Nha Trang Mẹt Cuốn Bánh Tráng",
       "en": "Nha Trang Grilled Pork Sausage Rice Paper Rolls"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Nem_n%C6%B0%E1%BB%9Bng.jpg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Cuốn & Trộn",
       "en": "Platters"
@@ -5438,7 +5653,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Lay rice paper wrapper, add herbs, crisp green mango, cucumber, grilled pork skewer, and fried crunch tube.",
         "Roll tightly and dip into warm, savory-nutty golden sauce."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-com-chien-duong-chau",
@@ -5544,7 +5763,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Fold in sausage, shrimp, carrots, and sweet green peas.",
         "Season with oyster sauce, soy sauce, and white pepper; toss for 2 minutes before serving."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-goi-ngo-sen-tom-thit",
@@ -5650,7 +5874,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Drizzle thick sweet-sour fish sauce vinaigrette, gently tossing until coated.",
         "Mound onto platter, garnish with crushed peanuts and serve with puffed prawn crackers."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-ca-bong-kho-tieu",
@@ -5658,7 +5887,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cá Bống Kho Tiêu Đậm Vị Miền Trung",
       "en": "Central Style Goby Fish Braised with Black Pepper"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/C%C3%A1_kho_t%E1%BB%99.JPG",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -5733,7 +5962,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-ca-nuc-kho-ca",
@@ -5816,7 +6049,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-ca-dieu-hong-chien-xu",
@@ -5899,7 +6136,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-suon-rim-man-ngot",
@@ -5982,7 +6223,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-bo-luc-lac",
@@ -5990,7 +6235,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bò Lúc Lắc Khoai Tây Chiên Bơ Tỏi",
       "en": "Shaking Beef Tenderloin with Garlic Butter Fries"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Product_Shots_of_Food-Bo_Luc_Lac.jpg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6065,7 +6310,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-thit-kho-tieu",
@@ -6148,7 +6398,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-gio-lua-rim-mam",
@@ -6156,7 +6410,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Giò Lụa Rim Nước Mắm Tiêu Sọ",
       "en": "Caramelized Vietnamese Ham with Pepper Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/B%C3%A1nh_ch%C6%B0ng_v%C3%A0_gi%C3%B2_l%E1%BB%A5a.jpg",
+    "image": "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -6231,7 +6485,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-tom-rim-man-ngot",
@@ -6314,7 +6572,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-muc-xao-can-toi",
@@ -6397,7 +6659,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-muc-nhoi-thit",
@@ -6480,7 +6746,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-xiu-mai-sot-ca",
@@ -6563,7 +6833,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-trung-cuon-hanh",
@@ -6646,7 +6920,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-suon-khoai-tay",
@@ -6729,7 +7007,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-bau-nau-tom",
@@ -6812,7 +7094,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-cai-ca-thac-lac",
@@ -6895,7 +7181,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-ngao-chua",
@@ -6903,7 +7193,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Ngao Chua Nấu Dứa Thì Là",
       "en": "Sour Clam Soup with Pineapple & Fresh Dill"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Korean_clam_soup-Jaecheopguk-01.jpg",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -6978,7 +7268,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-hen-hoa-thien-ly",
@@ -7061,7 +7355,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-rong-bien-thit-bo",
@@ -7069,7 +7367,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Rong Biển Nấu Thịt Bò Thanh Ngọt",
       "en": "Seaweed Soup with Tender Sliced Beef"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Korea.food-Miyeok.guk-01.jpg",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7144,7 +7442,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-bap-cai-cuon-thit",
@@ -7227,7 +7529,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-mang-chua-bo",
@@ -7310,7 +7616,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-chua-tom",
@@ -7318,7 +7628,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Chua Tôm Tươi Miền Tây",
       "en": "Mekong Sour Shrimp Soup with Tamarind & Okra"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Canh_chua_t%C3%B4m_01.jpg/1280px-Canh_chua_t%C3%B4m_01.jpg",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7393,7 +7703,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-khoai-mo",
@@ -7476,7 +7790,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-cu-sen-suon",
@@ -7484,7 +7802,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Canh Củ Sen Hầm Sườn Bổ Dưỡng",
       "en": "Lotus Root & Pork Ribs Nourishing Clear Soup"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Lotus_root_soup.jpg/1280px-Lotus_root_soup.jpg",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Canh",
       "en": "Soup"
@@ -7559,7 +7877,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-sup-rau-cu",
@@ -7642,7 +7964,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-xa-lach-xoong",
@@ -7725,7 +8051,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-rau-lang-xao-toi",
@@ -7808,7 +8138,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-bap-cai-xao-ca",
@@ -7816,7 +8150,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bắp Cải Xào Cà Chua Chín Tới",
       "en": "Stir-Fried Cabbage with Fresh Tomatoes"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Stir_Fried_Cabbage_and_Bacon_%E5%9F%B9%E6%A0%B9%E9%AB%98%E4%B8%BD%E8%8F%9C.jpg",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -7891,7 +8225,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-dau-cove-xao-bo",
@@ -7899,7 +8237,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Đậu Cô Ve Xào Thịt Bò Mềm",
       "en": "Stir-Fried Green String Beans with Beef"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Chicken_and_snow_peas_with_stir_fried_green_beans_%2815666974844%29.jpg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -7974,7 +8312,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-su-su-xao-bo",
@@ -8057,7 +8399,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-mang-tay-xao-tom",
@@ -8140,7 +8486,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-bong-cai-xao-bo",
@@ -8148,7 +8498,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bông Cải Xanh Xào Thịt Bò Dầu Hào",
       "en": "Stir-Fried Broccoli with Beef in Savory Oyster Sauce"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Broccoli_beef_%285457397534%29.jpg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8223,7 +8573,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-kho-qua-xao-trung",
@@ -8306,7 +8660,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-gia-do-xao-huyet",
@@ -8389,7 +8747,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-nam-dui-ga-xao-bo",
@@ -8397,7 +8759,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nấm Đùi Gà Xào Bơ Tỏi Đậm Vị",
       "en": "King Oyster Mushrooms Sautéed in Garlic Butter"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Mmmm_-_cremini_and_king_oyster_mushrooms_with_tagliatelle.jpg",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8472,7 +8834,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-ga-luoc-la-chanh",
@@ -8480,7 +8846,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Gà Ta Luộc Lá Chanh Da Giòn Vàng",
       "en": "Traditional Poached Chicken with Kaffir Lime Leaves"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BeiQieJi-WhiteCutChicken.jpg/1280px-BeiQieJi-WhiteCutChicken.jpg",
+    "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm Gia Đình",
       "en": "Home Cooking"
@@ -8555,7 +8921,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-bap-bo-luoc-sa",
@@ -8638,7 +9008,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-dau-bap-luoc-chao",
@@ -8646,7 +9020,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Đậu Bắp Luộc Chấm Chao Béo Ngậy",
       "en": "Boiled Crisp Okra with Fermented Bean Curd Dip"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/BOILED_OR_STEAMED_OKRA_FROM_GARDEN_TO_TABLE.jpg",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Rau Củ",
       "en": "Vegetables"
@@ -8721,7 +9095,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-bun-mam-mien-tay",
@@ -8729,7 +9107,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Mắm Miền Tây Đậm Đà Sông Nước",
       "en": "Mekong Fermented Fish Noodle Soup with Seafood & Roasted Pork"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/B%C3%BAn_M%E1%BA%AFm_S%C3%B3c_Tr%C4%83ng.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -8804,7 +9182,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-ca-cay-hai-phong",
@@ -8812,7 +9194,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Cá Cay Hải Phòng Nước Dùng Thanh",
       "en": "Hai Phong Spicy Fish Noodle Soup with Crispy Fish & Taro Stems"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Nh%C3%A0_m%C3%ACnh_d%E1%BB%8Bp_L%E1%BB%85_2th9n2023_%28b%C3%BAn_c%C3%A1_cay_%C4%90%C3%B4ng_H%C3%A0%29_%281%29.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -8887,7 +9269,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-moc-suon-non",
@@ -8895,7 +9281,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Mọc Sườn Non Nước Dùng Trong Ngọt",
       "en": "Pork Meatball & Spare Rib Noodle Soup with Shiitake"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/B%C3%BAn_m%E1%BB%8Dc_s%C6%B0%E1%BB%9Dn.jpg",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -8970,7 +9356,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-cha-ca-da-nang",
@@ -8978,7 +9368,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bún Chả Cá Đà Nẵng Đậm Đà Xứ Biển",
       "en": "Da Nang Fish Cake Noodle Soup with Pumpkin & Bamboo Shoots"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/B%C3%BAn_ch%E1%BA%A3_c%C3%A1%2C_th%C3%A1ng_8_n%C4%83m_2018.JPG",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9053,7 +9443,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-hu-tieu-my-tho",
@@ -9061,7 +9455,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Hủ Tiếu Mỹ Tho Sợi Dai Nước Trong",
       "en": "My Tho Signature Chewy Clear Noodle Soup"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/H%E1%BB%A7_ti%E1%BA%BFu_th%E1%BA%ADp_c%E1%BA%A9m.jpg/1280px-H%E1%BB%A7_ti%E1%BA%BFu_th%E1%BA%ADp_c%E1%BA%A9m.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9136,7 +9530,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-hu-tieu-go",
@@ -9144,7 +9542,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Hủ Tiếu Gõ Xá Xíu Bò Viên Đêm Sài Gòn",
       "en": "Saigon Street Cart Noodle Soup with Char Siu & Beef Meatballs"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/H%E1%BB%A7_ti%E1%BA%BFu_g%C3%B5_S%C3%A0i_G%C3%B2n.jpg/1280px-H%E1%BB%A7_ti%E1%BA%BFu_g%C3%B5_S%C3%A0i_G%C3%B2n.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Nước",
       "en": "Noodle Soup"
@@ -9219,7 +9617,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-canh-ghe",
@@ -9302,7 +9704,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-canh-cha-ca",
@@ -9385,7 +9791,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-mien-mang-ga",
@@ -9468,7 +9878,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-mien-luon-gion",
@@ -9551,7 +9965,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-mien-xao-cua",
@@ -9634,7 +10052,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-nam-hue",
@@ -9642,7 +10064,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Bánh Nậm Tôm Thịt Lá Chuối Xứ Huế",
       "en": "Hue Flat Rice Dumpling with Minced Shrimp & Pork in Banana Leaves"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/B%C3%A1nh_n%E1%BA%ADm_Th%E1%BB%A7_%C4%90%E1%BB%A9c.jpg",
+    "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Ăn Vặt",
       "en": "Street Food"
@@ -9717,7 +10139,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-banh-can-phan-thiet",
@@ -9800,7 +10226,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bo-bia-ngot",
@@ -9883,7 +10313,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-nem-lui-nuong-sa",
@@ -9891,7 +10325,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Nem Lụi Nướng Sả Cây Phố Cổ Huế",
       "en": "Hue Grilled Pork Skewers on Lemongrass Stalks"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Nh%C3%A0_m%C3%ACnh_L%E1%BB%85_30th4n2023_%28ch%E1%BA%A1o_nem_l%E1%BB%A5i%29_%282%29.jpg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Món Cuốn & Trộn",
       "en": "Platters"
@@ -9966,7 +10400,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-goi-ga-bap-cai",
@@ -10049,7 +10487,12 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ]
   },
   {
     "id": "vn-nom-bo-kho",
@@ -10132,7 +10575,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-cha-ram-tom-dat",
@@ -10215,7 +10662,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-com-ga-tam-ky",
@@ -10298,7 +10749,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-chao-ga-nam-huong",
@@ -10306,7 +10761,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cháo Gà Ta Nấm Hương Hạt Sen Ấm Bụng",
       "en": "Chicken Congee with Shiitake Mushrooms & Lotus Seeds"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Chinese_rice_congee.jpg",
+    "image": "https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -10381,7 +10836,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-chao-long-ha-noi",
@@ -10389,7 +10848,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Cháo Lòng Tiết Huyết Phố Cổ Hà Nội",
       "en": "Traditional Hanoi Pork Offal & Blood Congee"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Ch%C3%A1o_l%C3%B2ng.jpg",
+    "image": "https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -10464,7 +10923,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-chao-ca-loc-rau-dang",
@@ -10547,7 +11010,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-xoi-ga-xe",
@@ -10630,7 +11097,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-xoi-khuc-ha-noi",
@@ -10638,7 +11109,7 @@ export const vietnameseRecipes: MasterRecipe[] = [
       "vi": "Xôi Khúc Lá Khúc Nhân Thịt Đậu Xanh Hà Nội",
       "en": "Traditional Hanoi Cudweed Rice Cakes with Pork & Mung Bean"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/X%C3%B4i_kh%C3%BAc.jpg",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
     "category": {
       "vi": "Cơm & Xôi",
       "en": "Rice Dishes"
@@ -10713,7 +11184,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Cook using authentic method to lock in natural sweetness and aroma.",
         "Serve steaming hot with fragrant jasmine rice or noodles."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-ca-chep-om-dua",
@@ -10821,7 +11296,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Pour hot water, bring to boil, gently place carp inside and simmer for 20 minutes.",
         "Garnish generously with fresh dill, scallions, and sliced chili; serve hot with rice vermicelli."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-suon-chua-sau",
@@ -10922,7 +11401,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add sấu fruit and tomato wedges, simmer 8 minutes until sấu softens.",
         "Mash sấu to release tangy juice, adjust seasoning, garnish with cilantro and scallions."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-canh-ca-nau-ngot",
@@ -11023,7 +11506,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Season with fragrant fish sauce, salt, and a dash of sugar.",
         "Toss in Chinese celery and scallions, cook 1 minute and remove immediately to retain crisp greenery."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-rau-cai-ngong-xao-toi",
@@ -11108,7 +11595,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Turn heat high, add greens and toss quickly for 2 minutes.",
         "Season with oyster sauce and pepper, top with crispy garlic bits and serve."
       ]
-    }
+    },
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ]
   },
   {
     "id": "vn-pho-sot-vang",
@@ -11217,7 +11708,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Thicken broth lightly with tapioca starch slurry.",
         "Assemble fresh pho noodles in deep bowls, ladle shimmering crimson beef stew, and sprinkle fresh herbs."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-bun-oc-chuoi-dau",
@@ -11326,7 +11821,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Add green bananas, tofu, and clear snail broth; simmer gently until bananas are creamy.",
         "Adjust tanginess with rice vinegar, toss in shredded perilla and piper sarmentosum leaves, serve over vermicelli."
       ]
-    }
+    },
+    "region": "north",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-che-sen-long-nhan",
@@ -11419,7 +11918,11 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Gently drop stuffed longans into sweet syrup, simmer for 2 minutes and turn off heat.",
         "Scent with pomelo blossom essence; chill before serving for a sublime summer treat."
       ]
-    }
+    },
+    "region": "central",
+    "diningType": [
+      "eat_out"
+    ]
   },
   {
     "id": "vn-che-buoi",
@@ -11517,6 +12020,10 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Boil sweet syrup, thicken with tapioca starch slurry, fold in steamed mung beans and crispy pomelo pith.",
         "Ladle into cups, top with rich coconut cream and crushed roasted peanuts."
       ]
-    }
+    },
+    "region": "south",
+    "diningType": [
+      "eat_out"
+    ]
   }
 ];

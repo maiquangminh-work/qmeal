@@ -46,6 +46,8 @@ export async function GET(request: NextRequest, context: { params: Promise<{ id:
         nutritionSource: masterRecipe.nutritionSource[lang] || masterRecipe.nutritionSource.vi,
         recipeSource: masterRecipe.recipeSource[lang] || masterRecipe.recipeSource.vi,
         servings: masterRecipe.servings || 4,
+        region: masterRecipe.region,
+        diningType: masterRecipe.diningType,
         verified: true
       };
 
