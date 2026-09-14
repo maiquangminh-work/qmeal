@@ -248,7 +248,7 @@ export default function Navbar() {
         </div>
 
         {/* User Profile Avatar */}
-        <UserAvatar size="md" showBadge={true} />
+        <UserAvatar size="md" />
       </div>
     </nav>
   );

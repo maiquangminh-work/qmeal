@@ -20,9 +20,7 @@ export interface GroceryItem {
 
 export interface UserProfile {
   name: string;
-  avatarType: 'persona' | 'initials' | 'custom';
-  avatarValue: string;
-  roleTitle: string;
+  avatarUrl?: string;
 }
 
 interface UserState {
@@ -142,9 +140,7 @@ export const useStore = create<UserState>()(
 
       userProfile: {
         name: 'Quang Minh',
-        avatarType: 'persona',
-        avatarValue: '/avatars/chef-minh.svg',
-        roleTitle: 'Bếp trưởng đam mê',
+        avatarUrl: '',
       },
       setUserProfile: (patch) => set((state) => ({
         userProfile: { ...state.userProfile, ...patch }
