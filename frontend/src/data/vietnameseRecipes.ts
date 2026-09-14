@@ -50,6 +50,7 @@ export interface MasterRecipe {
 }
 
 export const vietnameseRecipes: MasterRecipe[] = [
+
   {
     "id": "vn-pho-bo",
     "title": {
@@ -12273,5 +12274,13378 @@ export const vietnameseRecipes: MasterRecipe[] = [
     ],
     "isPopular": false,
     "popularityScore": 70
+  },
+  {
+    "id": "vn-trung-duc-thit",
+    "title": {
+      "vi": "Trứng Đúc Thịt Băm Rán Vàng Giòn",
+      "en": "Vietnamese Minced Pork Omelet"
+    },
+    "image": "/dishes/vn-trung-duc-thit.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Dễ làm",
+        "Giàu đạm"
+      ],
+      "en": [
+        "Home Cook",
+        "Easy",
+        "High Protein"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 285,
+    "protein": 21,
+    "fat": 20,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 phần (~180g)",
+      "en": "1 serving (~180g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia (NIN)",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Gia Đình Việt",
+      "en": "Vietnamese Family Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Trứng gà ta",
+          "en": "Farm eggs"
+        },
+        "amount": "4 quả"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo xay nạc dăm",
+          "en": "Minced pork shoulder"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm",
+          "en": "Minced shallots"
+        },
+        "amount": "2 củ"
+      },
+      {
+        "name": {
+          "vi": "Hành lá thái nhỏ",
+          "en": "Chopped scallions"
+        },
+        "amount": "3 nhánh"
+      },
+      {
+        "name": {
+          "vi": "Mộc nhĩ băm nhỏ",
+          "en": "Minced wood ear mushroom"
+        },
+        "amount": "2 tai"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon",
+          "en": "Fish sauce"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Hạt tiêu xay",
+          "en": "Ground black pepper"
+        },
+        "amount": "1/2 thìa cà phê"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn",
+          "en": "Cooking oil"
+        },
+        "amount": "2 thìa canh"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cho thịt heo xay, mộc nhĩ băm, hành tím và hành lá vào tô lớn.",
+        "Đập 4 quả trứng gà vào, thêm nước mắm và hạt tiêu đen, đánh đều tay cho hỗn hợp hòa quyện.",
+        "Làm nóng chảo với 2 thìa canh dầu ăn trên lửa vừa. Đổ hỗn hợp trứng thịt vào dàn đều.",
+        "Hạ lửa nhỏ vừa, đậy nắp vung khoảng 4-5 phút để thịt bên trong chín đều.",
+        "Mở nắp, khéo léo lật mặt trứng và rán thêm 2-3 phút cho cả hai mặt vàng ruộm.",
+        "Cho ra đĩa, cắt thành từng miếng tam giác vừa ăn, dùng nóng với cơm trắng."
+      ],
+      "en": [
+        "In a large bowl, combine minced pork, wood ear mushroom, shallots, and scallions.",
+        "Crack eggs into the bowl, add fish sauce and black pepper, beat thoroughly.",
+        "Heat cooking oil in a skillet over medium heat. Pour in egg mixture evenly.",
+        "Cover and cook on medium-low for 4-5 minutes until cooked through.",
+        "Flip carefully and cook for 2-3 minutes until golden brown on both sides.",
+        "Transfer to a plate, cut into wedges, and serve hot with steamed rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-thit-chan-gio-luoc",
+    "title": {
+      "vi": "Thịt Chân Giò Luộc Cuộn Chỉ Chấm Mắm Tép",
+      "en": "Boiled Rolled Pork Shank with Fermented Shrimp Paste"
+    },
+    "image": "/dishes/vn-thit-chan-gio-luoc.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Truyền thống",
+        "Món nhắm"
+      ],
+      "en": [
+        "Home Cook",
+        "Traditional"
+      ]
+    },
+    "time": "45m",
+    "servings": 4,
+    "calories": 320,
+    "protein": 26,
+    "fat": 23,
+    "carbs": 2,
+    "servingSize": {
+      "vi": "1 đĩa thái mỏng (~250g)",
+      "en": "1 sliced plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia (NIN)",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đồng bằng Bắc Bộ",
+      "en": "Northern Vietnamese Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt bắp chân giò heo",
+          "en": "Pork shank"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Hành khô đập dập",
+          "en": "Crushed shallots"
+        },
+        "amount": "3 củ"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi đập dập",
+          "en": "Crushed ginger"
+        },
+        "amount": "1 nhánh"
+      },
+      {
+        "name": {
+          "vi": "Mắm tép Hàng Bè hoặc mắm tôm",
+          "en": "Fermented shrimp sauce"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Ớt hiểm, tỏi băm, chanh tươi",
+          "en": "Chili, garlic, fresh lime"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bắp giò rửa sạch, cuộn tròn chặt bằng dây chỉ thực phẩm để tạo hình khối trụ tròn.",
+        "Đun sôi nồi nước với gừng đập dập, hành khô và 1 thìa cà phê muối.",
+        "Cho bắp giò vào luộc nhỏ lửa trong 25-30 phút đến khi xiên đũa thấy mềm, nước trong không hồng.",
+        "Vớt thịt ngâm ngay vào âu nước đá lạnh 10 phút cho da giòn trắng giòn sần sật.",
+        "Bọc kín cho vào ngăn mát tủ lạnh 1 tiếng để thịt săn chắc, thái lát thật mỏng.",
+        "Pha mắm tép với đường, ớt băm, tỏi băm và chanh tươi đánh bông lên, chấm kèm thịt luộc."
+      ],
+      "en": [
+        "Clean pork shank, tightly roll and tie with kitchen twine into a cylinder.",
+        "Bring water to a boil with crushed ginger, shallots, and salt.",
+        "Simmer pork over medium-low heat for 25-30 minutes until tender and cooked through.",
+        "Plunge into an ice bath for 10 minutes to crisp up the skin, then chill in fridge.",
+        "Slice very thinly with a sharp knife.",
+        "Serve with seasoned fermented shrimp paste spiked with lime, sugar, garlic, and chili."
+      ]
+    }
+  },
+  {
+    "id": "vn-thit-ba-chi-luoc-cuon-banh-trang",
+    "title": {
+      "vi": "Thịt Ba Chỉ Luộc Cuốn Bánh Tráng Rau Sống",
+      "en": "Boiled Pork Belly Spring Rolls with Fresh Herbs"
+    },
+    "image": "/dishes/vn-thit-ba-chi-luoc-cuon-banh-trang.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Thanh mát",
+        "Nhiều rau xanh"
+      ],
+      "en": [
+        "Fresh",
+        "Herbs",
+        "Healthy"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 340,
+    "protein": 22,
+    "fat": 26,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 phần cuốn (~300g)",
+      "en": "1 wrap plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Trung",
+      "en": "Central Vietnam Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt ba chỉ heo tươi",
+          "en": "Fresh pork belly"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Bánh tráng phơi sương Đại Lộc",
+          "en": "Rice paper"
+        },
+        "amount": "1 xấp"
+      },
+      {
+        "name": {
+          "vi": "Bún tươi",
+          "en": "Fresh rice vermicelli"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Rau sống tổng hợp (xà lách, diếp cá, húng quế, tía tô, dưa leo)",
+          "en": "Assorted fresh herbs & cucumber"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Mắm nêm pha tỏi ớt dứa băm",
+          "en": "Fermented fish sauce with pineapple"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt ba chỉ cạo sạch bì, luộc chín tới cùng hành củ nướng và chút muối trong 20 phút.",
+        "Vớt ra ngâm nước đá lạnh cho thịt trắng giòn, sau đó thái lát mỏng bản to.",
+        "Rau sống rửa sạch, ngâm nước muối loãng, vớt ra vẩy ráo nước.",
+        "Pha mắm nêm với dứa băm nhuyễn, tỏi ớt băm, đường, chanh cho vừa vị chua ngọt cay mặn.",
+        "Trải bánh tráng, xếp rau sống, bún, lát thịt ba chỉ cuộn tròn chấm mắm nêm đậm đà."
+      ],
+      "en": [
+        "Boil pork belly with charred shallot and salt for 20 minutes until just cooked.",
+        "Ice bath the pork to preserve juiciness, then slice thinly.",
+        "Wash and dry assorted fresh herbs, lettuce, and cucumber strips.",
+        "Mix fermented anchovy sauce (mắm nêm) with minced pineapple, garlic, chili, lime, and sugar.",
+        "Wrap herbs, vermicelli, and pork slices in rice paper and dip in sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-thit-kho-cui-dua",
+    "title": {
+      "vi": "Thịt Ba Chỉ Kho Cùi Dừa Béo Ngậy",
+      "en": "Braised Pork Belly with Fresh Coconut Meat"
+    },
+    "image": "/dishes/vn-thit-kho-cui-dua.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Đậm đà",
+        "Hao cơm"
+      ],
+      "en": [
+        "Home Cook",
+        "Rich Flavor"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 380,
+    "protein": 20,
+    "fat": 31,
+    "carbs": 7,
+    "servingSize": {
+      "vi": "1 đĩa (~220g)",
+      "en": "1 plate (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Nam Bộ",
+      "en": "Southern Vietnamese Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt ba chỉ heo",
+          "en": "Pork belly"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Cùi dừa bánh tẻ thái con chì",
+          "en": "Coconut meat strips"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nước hàng tạo màu",
+          "en": "Caramel coloring sauce"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm truyền thống",
+          "en": "Pure fish sauce"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước dừa tươi",
+          "en": "Fresh coconut water"
+        },
+        "amount": "150ml"
+      },
+      {
+        "name": {
+          "vi": "Hành tím, tỏi, ớt",
+          "en": "Shallots, garlic, chili"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt ba chỉ rửa sạch, thái miếng vuông vừa ăn. Cùi dừa cạo sạch vỏ nâu, thái lát dày cỡ ngón tay.",
+        "Ướp thịt với nước mắm, hành tím băm, tiêu xay trong 15 phút.",
+        "Phi thơm tỏi hành, cho thịt vào xào săn rồi cho cùi dừa và nước hàng vào đảo cùng.",
+        "Đổ nước dừa tươi vào ngập xâm xấp mặt thịt, đun sôi rồi hạ nhỏ lửa kho liu riu.",
+        "Kho khoảng 25-30 phút đến khi nước thịt cạn sệt, sánh bóng vàng cánh gián là hoàn thành."
+      ],
+      "en": [
+        "Cut pork into bite-sized cubes. Peel brown skin off coconut meat and slice into thick strips.",
+        "Marinate pork with fish sauce, shallots, and pepper for 15 minutes.",
+        "Sear pork in aromatics until browned, then add coconut strips and caramel sauce.",
+        "Pour in fresh coconut water, bring to a boil, then reduce heat to low.",
+        "Simmer for 25-30 minutes until sauce reduces to a glossy golden-brown glaze."
+      ]
+    }
+  },
+  {
+    "id": "vn-thit-kho-cu-cai",
+    "title": {
+      "vi": "Thịt Heo Kho Củ Cải Trắng Ngọt Đậm Đà",
+      "en": "Braised Pork with White Daikon Radish"
+    },
+    "image": "/dishes/vn-thit-kho-cu-cai.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 89,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Dân dã",
+        "Đậm đà"
+      ],
+      "en": [
+        "Home Cook",
+        "Classic"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 275,
+    "protein": 21,
+    "fat": 19,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa (~220g)",
+      "en": "1 plate (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt nạc vai hoặc ba chỉ",
+          "en": "Pork shoulder or belly"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Củ cải trắng",
+          "en": "White daikon radish"
+        },
+        "amount": "2 củ (~300g)"
+      },
+      {
+        "name": {
+          "vi": "Nước màu đường",
+          "en": "Caramel sauce"
+        },
+        "amount": "1.5 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, hạt tiêu, hành hoa",
+          "en": "Fish sauce, black pepper, scallions"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt heo thái con chì, củ cải gọt vỏ cắt khúc vuông dày.",
+        "Xào thịt săn với hành tím, nêm nước mắm và nước màu đường đảo đều.",
+        "Thêm nước sôi xâm xấp mặt thịt, kho nhỏ lửa 15 phút.",
+        "Cho củ cải vào kho cùng thêm 15 phút đến khi củ cải mềm trong, ngấm trọn vị ngọt mặn.",
+        "Rắc hành lá và tiêu xay lên trên, dùng nóng với cơm trắng."
+      ],
+      "en": [
+        "Cut pork into cubes; peel daikon and cut into thick chunks.",
+        "Sear pork with shallots, season with fish sauce and caramel sauce.",
+        "Add hot water barely covering meat, simmer on low for 15 mins.",
+        "Add daikon and simmer another 15 mins until tender and translucent.",
+        "Garnish with scallions and black pepper, serve with warm rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-cha-la-lot",
+    "title": {
+      "vi": "Chả Lá Lốt Thịt Băm Rán Thơm Lừng",
+      "en": "Pan-fried Minced Pork in Wild Betel Leaves"
+    },
+    "image": "/dishes/vn-cha-la-lot.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Truyền thống",
+        "Thơm nức"
+      ],
+      "en": [
+        "Home Cook",
+        "Aromatic"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 310,
+    "protein": 22,
+    "fat": 23,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "8-10 cuốn (~220g)",
+      "en": "8-10 rolls (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hà Nội Cổ Truyền",
+      "en": "Hanoi Heritage Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt heo nạc vai xay",
+          "en": "Minced pork shoulder"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Lá lốt bánh tẻ tươi",
+          "en": "Fresh piper lolot leaves"
+        },
+        "amount": "30 lá"
+      },
+      {
+        "name": {
+          "vi": "Mộc nhĩ ngâm nở băm vụn",
+          "en": "Minced wood ear mushroom"
+        },
+        "amount": "1 tai"
+      },
+      {
+        "name": {
+          "vi": "Hành tím, hạt tiêu, nước mắm",
+          "en": "Shallots, pepper, fish sauce"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn rán chả",
+          "en": "Cooking oil"
+        },
+        "amount": "3 thìa canh"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Lá lốt rửa sạch để ráo. Lấy 3-4 lá nhỏ băm vụn trộn vào thịt.",
+        "Trộn đều thịt xay, lá lốt băm, mộc nhĩ, hành tím băm, tiêu và nước mắm.",
+        "Đặt lá lốt úp mặt xanh đậm xuống, cho nhân vào giữa cuộn chặt tay.",
+        "Rán chả trên chảo dầu nóng vừa khoảng 8-10 phút cho chín đều hai mặt và dậy mùi thơm nức.",
+        "Bày chả ra đĩa, thưởng thức cùng cơm nóng hoặc bún chấm mắm tỏi ớt."
+      ],
+      "en": [
+        "Wash and dry lolot leaves. Finely mince a few leaves to add to meat filling.",
+        "Mix minced pork with minced lolot, wood ear, shallots, pepper, and fish sauce.",
+        "Place leaf shiny side down, add filling and roll tightly.",
+        "Pan-fry in medium-hot oil for 8-10 minutes until aromatic and browned.",
+        "Serve hot with steamed rice or fresh rice vermicelli."
+      ]
+    }
+  },
+  {
+    "id": "vn-cha-xuong-song",
+    "title": {
+      "vi": "Chả Thịt Băm Cuốn Lá Xương Sông",
+      "en": "Pork Rolls Wrapped in Clausena Leaves"
+    },
+    "image": "/dishes/vn-cha-xuong-song.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": false,
+    "popularityScore": 84,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Dân dã",
+        "Thảo mộc"
+      ],
+      "en": [
+        "Home Cook",
+        "Herbal Flavor"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 295,
+    "protein": 21,
+    "fat": 22,
+    "carbs": 3,
+    "servingSize": {
+      "vi": "1 đĩa (~220g)",
+      "en": "1 plate (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Bắc Truyền Thống",
+      "en": "Northern Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt heo nạc vai xay có mỡ",
+          "en": "Minced pork"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Lá xương sông bánh tẻ",
+          "en": "Clausena indica leaves"
+        },
+        "amount": "25 lá"
+      },
+      {
+        "name": {
+          "vi": "Hành hoa thái nhỏ",
+          "en": "Scallions"
+        },
+        "amount": "2 nhánh"
+      },
+      {
+        "name": {
+          "vi": "Gia vị mắm tiêu hạt nêm",
+          "en": "Seasoning"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Lá xương sông rửa sạch, chần sơ nước sôi 10 giây cho mềm dai dễ cuộn.",
+        "Trộn thịt với hành hoa, tiêu đen, nước mắm vừa miệng.",
+        "Đặt thịt vào cuộn chặt trong lá xương sông.",
+        "Rán vàng đều trên lửa nhỏ vừa cho lá tiết ra tinh dầu thơm nồng đặc trưng.",
+        "Ăn nóng chấm tương ớt hoặc nước mắm chanh tỏi."
+      ],
+      "en": [
+        "Blanch clausena leaves in boiling water for 10s to soften.",
+        "Season minced pork with scallions, black pepper, and fish sauce.",
+        "Roll filling tightly inside leaves.",
+        "Pan-fry until fragrant and golden.",
+        "Serve hot with dipping sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-thit-heo-xao-sa-ot",
+    "title": {
+      "vi": "Thịt Heo Xào Sả Ớt Giòn Cay Đưa Cơm",
+      "en": "Stir-fried Pork with Lemongrass and Chili"
+    },
+    "image": "/dishes/vn-thit-heo-xao-sa-ot.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 90,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Cay ấm",
+        "Nhanh gọn"
+      ],
+      "en": [
+        "Home Cook",
+        "Spicy",
+        "Quick"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 290,
+    "protein": 24,
+    "fat": 20,
+    "carbs": 5,
+    "servingSize": {
+      "vi": "1 đĩa (~200g)",
+      "en": "1 plate (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt nạc dăm heo thái mỏng",
+          "en": "Sliced pork shoulder"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Sả băm nhuyễn",
+          "en": "Minced lemongrass"
+        },
+        "amount": "3 củ"
+      },
+      {
+        "name": {
+          "vi": "Ớt hiểm băm",
+          "en": "Minced hot chili"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Tỏi, hành tím băm",
+          "en": "Garlic & shallots"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, nước mắm, tiêu",
+          "en": "Oyster sauce, fish sauce"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt ướp hạt nêm, tiêu, dầu hào 10 phút.",
+        "Phi thơm tỏi, hành tím và sả ớt trong chảo dầu nóng.",
+        "Trút thịt vào xào nhanh tay trên lửa lớn cho thịt chín săn mềm.",
+        "Nêm nước mắm và chút xíu đường tạo vị đậm đà hài hòa.",
+        "Đảo đều đến khi dậy mùi thơm nức thì trút ra đĩa dùng ngay."
+      ],
+      "en": [
+        "Marinate sliced pork with seasoning and oyster sauce.",
+        "Sauté garlic, shallots, lemongrass, and chili until fragrant.",
+        "Add pork and stir-fry briskly over high heat until browned and tender.",
+        "Season with fish sauce and a hint of sugar.",
+        "Toss well and serve immediately with hot rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-thit-vien-sot-ca-chua",
+    "title": {
+      "vi": "Thịt Băm Viên Sốt Cà Chua Mềm Mọng",
+      "en": "Pork Meatballs in Fresh Tomato Sauce"
+    },
+    "image": "/dishes/vn-thit-vien-sot-ca-chua.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Dễ ăn",
+        "Trẻ em thích"
+      ],
+      "en": [
+        "Home Cook",
+        "Kid Friendly"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 270,
+    "protein": 20,
+    "fat": 18,
+    "carbs": 7,
+    "servingSize": {
+      "vi": "1 đĩa (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Gia Đình Việt",
+      "en": "Vietnamese Family Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt heo xay nạc mỡ",
+          "en": "Minced pork"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Mộc nhĩ ngâm nở băm vụn",
+          "en": "Wood ear mushroom"
+        },
+        "amount": "1 tai"
+      },
+      {
+        "name": {
+          "vi": "Cà chua chín mọng",
+          "en": "Ripe tomatoes"
+        },
+        "amount": "3 quả"
+      },
+      {
+        "name": {
+          "vi": "Hành khô, hành hoa thái nhỏ",
+          "en": "Shallots & scallions"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Gia vị mắm, muối, tiêu",
+          "en": "Seasonings"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trộn thịt xay với mộc nhĩ băm, hành khô băm, hạt nêm, tiêu rồi vo tròn thành các viên nhỏ.",
+        "Hấp sơ hoặc chiên sơ các viên thịt cho định hình săn chắc.",
+        "Phi thơm hành, xào cà chua bổ múi cau nhuyễn với chút nước thành sốt sánh đỏ.",
+        "Thả thịt viên vào đun liu riu trong sốt cà 10 phút cho ngấm đẫm vị chua ngọt.",
+        "Rắc hành hoa thái nhỏ, múc ra đĩa ăn cùng cơm trắng."
+      ],
+      "en": [
+        "Mix minced pork with wood ear, shallots, and seasoning; roll into meatballs.",
+        "Lightly pan-fry or steam meatballs to hold shape.",
+        "Sauté chopped tomatoes with a splash of water into a rich red gravy.",
+        "Add meatballs and simmer in sauce for 10 minutes until juicy and well-coated.",
+        "Garnish with chopped scallions and serve hot with rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-thit-bam-xao-ngo-ngot",
+    "title": {
+      "vi": "Thịt Băm Xào Bắp Ngọt Giòn Ngon",
+      "en": "Stir-fried Sweet Corn with Minced Pork"
+    },
+    "image": "/dishes/vn-thit-bam-xao-ngo-ngot.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 88,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Nhanh gọn",
+        "Trẻ em thích"
+      ],
+      "en": [
+        "Quick",
+        "Kid Friendly"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 16,
+    "fat": 12,
+    "carbs": 14,
+    "servingSize": {
+      "vi": "1 đĩa (~200g)",
+      "en": "1 plate (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Ngô ngọt tách hạt",
+          "en": "Sweet corn kernels"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo nạc xay",
+          "en": "Minced pork"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, hành hoa",
+          "en": "Shallots & scallions"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Bơ thực vật hoặc dầu ăn",
+          "en": "Butter or cooking oil"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Hạt nêm, tiêu xay",
+          "en": "Seasonings"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ngô ngọt rửa sạch để ráo nước. Thịt xay ướp chút hạt nêm tiêu.",
+        "Phi thơm hành tím trong chảo với dầu ăn, trút thịt xay vào xào tơi chín tới.",
+        "Cho ngô ngọt vào đảo đều trên lửa vừa khoảng 3-4 phút đến khi hạt ngô căng mọng bóng bẩy.",
+        "Thêm chút bơ và hành hoa đảo nhanh tay cho thơm nức mũi.",
+        "Múc ra đĩa, ăn nóng cùng cơm trắng hoặc làm món xào nhẹ."
+      ],
+      "en": [
+        "Rinse sweet corn kernels. Season minced pork with salt and pepper.",
+        "Sauté shallots in oil, add minced pork and cook until crumbly.",
+        "Add sweet corn and stir-fry over medium heat for 3-4 minutes until tender-crisp.",
+        "Stir in a touch of butter and scallions for extra aroma.",
+        "Serve hot with steamed rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-suon-non-sot-me",
+    "title": {
+      "vi": "Sườn Non Sốt Me Chua Cay Mặn Ngọt",
+      "en": "Tamarind Glazed Baby Pork Ribs"
+    },
+    "image": "/dishes/vn-suon-non-sot-me.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Chua ngọt",
+        "Đậm đà"
+      ],
+      "en": [
+        "Savory Sweet",
+        "Home Cook"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 360,
+    "protein": 24,
+    "fat": 25,
+    "carbs": 11,
+    "servingSize": {
+      "vi": "1 đĩa sườn (~250g)",
+      "en": "1 plate ribs (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Gia Đình",
+      "en": "Family Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sườn non heo chặt khúc",
+          "en": "Pork baby ribs"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Cốt me vắt lấy nước chua",
+          "en": "Tamarind pulp juice"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, đường, tỏi băm, ớt băm",
+          "en": "Fish sauce, sugar, garlic, chili"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn chiên sườn",
+          "en": "Cooking oil"
+        },
+        "amount": "3 thìa canh"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Sườn non chần nước sôi khử mùi, ướp chút muối tiêu rồi chiên vàng giòn hai mặt.",
+        "Pha sốt me: nước cốt me, đường, nước mắm, tương ớt khuấy tan vị chua ngọt đậm đà.",
+        "Phi thơm tỏi ớt băm trong chảo, đổ bát sốt me vào đun sôi sủi bọt.",
+        "Trút sườn đã chiên vào đảo đều trên lửa nhỏ cho sốt keo lại bám đều quanh từng dẻ sườn.",
+        "Bày ra đĩa, rắc vừng rang hoặc hành hoa thưởng thức nóng hổi."
+      ],
+      "en": [
+        "Blanch ribs in boiling water, season, and pan-fry until golden brown.",
+        "Mix tamarind juice with sugar, fish sauce, and chili sauce.",
+        "Sauté minced garlic and chili, pour in tamarind sauce until bubbling.",
+        "Add ribs and toss over low heat until the sauce forms a thick sticky glaze.",
+        "Serve hot garnished with toasted sesame or scallions."
+      ]
+    }
+  },
+  {
+    "id": "vn-suon-heo-hap-tau-xi",
+    "title": {
+      "vi": "Sườn Heo Hấp Tàu Xì Tỏi Đen Kiểu Hoa",
+      "en": "Steamed Pork Ribs with Fermented Black Beans"
+    },
+    "image": "/dishes/vn-suon-heo-hap-tau-xi.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": false,
+    "popularityScore": 86,
+    "dietaryTags": {
+      "vi": [
+        "Dimsum",
+        "Mềm tan",
+        "Đậm vị"
+      ],
+      "en": [
+        "Steamed",
+        "Tender",
+        "Dim Sum"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 320,
+    "protein": 23,
+    "fat": 22,
+    "carbs": 5,
+    "servingSize": {
+      "vi": "1 dĩa hấp (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Chợ Lớn Sài Gòn",
+      "en": "Cholon Cantonese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sườn non chặt nhỏ",
+          "en": "Baby ribs chopped small"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Hạt tàu xì (đậu đen lên men) rửa sạch băm nhỏ",
+          "en": "Fermented black beans"
+        },
+        "amount": "1.5 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm, ớt sừng cắt khoanh",
+          "en": "Garlic, red chili"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, xì dầu, bột bắp, dầu mè",
+          "en": "Oyster sauce, soy sauce, cornstarch"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Sườn non rửa sạch thấm khô, ướp với tàu xì băm, tỏi băm, dầu hào, xì dầu, bột bắp và dầu mè trong 20 phút.",
+        "Xếp sườn dàn đều ra đĩa sâu lòng chịu nhiệt, rắc ớt sừng lên trên.",
+        "Đặt đĩa sườn vào xửng hấp cách thủy trên lửa lớn trong 20-25 phút.",
+        "Khi sườn chín mềm mọng nước, thơm lừng vị tàu xì đặc trưng thì lấy ra dùng nóng."
+      ],
+      "en": [
+        "Wash and dry ribs. Marinate with black beans, garlic, oyster sauce, soy sauce, and cornstarch for 20 mins.",
+        "Spread ribs evenly on a heatproof deep plate and top with sliced chili.",
+        "Steam over high heat in a steamer for 20-25 minutes.",
+        "Serve piping hot while tender and aromatic."
+      ]
+    }
+  },
+  {
+    "id": "vn-gio-thu-xao",
+    "title": {
+      "vi": "Giò Thủ Xào Mộc Nhĩ Tiêu Hạt Giòn Sần Sật",
+      "en": "Northern Vietnamese Brawn (Head Cheese)"
+    },
+    "image": "/dishes/vn-gio-thu-xao.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Truyền thống",
+        "Mâm cỗ Tết",
+        "Giòn sần sật"
+      ],
+      "en": [
+        "Traditional",
+        "Festive",
+        "Crunchy"
+      ]
+    },
+    "time": "50m",
+    "servings": 6,
+    "calories": 340,
+    "protein": 25,
+    "fat": 26,
+    "carbs": 3,
+    "servingSize": {
+      "vi": "1 đĩa thái lát (~200g)",
+      "en": "1 plate (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Tết Cổ Truyền",
+      "en": "Traditional Lunar New Year Food"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Tai heo, mũi heo, thịt chân giò",
+          "en": "Pork ears, snout, shank"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Mộc nhĩ, nấm hương ngâm nở thái sợi",
+          "en": "Wood ear & shiitake strips"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Tiêu sọ đập dập thơm cay",
+          "en": "Crushed white peppercorns"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm cốt nguyên chất",
+          "en": "Pure fish sauce"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Khuôn ép giò inox",
+          "en": "Stainless steel press mold"
+        },
+        "amount": "1 chiếc"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tai, mũi và thịt heo làm sạch, luộc sơ rồi thái lát mỏng dài đều tay.",
+        "Phi thơm hành tím, cho thịt vào xào săn trên lửa vừa, nêm nước mắm ngon và tiêu hạt đập dập.",
+        "Cho mộc nhĩ, nấm hương vào xào cùng đến khi thịt tiết mỡ trong, keo lại dính đũa.",
+        "Múc thịt còn nóng hổi vào khuôn ép giò, vặn chặt ốc nén để ép hết mỡ thừa ra ngoài.",
+        "Để nguội hẳn rồi cho vào ngăn mát tủ lạnh 4-6 tiếng cho giò đông kết chắc nịch.",
+        "Tháo khuôn, cắt khoanh tròn rồi chia miếng vừa ăn, chấm mắm ớt cà pháo chua giòn."
+      ],
+      "en": [
+        "Clean pork ears, snout, and shank; blanch and thinly slice into strips.",
+        "Sauté with fish sauce and crushed peppercorns until translucent.",
+        "Add sliced mushrooms and stir-fry until gelatinous and sticky.",
+        "Pack while hot into a press mold and tighten to squeeze out excess oil.",
+        "Chill in refrigerator for 4-6 hours until set firm.",
+        "Unmold, slice into wedges, and serve cold with pickled garlic or shallots."
+      ]
+    }
+  },
+  {
+    "id": "vn-tai-heo-ngam-chua-ngot",
+    "title": {
+      "vi": "Tai Heo Ngâm Giấm Chua Ngọt Giòn Sần Sật",
+      "en": "Pickled Crunchy Pork Ears in Sweet Vinegar"
+    },
+    "image": "/dishes/vn-tai-heo-ngam-chua-ngot.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 87,
+    "dietaryTags": {
+      "vi": [
+        "Món nhắm",
+        "Chua ngọt",
+        "Giòn sần sật"
+      ],
+      "en": [
+        "Appetizer",
+        "Crunchy",
+        "Pickled"
+      ]
+    },
+    "time": "40m",
+    "servings": 6,
+    "calories": 190,
+    "protein": 18,
+    "fat": 12,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 đĩa (~180g)",
+      "en": "1 plate (~180g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Cẩm nang Món Nhậu Việt",
+      "en": "Vietnamese Bar & Home Bites"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Tai heo tươi làm sạch",
+          "en": "Cleaned fresh pork ears"
+        },
+        "amount": "2 cái (~500g)"
+      },
+      {
+        "name": {
+          "vi": "Giấm gạo ngon",
+          "en": "Rice vinegar"
+        },
+        "amount": "300ml"
+      },
+      {
+        "name": {
+          "vi": "Đường cát trắng",
+          "en": "Sugar"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi tép thái lát, ớt sừng, tiêu hạt",
+          "en": "Sliced garlic, chili, whole pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tai heo xát muối chanh cạo sạch chất bẩn, luộc chín tới khoảng 15-20 phút.",
+        "Vớt ngay ra âu nước đá lạnh ngâm 15 phút cho tai thật giòn và trắng tinh.",
+        "Thái tai heo thành từng sợi mỏng dài vừa ăn.",
+        "Nấu nước ngâm: giấm gạo, đường, chút muối đun sôi để nguội hoàn toàn.",
+        "Xếp tai heo vào hũ thủy tinh cùng tỏi thái lát, ớt đỏ và hạt tiêu.",
+        "Đổ nước giấm ngập tai heo, đậy nắp cất tủ lạnh sau 1-2 ngày là giòn ngon đậm vị."
+      ],
+      "en": [
+        "Scrub pork ears with salt and lime, boil for 15-20 minutes until cooked through.",
+        "Immediately submerge into ice water for 15 minutes for maximum crunch and white color.",
+        "Thinly slice into strips.",
+        "Boil rice vinegar, sugar, and salt together, then let cool completely.",
+        "Pack sliced ears into glass jars layered with sliced garlic, chili, and peppercorns.",
+        "Pour vinegar syrup over, seal, and refrigerate for 1-2 days before enjoying."
+      ]
+    }
+  },
+  {
+    "id": "vn-mong-gio-ham-hat-sen",
+    "title": {
+      "vi": "Móng Giò Hầm Hạt Sen Nấm Hương Bổ Dưỡng",
+      "en": "Stewed Pork Trotter with Lotus Seeds & Shiitake"
+    },
+    "image": "/dishes/vn-mong-gio-ham-hat-sen.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Bổ dưỡng",
+        "Phục hồi sức khỏe",
+        "Mềm nhừ"
+      ],
+      "en": [
+        "Nourishing",
+        "Comfort Food"
+      ]
+    },
+    "time": "60m",
+    "servings": 4,
+    "calories": 390,
+    "protein": 28,
+    "fat": 27,
+    "carbs": 11,
+    "servingSize": {
+      "vi": "1 tô hầm (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Canh Bổ Dưỡng Việt",
+      "en": "Vietnamese Herbal Soups"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Móng giò heo chặt khoanh vừa ăn",
+          "en": "Pork trotters cut in rounds"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Hạt sen tươi hoặc khô ngâm mềm",
+          "en": "Lotus seeds"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Nấm hương khô ngâm nở",
+          "en": "Dried shiitake mushrooms"
+        },
+        "amount": "10 tai"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt tỉa hoa",
+          "en": "Carrot"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Hành tím, gừng lát, mùi tàu, hành hoa",
+          "en": "Aromatics & herbs"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Móng giò cạo sạch lông, chần nước sôi khử bọt rồi rửa sạch.",
+        "Cho móng giò vào nồi hầm với 1.2 lít nước, thêm gừng lát và hành tím nướng nhỏ lửa.",
+        "Khi móng giò bắt đầu mềm (khoảng 35 phút), cho hạt sen và nấm hương vào nấu cùng.",
+        "Thêm cà rốt vào hầm thêm 10 phút, nêm nước mắm và hạt nêm vừa vị thanh ngọt.",
+        "Múc ra bát lớn, rắc tiêu đen, hành hoa và mùi tàu thái nhỏ lên trên."
+      ],
+      "en": [
+        "Clean trotters thoroughly and blanch in boiling water.",
+        "Simmer trotters in 1.2L water with ginger and shallots for 35 mins.",
+        "Add lotus seeds and shiitake mushrooms, cook until tender.",
+        "Add carrots and simmer another 10 mins; season with fish sauce and broth powder.",
+        "Garnish with black pepper, scallions, and culantro before serving."
+      ]
+    }
+  },
+  {
+    "id": "vn-trung-chien-ngai-cuu",
+    "title": {
+      "vi": "Trứng Gà Rán Ngải Cứu Thơm Bùi Trị Đau Đầu",
+      "en": "Fried Eggs with Mugwort Leaves"
+    },
+    "image": "/dishes/vn-trung-chien-ngai-cuu.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 90,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Bài thuốc dân gian",
+        "Giàu dinh dưỡng"
+      ],
+      "en": [
+        "Home Cook",
+        "Herbal",
+        "Healthy"
+      ]
+    },
+    "time": "15m",
+    "servings": 3,
+    "calories": 220,
+    "protein": 15,
+    "fat": 17,
+    "carbs": 3,
+    "servingSize": {
+      "vi": "1 đĩa trứng (~180g)",
+      "en": "1 plate (~180g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ăn Bài Thuốc Dân Gian",
+      "en": "Vietnamese Herbal Healing Dishes"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Trứng gà ta",
+          "en": "Farm fresh eggs"
+        },
+        "amount": "4 quả"
+      },
+      {
+        "name": {
+          "vi": "Lá ngải cứu non thái nhỏ",
+          "en": "Young mugwort leaves, finely chopped"
+        },
+        "amount": "1 nắm (~50g)"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm nhỏ",
+          "en": "Minced shallot"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, tiêu xay, dầu ăn",
+          "en": "Fish sauce, black pepper, oil"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ngải cứu nhặt lấy ngọn non, rửa sạch vẩy ráo nước rồi thái nhỏ.",
+        "Đập trứng vào bát, thêm ngải cứu, hành tím, 1 thìa nước mắm và tiêu xay đánh đều.",
+        "Làm nóng chảo với dầu ăn, đổ trứng ngải cứu vào rán nhỏ lửa.",
+        "Rán vàng đều hai mặt cho thơm nức, ngải cứu chín mềm bùi bùi không bị đắng ngắt.",
+        "Thưởng thức nóng cùng cơm trắng giúp lưu thông khí huyết, nhẹ nhõm đầu óc."
+      ],
+      "en": [
+        "Pick young mugwort tips, wash, drain and finely chop.",
+        "Beat eggs with mugwort, shallot, fish sauce, and black pepper.",
+        "Heat oil in a skillet, pour in egg mixture and fry on low-medium heat.",
+        "Flip gently to cook both sides until golden and aromatic.",
+        "Serve hot with steamed rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-trung-hap-thit-van",
+    "title": {
+      "vi": "Trứng Hấp Thịt Vân Nấm Hương Cách Thủy",
+      "en": "Steamed Marbled Egg Custard with Minced Pork"
+    },
+    "image": "/dishes/vn-trung-hap-thit-van.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": false,
+    "popularityScore": 85,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Thanh nhẹ",
+        "Trẻ em người già thích"
+      ],
+      "en": [
+        "Steamed",
+        "Soft",
+        "Comfort Food"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 230,
+    "protein": 18,
+    "fat": 16,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 tô hấp (~220g)",
+      "en": "1 bowl (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Gia Đình",
+      "en": "Family Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Trứng gà",
+          "en": "Eggs"
+        },
+        "amount": "4 quả"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo nạc xay",
+          "en": "Minced pork"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nấm hương băm nhỏ",
+          "en": "Minced shiitake"
+        },
+        "amount": "4 tai"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng gà hoặc nước ấm",
+          "en": "Warm broth or water"
+        },
+        "amount": "100ml"
+      },
+      {
+        "name": {
+          "vi": "Hành hoa, tiêu, hạt nêm",
+          "en": "Scallions, pepper, seasoning"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ướp thịt xay với nấm hương, tiêu và chút hạt nêm, rải đều xuống đáy âu chịu nhiệt.",
+        "Đánh tan trứng với nước ấm và hạt nêm, lọc qua rây cho mịn.",
+        "Rót nhẹ nhàng trứng vào âu thịt, bọc màng bọc thực phẩm xăm lỗ nhỏ.",
+        "Hấp cách thủy trên lửa nhỏ trong 18-20 phút đến khi trứng đông mịn như thạch.",
+        "Rắc hành hoa và tiêu hạt lên trên, dùng nóng mềm mượt tan ngay trong miệng."
+      ],
+      "en": [
+        "Season pork with shiitake and pepper, spread evenly at bottom of a steaming bowl.",
+        "Whisk eggs with warm water and broth powder; strain for silkiness.",
+        "Gently pour egg over meat layer, cover with vented wrap.",
+        "Steam gently on low heat for 18-20 minutes until set like silk custard.",
+        "Garnish with scallions and serve hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-trung-chung-ca-chua",
+    "title": {
+      "vi": "Trứng Chưng Cà Chua Mềm Thơm Đậm Đà",
+      "en": "Stir-fried Scrambled Eggs with Tomatoes"
+    },
+    "image": "/dishes/vn-trung-chung-ca-chua.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Nhanh gọn",
+        "5 phút"
+      ],
+      "en": [
+        "Quick",
+        "5 Minutes",
+        "Easy"
+      ]
+    },
+    "time": "10m",
+    "servings": 3,
+    "calories": 180,
+    "protein": 12,
+    "fat": 13,
+    "carbs": 5,
+    "servingSize": {
+      "vi": "1 đĩa (~180g)",
+      "en": "1 plate (~180g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Trứng gà",
+          "en": "Eggs"
+        },
+        "amount": "4 quả"
+      },
+      {
+        "name": {
+          "vi": "Cà chua chín đỏ thái nhỏ",
+          "en": "Diced ripe tomatoes"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, hành hoa thái nhỏ",
+          "en": "Shallots & scallions"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, dầu ăn, tiêu",
+          "en": "Fish sauce, oil, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trứng đập ra bát đánh tan với 1 thìa cà phê nước mắm.",
+        "Phi thơm hành tím, cho cà chua vào xào mềm nhuyễn thành sốt đỏ mọng.",
+        "Đổ trứng vào chảo sốt cà, dùng đũa khuấy nhẹ tay trên lửa nhỏ vừa cho trứng đông tơi xốp mềm mại.",
+        "Rắc hành hoa và chút tiêu xay rồi tắt bếp ngay tránh để trứng bị khô xác.",
+        "Dọn ra đĩa, ăn kèm cơm nóng hoặc bánh mì giòn tan."
+      ],
+      "en": [
+        "Beat eggs with fish sauce.",
+        "Sauté shallots and cook diced tomatoes until soft and saucy.",
+        "Pour eggs into skillet and stir gently over low heat until fluffy and soft-scrambled.",
+        "Top with green onions and cracked black pepper, remove from heat.",
+        "Serve with warm rice or crusty bread."
+      ]
+    }
+  },
+  {
+    "id": "vn-dau-phu-luot-van",
+    "title": {
+      "vi": "Đậu Phụ Lướt Ván Giòn Rụm Chấm Mắm Tôm",
+      "en": "Crispy Flash-fried Soft Tofu with Shrimp Paste"
+    },
+    "image": "/dishes/vn-dau-phu-luot-van.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Dân dã",
+        "Giá rẻ"
+      ],
+      "en": [
+        "Budget Friendly",
+        "Classic",
+        "Crispy"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 210,
+    "protein": 16,
+    "fat": 15,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 đĩa (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Cổ Hà Nội",
+      "en": "Hanoi Street & Home Food"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đậu phụ Mơ trắng mềm mịn",
+          "en": "Fresh soft Mo tofu"
+        },
+        "amount": "4 bìa"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn chiên ngập dầu",
+          "en": "Cooking oil for deep fry"
+        },
+        "amount": "200ml"
+      },
+      {
+        "name": {
+          "vi": "Mắm tôm Thanh Hóa",
+          "en": "Fermented shrimp paste"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Chanh tươi, đường, ớt hiểm, rượu trắng",
+          "en": "Lime, sugar, chili, rice wine"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đậu phụ cắt miếng vuông vừa ăn, thấm khô nhẹ nhàng để không bị bắn dầu.",
+        "Đun chảo ngập dầu thật nóng già, nhẹ nhàng thả từng miếng đậu vào.",
+        "Chiên nhanh trên lửa lớn (lướt ván) để lớp vỏ ngoài vàng ruộm giòn tan mà bên trong vẫn mềm béo mịn màng.",
+        "Vớt đậu ra để ráo dầu trên giấy thấm.",
+        "Đánh bông mắm tôm với chanh, đường, chút rượu trắng và ớt thái lát, chấm đậu ăn ngay khi còn nóng bỏng tay."
+      ],
+      "en": [
+        "Cut soft tofu into cubes, pat dry gently.",
+        "Heat oil until sizzling hot; flash-fry tofu cubes over high heat.",
+        "Drain as soon as outside turns crispy golden while inside stays silky soft.",
+        "Froth shrimp paste with lime juice, sugar, chili, and a splash of wine.",
+        "Dip hot tofu in shrimp paste and enjoy immediately."
+      ]
+    }
+  },
+  {
+    "id": "vn-dau-phu-tam-hanh",
+    "title": {
+      "vi": "Đậu Phụ Rán Tẩm Mỡ Hành Hà Nội",
+      "en": "Fried Tofu Dipped in Scallion Fish Sauce"
+    },
+    "image": "/dishes/vn-dau-phu-tam-hanh.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Tuổi thơ",
+        "Đậm vị"
+      ],
+      "en": [
+        "Comfort Food",
+        "Hanoi Classic"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 15,
+    "fat": 16,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 đĩa (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Gia Đình Bắc Bộ",
+      "en": "Northern Home Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đậu phụ trắng",
+          "en": "White tofu"
+        },
+        "amount": "4 bìa"
+      },
+      {
+        "name": {
+          "vi": "Hành lá thái nhỏ thật nhiều",
+          "en": "Generous chopped scallions"
+        },
+        "amount": "1 bát con"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon pha chút nước lọc ấm",
+          "en": "Fish sauce diluted with warm water"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn rán đậu",
+          "en": "Cooking oil"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cho hành lá thái nhỏ vào bát nước mắm ngon để sẵn.",
+        "Đậu phụ thái con chì hoặc miếng vuông vừa ăn, chiên trong chảo dầu nóng đến khi vỏ vàng giòn rụm.",
+        "Gắp miếng đậu phụ ngay khi vừa vớt ra khỏi chảo dầu nóng nhúng ngập vào bát nước mắm hành lá.",
+        "Sức nóng của miếng đậu sẽ làm hành lá chín tái xanh mướt và hút đẫm nước mắm thơm lừng.",
+        "Xếp ra đĩa ăn ngay với cơm trắng, vị béo của đậu quyện cùng mùi thơm mỡ hành mằn mặn khó quên."
+      ],
+      "en": [
+        "Place chopped scallions into a bowl of seasoned fish sauce.",
+        "Fry tofu in hot oil until crispy golden brown.",
+        "Immediately take boiling-hot tofu from pan and dip directly into the scallion sauce.",
+        "The residual heat lightly wilts the scallions and infuses the tofu with savory aroma.",
+        "Serve hot with steamed rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-dau-phu-chien-sa-ot",
+    "title": {
+      "vi": "Đậu Phụ Chiên Sả Ớt Vàng Giòn Cay Nồng",
+      "en": "Crispy Lemongrass Chili Fried Tofu"
+    },
+    "image": "/dishes/vn-dau-phu-chien-sa-ot.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 89,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Ăn chay hoặc mặn",
+        "Cay nồng"
+      ],
+      "en": [
+        "Vegetarian Friendly",
+        "Spicy"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 200,
+    "protein": 14,
+    "fat": 14,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa (~220g)",
+      "en": "1 plate (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Chay & Cơm Nhà",
+      "en": "Vietnamese Vegetarian Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đậu phụ trắng",
+          "en": "Firm tofu"
+        },
+        "amount": "4 bìa"
+      },
+      {
+        "name": {
+          "vi": "Sả băm nhuyễn",
+          "en": "Minced lemongrass"
+        },
+        "amount": "3 củ"
+      },
+      {
+        "name": {
+          "vi": "Ớt băm, tỏi băm",
+          "en": "Minced chili & garlic"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Hạt nêm, xì dầu, muối",
+          "en": "Seasonings"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đậu phụ cắt miếng chữ nhật, khía vài đường chéo nhẹ trên mặt để dễ ngấm gia vị.",
+        "Chiên đậu phụ vàng giòn các mặt rồi vớt ra đĩa.",
+        "Dùng chính chảo đó, phi thơm sả băm, tỏi, ớt đến khi vàng giòn dậy mùi nồng ấm.",
+        "Nêm chút muối, hạt nêm hoặc xì dầu cho đậm đà.",
+        "Trút đậu phụ chiên vào đảo đều cho sả ớt phủ kín bề mặt miếng đậu rồi trút ra đĩa."
+      ],
+      "en": [
+        "Cut tofu into rectangles, score lightly with diagonal cuts.",
+        "Deep fry until golden and crispy; drain on plate.",
+        "Sauté minced lemongrass, garlic, and chili until crisp and aromatic.",
+        "Season with salt and soy sauce.",
+        "Toss tofu back into the skillet until well coated with the crunchy spicy lemongrass mix."
+      ]
+    }
+  },
+  {
+    "id": "vn-dau-non-sot-nam-dong-co",
+    "title": {
+      "vi": "Đậu Hũ Non Sốt Nấm Đông Cô Dầu Hào",
+      "en": "Silken Tofu with Braised Shiitake Mushrooms"
+    },
+    "image": "/dishes/vn-dau-non-sot-nam-dong-co.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Thanh đạm",
+        "Tốt cho tim mạch",
+        "Chay mặn đều dùng được"
+      ],
+      "en": [
+        "Healthy",
+        "Silky",
+        "Vegetarian Adaptable"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 165,
+    "protein": 12,
+    "fat": 7,
+    "carbs": 14,
+    "servingSize": {
+      "vi": "1 đĩa sâu lòng (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Thanh Đạm",
+      "en": "Wholesome Living Vietnam"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đậu hũ non",
+          "en": "Silken tofu"
+        },
+        "amount": "1 cây hoặc 1 hộp (~300g)"
+      },
+      {
+        "name": {
+          "vi": "Nấm đông cô tươi thái lát",
+          "en": "Fresh shiitake mushrooms sliced"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào chay, nước tương",
+          "en": "Vegetarian oyster sauce, soy sauce"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Bột năng hòa nước",
+          "en": "Tapioca starch slurry"
+        },
+        "amount": "1 thìa cà phê"
+      },
+      {
+        "name": {
+          "vi": "Hành boa-rô hoặc hành tím, tiêu",
+          "en": "Leek/shallots & pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đậu hũ non cắt khoanh tròn dày khoảng 2cm, hấp nóng nhẹ 5 phút rồi xếp ra đĩa sâu lòng.",
+        "Phi thơm hành boa-rô, cho nấm đông cô vào xào chín tới.",
+        "Thêm dầu hào, nước tương và chút nước dùng đun sôi liu riu.",
+        "Rót từ từ nước bột năng vào khuấy đều tạo độ sánh bóng mượt mà.",
+        "Rưới đều sốt nấm nóng hổi lên trên đĩa đậu hũ non, rắc tiêu và ngò rí dùng ngay."
+      ],
+      "en": [
+        "Cut silken tofu into thick rounds, steam for 5 mins and place on a deep plate.",
+        "Sauté leeks or shallots, then add shiitake slices and cook until tender.",
+        "Add oyster sauce, soy sauce, and a splash of broth; simmer.",
+        "Stir in starch slurry to create a glossy, thick gravy.",
+        "Pour hot mushroom sauce over the steamed silken tofu, garnish with cilantro and pepper."
+      ]
+    }
+  },
+  {
+    "id": "vn-trung-cut-rim-man-ngot",
+    "title": {
+      "vi": "Trứng Cút Rim Mặn Ngọt Óng Ả Hao Cơm",
+      "en": "Caramelized Glazed Quail Eggs"
+    },
+    "image": "/dishes/vn-trung-cut-rim-man-ngot.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 89,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Trẻ em mê",
+        "Đậm đà"
+      ],
+      "en": [
+        "Kid Friendly",
+        "Sweet & Savory"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 260,
+    "protein": 15,
+    "fat": 18,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 đĩa (~200g)",
+      "en": "1 plate (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Cho Bé & Gia Đình",
+      "en": "Family & Kids Favorite"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Trứng cút tươi",
+          "en": "Fresh quail eggs"
+        },
+        "amount": "25 quả"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, đường cát",
+          "en": "Fish sauce & sugar"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tương ớt, tiêu, tỏi băm",
+          "en": "Chili sauce, pepper, garlic"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn chiên trứng",
+          "en": "Cooking oil"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trứng cút luộc chín trong 5 phút, ngâm nước lạnh rồi bóc sạch vỏ.",
+        "Chiên trứng cút ngập dầu đến khi lớp vỏ ngoài phồng rộp vàng giòn.",
+        "Pha hỗn hợp sốt: nước mắm, đường, tương ớt và 2 thìa nước lọc.",
+        "Phi thơm tỏi băm, đổ sốt vào đun sôi rồi trút trứng cút chiên vào đảo liên tục trên lửa nhỏ.",
+        "Khi sốt keo lại bám bóng màu hổ phách quanh từng quả trứng cút thì rắc tiêu, tắt bếp."
+      ],
+      "en": [
+        "Hard-boil quail eggs for 5 minutes, peel under cold water.",
+        "Deep fry until the outer skin turns bubbly and golden-crisp.",
+        "Mix fish sauce, sugar, chili sauce, and water into a glaze.",
+        "Sauté garlic, pour in glaze, and simmer.",
+        "Toss fried quail eggs in glaze until coated with a shiny amber caramel."
+      ]
+    }
+  },
+  {
+    "id": "vn-bo-xao-gia-muop",
+    "title": {
+      "vi": "Thịt Bò Xào Giá Đỗ Mướp Hương Giòn Ngọt",
+      "en": "Stir-fried Beef with Bean Sprouts & Sponge Gourd"
+    },
+    "image": "/dishes/vn-bo-xao-gia-muop.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Thanh mát",
+        "Nhanh gọn"
+      ],
+      "en": [
+        "Quick",
+        "Fresh",
+        "Healthy"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 24,
+    "fat": 10,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 đĩa xào (~280g)",
+      "en": "1 plate (~280g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt thăn bò thái mỏng",
+          "en": "Thinly sliced beef sirloin"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Mướp hương gọt vỏ thái vát",
+          "en": "Fragrant sponge gourd sliced"
+        },
+        "amount": "1 quả"
+      },
+      {
+        "name": {
+          "vi": "Giá đỗ rửa sạch",
+          "en": "Fresh bean sprouts"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm, hành hoa",
+          "en": "Minced garlic & scallions"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, nước mắm, tiêu xay",
+          "en": "Oyster sauce, fish sauce, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt bò ướp với tỏi băm, dầu hào, tiêu và 1 thìa cà phê dầu ăn để thịt mềm mọng.",
+        "Phi thơm tỏi trên lửa lớn, xào nhanh thịt bò chín tái khoảng 1 phút rồi trút riêng ra đĩa.",
+        "Cho mướp hương vào chảo xào chín tới trong 2 phút, tiếp tục trút giá đỗ vào đảo nhanh 30 giây.",
+        "Trút thịt bò trở lại chảo, đảo đều tay trên lửa to cho hòa quyện rồi nêm lại vừa ăn.",
+        "Rắc hành hoa thái khúc và tiêu đen, bày ra đĩa thưởng thức ngay khi còn bốc khói nghi ngút."
+      ],
+      "en": [
+        "Marinate beef slices with garlic, oyster sauce, pepper, and a dash of oil to keep tender.",
+        "Sear beef quickly in garlic oil over high heat for 1 minute; set aside.",
+        "Stir-fry sponge gourd for 2 mins, then add bean sprouts and toss for 30s.",
+        "Return beef to wok, toss together over high heat and adjust seasoning.",
+        "Top with scallions and black pepper; serve piping hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-bo-xao-thien-ly",
+    "title": {
+      "vi": "Thịt Bò Xào Hoa Thiên Lý Ngát Hương",
+      "en": "Stir-fried Beef with Fragrant Telosma Flowers"
+    },
+    "image": "/dishes/vn-bo-xao-thien-ly.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Món quý",
+        "Thanh nhiệt",
+        "Giàu dinh dưỡng"
+      ],
+      "en": [
+        "Seasonal",
+        "Nutritious"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 230,
+    "protein": 25,
+    "fat": 10,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Việt Nam",
+      "en": "Vietnamese Delicacies"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt bò thăn thái lát mỏng",
+          "en": "Thinly sliced beef"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Hoa thiên lý tươi rửa sạch",
+          "en": "Fresh telosma flowers"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm nhuyễn",
+          "en": "Minced garlic"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, tiêu, nước mắm",
+          "en": "Oyster sauce, pepper, fish sauce"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt bò ướp với dầu hào, tỏi băm và tiêu 10 phút.",
+        "Phi thơm tỏi trong chảo dầu nóng, xào thịt bò trên lửa lớn vừa chín tới, múc ra đĩa.",
+        "Cho hoa thiên lý vào chảo xào nhanh tay trên lửa lớn khoảng 1-2 phút cho hoa vừa chín giòn ngọt màu xanh mướt.",
+        "Trút thịt bò vào đảo cùng 30 giây cho quyện đều vị.",
+        "Tắt bếp, cho ra đĩa rắc tiêu thưởng thức cùng cơm trắng."
+      ],
+      "en": [
+        "Marinate sliced beef with oyster sauce, minced garlic, and pepper for 10 mins.",
+        "Quickly sear beef in garlic oil over high heat until tender; set aside.",
+        "Stir-fry telosma flowers over high heat for 1-2 mins until bright green and crisp.",
+        "Return beef, toss for 30 seconds to combine.",
+        "Finish with fresh pepper and serve immediately."
+      ]
+    }
+  },
+  {
+    "id": "vn-bap-bo-ngam-mam",
+    "title": {
+      "vi": "Bắp Bò Hoa Ngâm Nước Mắm Chua Ngọt Giòn Tan",
+      "en": "Sweet & Savory Fish Sauce Pickled Beef Shank"
+    },
+    "image": "/dishes/vn-bap-bo-ngam-mam.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản ngày Tết",
+        "Món nhắm",
+        "Đậm đà"
+      ],
+      "en": [
+        "Festive",
+        "Savory",
+        "Appetizer"
+      ]
+    },
+    "time": "45m",
+    "servings": 6,
+    "calories": 270,
+    "protein": 30,
+    "fat": 14,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa thái mỏng (~200g)",
+      "en": "1 plate sliced (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Tết Hà Nội",
+      "en": "Hanoi Holiday Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bắp bò hoa nhiều gân",
+          "en": "Beef shank with tendon veins"
+        },
+        "amount": "800g"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm truyền thống cốt nhĩ",
+          "en": "Premium fish sauce"
+        },
+        "amount": "300ml"
+      },
+      {
+        "name": {
+          "vi": "Đường vàng hoặc đường phèn",
+          "en": "Rock sugar / cane sugar"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Giấm gạo ngon",
+          "en": "Rice vinegar"
+        },
+        "amount": "100ml"
+      },
+      {
+        "name": {
+          "vi": "Quế, hoa hồi, thảo quả, gừng, tỏi, ớt",
+          "en": "Cinnamon, star anise, cardamom, aromatics"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bắp bò cuộn chặt dây chỉ, luộc cùng quế, hồi, thảo quả, gừng và chút muối trong 30-35 phút đến khi chín tới.",
+        "Vớt bắp bò ngâm ngay vào âu nước đá cho săn chắc rồi để thật khô ráo trong tủ lạnh.",
+        "Nấu nước mắm ngâm: đun sôi nước mắm, đường, giấm và nước lọc theo tỉ lệ cân đối, để nguội hoàn toàn.",
+        "Xếp bắp bò vào hũ thủy tinh cùng tỏi thái lát, ớt hiểm, tiêu sọ và hoa hồi.",
+        "Rót nước mắm ngập bắp bò, đậy kín sau 3-5 ngày là ngấm giòn sần sật, thái lát mỏng cuốn bánh tráng hoặc nhắm rượu."
+      ],
+      "en": [
+        "Tie beef shank tightly, simmer with cinnamon, star anise, cardamom, and ginger for 30-35 mins.",
+        "Ice bath the shank to seal juices and crisp tendon, then pat completely dry.",
+        "Boil fish sauce, rock sugar, vinegar, and water; let cool completely.",
+        "Pack beef in glass jar with sliced garlic, chili, peppercorns, and star anise.",
+        "Submerge in seasoned fish sauce for 3-5 days. Slice paper-thin before serving."
+      ]
+    }
+  },
+  {
+    "id": "vn-bo-kho-gung-sa",
+    "title": {
+      "vi": "Bắp Bò Kho Gừng Sả Ấm Nồng Ngày Mưa",
+      "en": "Braised Beef Shank with Ginger & Lemongrass"
+    },
+    "image": "/dishes/vn-bo-kho-gung-sa.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Ấm áp ngày đông",
+        "Hao cơm"
+      ],
+      "en": [
+        "Comfort Food",
+        "Warming Stew"
+      ]
+    },
+    "time": "50m",
+    "servings": 4,
+    "calories": 310,
+    "protein": 28,
+    "fat": 18,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 tô kho (~250g)",
+      "en": "1 bowl (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Bắc",
+      "en": "Northern Vietnam Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bắp bò hoặc nạm bò",
+          "en": "Beef shank or flank"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi đập dập và thái sợi",
+          "en": "Crushed and julienned ginger"
+        },
+        "amount": "2 củ to"
+      },
+      {
+        "name": {
+          "vi": "Sả cây đập dập cắt khúc",
+          "en": "Lemongrass stalks bruised"
+        },
+        "amount": "3 cây"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, nước màu đường, tiêu",
+          "en": "Fish sauce, caramel sauce, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt bò thái miếng vuông quân cờ vừa ăn. Ướp với nước mắm, tiêu, gừng băm và nước màu 20 phút.",
+        "Phi thơm sả và gừng trong nồi, trút thịt bò vào xào săn trên lửa lớn.",
+        "Đổ nước sôi xâm xấp mặt thịt, đun sôi rồi hạ nhỏ lửa đậy nắp kho liu riu.",
+        "Kho khoảng 40 phút đến khi thịt bò mềm rục ngấm trọn vị cay ấm của gừng sả, nước kho sánh đặc nâu đỏ óng ả.",
+        "Dọn ra tô ăn nóng cùng cơm trắng trong những ngày mưa lạnh."
+      ],
+      "en": [
+        "Cut beef into hearty cubes. Marinate with fish sauce, pepper, ginger, and caramel for 20 mins.",
+        "Sauté lemongrass and ginger in pot, add beef and sear over high heat.",
+        "Pour in boiling water to cover, reduce heat and simmer covered.",
+        "Cook for 40 mins until beef is meltingly tender and coated in a spicy ginger sauce.",
+        "Serve piping hot with steamed rice on cold rainy days."
+      ]
+    }
+  },
+  {
+    "id": "vn-bo-ne-chao-gang",
+    "title": {
+      "vi": "Bò Né Chảo Gang Trứng Ốp La Pâté Xèo Xèo",
+      "en": "Vietnamese Sizzling Beef Steak with Eggs & Pâté"
+    },
+    "image": "/dishes/vn-bo-ne-chao-gang.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Ăn sáng",
+        "Đậm vị",
+        "Giàu đạm"
+      ],
+      "en": [
+        "Breakfast",
+        "Sizzling Steak",
+        "High Protein"
+      ]
+    },
+    "time": "15m",
+    "servings": 2,
+    "calories": 480,
+    "protein": 35,
+    "fat": 34,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 chảo gang (~350g)",
+      "en": "1 skillet (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Đặc sản Quán Ăn Sài Gòn",
+      "en": "Saigon Street Food Culture"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt thăn bò mềm thái lát bản to",
+          "en": "Tender beef sirloin steak slices"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà ta",
+          "en": "Farm eggs"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Pâté gan heo béo bùi",
+          "en": "Pork liver pâté"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Bơ thơm thực vật",
+          "en": "Butter"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Hành tây thái múi cau, cà chua, ngò rí",
+          "en": "Onion, tomato, cilantro"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Bánh mì giòn ăn kèm",
+          "en": "Crusty baguette"
+        },
+        "amount": "2 ổ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt bò dần mềm, ướp với dầu hào, xì dầu, tiêu xay và tỏi băm 15 phút.",
+        "Đặt chảo gang hình con bò lên bếp đun thật nóng già, cho bơ vào tan chảy xèo xèo.",
+        "Xếp thịt bò, hành tây, 1 viên pâté và đập 1 quả trứng gà trực tiếp vào chảo.",
+        "Rưới chút nước sốt bò lên trên, rắc tiêu đen và ngò rí, nhấc chảo gang đặt lên đĩa gỗ phục vụ ngay khi còn sôi sùng sục.",
+        "Chấm bánh mì giòn tan vào lòng đỏ trứng béo ngậy và nước sốt bò đậm đà."
+      ],
+      "en": [
+        "Tenderize beef slices; marinate with oyster sauce, soy sauce, pepper, and garlic.",
+        "Heat cast-iron cow skillet until smoking hot; melt butter sizzlingly.",
+        "Add beef, onion slices, a scoop of pâté, and crack an egg directly on skillet.",
+        "Drizzle steak sauce, sprinkle pepper and cilantro; serve immediately on wooden base.",
+        "Dip crispy warm baguette into runny yolk, buttery pâté, and savory meat juices."
+      ]
+    }
+  },
+  {
+    "id": "vn-bo-cuon-nam-kim-cham",
+    "title": {
+      "vi": "Bò Cuộn Nấm Kim Châm Áp Chảo Sốt Tiêu",
+      "en": "Pan-seared Beef Rolls with Enoki Mushrooms"
+    },
+    "image": "/dishes/vn-bo-cuon-nam-kim-cham.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Đẹp mắt",
+        "Nhanh gọn"
+      ],
+      "en": [
+        "Quick",
+        "Elegant",
+        "Healthy"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 260,
+    "protein": 26,
+    "fat": 15,
+    "carbs": 5,
+    "servingSize": {
+      "vi": "8-10 cuốn (~250g)",
+      "en": "8-10 rolls (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Hiện Đại",
+      "en": "Modern Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt ba chỉ bò Mỹ cuộn lát mỏng",
+          "en": "Thinly sliced beef short plate"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Nấm kim châm cắt gốc rửa sạch",
+          "en": "Enoki mushrooms"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, xì dầu, mật ong, tiêu đen",
+          "en": "Oyster sauce, soy sauce, honey, black pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Hành lá chần sơ buộc nơ",
+          "en": "Blanched scallion ribbons"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trải từng dải thịt bò mỏng ra thớt, đặt một nhúm nấm kim châm vào giữa rồi cuộn tròn chặt tay.",
+        "Pha nước sốt: dầu hào, xì dầu, mật ong, tiêu đen và chút nước lọc.",
+        "Làm nóng chảo với chút xíu dầu ăn, xếp từng cuộn bò vào áp chảo vàng xém các mặt.",
+        "Rưới nước sốt vào chảo đảo nhẹ 1-2 phút cho sốt ngấm đều bóng bẩy quanh cuộn bò.",
+        "Gắp ra đĩa rắc mè rang hoặc hành lá thái nhỏ, dùng nóng với cơm trắng."
+      ],
+      "en": [
+        "Lay thin beef slices flat, place a bundle of enoki mushrooms in center, roll tightly.",
+        "Whisk oyster sauce, soy sauce, honey, cracked pepper, and water for the glaze.",
+        "Pan-sear beef rolls in a lightly oiled pan until browned on all sides.",
+        "Pour in glaze and simmer for 1-2 mins until glazed and glossy.",
+        "Plate, garnish with toasted sesame seeds, and serve hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-dua-bo",
+    "title": {
+      "vi": "Canh Dưa Chua Nấu Gầu Bò Thì Là Chua Dịu",
+      "en": "Sour Pickled Mustard Greens Soup with Beef Brisket"
+    },
+    "image": "/dishes/vn-canh-dua-bo.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Chua dịu",
+        "Đưa cơm ngày hè"
+      ],
+      "en": [
+        "Home Cook",
+        "Tangy Soup",
+        "Comfort Food"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 280,
+    "protein": 22,
+    "fat": 18,
+    "carbs": 7,
+    "servingSize": {
+      "vi": "1 tô lớn (~400g)",
+      "en": "1 large bowl (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Cổ Hà Nội",
+      "en": "Hanoi Traditional Soups"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Dưa cải chua muối giòn",
+          "en": "Sour pickled mustard greens"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Gầu bò hoặc dẻ sườn bò",
+          "en": "Beef brisket or rib fingers"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Cà chua chín bổ múi cau",
+          "en": "Ripe tomatoes wedged"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, hành hoa, thì là",
+          "en": "Shallots, scallions, fresh dill"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Gia vị mắm muối hạt nêm",
+          "en": "Seasonings"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Gầu bò thái miếng vừa ăn, xào săn với hành tím và chút nước mắm rồi ninh nhỏ lửa 20 phút cho mềm.",
+        "Dưa cải chua rửa sơ vắt ráo. Cà chua xào mềm trong chảo riêng cho lên màu đỏ đẹp.",
+        "Cho dưa chua vào xào cùng cà chua khoảng 3-5 phút cho ngấm vị mặn mòi giòn tan.",
+        "Trút dưa cà vào nồi nước ninh thịt bò, đun sôi rồi hạ nhỏ lửa nấu thêm 10 phút.",
+        "Nêm lại vừa khẩu vị chua thanh đậm đà, thả hành hoa và thì là thái khúc vào rồi tắt bếp ngay."
+      ],
+      "en": [
+        "Slice beef brisket, sear with shallots and fish sauce, then simmer in water for 20 mins until tender.",
+        "Rinse pickled greens lightly. Sauté tomatoes until soft and red.",
+        "Add pickled mustard greens to tomatoes and stir-fry for 3-5 mins.",
+        "Transfer greens and tomatoes into the beef broth pot; simmer for 10 mins.",
+        "Season to balance tangy and savory flavors; toss in scallions and fresh dill before serving."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-ga-chien-mam",
+    "title": {
+      "vi": "Cánh Gà Chiên Nước Mắm Tỏi Ớt Giòn Rụm",
+      "en": "Crispy Chicken Wings in Savory Garlic Fish Sauce"
+    },
+    "image": "/dishes/vn-canh-ga-chien-mam.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 99,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Món khoái khẩu",
+        "Giòn rụm"
+      ],
+      "en": [
+        "Crowd Pleaser",
+        "Crispy",
+        "Savory"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 380,
+    "protein": 26,
+    "fat": 28,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa cánh gà (~300g)",
+      "en": "1 plate wings (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cánh gà tươi chặt khúc",
+          "en": "Chicken wings sectioned"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon cốt nhĩ",
+          "en": "Premium fish sauce"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Đường cát trắng",
+          "en": "Sugar"
+        },
+        "amount": "2.5 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm thật nhiều",
+          "en": "Generous minced garlic"
+        },
+        "amount": "2 củ"
+      },
+      {
+        "name": {
+          "vi": "Ớt hiểm băm",
+          "en": "Minced chili"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Bột bắp hoặc bột chiên giòn",
+          "en": "Cornstarch"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn chiên gà",
+          "en": "Cooking oil"
+        },
+        "amount": "200ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cánh gà rửa sạch xát muối chanh, khía nhẹ mặt sau, áo một lớp mỏng bột bắp khô.",
+        "Chiên cánh gà ngập dầu trên lửa vừa đến khi da căng phồng vàng ruộm giòn tan, vớt ra để ráo dầu.",
+        "Pha sốt mắm tỏi: khuấy tan nước mắm, đường, tương ớt và 1 thìa nước lọc.",
+        "Phi thơm tỏi ớt băm trong chảo đến khi vàng thơm, đổ bát sốt mắm vào đun sủi bọt sánh lại.",
+        "Trút cánh gà chiên vào đảo nhanh tay trên lửa lớn 1-2 phút cho lớp mắm tỏi phủ bóng đều quanh cánh gà.",
+        "Múc ra đĩa, ăn nóng kèm dưa chuột và rau răm."
+      ],
+      "en": [
+        "Clean chicken wings, score gently, lightly dust with cornstarch.",
+        "Deep fry until golden and crispy; drain on paper towels.",
+        "Mix fish sauce, sugar, chili sauce, and water into a glaze.",
+        "Sauté garlic and chili until fragrant and golden, pour in glaze and bring to a simmer.",
+        "Toss chicken wings vigorously in the glaze until thoroughly coated and sticky.",
+        "Serve hot with cucumber slices and Vietnamese coriander."
+      ]
+    }
+  },
+  {
+    "id": "vn-dui-ga-sot-bo-toi",
+    "title": {
+      "vi": "Đùi Gà Sốt Bơ Tỏi Mật Ong Óng Vàng",
+      "en": "Honey Garlic Butter Glazed Chicken Thighs"
+    },
+    "image": "/dishes/vn-dui-ga-sot-bo-toi.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Trẻ em thích",
+        "Thơm ngậy"
+      ],
+      "en": [
+        "Kid Friendly",
+        "Butter Garlic",
+        "Sweet Savory"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 390,
+    "protein": 28,
+    "fat": 27,
+    "carbs": 9,
+    "servingSize": {
+      "vi": "1 đĩa (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Gia Đình",
+      "en": "Family Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đùi gà góc tư hoặc má đùi",
+          "en": "Chicken thighs"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Bơ lạt",
+          "en": "Unsalted butter"
+        },
+        "amount": "30g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm nhuyễn",
+          "en": "Minced garlic"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Mật ong rừng",
+          "en": "Wild honey"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Xì dầu, tiêu xay, dầu ăn",
+          "en": "Soy sauce, pepper, oil"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đùi gà lọc bỏ bớt mỡ thừa, ướp chút muối tiêu và xì dầu trong 15 phút.",
+        "Áp chảo đùi gà trên lửa vừa đến khi da gà vàng rụm, thịt bên trong chín mềm mọng nước.",
+        "Làm tan chảy bơ trong chảo, phi thơm tỏi băm đến khi dậy mùi béo ngậy.",
+        "Cho mật ong, chút xì dầu vào khuấy đều tạo sốt bóng mượt.",
+        "Cho đùi gà vào đảo cùng sốt bơ tỏi 2 phút cho ngấm đều lớp sốt vàng óng thơm lừng."
+      ],
+      "en": [
+        "Trim excess fat from thighs, season with salt, pepper, and soy sauce.",
+        "Pan-sear chicken thighs skin-side down until crispy and cooked through.",
+        "Melt butter in a skillet, gently sauté garlic until golden and fragrant.",
+        "Stir in honey and soy sauce to form a rich glossy glaze.",
+        "Baste chicken in honey garlic butter sauce for 2 minutes and serve hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-ga-rang-la-chanh",
+    "title": {
+      "vi": "Gà Ta Rang Lá Chanh Thơm Nức Cơm Nhà",
+      "en": "Northern Style Braised Free-range Chicken with Kaffir Lime Leaves"
+    },
+    "image": "/dishes/vn-ga-rang-la-chanh.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Chuẩn vị Bắc",
+        "Đậm đà"
+      ],
+      "en": [
+        "Northern Classic",
+        "Home Cook",
+        "Aromatic"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 290,
+    "protein": 27,
+    "fat": 18,
+    "carbs": 3,
+    "servingSize": {
+      "vi": "1 đĩa gà rang (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Bắc Bộ Cổ Truyền",
+      "en": "Northern Vietnamese Culinary Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt gà ta chặt miếng vừa ăn",
+          "en": "Free-range chicken cut small"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Lá chanh tươi thái chỉ thật nhỏ",
+          "en": "Finely julienned lime leaves"
+        },
+        "amount": "10 lá"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm truyền thống",
+          "en": "Pure fish sauce"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Gừng thái sợi, hành tím băm",
+          "en": "Julienned ginger, shallots"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Hạt tiêu xay, ớt hiểm",
+          "en": "Black pepper, chili"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt gà chặt miếng vừa ăn, ướp nước mắm, hành tím, gừng sợi và tiêu 15 phút.",
+        "Bắc chảo lên bếp, cho thịt gà vào đảo đều trên lửa lớn không cần dầu mỡ để mỡ gà tự tiết ra.",
+        "Rang đến khi thịt gà săn chắc, cháy cạnh nhẹ và dậy mùi thơm nồng.",
+        "Nêm thêm chút nước mắm ngon cho dậy vị đậm đà, đảo liên tục.",
+        "Tắt bếp, rắc lá chanh thái chỉ mỏng như sợi tơ lên trên đảo đều cho hương tinh dầu chanh bốc lên thơm ngát."
+      ],
+      "en": [
+        "Chop chicken into bite-sized pieces, marinate with fish sauce, shallots, ginger, and pepper for 15 mins.",
+        "Sauté chicken in dry pan over high heat; render its own natural fat.",
+        "Stir-fry until edges are slightly charred and golden.",
+        "Splash extra fish sauce for fragrant savory finish.",
+        "Turn off heat, immediately scatter julienned lime leaves and toss to release essential oils."
+      ]
+    }
+  },
+  {
+    "id": "vn-ga-nau-nam-tao-do",
+    "title": {
+      "vi": "Gà Ta Hầm Nấm Đông Cô Táo Đỏ Hạt Sen",
+      "en": "Nourishing Stewed Chicken with Shiitake, Red Dates & Lotus Seeds"
+    },
+    "image": "/dishes/vn-ga-nau-nam-tao-do.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Bồi bổ",
+        "Thanh mát",
+        "Ngọt nước"
+      ],
+      "en": [
+        "Nourishing",
+        "Herbal",
+        "Healthy"
+      ]
+    },
+    "time": "45m",
+    "servings": 4,
+    "calories": 320,
+    "protein": 29,
+    "fat": 16,
+    "carbs": 14,
+    "servingSize": {
+      "vi": "1 tô lớn (~380g)",
+      "en": "1 bowl (~380g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Bổ Dưỡng Gia Đình",
+      "en": "Vietnamese Herbal Soups"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt gà ta chặt miếng",
+          "en": "Free range chicken chunks"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Nấm đông cô ngâm nở",
+          "en": "Shiitake mushrooms"
+        },
+        "amount": "8 tai"
+      },
+      {
+        "name": {
+          "vi": "Táo đỏ khô",
+          "en": "Dried red dates"
+        },
+        "amount": "8 quả"
+      },
+      {
+        "name": {
+          "vi": "Hạt sen tươi",
+          "en": "Fresh lotus seeds"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Kỷ tử, gừng lát, hành hoa",
+          "en": "Goji berries, ginger, scallions"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt gà chần nước sôi khử bọt, xào sơ với gừng lát cho thơm.",
+        "Đổ 1 lít nước lọc vào nồi, đun sôi rồi hạ nhỏ lửa hầm thịt gà trong 20 phút.",
+        "Cho nấm đông cô, táo đỏ và hạt sen vào hầm tiếp 15 phút cho hạt sen bở tơi mềm ngọt.",
+        "Thêm kỷ tử, nêm nước mắm và muối vừa khẩu vị thanh tao.",
+        "Múc ra tô lớn, rắc hành hoa thái nhỏ, dùng nóng bổ dưỡng hồi phục thể lực."
+      ],
+      "en": [
+        "Blanch chicken, then lightly sauté with sliced ginger.",
+        "Pour in 1 liter of water, bring to boil and simmer for 20 mins.",
+        "Add shiitake, red dates, and lotus seeds; simmer another 15 mins until tender.",
+        "Add goji berries, season lightly with salt and fish sauce.",
+        "Garnish with scallions and serve hot for revitalizing nourishment."
+      ]
+    }
+  },
+  {
+    "id": "vn-ga-hap-mam-nhi",
+    "title": {
+      "vi": "Gà Hấp Nước Mắm Nhĩ Phú Quốc Da Giòn",
+      "en": "Steamed Chicken with Pure Phu Quoc Fish Sauce"
+    },
+    "image": "/dishes/vn-ga-hap-mam-nhi.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Nam Bộ",
+        "Đậm đà",
+        "Da giòn"
+      ],
+      "en": [
+        "Southern Specialty",
+        "Savory"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 330,
+    "protein": 31,
+    "fat": 20,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 đĩa gà chặt (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Tây Nam Bộ",
+      "en": "Mekong Delta Culinary"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Gà ta thả vườn nguyên con",
+          "en": "Whole free-range chicken"
+        },
+        "amount": "1.2kg"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm nhĩ Phú Quốc",
+          "en": "Phu Quoc pure fish sauce"
+        },
+        "amount": "4 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tỏi nguyên củ, tiêu sọ, ớt sừng",
+          "en": "Whole garlic bulbs, peppercorns, chili"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Đường thốt nốt, dầu mè",
+          "en": "Palm sugar, sesame oil"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Gà xát muối rượu làm sạch, để thật ráo nước.",
+        "Pha sốt mắm nhĩ: nước mắm Phú Quốc, đường thốt nốt, tiêu sọ đập dập, tỏi tép đập dập.",
+        "Xoa đều sốt mắm quanh mình gà và bên trong bụng gà ướp 20 phút.",
+        "Cho gà vào nồi hấp cách thủy trên xửng hấp khoảng 25-30 phút đến khi da gà căng bóng vàng ươm.",
+        "Chặt miếng vừa ăn xếp ra đĩa, rưới nước hấp mắm nhĩ thơm lừng lên trên, chấm muối tiêu chanh ớt."
+      ],
+      "en": [
+        "Clean whole chicken with salt and wine, drain thoroughly.",
+        "Make fish sauce marinade with palm sugar, cracked peppercorns, and crushed garlic.",
+        "Rub marinade all over chicken inside and out; rest for 20 mins.",
+        "Steam chicken for 25-30 mins until the skin is glistening yellow and meat is succulent.",
+        "Chop into bite-sized pieces, pour steaming pan juices over, and dip in lime pepper salt."
+      ]
+    }
+  },
+  {
+    "id": "vn-long-ga-xao-muop",
+    "title": {
+      "vi": "Lòng Gà Xào Mướp Hương Giá Đỗ Giòn Ngọt",
+      "en": "Stir-fried Chicken Giblets with Sponge Gourd"
+    },
+    "image": "/dishes/vn-long-ga-xao-muop.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 88,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Dân dã",
+        "Thanh mát"
+      ],
+      "en": [
+        "Home Cook",
+        "Rustic"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 195,
+    "protein": 19,
+    "fat": 9,
+    "carbs": 9,
+    "servingSize": {
+      "vi": "1 đĩa (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Lòng mề gà làm sạch",
+          "en": "Cleaned chicken giblets"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Mướp hương thái vát",
+          "en": "Sponge gourd sliced"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Giá đỗ sạch",
+          "en": "Bean sprouts"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, hành hoa, mùi tàu",
+          "en": "Shallots, scallions, culantro"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, tiêu đen, dầu ăn",
+          "en": "Fish sauce, pepper, oil"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Lòng mề gà bóp muối gừng rửa sạch, khía hoa rồi thái miếng vừa ăn, ướp chút nước mắm tiêu.",
+        "Phi thơm hành tím, xào lòng mề trên lửa lớn cho chín giòn sần sật, trút ra đĩa riêng.",
+        "Cho mướp hương vào xào chín tới trong 2 phút, thêm giá đỗ đảo nhanh 30 giây.",
+        "Trút lòng gà trở lại chảo đảo đều tay, rắc hành hoa và mùi tàu thái nhỏ.",
+        "Múc ra đĩa rắc tiêu, ăn nóng ngọt thanh đậm vị đồng quê."
+      ],
+      "en": [
+        "Clean giblets with salt and ginger, score and slice, marinate with fish sauce and pepper.",
+        "Sauté shallots, stir-fry giblets over high heat until crunchy-tender; set aside.",
+        "Stir-fry sponge gourd for 2 mins, toss in bean sprouts for 30s.",
+        "Return giblets to wok, toss with scallions and culantro.",
+        "Garnish with pepper and serve hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-vit-om-sau",
+    "title": {
+      "vi": "Vịt Om Sấu Nước Cốt Dừa Miền Bắc",
+      "en": "Northern Duck Stewed with Dracontomelon (Sấu)"
+    },
+    "image": "/dishes/vn-vit-om-sau.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Hà Nội",
+        "Chua thanh",
+        "Ăn kèm bún"
+      ],
+      "en": [
+        "Hanoi Specialty",
+        "Tangy Stew"
+      ]
+    },
+    "time": "45m",
+    "servings": 4,
+    "calories": 390,
+    "protein": 27,
+    "fat": 28,
+    "carbs": 7,
+    "servingSize": {
+      "vi": "1 nồi om (~450g)",
+      "en": "1 stew bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hà Nội Phố",
+      "en": "Hanoi Street Food Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt vịt cỏ chặt miếng vừa ăn",
+          "en": "Duck meat chopped"
+        },
+        "amount": "800g"
+      },
+      {
+        "name": {
+          "vi": "Quả sấu tươi cạo vỏ",
+          "en": "Fresh dracontomelon (sấu)"
+        },
+        "amount": "8-10 quả"
+      },
+      {
+        "name": {
+          "vi": "Khoai sọ luộc sơ bóc vỏ",
+          "en": "Taro potatoes"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Nước dừa tươi",
+          "en": "Fresh coconut water"
+        },
+        "amount": "1 quả (~300ml)"
+      },
+      {
+        "name": {
+          "vi": "Sả cây, gừng, hành tím, tỏi, ớt",
+          "en": "Lemongrass, ginger, aromatics"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Mùi tàu (ngò gai), rau ngổ",
+          "en": "Culantro, rice paddy herb"
+        },
+        "amount": "1 nắm"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Vịt bóp kỹ rượu gừng khử sạch mùi hôi, chặt miếng vừa ăn, ướp với sả, gừng băm, nước mắm trong 20 phút.",
+        "Xào thịt vịt săn lại trên chảo cho tiết bớt mỡ.",
+        "Cho vịt vào nồi cùng quả sấu và nước dừa tươi đun sôi, hạ nhỏ lửa om khoảng 20 phút.",
+        "Thêm khoai sọ vào om tiếp 15 phút đến khi khoai bở dẻo mềm.",
+        "Dùng muôi dầm nát quả sấu để tạo vị chua thanh dịu mát lan tỏa khắp nồi nước om.",
+        "Rắc mùi tàu và rau ngổ thái khúc, dùng nóng cùng bún tươi hoặc cơm trắng."
+      ],
+      "en": [
+        "Scrub duck with ginger and rice wine to remove odor; chop into chunks and marinate with lemongrass, aromatics, and fish sauce.",
+        "Sear duck pieces in a pot until browned and excess fat renders.",
+        "Add fresh sấu fruit and coconut water; bring to a boil and simmer for 20 mins.",
+        "Add taro and simmer another 15 mins until tender and creamy.",
+        "Crush sấu fruits to release their signature clean tartness into the broth.",
+        "Garnish with culantro and rice paddy herb; serve with fresh vermicelli or rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-vit-nau-chao",
+    "title": {
+      "vi": "Vịt Nấu Chao Khoai Môn Miền Tây Nam Bộ",
+      "en": "Mekong Duck Stewed with Fermented Tofu (Chao)"
+    },
+    "image": "/dishes/vn-vit-nau-chao.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Miền Tây",
+        "Béo ngậy",
+        "Đậm đà"
+      ],
+      "en": [
+        "Mekong Specialty",
+        "Rich Flavor"
+      ]
+    },
+    "time": "50m",
+    "servings": 4,
+    "calories": 420,
+    "protein": 28,
+    "fat": 31,
+    "carbs": 10,
+    "servingSize": {
+      "vi": "1 nồi lẩu/om (~450g)",
+      "en": "1 stew bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đồng Bằng Sông Cửu Long",
+      "en": "Mekong Delta Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt vịt xiêm làm sạch chặt miếng",
+          "en": "Muscovy duck chopped"
+        },
+        "amount": "800g"
+      },
+      {
+        "name": {
+          "vi": "Chao đỏ và chao trắng tán nhuyễn",
+          "en": "Fermented red & white bean curd"
+        },
+        "amount": "5 viên"
+      },
+      {
+        "name": {
+          "vi": "Khoai môn cắt khối chiên sơ",
+          "en": "Taro root cubes lightly fried"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Nước dừa tươi",
+          "en": "Coconut water"
+        },
+        "amount": "500ml"
+      },
+      {
+        "name": {
+          "vi": "Rau muống, bún tươi ăn kèm",
+          "en": "Water spinach & vermicelli"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Vịt làm sạch khử mùi với rượu gừng, ướp với chao tán nhuyễn, tỏi ớt băm, đường và hạt nêm 30 phút.",
+        "Xào thịt vịt săn vàng óng trong nồi trên lửa lớn.",
+        "Đổ nước dừa tươi vào nồi ngập thịt, đun sôi rồi hạ nhỏ lửa om 25 phút.",
+        "Cho khoai môn đã chiên sơ vào om cùng thêm 10 phút đến khi mềm dẻo ngậy béo.",
+        "Dùng như món lẩu nhúng rau muống xanh giòn, ăn kèm bún tươi và chấm nước chao pha tỏi ớt đường chanh."
+      ],
+      "en": [
+        "Clean duck with ginger wine; marinate with mashed fermented bean curd, aromatics, and sugar for 30 mins.",
+        "Sear duck pieces in pot until aromatic and golden.",
+        "Add fresh coconut water and simmer over low heat for 25 mins.",
+        "Add fried taro cubes and simmer 10 mins until creamy and soft.",
+        "Serve as a hotpot with water spinach, fresh rice noodles, and seasoned chao dipping sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-goi-vit-bap-cai",
+    "title": {
+      "vi": "Gỏi Vịt Bắp Cải Rau Răm Nước Mắm Gừng",
+      "en": "Shredded Duck Cabbage Salad with Ginger Fish Sauce"
+    },
+    "image": "/dishes/vn-goi-vit-bap-cai.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Thanh mát",
+        "Món nhắm",
+        "Chua ngọt"
+      ],
+      "en": [
+        "Refreshing",
+        "Salad",
+        "Tangy"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 270,
+    "protein": 26,
+    "fat": 14,
+    "carbs": 9,
+    "servingSize": {
+      "vi": "1 đĩa gỏi lớn (~350g)",
+      "en": "1 large salad plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm & Quán Gỏi Việt",
+      "en": "Traditional Salad Masters"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt vịt luộc chín xé phay",
+          "en": "Boiled shredded duck meat"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Bắp cải trắng thái sợi mỏng",
+          "en": "Finely shredded white cabbage"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt thái sợi",
+          "en": "Julienned carrot"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Rau răm rửa sạch thái rối",
+          "en": "Vietnamese coriander"
+        },
+        "amount": "1 nắm"
+      },
+      {
+        "name": {
+          "vi": "Đậu phộng rang giã dập, hành phi",
+          "en": "Crushed roasted peanuts & fried shallots"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm gừng tỏi ớt chua ngọt",
+          "en": "Sweet spicy ginger dipping sauce"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bắp cải và cà rốt thái sợi ngâm nước đá lạnh 10 phút cho thật giòn rồi vớt ra vắt ráo.",
+        "Pha nước sốt trộn: nước mắm ngon, nước cốt chanh, đường, gừng tươi giã nhuyễn và ớt hiểm đánh tan sánh kẹo.",
+        "Cho bắp cải, cà rốt, thịt vịt xé phay và rau răm vào âu lớn.",
+        "Rưới 2/3 lượng nước sốt mắm gừng vào bóp trộn nhẹ tay cho ngấm đều gia vị trong 3 phút.",
+        "Bày gỏi ra đĩa lớn, rắc đậu phộng rang giã dập và hành phi giòn tan lên trên, chấm thêm nước mắm gừng đậm đà."
+      ],
+      "en": [
+        "Soak shredded cabbage and carrot in ice water for 10 mins for extreme crispiness; drain well.",
+        "Whisk fish sauce, lime juice, sugar, finely pounded ginger, and chili into a thick dressing.",
+        "Combine cabbage, carrots, shredded duck, and Vietnamese coriander in a large bowl.",
+        "Toss gently with dressing until evenly infused.",
+        "Mound onto a platter, top with crushed roasted peanuts and crispy fried shallots."
+      ]
+    }
+  },
+  {
+    "id": "vn-chan-ga-sa-tac",
+    "title": {
+      "vi": "Chân Gà Ngâm Sả Tắc Chua Cay Giòn Sần Sật",
+      "en": "Crunchy Lemongrass Calamansi Pickled Chicken Feet"
+    },
+    "image": "/dishes/vn-chan-ga-sa-tac.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "snack",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Ăn vặt hot",
+        "Món nhắm",
+        "Chua cay giòn"
+      ],
+      "en": [
+        "Street Snack",
+        "Crunchy",
+        "Spicy Sweet"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 210,
+    "protein": 20,
+    "fat": 10,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 đĩa (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Ăn Vặt Giới Trẻ",
+      "en": "Vietnamese Street Bites"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Chân gà tươi chặt đôi làm sạch",
+          "en": "Cleaned chicken feet cut in half"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Quả tắc (quất) thái lát bỏ hạt",
+          "en": "Calamansi sliced and deseeded"
+        },
+        "amount": "10 quả"
+      },
+      {
+        "name": {
+          "vi": "Sả cây thái vát mỏng",
+          "en": "Lemongrass sliced diagonally"
+        },
+        "amount": "5 cây"
+      },
+      {
+        "name": {
+          "vi": "Ớt sừng, ớt hiểm thái lát",
+          "en": "Red chilies sliced"
+        },
+        "amount": "4 quả"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, đường, giấm gạo, muối",
+          "en": "Fish sauce, sugar, rice vinegar"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Chân gà luộc với gừng, sả và chút muối trong 10-12 phút cho chín tới.",
+        "Vớt ngay ra âu nước đá lạnh ngâm 20 phút cho da chân gà giòn sần sật, sau đó để ráo.",
+        "Nấu nước ngâm: đun sôi nước mắm, giấm gạo, đường và nước lọc để nguội hoàn toàn.",
+        "Trộn chân gà với sả thái vát, lát tắc bỏ hạt, ớt thái lát và gừng sợi trong hũ.",
+        "Đổ nước ngâm vào ngập chân gà, để tủ lạnh 2-3 tiếng là ngấm giòn chua cay thơm lừng."
+      ],
+      "en": [
+        "Boil chicken feet with ginger, lemongrass, and salt for 10-12 minutes.",
+        "Transfer immediately into ice water for 20 mins to achieve ultimate crunchy texture; drain.",
+        "Boil fish sauce, sugar, vinegar, and water; let cool completely.",
+        "Combine feet with sliced lemongrass, deseeded calamansi, chilies, and ginger.",
+        "Submerge in brine, chill in fridge for 2-3 hours before serving."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-ro-phi-ran-gion",
+    "title": {
+      "vi": "Cá Rô Phi Rán Giòn Chấm Mắm Tỏi Ớt Gừng",
+      "en": "Crispy Fried Tilapia with Ginger Garlic Fish Sauce"
+    },
+    "image": "/dishes/vn-ca-ro-phi-ran-gion.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Dân dã",
+        "Giòn tan"
+      ],
+      "en": [
+        "Home Cook",
+        "Crispy",
+        "Classic"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 260,
+    "protein": 28,
+    "fat": 15,
+    "carbs": 3,
+    "servingSize": {
+      "vi": "1 con cá chiên (~400g)",
+      "en": "1 fish (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá rô phi tươi sống đánh vảy",
+          "en": "Fresh whole tilapia cleaned"
+        },
+        "amount": "1 con (~800g)"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi, tỏi, ớt giã nhuyễn",
+          "en": "Pounded ginger, garlic, chili"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon truyền thống",
+          "en": "Pure fish sauce"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt chanh, đường cát",
+          "en": "Lime juice & sugar"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn chiên cá",
+          "en": "Cooking oil"
+        },
+        "amount": "200ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá rô phi làm sạch, khía vảy chéo hai bên mình cá, xát muối gừng rồi thấm thật khô ráo.",
+        "Đun chảo ngập dầu thật nóng già, thả cá vào chiên trên lửa vừa.",
+        "Chiên kiên nhẫn đến khi một mặt vàng ruộm giòn tan mới lật mặt kia để cá không bị nát.",
+        "Vớt cá ra để ráo dầu trên đĩa có lót giấy thấm.",
+        "Pha nước mắm gừng tỏi ớt chua ngọt đậm đà, chấm từng thớ thịt cá trắng giòn ngọt lịm."
+      ],
+      "en": [
+        "Clean whole tilapia, score diagonals on sides, rub with ginger salt, pat bone dry.",
+        "Heat oil in skillet until shimmering; slide fish in carefully over medium heat.",
+        "Fry patiently without disturbing until the bottom is deeply golden-crisp, then flip.",
+        "Drain well on paper towels.",
+        "Serve with aromatic ginger-garlic-lime dipping fish sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-dieu-hong-hap-xi-dau",
+    "title": {
+      "vi": "Cá Điêu Hồng Hấp Xì Dầu Hành Gừng",
+      "en": "Steamed Red Tilapia with Soy Sauce, Scallions & Ginger"
+    },
+    "image": "/dishes/vn-ca-dieu-hong-hap-xi-dau.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Thanh đạm",
+        "Tốt cho sức khỏe",
+        "Nhẹ nhàng"
+      ],
+      "en": [
+        "Steamed",
+        "Healthy",
+        "Cantonese Style"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 29,
+    "fat": 9,
+    "carbs": 5,
+    "servingSize": {
+      "vi": "1 đĩa cá hấp (~450g)",
+      "en": "1 plate (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hải Sản Tươi Sống",
+      "en": "Fresh Seafood Masters"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá điêu hồng tươi nguyên con",
+          "en": "Fresh red tilapia"
+        },
+        "amount": "1 con (~800g)"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi cạo vỏ thái chỉ",
+          "en": "Julienned ginger"
+        },
+        "amount": "1 củ to"
+      },
+      {
+        "name": {
+          "vi": "Hành lá chẻ sợi, thì là, ngò rí",
+          "en": "Curled scallions & cilantro"
+        },
+        "amount": "1 nắm lớn"
+      },
+      {
+        "name": {
+          "vi": "Xì dầu ngon, dầu hào, dầu mè",
+          "en": "Soy sauce, oyster sauce, sesame oil"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn đun sôi già để xối",
+          "en": "Sizzling hot oil for drizzling"
+        },
+        "amount": "2 thìa canh"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá điêu hồng làm sạch, khía xéo, nhét gừng thái chỉ vào bụng và phủ lên mình cá.",
+        "Đặt cá vào đĩa sâu lòng, hấp cách thủy trong xửng 15-18 phút đến khi cá vừa chín tới giữ trọn độ ngọt mọng.",
+        "Chắt bỏ phần nước tiết đầu của cá, rưới hỗn hợp xì dầu, dầu hào và chút đường đun nóng lên mình cá.",
+        "Phủ kín mặt cá bằng hành lá chẻ sợi và ngò rí.",
+        "Đun sôi già 2 thìa canh dầu ăn và dầu mè, xối trực tiếp lên hành gừng xèo xèo dậy hương thơm ngát."
+      ],
+      "en": [
+        "Clean red tilapia, score sides, stuff cavity and top with julienned ginger.",
+        "Steam in a heatproof dish for 15-18 minutes until flesh flakes easily.",
+        "Drain initial fish water, drizzle seasoned hot soy sauce and oyster sauce blend over fish.",
+        "Cover fish generously with shredded scallions and cilantro.",
+        "Heat oil and sesame oil until smoking hot; pour sizzling oil directly over scallions."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-thu-sot-ca-chua",
+    "title": {
+      "vi": "Cá Thu Sốt Cà Chua Thì Là Đậm Vị",
+      "en": "Pan-seared Mackerel Steaks in Rich Tomato Dill Sauce"
+    },
+    "image": "/dishes/vn-ca-thu-sot-ca-chua.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Giàu Omega-3",
+        "Đậm đà"
+      ],
+      "en": [
+        "Omega-3 Rich",
+        "Savory",
+        "Home Cook"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 290,
+    "protein": 26,
+    "fat": 17,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa cá thu (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá thu cắt khúc tươi ngon",
+          "en": "Mackerel cutlets"
+        },
+        "amount": "3 khúc (~500g)"
+      },
+      {
+        "name": {
+          "vi": "Cà chua chín đỏ băm nhỏ",
+          "en": "Finely chopped tomatoes"
+        },
+        "amount": "3 quả"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, hành lá, thì là tươi",
+          "en": "Shallots, scallions, fresh dill"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, hạt tiêu, ớt",
+          "en": "Fish sauce, black pepper, chili"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá thu rửa sạch thấm khô, chiên sơ hai mặt cho se vàng rồi vớt ra.",
+        "Phi thơm hành tím, cho cà chua vào xào nhuyễn tạo thành sốt đỏ sánh mịn.",
+        "Nêm nước mắm ngon, hạt nêm và chút nước lọc đun sôi sốt cà.",
+        "Thả từng khúc cá thu vào rim nhỏ lửa trong sốt khoảng 10 phút, trở mặt cá cho ngấm đều.",
+        "Rắc thì là và hành lá thái khúc cùng tiêu xay lên trên, tắt bếp dùng nóng với cơm trắng."
+      ],
+      "en": [
+        "Pat mackerel steaks dry, lightly pan-fry both sides until lightly browned; remove.",
+        "Sauté shallots and cook chopped tomatoes until broken down into a rich sauce.",
+        "Season sauce with fish sauce, broth powder, and a touch of water.",
+        "Add mackerel steaks back to skillet and simmer gently for 10 minutes, basting often.",
+        "Garnish with fresh dill, scallions, and cracked pepper before serving."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-loc-kho-nghe",
+    "title": {
+      "vi": "Cá Lóc Đồng Kho Nghệ Tươi Ấm Bụng",
+      "en": "Braised Snakehead Fish with Fresh Turmeric"
+    },
+    "image": "/dishes/vn-ca-loc-kho-nghe.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 90,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Ấm bụng",
+        "Tốt cho dạ dày"
+      ],
+      "en": [
+        "Healing",
+        "Turmeric",
+        "Central Vietnam"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 240,
+    "protein": 26,
+    "fat": 11,
+    "carbs": 5,
+    "servingSize": {
+      "vi": "1 niêu kho (~250g)",
+      "en": "1 clay pot (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Trung",
+      "en": "Central Vietnamese Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá lóc đồng làm sạch cắt khúc",
+          "en": "Wild snakehead fish cutlets"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Củ nghệ tươi giã nhuyễn",
+          "en": "Pounded fresh turmeric root"
+        },
+        "amount": "2 củ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm truyền thống, tiêu, ớt hiểm",
+          "en": "Fish sauce, pepper, chili"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, mỡ heo",
+          "en": "Minced shallots, pork lard"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá lóc xát muối chanh rửa sạch nhớt, cắt khúc dày 2.5cm.",
+        "Ướp cá với nghệ tươi giã nhuyễn, nước mắm, hành tím, tiêu và ớt trong 20 phút.",
+        "Phi thơm mỡ heo trong niêu đất, xếp cá vào đun lửa lớn cho thịt cá săn lại.",
+        "Thêm chút nước sôi xâm xấp, đậy vung kho lửa liu riu 20-25 phút đến khi nước cạn sệt màu vàng nghệ óng ả.",
+        "Rắc thêm tiêu hạt đập dập, ăn cùng cơm nóng rất lành bụng và bổ dưỡng."
+      ],
+      "en": [
+        "Clean snakehead fish thoroughly with lime and salt, cut into 2.5cm steaks.",
+        "Marinate with freshly crushed turmeric, fish sauce, shallots, and chili for 20 mins.",
+        "Heat pork lard in a clay pot, arrange fish steaks and sear over medium-high heat.",
+        "Pour in hot water to cover halfway, simmer covered on low for 20-25 mins until sauce is reduced to a golden glaze.",
+        "Finish with cracked black pepper; soothing and highly comforting with steamed rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-tre-kho-gung",
+    "title": {
+      "vi": "Cá Trê Đồng Kho Gừng Ớt Dân Dã",
+      "en": "Rustic Braised Catfish with Ginger and Chili"
+    },
+    "image": "/dishes/vn-ca-tre-kho-gung.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": false,
+    "popularityScore": 85,
+    "dietaryTags": {
+      "vi": [
+        "Dân dã",
+        "Đậm đà",
+        "Ấm áp"
+      ],
+      "en": [
+        "Rustic",
+        "Warming",
+        "Traditional"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 270,
+    "protein": 24,
+    "fat": 16,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 đĩa cá kho (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Quê Đồng Nội",
+      "en": "Countryside Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá trê đồng làm sạch nhớt",
+          "en": "Cleaned freshwater catfish"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Gừng già đập dập và thái sợi",
+          "en": "Old ginger crushed & shredded"
+        },
+        "amount": "2 củ"
+      },
+      {
+        "name": {
+          "vi": "Nước hàng, nước mắm, tiêu sọ, ớt hiểm",
+          "en": "Caramel sauce, fish sauce, peppercorns, chili"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá trê dội nước sôi cạo sạch nhớt trắng, xát muối giấm, cắt khúc.",
+        "Ướp cá với gừng giã, nước mắm ngon, nước hàng và ớt trong 20 phút.",
+        "Lót lớp gừng thái sợi dưới đáy nồi, xếp cá lên trên, đun săn trên lửa lớn.",
+        "Đổ nước sôi xâm xấp mặt cá, hạ nhỏ lửa kho liu riu 30 phút đến khi thịt cá săn chắc, nước sánh đặc thơm nức mùi gừng cay.",
+        "Ăn nóng cùng cơm gạo mới và đĩa rau luộc."
+      ],
+      "en": [
+        "Clean catfish with hot water and vinegar to remove slime; slice into pieces.",
+        "Marinate with pounded ginger, fish sauce, caramel coloring, and chili.",
+        "Layer shredded ginger at the base of the pot, arrange fish on top, and sear.",
+        "Add boiling water and simmer gently for 30 minutes until fish is firm and glazed in spicy ginger sauce.",
+        "Serve hot with steamed rice and boiled vegetables."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-com-rim-lac",
+    "title": {
+      "vi": "Cá Cơm Khô Rim Lạc Mặn Ngọt Giòn Tan",
+      "en": "Crispy Sweet & Savory Dried Anchovies with Roasted Peanuts"
+    },
+    "image": "/dishes/vn-ca-com-rim-lac.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Giòn rụm",
+        "Để được lâu"
+      ],
+      "en": [
+        "Crispy",
+        "Long Shelf Life",
+        "Pantry Staple"
+      ]
+    },
+    "time": "20m",
+    "servings": 6,
+    "calories": 230,
+    "protein": 21,
+    "fat": 13,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 hũ nhỏ (~150g)",
+      "en": "1 portion (~150g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Gia Đình",
+      "en": "Vietnamese Pantry Delights"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá cơm khô loại nhỏ",
+          "en": "Dried baby anchovies"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Lạc (đậu phộng) rang giòn",
+          "en": "Crispy roasted peanuts"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm, ớt băm",
+          "en": "Minced garlic & chili"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, đường, tương ớt, giấm",
+          "en": "Fish sauce, sugar, chili paste, vinegar"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá cơm rửa nhanh qua nước ấm vắt ráo, chiên sơ với dầu ăn cho vàng giòn rụm rồi vớt ra.",
+        "Lạc rang chín giòn xát sạch vỏ lụa.",
+        "Phi thơm tỏi ớt, cho hỗn hợp nước mắm, đường, tương ớt và giấm vào đun sôi keo lại.",
+        "Trút cá cơm và lạc rang vào chảo đảo thật nhanh tay trên lửa nhỏ đến khi sốt keo bám đều từng con cá và hạt lạc khô ráo giòn tan.",
+        "Để nguội cất hũ kín ăn dần với cơm trắng hoặc cháo hoa."
+      ],
+      "en": [
+        "Rinse dried anchovies, drain well, and fry in oil until golden-crisp; remove.",
+        "Roast peanuts until crunchy, rub away skins.",
+        "Sauté garlic and chili; simmer fish sauce, sugar, chili paste, and vinegar into a sticky glaze.",
+        "Toss fried anchovies and roasted peanuts vigorously over low heat until evenly coated and dry.",
+        "Cool and store in airtight jars to eat with rice or rice congee."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-hoi-ap-chao-chanh-leo",
+    "title": {
+      "vi": "Cá Hồi Áp Chảo Sốt Chanh Leo Thanh Mát",
+      "en": "Pan-seared Salmon Fillet in Passion Fruit Sauce"
+    },
+    "image": "/dishes/vn-ca-hoi-ap-chao-chanh-leo.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Hiện đại",
+        "Giàu Omega-3",
+        "Chua ngọt thanh"
+      ],
+      "en": [
+        "Modern",
+        "Healthy",
+        "Omega-3"
+      ]
+    },
+    "time": "20m",
+    "servings": 2,
+    "calories": 340,
+    "protein": 30,
+    "fat": 20,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 phần cá hồi (~200g)",
+      "en": "1 serving (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Hiện Đại",
+      "en": "Modern Vietnamese Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Phi lê cá hồi tươi còn da",
+          "en": "Fresh salmon fillet with skin"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Chanh leo vắt lấy nước cốt",
+          "en": "Fresh passion fruit juice"
+        },
+        "amount": "3 quả"
+      },
+      {
+        "name": {
+          "vi": "Bơ lạt",
+          "en": "Butter"
+        },
+        "amount": "20g"
+      },
+      {
+        "name": {
+          "vi": "Mật ong hoặc đường, muối tiêu",
+          "en": "Honey, salt, pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Măng tây hoặc súp lơ xào ăn kèm",
+          "en": "Asparagus side"
+        },
+        "amount": "100g"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá hồi thấm thật khô, ướp chút muối tiêu và dầu ô-liu trong 10 phút.",
+        "Đặt chảo lên bếp đun nóng, áp chảo cá hồi mặt da xuống trước trong 3-4 phút cho da giòn rụm, lật mặt kia áp chảo thêm 2 phút.",
+        "Đun nhỏ lửa nước cốt chanh leo với đường/mật ong và bơ lạt đến khi sốt sánh bóng màu vàng cam.",
+        "Rưới sốt chanh leo chua ngọt thơm ngát lên trên miếng cá hồi áp chảo.",
+        "Thưởng thức nóng kèm măng tây xào bơ tỏi."
+      ],
+      "en": [
+        "Pat salmon dry, season with salt, pepper, and olive oil for 10 mins.",
+        "Sear skin-side down in a hot pan for 3-4 mins until skin is ultra-crisp; flip and cook 2 mins more.",
+        "Simmer passion fruit juice with honey and butter into a silky, vibrant orange sauce.",
+        "Spoon tangy sweet passion fruit glaze over the seared salmon.",
+        "Serve hot alongside buttered asparagus."
+      ]
+    }
+  },
+  {
+    "id": "vn-tom-hap-bia-sa",
+    "title": {
+      "vi": "Tôm Sú Hấp Bia Sả Gừng Ngọt Đậm Tự Nhiên",
+      "en": "Steamed Tiger Prawns with Beer, Lemongrass & Ginger"
+    },
+    "image": "/dishes/vn-tom-hap-bia-sa.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Hải sản tươi",
+        "Thanh ngọt tự nhiên",
+        "Dễ làm"
+      ],
+      "en": [
+        "Seafood",
+        "Easy",
+        "Juicy Prawns"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 180,
+    "protein": 28,
+    "fat": 3,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 đĩa tôm (~350g)",
+      "en": "1 plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hải Sản Việt",
+      "en": "Coastal Seafood Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Tôm sú tươi sống",
+          "en": "Live tiger prawns"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Bia tươi hoặc lon bia",
+          "en": "Beer"
+        },
+        "amount": "1/2 lon (~150ml)"
+      },
+      {
+        "name": {
+          "vi": "Sả cây đập dập cắt khúc",
+          "en": "Lemongrass bruised"
+        },
+        "amount": "4 cây"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi thái lát, lá chanh",
+          "en": "Sliced ginger, lime leaves"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Muối ớt chanh hoặc muối tiêu chanh chấm kèm",
+          "en": "Green chili salt or lime pepper salt"
+        },
+        "amount": "1 đĩa nhỏ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tôm rửa sạch, cắt bớt râu và ngạnh nhọn, rút chỉ lưng.",
+        "Lót lớp sả đập dập, gừng lát và lá chanh dưới đáy nồi hấp.",
+        "Xếp tôm lên trên, đổ 1/2 lon bia vào nồi, đậy kín nắp.",
+        "Đun sôi trên lửa lớn hấp trong 6-8 phút đến khi tôm chuyển màu đỏ au cong đều là chín tới.",
+        "Gắp ra đĩa dùng nóng ngay, chấm muối ớt chanh hoặc muối tiêu chanh vị ngọt lịm đậm đà."
+      ],
+      "en": [
+        "Trim whiskers and devein prawns; rinse well.",
+        "Layer bruised lemongrass, ginger, and lime leaves at the base of the pot.",
+        "Place prawns on top, pour in half a can of beer, cover tightly.",
+        "Steam over high heat for 6-8 mins until prawns turn vibrant orange and curled.",
+        "Serve hot with spicy green chili salt or pepper lime dip."
+      ]
+    }
+  },
+  {
+    "id": "vn-tom-rang-muoi-ot",
+    "title": {
+      "vi": "Tôm Rang Muối Ớt Hồng Kông Giòn Rụm",
+      "en": "Crispy Salt and Pepper Chili Tossed Prawns"
+    },
+    "image": "/dishes/vn-tom-rang-muoi-ot.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Giòn rụm cả vỏ",
+        "Món nhắm",
+        "Đậm vị"
+      ],
+      "en": [
+        "Crispy Shell",
+        "Savory Spicy"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 240,
+    "protein": 26,
+    "fat": 12,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hải Sản Quán",
+      "en": "Vietnamese Seafood Eateries"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Tôm thẻ tươi",
+          "en": "Fresh white prawns"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Bột muối rang hải sản",
+          "en": "Seafood spiced salt mix"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm, ớt sừng băm, hành hoa",
+          "en": "Garlic, red chili, scallions"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Bột chiên giòn",
+          "en": "Crispy batter flour"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn",
+          "en": "Cooking oil"
+        },
+        "amount": "200ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tôm làm sạch thấm khô, áo đều một lớp mỏng bột chiên giòn.",
+        "Chiên tôm ngập dầu nóng già trong 2-3 phút cho vỏ tôm giòn rụm màu đỏ hồng rồi vớt ra ráo dầu.",
+        "Phi thơm tỏi băm, ớt băm và hành hoa trong chảo khô ráo không đọng dầu.",
+        "Trút tôm chiên giòn và bột muối rang vào xóc đều tay trên lửa vừa cho muối bám đều khắp vỏ tôm.",
+        "Bày ra đĩa ăn nóng, vỏ tôm giòn rụm thơm lừng vị mặn cay hấp dẫn."
+      ],
+      "en": [
+        "Clean and dry prawns; lightly coat in crispy flour.",
+        "Flash-fry in hot oil for 2-3 mins until shells are deeply crispy; drain well.",
+        "Sauté minced garlic, chili, and scallions in a dry wok.",
+        "Toss prawns and spiced salt mix vigorously over medium heat until evenly crusted.",
+        "Serve hot, crunchy enough to eat shell and all."
+      ]
+    }
+  },
+  {
+    "id": "vn-tom-sot-me",
+    "title": {
+      "vi": "Tôm Sú Sốt Me Chua Cay Mặn Ngọt",
+      "en": "Tiger Prawns in Sweet & Sour Tamarind Sauce"
+    },
+    "image": "/dishes/vn-tom-sot-me.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Chua ngọt đậm đà",
+        "Hao cơm"
+      ],
+      "en": [
+        "Tamarind Glaze",
+        "Savory Sweet"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 250,
+    "protein": 25,
+    "fat": 10,
+    "carbs": 14,
+    "servingSize": {
+      "vi": "1 đĩa (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Gia Đình Việt",
+      "en": "Vietnamese Family Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Tôm sú hoặc tôm càng",
+          "en": "Tiger prawns"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt me chua",
+          "en": "Tamarind pulp juice"
+        },
+        "amount": "4 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Đường thốt nốt hoặc đường cát",
+          "en": "Palm sugar / sugar"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, tỏi ớt băm",
+          "en": "Fish sauce, garlic, chili"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tôm làm sạch, chiên áp chảo sơ cho vỏ tôm săn đỏ cam.",
+        "Khuấy đều nước cốt me, đường, nước mắm và chút tương ớt thành sốt sánh chua ngọt vừa miệng.",
+        "Phi thơm tỏi ớt băm, đổ sốt me vào đun sôi sủi bọt sánh mịn.",
+        "Cho tôm vào đảo đều trên lửa nhỏ cho sốt me ngấm sâu vào từng con tôm.",
+        "Rắc hành lá và đậu phộng rang giã nhỏ lên trên, ăn cùng cơm nóng rất đưa cơm."
+      ],
+      "en": [
+        "Clean prawns and pan-sear until shells turn bright orange.",
+        "Whisk tamarind extract with sugar, fish sauce, and chili sauce into a balanced glaze.",
+        "Sauté garlic and chili, add tamarind glaze and bring to a simmer.",
+        "Toss prawns in glaze over low heat until generously coated.",
+        "Top with scallions and crushed peanuts, serve hot with rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-muc-hap-gung",
+    "title": {
+      "vi": "Mực Ống Hấp Gừng Hành Chấm Mắm Gừng",
+      "en": "Steamed Fresh Squid with Ginger & Scallions"
+    },
+    "image": "/dishes/vn-muc-hap-gung.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Hải sản tươi",
+        "Giòn ngọt",
+        "Nhanh gọn"
+      ],
+      "en": [
+        "Seafood",
+        "Fresh & Sweet",
+        "Quick"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 170,
+    "protein": 27,
+    "fat": 3,
+    "carbs": 4,
+    "servingSize": {
+      "vi": "1 đĩa mực (~350g)",
+      "en": "1 plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Biển",
+      "en": "Vietnamese Coastal Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Mực ống tươi dày mình",
+          "en": "Fresh tube squid"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi thái sợi nhiều",
+          "en": "Generous shredded ginger"
+        },
+        "amount": "2 củ"
+      },
+      {
+        "name": {
+          "vi": "Hành lá cắt khúc dài",
+          "en": "Scallions cut in batons"
+        },
+        "amount": "1 nắm"
+      },
+      {
+        "name": {
+          "vi": "Ớt sừng đỏ thái lát",
+          "en": "Red chili sliced"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm gừng chua ngọt chấm kèm",
+          "en": "Ginger dipping sauce"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Mực ống làm sạch túi mực, khía vảy rồng nhẹ hoặc để nguyên con.",
+        "Xếp lớp gừng sợi và hành lá cắt khúc lên đĩa chịu nhiệt, đặt mực lên trên, rải thêm gừng và ớt sừng lên mặt mực.",
+        "Hấp cách thủy trên lửa lớn trong 8-10 phút đến khi mực căng mọng giòn sần sật, không hấp quá lâu sẽ bị dai xác.",
+        "Lấy mực ra, cắt khoanh vừa ăn nếu để nguyên con.",
+        "Thưởng thức ngay khi còn nóng hổi, chấm đẫm nước mắm gừng ớt cay nồng đậm đà."
+      ],
+      "en": [
+        "Clean squids, remove ink sacs, score diamond pattern.",
+        "Arrange bed of scallions and shredded ginger on plate, top with squid, chili, and more ginger.",
+        "Steam over high heat for 8-10 minutes until squid is plump and tender-crisp.",
+        "Slice into rings if whole.",
+        "Serve hot with fiery sweet ginger fish sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-muc-chien-mam",
+    "title": {
+      "vi": "Mực Chiên Nước Mắm Ớt Giòn Dai Đậm Đà",
+      "en": "Crispy Fried Squid with Spicy Fish Sauce Glaze"
+    },
+    "image": "/dishes/vn-muc-chien-mam.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Món nhắm",
+        "Món khoái khẩu",
+        "Cay mặn đậm vị"
+      ],
+      "en": [
+        "Savory",
+        "Crispy Chewy",
+        "Popular"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 270,
+    "protein": 25,
+    "fat": 14,
+    "carbs": 9,
+    "servingSize": {
+      "vi": "1 đĩa (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Quán Ngon Sài Gòn",
+      "en": "Saigon Seafood Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Mực lá hoặc mực ống",
+          "en": "Squid"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon",
+          "en": "Fish sauce"
+        },
+        "amount": "2.5 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Đường cát, tương ớt",
+          "en": "Sugar, chili sauce"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm, ớt hiểm băm, hành tây",
+          "en": "Garlic, chili, onion"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Bột bắp áo mực",
+          "en": "Cornstarch"
+        },
+        "amount": "2 thìa canh"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Mực làm sạch, khía vảy rồng, cắt miếng vừa ăn, thấm khô nước rồi xóc qua lớp mỏng bột bắp.",
+        "Chiên mực trong dầu nóng thật nhanh 2-3 phút cho giòn vàng, vớt ra thấm dầu.",
+        "Phi thơm tỏi ớt băm, cho hỗn hợp nước mắm, đường, tương ớt vào đun sôi kẹo lại.",
+        "Cho mực chiên và hành tây thái múi cau vào đảo thật nhanh tay trên lửa lớn cho sốt mắm áo bóng đều quanh từng miếng mực.",
+        "Múc ra đĩa ăn kèm dưa leo và rau răm, nhâm nhi cùng bạn bè rất tuyệt."
+      ],
+      "en": [
+        "Clean squid, score crosswise, cut into chunks, dry and toss in cornstarch.",
+        "Flash-fry in hot oil for 2-3 mins until golden-crisp; drain.",
+        "Sauté garlic and chili; bring fish sauce, sugar, and chili sauce to a bubbly glaze.",
+        "Toss squid and onion wedges vigorously in glaze over high heat for 1 min.",
+        "Serve hot with cucumber and Vietnamese coriander."
+      ]
+    }
+  },
+  {
+    "id": "vn-ngao-hap-sa-dua",
+    "title": {
+      "vi": "Ngao Hấp Sả Dứa Ớt Cay Ấm Nồng",
+      "en": "Steamed Clams with Lemongrass, Pineapple & Chili"
+    },
+    "image": "/dishes/vn-ngao-hap-sa-dua.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Hải sản",
+        "Nước ngọt lịm",
+        "Ấm bụng"
+      ],
+      "en": [
+        "Steamed Clams",
+        "Sweet Broth",
+        "Quick"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 140,
+    "protein": 20,
+    "fat": 2,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 tô lớn (~500g cả vỏ)",
+      "en": "1 bowl (~500g with shell)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Ốc Hà Nội & Sài Gòn",
+      "en": "Vietnamese Clam & Snail Culture"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Ngao trắng ngâm sạch cát",
+          "en": "White clams soaked clean"
+        },
+        "amount": "1kg"
+      },
+      {
+        "name": {
+          "vi": "Dứa chín thái lát mỏng",
+          "en": "Pineapple slices"
+        },
+        "amount": "1/4 quả"
+      },
+      {
+        "name": {
+          "vi": "Sả cây đập dập cắt khúc",
+          "en": "Lemongrass bruised"
+        },
+        "amount": "4 cây"
+      },
+      {
+        "name": {
+          "vi": "Ớt hiểm, rau răm, nước mắm",
+          "en": "Hot chilies, Vietnamese coriander, fish sauce"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ngao ngâm nước vo gạo và ớt cắt lát 1-2 tiếng cho nhả sạch hết cát bẩn, rửa lại thật sạch.",
+        "Lót sả đập dập và dứa thái lát dưới đáy nồi, cho ngao lên trên.",
+        "Thêm ớt cắt lát, 1 thìa cà phê đường, 1 thìa nước mắm và chỉ cần thêm 50ml nước (vì ngao tự tiết ra rất nhiều nước ngọt).",
+        "Đậy vung đun sôi lửa lớn trong 4-5 phút đến khi tất cả ngao há miệng đều là tắt bếp ngay.",
+        "Rắc rau răm thái nhỏ, múc ra tô húp nước ngọt thanh ấm nồng."
+      ],
+      "en": [
+        "Purge clams in water with chili slices for 1-2 hours to release sand; rinse.",
+        "Layer bruised lemongrass and pineapple at bottom of pot; add clams on top.",
+        "Add sliced chili, a dash of fish sauce and sugar, and just 50ml water (clams release natural sweet broth).",
+        "Cover tightly and boil on high for 4-5 mins until shells open wide; remove from heat.",
+        "Garnish with culantro or Vietnamese coriander; sip the naturally sweet, tangy broth hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-so-huyet-xao-toi",
+    "title": {
+      "vi": "Sò Huyết Xào Tỏi Mỡ Hành Tóp Mỡ",
+      "en": "Garlic Butter Stir-fried Blood Cockles"
+    },
+    "image": "/dishes/vn-so-huyet-xao-toi.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "dinner",
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Bổ máu",
+        "Đặc sản quán ốc",
+        "Mỡ hành tóp mỡ"
+      ],
+      "en": [
+        "Iron Rich",
+        "Street Food",
+        "Garlic Butter"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 19,
+    "fat": 13,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa (~350g)",
+      "en": "1 plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Quán Ốc Sài Gòn",
+      "en": "Saigon Street Shellfish"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sò huyết tươi sống",
+          "en": "Fresh blood cockles"
+        },
+        "amount": "800g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi tép băm nhiều",
+          "en": "Generous minced garlic"
+        },
+        "amount": "2 củ"
+      },
+      {
+        "name": {
+          "vi": "Tóp mỡ giòn",
+          "en": "Crispy pork cracklings"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Bơ thơm, nước mắm, tiêu",
+          "en": "Butter, fish sauce, pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Rau răm rửa sạch",
+          "en": "Vietnamese coriander"
+        },
+        "amount": "1 nắm"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Sò huyết chà sạch bùn đất bên ngoài vỏ, rửa lại nhiều lần với nước.",
+        "Phi thơm ngập tỏi băm trong chảo với dầu ăn và bơ cho tỏi vàng giòn rụm, vớt 1/2 lượng tỏi phi ra đĩa riêng.",
+        "Trút sò huyết vào chảo đảo thật nhanh tay trên lửa lớn trong 2-3 phút cho sò vừa hé miệng.",
+        "Nêm chút nước mắm ngon, hạt nêm và trút tóp mỡ giòn vào xóc đều tay.",
+        "Múc ra đĩa rải tỏi phi giòn và tiêu đen lên trên, ăn kèm rau răm chấm muối tiêu chanh."
+      ],
+      "en": [
+        "Scrub cockle shells clean of mud; rinse several times.",
+        "Fry minced garlic in oil and butter until deeply golden and crispy; reserve half.",
+        "Add blood cockles to the pan and toss vigorously over high heat for 2-3 mins until barely cracked open.",
+        "Season with fish sauce, pepper, and toss in crispy pork cracklings.",
+        "Plate, scatter crispy garlic over, and serve with Vietnamese coriander and lime salt."
+      ]
+    }
+  },
+  {
+    "id": "vn-oc-buou-xao-sa-ot",
+    "title": {
+      "vi": "Ốc Bươu Xào Sả Ớt Lá Lốt Giòn Cay",
+      "en": "Stir-fried Apple Snails with Lemongrass, Chili & Lolot Leaves"
+    },
+    "image": "/dishes/vn-oc-buou-xao-sa-ot.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Dân dã",
+        "Món nhắm",
+        "Giòn sần sật"
+      ],
+      "en": [
+        "Crunchy",
+        "Spicy",
+        "Savory"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 190,
+    "protein": 22,
+    "fat": 8,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa ốc (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Đồng Quê Dân Dã",
+      "en": "Countryside Vietnamese Bites"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt ốc bươu bóp muối giấm",
+          "en": "Cleaned apple snail meat"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Sả băm và sả thái vát",
+          "en": "Lemongrass minced & sliced"
+        },
+        "amount": "4 cây"
+      },
+      {
+        "name": {
+          "vi": "Lá lốt thái sợi",
+          "en": "Piper lolot leaves shredded"
+        },
+        "amount": "10 lá"
+      },
+      {
+        "name": {
+          "vi": "Ớt hiểm, tỏi, nước mắm",
+          "en": "Hot chilies, garlic, fish sauce"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt ốc bươu bóp kỹ muối hạt và nước cốt chanh cho sạch nhớt đen, rửa sạch rồi trần sơ nước sôi.",
+        "Phi thơm tỏi, sả và ớt trong chảo dầu nóng.",
+        "Trút thịt ốc vào xào săn trên lửa lớn trong 3 phút để ốc giữ độ giòn sần sật không bị dai.",
+        "Nêm nước mắm ngon, hạt nêm và chút ớt bột cho vị cay mặn đậm đà.",
+        "Cho lá lốt thái sợi vào đảo nhanh 30 giây dậy mùi thơm nồng rồi trút ra đĩa dùng nóng."
+      ],
+      "en": [
+        "Scrub snail meat with coarse salt and lime juice to remove slime; blanch briefly.",
+        "Sauté garlic, lemongrass, and chilies until fragrant.",
+        "Add snail meat and stir-fry briskly over high heat for 3 mins to retain crisp crunch.",
+        "Season with fish sauce, chili flakes, and broth powder.",
+        "Toss in shredded lolot leaves for 30 seconds and serve piping hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-muop-nau-lac",
+    "title": {
+      "vi": "Canh Mướp Hương Nấu Lạc Giã Bùi Ngọt",
+      "en": "Fragrant Sponge Gourd Soup with Crushed Peanuts"
+    },
+    "image": "/dishes/vn-canh-muop-nau-lac.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Thanh nhiệt",
+        "Thuần chay được"
+      ],
+      "en": [
+        "Home Cook",
+        "Cooling",
+        "Vegan Adaptable"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 160,
+    "protein": 8,
+    "fat": 9,
+    "carbs": 12,
+    "servingSize": {
+      "vi": "1 tô canh (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Mướp hương tươi gọt vỏ thái vát",
+          "en": "Fresh sponge gourd sliced"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Lạc nhân (đậu phộng) tươi hoặc khô",
+          "en": "Raw peanuts"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, hành hoa",
+          "en": "Shallots & scallions"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Muối hạt, nước mắm, tiêu",
+          "en": "Salt, fish sauce, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Lạc ngâm nước ấm 20 phút cho nở mềm, bóc vỏ lụa rồi cho vào cối giã dập hoặc giã nhuyễn vừa phải.",
+        "Phi thơm hành tím với chút dầu ăn, cho lạc giã vào xào thơm cùng 1 thìa cà phê muối.",
+        "Đổ 800ml nước lọc vào đun sôi, hạ nhỏ lửa ninh 10 phút cho chất bùi ngọt của lạc tan đều vào nước canh.",
+        "Thả mướp hương vào nấu sôi bùng lên khoảng 2 phút đến khi mướp vừa chín tới màu xanh mướt.",
+        "Nêm lại chút nước mắm ngon, rắc hành hoa thái nhỏ, múc ra tô húp vị ngọt mát bùi béo tự nhiên."
+      ],
+      "en": [
+        "Soak raw peanuts in warm water for 20 mins, peel skin, crush coarsely in a mortar.",
+        "Sauté shallots in a pot, add crushed peanuts and fry briefly with a pinch of salt.",
+        "Pour in 800ml water, bring to boil, and simmer for 10 mins to extract peanut milkiness.",
+        "Add sponge gourd slices and boil briskly for 2 minutes until tender-crisp and bright green.",
+        "Season with fish sauce, top with chopped scallions, and serve warm."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-rau-den-nau-tom",
+    "title": {
+      "vi": "Canh Rau Dền Đỏ Nấu Tôm Tươi Ngọt Mát",
+      "en": "Red Amaranth Soup with Fresh Shrimp"
+    },
+    "image": "/dishes/vn-canh-rau-den-nau-tom.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Thanh nhiệt",
+        "Bổ máu"
+      ],
+      "en": [
+        "Iron Rich",
+        "Cooling",
+        "Home Cook"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 120,
+    "protein": 15,
+    "fat": 3,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 tô lớn (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Rau dền đỏ nhặt sạch",
+          "en": "Fresh red amaranth greens"
+        },
+        "amount": "1 bó (~350g)"
+      },
+      {
+        "name": {
+          "vi": "Tôm tươi bóc vỏ giã dập",
+          "en": "Fresh shrimp peeled & bruised"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Hành khô băm nhỏ",
+          "en": "Minced shallot"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, muối, hạt nêm",
+          "en": "Fish sauce, salt, seasoning"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Rau dền đỏ nhặt ngọn non, rửa sạch ngâm nước muối loãng vớt ra để ráo.",
+        "Tôm tươi bóc vỏ, rút chỉ đen, băm thô hoặc giã dập với chút hành khô và tiêu.",
+        "Phi thơm hành khô, xào thịt tôm săn đỏ rồi đổ 800ml nước lọc vào đun sôi.",
+        "Hớt sạch bọt cho nước canh trong vắt, thả rau dền đỏ vào đun sôi bùng 2-3 phút.",
+        "Nêm nước mắm và hạt nêm vừa miệng, múc ra tô canh có màu đỏ tím đẹp mắt ngọt lịm."
+      ],
+      "en": [
+        "Pick tender amaranth leaves and shoots, wash and drain.",
+        "Peel and devein shrimp, roughly crush with shallots and pepper.",
+        "Sauté shallots, stir-fry shrimp until pink, then add 800ml water and bring to boil.",
+        "Skim foam, add red amaranth and boil for 2-3 mins until tender.",
+        "Season with fish sauce; ladle into bowls showing its iconic gorgeous crimson broth."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-mong-toi-nau-ngao",
+    "title": {
+      "vi": "Canh Mồng Tơi Nấu Ngao Thanh Nhiệt Ngày Hè",
+      "en": "Malabar Spinach Soup with Sweet Clams"
+    },
+    "image": "/dishes/vn-canh-mong-toi-nau-ngao.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Thanh nhiệt",
+        "Ngọt mát"
+      ],
+      "en": [
+        "Cooling",
+        "Summer Soup",
+        "Sweet Broth"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 110,
+    "protein": 14,
+    "fat": 2,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 tô canh (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Rau mồng tơi tươi non",
+          "en": "Fresh Malabar spinach"
+        },
+        "amount": "1 bó (~300g)"
+      },
+      {
+        "name": {
+          "vi": "Ngao trắng tươi sống",
+          "en": "Live white clams"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm",
+          "en": "Minced shallot"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, gừng thái chỉ",
+          "en": "Fish sauce, julienned ginger"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ngao rửa sạch luộc với chút nước đến khi há miệng, vớt lấy phần thịt ngao rửa sạch cát, chắt lấy nước luộc ngao trong veo.",
+        "Rau mồng tơi nhặt lá non rửa sạch, thái vừa ăn.",
+        "Phi thơm hành tím, xào săn thịt ngao với chút nước mắm.",
+        "Đổ nước luộc ngao vào đun sôi, thả rau mồng tơi vào nấu chín tới trong 2 phút.",
+        "Nêm lại cho vừa vị ngọt thanh, tắt bếp múc ra tô ăn giải nhiệt ngày nắng gắt."
+      ],
+      "en": [
+        "Boil clams until opened; remove meat and rinse sand; strain clam broth to clarify.",
+        "Wash and coarsely chop Malabar spinach.",
+        "Sauté shallots, stir-fry clam meat with a dash of fish sauce.",
+        "Pour clear clam broth back into pot, bring to a rolling boil, add spinach and cook for 2 mins.",
+        "Adjust seasoning; serve warm for instant summer refreshment."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-cai-cuc-thit-bam",
+    "title": {
+      "vi": "Canh Cải Cúc Nấu Thịt Băm Nhanh Gọn",
+      "en": "Garland Chrysanthemum Soup with Minced Pork"
+    },
+    "image": "/dishes/vn-canh-cai-cuc-thit-bam.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Nhanh gọn 10 phút",
+        "Thơm đặc trưng"
+      ],
+      "en": [
+        "Quick",
+        "10 Minutes",
+        "Herbal Aroma"
+      ]
+    },
+    "time": "10m",
+    "servings": 4,
+    "calories": 140,
+    "protein": 13,
+    "fat": 7,
+    "carbs": 5,
+    "servingSize": {
+      "vi": "1 tô canh (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Hà Nội Cổ Truyền",
+      "en": "Northern Home Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Rau cải cúc (tần ô) non",
+          "en": "Garland chrysanthemum greens"
+        },
+        "amount": "1 bó (~300g)"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo nạc xay",
+          "en": "Minced pork"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm nhỏ",
+          "en": "Minced shallot"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, tiêu xay, gia vị",
+          "en": "Fish sauce, pepper, salt"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Rau cải cúc nhặt ngọn non, rửa sạch ngắt làm đôi.",
+        "Phi thơm hành tím, cho thịt băm vào xào săn với chút nước mắm tiêu.",
+        "Đổ 750ml nước vào đun sôi bùng, hớt bọt cho nước trong.",
+        "Thả rau cải cúc vào đảo nhẹ, canh vừa sôi lại là tắt bếp ngay để cải cúc không bị nồng nát.",
+        "Múc ra tô rắc tiêu xay, ăn nóng thơm nồng đặc trưng."
+      ],
+      "en": [
+        "Clean tender chrysanthemum greens and break in half.",
+        "Sauté shallots, stir-fry minced pork with fish sauce and pepper.",
+        "Add 750ml water and bring to a boil; skim foam.",
+        "Drop in greens, let it boil for just 30 seconds and turn off heat immediately.",
+        "Ladle into bowl, finish with black pepper; enjoy while hot and fragrant."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-bi-do-dau-phong",
+    "title": {
+      "vi": "Canh Bí Đỏ Hầm Đậu Phộng Nước Cốt Dừa",
+      "en": "Pumpkin & Peanut Soup with Creamy Coconut Milk"
+    },
+    "image": "/dishes/vn-canh-bi-do-dau-phong.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Món ngon Nam Bộ",
+        "Bổ não",
+        "Béo bùi"
+      ],
+      "en": [
+        "Southern Style",
+        "Brain Food",
+        "Creamy"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 8,
+    "fat": 14,
+    "carbs": 18,
+    "servingSize": {
+      "vi": "1 tô canh (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Nam",
+      "en": "Southern Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bí đỏ gọt vỏ cắt khối vuông",
+          "en": "Pumpkin cut in cubes"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Đậu phộng (lạc) giã dập",
+          "en": "Crushed peanuts"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa sánh béo",
+          "en": "Coconut milk"
+        },
+        "amount": "100ml"
+      },
+      {
+        "name": {
+          "vi": "Hành boa-rô hoặc hành lá, ngò ôm",
+          "en": "Leek or scallions & rice paddy herb"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bí đỏ cắt khối vừa ăn. Đậu phộng ngâm mềm giã dập.",
+        "Nấu đậu phộng với 800ml nước trong 15 phút cho đậu mềm nhừ tiết vị bùi.",
+        "Cho bí đỏ vào hầm thêm 10 phút đến khi bí chín mềm dẻo ngọt bùi.",
+        "Rót nước cốt dừa vào khuấy đều, nêm muối và đường phèn vừa khẩu vị ngọt béo hài hòa.",
+        "Rắc ngò ôm và ngò gai thái nhỏ lên trên, dùng nóng béo ngậy ấm bụng."
+      ],
+      "en": [
+        "Cut pumpkin into bite-sized cubes. Soak and crush peanuts.",
+        "Simmer crushed peanuts in 800ml water for 15 mins until softened.",
+        "Add pumpkin cubes and cook 10 mins until fork-tender and sweet.",
+        "Stir in creamy coconut milk, season with salt and a touch of rock sugar.",
+        "Garnish with chopped rice paddy herb and culantro."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-khoai-tay-suon",
+    "title": {
+      "vi": "Canh Khoai Tây Cà Rốt Hầm Sườn Heo Béo Bùi",
+      "en": "Pork Rib Stewed Potato & Carrot Soup"
+    },
+    "image": "/dishes/vn-canh-khoai-tay-suon.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Bổ dưỡng",
+        "Trẻ em mê"
+      ],
+      "en": [
+        "Home Cook",
+        "Comfort Food",
+        "Kid Friendly"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 290,
+    "protein": 21,
+    "fat": 17,
+    "carbs": 16,
+    "servingSize": {
+      "vi": "1 tô canh lớn (~400g)",
+      "en": "1 large bowl (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Gia Đình Việt",
+      "en": "Vietnamese Family Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sườn non hoặc xương heo",
+          "en": "Pork ribs"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Khoai tây gọt vỏ cắt khối",
+          "en": "Potatoes cut in chunks"
+        },
+        "amount": "3 củ"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt tỉa hoa thái khúc",
+          "en": "Carrot sliced"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Hành hoa, mùi ta thái nhỏ",
+          "en": "Scallions & cilantro"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Hạt nêm, nước mắm, tiêu",
+          "en": "Seasonings"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Sườn chần nước sôi rửa sạch, ướp chút hạt nêm rồi cho vào nồi xào săn.",
+        "Đổ 1 lít nước vào đun sôi, hớt bọt kỹ rồi hạ nhỏ lửa hầm sườn trong 20 phút.",
+        "Cho cà rốt và khoai tây vào hầm tiếp 12-15 phút đến khi khoai bở tơi, sườn róc thịt.",
+        "Nêm lại nước mắm ngon vừa vị đậm đà ngọt tự nhiên từ củ và sườn.",
+        "Múc ra tô rắc hành mùi và tiêu xay thơm nức mũi."
+      ],
+      "en": [
+        "Blanch ribs and rinse; sauté lightly in pot.",
+        "Add 1L water, bring to boil, skim thoroughly, and simmer for 20 mins.",
+        "Add carrots and potato chunks; cook 12-15 mins until tender.",
+        "Season with fish sauce and broth powder.",
+        "Garnish with scallions, cilantro, and freshly ground pepper."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-cai-thao-dau-non",
+    "title": {
+      "vi": "Canh Cải Thảo Nấu Đậu Hũ Non Tôm Nõn",
+      "en": "Napa Cabbage Soup with Silken Tofu & Dried Shrimp"
+    },
+    "image": "/dishes/vn-canh-cai-thao-dau-non.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 90,
+    "dietaryTags": {
+      "vi": [
+        "Thanh đạm",
+        "Ít calo",
+        "Dễ tiêu hóa"
+      ],
+      "en": [
+        "Low Calorie",
+        "Light & Healthy",
+        "Silky Tofu"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 130,
+    "protein": 14,
+    "fat": 4,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 tô canh (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Thanh Đạm",
+      "en": "Clean Eating Vietnam"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cải thảo rửa sạch cắt khúc",
+          "en": "Napa cabbage cut in chunks"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Đậu hũ non cắt khối vuông",
+          "en": "Silken tofu cubed"
+        },
+        "amount": "1 hộp (~250g)"
+      },
+      {
+        "name": {
+          "vi": "Tôm tươi hoặc tôm khô ngâm mềm",
+          "en": "Fresh or dried shrimp"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím, gừng lát, hành hoa",
+          "en": "Shallots, sliced ginger, scallions"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Xào thơm tôm với hành tím và gừng lát thái mỏng.",
+        "Đổ 800ml nước lọc vào đun sôi, thả phần cọng cải thảo cứng vào nấu trước 2 phút.",
+        "Cho tiếp phần lá cải thảo và nhẹ nhàng thả đậu hũ non vào nấu sôi lại.",
+        "Nêm hạt nêm và chút muối vừa miệng, tránh khuấy mạnh làm nát đậu non.",
+        "Tắt bếp, rắc hành lá thái nhỏ và chút tiêu, dùng nóng ngọt thanh nhẹ bụng."
+      ],
+      "en": [
+        "Sauté shrimp with shallots and ginger slices.",
+        "Add 800ml water and boil; add thicker napa cabbage stems first for 2 mins.",
+        "Add leafy cabbage and gently slide in silken tofu cubes.",
+        "Season with salt and broth powder without stirring aggressively.",
+        "Top with scallions and cracked pepper; gentle on the stomach."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-nam-dau-phu-chay",
+    "title": {
+      "vi": "Canh Nấm Đậu Phụ Cà Chua Thanh Đạm Chay",
+      "en": "Mushroom & Tofu Tomato Vegan Soup"
+    },
+    "image": "/dishes/vn-canh-nam-dau-phu-chay.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Thuần chay",
+        "Thanh lọc cơ thể",
+        "Thanh đạm"
+      ],
+      "en": [
+        "Vegan",
+        "Detox",
+        "Light"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 120,
+    "protein": 10,
+    "fat": 4,
+    "carbs": 11,
+    "servingSize": {
+      "vi": "1 tô canh (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Chay An Lạc",
+      "en": "Peaceful Vegan Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Nấm kim châm, nấm đùi gà thái lát",
+          "en": "Enoki & king oyster mushrooms"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Đậu phụ trắng cắt miếng vuông",
+          "en": "White tofu cubes"
+        },
+        "amount": "2 bìa"
+      },
+      {
+        "name": {
+          "vi": "Cà chua chín bổ múi cau",
+          "en": "Tomatoes wedged"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Hành boa-rô, ngò rí, tiêu",
+          "en": "Leek, cilantro, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Phi thơm hành boa-rô, xào cà chua mềm tạo màu đỏ thanh nhã.",
+        "Đổ 800ml nước vào đun sôi, thả đậu phụ trắng vào nấu sôi nhẹ.",
+        "Cho các loại nấm vào nấu trong 3-4 phút cho nấm tiết vị ngọt đậm đà tự nhiên.",
+        "Nêm hạt nêm chay từ nấm và chút muối hạt vừa khẩu vị thanh tao.",
+        "Rắc ngò rí và tiêu xay, dùng nóng thanh tịnh nhẹ nhõm tâm hồn."
+      ],
+      "en": [
+        "Sauté leek slices, cook tomatoes until soft and red.",
+        "Pour in 800ml water, bring to boil, gently add tofu cubes.",
+        "Add assorted mushrooms and simmer 3-4 mins for natural mushroom umami.",
+        "Season with mushroom broth powder and sea salt.",
+        "Finish with fresh cilantro and pepper; soothing and wholesome."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-kim-chi-thit-ba-chi",
+    "title": {
+      "vi": "Canh Kim Chi Thịt Ba Chỉ Đậu Hũ Non Ấm Nóng",
+      "en": "Pork Belly & Kimchi Stew with Soft Tofu"
+    },
+    "image": "/dishes/vn-canh-kim-chi-thit-ba-chi.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Cay ấm",
+        "Cơm nhà hiện đại",
+        "Đậm đà"
+      ],
+      "en": [
+        "Spicy Stew",
+        "Cozy",
+        "Comfort Food"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 290,
+    "protein": 19,
+    "fat": 20,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 tô canh nóng (~400g)",
+      "en": "1 bowl (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Trẻ Hiện Đại",
+      "en": "Contemporary Asian Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Kim chi cải thảo chua cay cắt khúc",
+          "en": "Aged cabbage kimchi chopped"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Thịt ba chỉ heo thái mỏng",
+          "en": "Thinly sliced pork belly"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Đậu hũ non cắt lát",
+          "en": "Silken tofu sliced"
+        },
+        "amount": "1 cây"
+      },
+      {
+        "name": {
+          "vi": "Hành boa-rô, tỏi băm, ớt bột",
+          "en": "Leek, garlic, chili powder"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Xào thịt ba chỉ với tỏi băm cho săn lại và tiết bớt mỡ thừa.",
+        "Trút kim chi vào xào cùng thịt khoảng 3-4 phút cho ngấm vị chua cay nồng.",
+        "Đổ nước lọc hoặc nước dùng gà vào ngập, thêm nước cốt kim chi đun sôi rồi hạ nhỏ lửa ninh 10 phút.",
+        "Thả đậu hũ non vào nấu sôi thêm 2 phút.",
+        "Rắc hành boa-rô thái vát, ăn ngay khi còn bốc khói xì xụp cùng cơm trắng."
+      ],
+      "en": [
+        "Sauté pork belly with garlic until lightly browned and fat renders.",
+        "Add kimchi and stir-fry for 3-4 mins to deepen flavors.",
+        "Pour in water/broth and kimchi juice, simmer covered for 10 mins.",
+        "Slide in silken tofu and cook gently for 2 mins.",
+        "Top with sliced leeks; serve bubbling hot with white rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-tep-dong-la-me",
+    "title": {
+      "vi": "Canh Tép Đồng Nấu Lá Me Non Chua Dịu",
+      "en": "Freshwater Shrimps Soup with Young Tamarind Leaves"
+    },
+    "image": "/dishes/vn-canh-tep-dong-la-me.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": false,
+    "popularityScore": 86,
+    "dietaryTags": {
+      "vi": [
+        "Dân dã",
+        "Đặc sản đồng quê",
+        "Chua thanh"
+      ],
+      "en": [
+        "Rustic",
+        "Tangy",
+        "Country Classic"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 130,
+    "protein": 16,
+    "fat": 4,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 tô canh (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Tây Dân Dã",
+      "en": "Mekong Country Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Tép đồng tươi nhảy tanh tách",
+          "en": "Live freshwater baby shrimps"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Lá me non tuốt sạch cọng",
+          "en": "Young tamarind leaves"
+        },
+        "amount": "1 nắm lớn (~80g)"
+      },
+      {
+        "name": {
+          "vi": "Hành tím, ớt hiểm, ngò gai",
+          "en": "Shallots, chilies, culantro"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm đồng, muối, tiêu",
+          "en": "Country fish sauce, salt, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tép đồng xóc muối rửa sạch, để ráo nước.",
+        "Phi thơm hành tím, cho tép vào xào săn đỏ hồng rồi trút nước sôi vào đun sủi bọt.",
+        "Vò nhẹ lá me non cho dậy tinh dầu chua rồi thả vào nồi canh.",
+        "Nêm nước mắm ngon và chút ớt hiểm thái lát cho vị chua cay đậm đà.",
+        "Tắt bếp rắc ngò gai, múc ra tô húp vị chua dịu thanh tao của lá me quyện vị ngọt của tép đồng."
+      ],
+      "en": [
+        "Rinse baby shrimps with salt, drain well.",
+        "Sauté shallots, stir-fry baby shrimps until pink, then add boiling water.",
+        "Lightly bruise young tamarind leaves to release acidity and add to the pot.",
+        "Season with fish sauce and sliced chili for a bright tangy balance.",
+        "Garnish with culantro and serve warm."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-chua-ca-hu",
+    "title": {
+      "vi": "Canh Chua Cá Hú Bắp Chuối Điên Điển Nam Bộ",
+      "en": "Southern River Catfish Sour Soup with Sesbania Flowers"
+    },
+    "image": "/dishes/vn-canh-chua-ca-hu.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Miền Tây",
+        "Mùa nước nổi",
+        "Chua ngọt"
+      ],
+      "en": [
+        "Mekong Delta",
+        "Tangy & Sweet",
+        "Seasonal"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 270,
+    "protein": 23,
+    "fat": 15,
+    "carbs": 11,
+    "servingSize": {
+      "vi": "1 tô lớn (~450g)",
+      "en": "1 large bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Miền Tây",
+      "en": "Southern Delta Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá hú béo cắt khúc",
+          "en": "Pangasius catfish steaks"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Bông điên điển vàng rực",
+          "en": "Yellow sesbania flowers"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Bắp chuối bào mỏng",
+          "en": "Shredded banana blossom"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Cốt me chua, đậu bắp, cà chua",
+          "en": "Tamarind pulp, okra, tomatoes"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Rau ngổ, ngò gai, tỏi phi",
+          "en": "Rice paddy herb, culantro, fried garlic"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá hú rửa sạch với nước muối gừng, chiên sơ hai mặt cho săn thịt và thơm béo.",
+        "Nấu sôi 1 lít nước lọc với nước cốt me và cà chua.",
+        "Thả cá hú vào nấu chín trong 8-10 phút, hớt sạch bọt.",
+        "Thêm đậu bắp, bắp chuối bào và bông điên điển vào đun sôi bùng lại 1 phút là chín giòn.",
+        "Nêm nước mắm ngon và đường cho chuẩn vị chua ngọt miền Tây, rắc rau ngổ, ngò gai và tỏi phi thơm nức."
+      ],
+      "en": [
+        "Clean catfish with ginger salt, sear lightly on both sides.",
+        "Boil 1L water with tamarind juice and tomato wedges.",
+        "Add fish steaks and simmer 8-10 mins, skimming carefully.",
+        "Toss in okra, banana blossoms, and yellow sesbania flowers for 1 minute.",
+        "Season with fish sauce and sugar for iconic southern balance; top with fried garlic and herbs."
+      ]
+    }
+  },
+  {
+    "id": "vn-rau-bi-xao-toi",
+    "title": {
+      "vi": "Rau Bí Xào Tỏi Xanh Giòn Thơm Lừng",
+      "en": "Crispy Stir-fried Pumpkin Vine Shoots with Garlic"
+    },
+    "image": "/dishes/vn-rau-bi-xao-toi.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Đặc sản dân dã",
+        "Giòn ngọt"
+      ],
+      "en": [
+        "Crispy Shoots",
+        "Garlic",
+        "Home Cook"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 120,
+    "protein": 4,
+    "fat": 8,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 đĩa rau (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Quê Bắc Bộ",
+      "en": "Northern Countryside Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Rau bí ngô non tước sạch xơ",
+          "en": "Fresh young pumpkin shoots peeled"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi tép đập dập nhiều",
+          "en": "Generous crushed garlic"
+        },
+        "amount": "2 củ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn hoặc mỡ heo",
+          "en": "Pork lard or cooking oil"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, hạt nêm, nước mắm",
+          "en": "Oyster sauce, seasoning, fish sauce"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Rau bí tước thật kỹ lớp xơ ráp bên ngoài cọng và cuống lá, rửa nhẹ tay vắt ráo.",
+        "Đun sôi nồi nước có chút muối, chần nhanh cọng rau bí 30 giây rồi vớt ngâm ngay vào âu nước đá cho xanh giòn.",
+        "Phi thơm ngập tỏi đập dập với mỡ heo trên lửa lớn.",
+        "Trút rau bí vào đảo thật nhanh tay trên lửa cực lớn để rau giữ trọn màu xanh mướt và độ giòn sần sật.",
+        "Nêm dầu hào và chút nước mắm, đảo đều 1 phút rồi trút ra đĩa thưởng thức ngay."
+      ],
+      "en": [
+        "Stringently peel fibrous outer skin off pumpkin shoots; wash and drain.",
+        "Quickly blanch shoots in salted boiling water for 30s, plunge into ice bath to preserve crisp texture.",
+        "Sauté plenty of crushed garlic in lard or oil over high heat.",
+        "Add pumpkin shoots and toss briskly over roaring high heat.",
+        "Season with oyster sauce and fish sauce, plate immediately while glistening green."
+      ]
+    }
+  },
+  {
+    "id": "vn-cai-ngot-xao-nam",
+    "title": {
+      "vi": "Cải Ngọt Xào Nấm Đông Cô Dầu Hào",
+      "en": "Stir-fried Choy Sum with Shiitake in Oyster Sauce"
+    },
+    "image": "/dishes/vn-cai-ngot-xao-nam.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 90,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Nhanh gọn",
+        "Giàu chất xơ"
+      ],
+      "en": [
+        "Quick",
+        "High Fiber",
+        "Healthy"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 110,
+    "protein": 5,
+    "fat": 6,
+    "carbs": 9,
+    "servingSize": {
+      "vi": "1 đĩa xào (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cải ngọt cắt khúc",
+          "en": "Fresh choy sum cut in lengths"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Nấm đông cô tươi thái lát",
+          "en": "Fresh shiitake sliced"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm",
+          "en": "Minced garlic"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, hạt nêm, tiêu",
+          "en": "Oyster sauce, seasoning, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cải ngọt rửa sạch cắt khúc 5cm. Nấm đông cô khía hoa hoặc thái lát dày.",
+        "Phi thơm tỏi băm trong chảo dầu nóng, xào nấm đông cô chín tới.",
+        "Cho phần cọng cải ngọt vào xào trước 1 phút, sau đó cho lá cải vào đảo cùng trên lửa lớn.",
+        "Nêm dầu hào và hạt nêm đảo nhanh tay cho ngấm đều vị đậm đà.",
+        "Tắt bếp rắc tiêu, trút ra đĩa dùng nóng giòn ngọt thanh tao."
+      ],
+      "en": [
+        "Wash choy sum, cut into 5cm pieces. Slice fresh shiitake.",
+        "Sauté minced garlic in hot oil, cook mushrooms until fragrant.",
+        "Add choy sum stems first for 1 min, then add leaves over high heat.",
+        "Season with oyster sauce and pepper, tossing vigorously.",
+        "Serve hot with bright green color and crisp texture."
+      ]
+    }
+  },
+  {
+    "id": "vn-mang-xao-thit-bo",
+    "title": {
+      "vi": "Măng Trúc Xào Thịt Bò Lá Lốt Thơm Nức",
+      "en": "Stir-fried Bamboo Shoots & Beef with Wild Betel Leaves"
+    },
+    "image": "/dishes/vn-mang-xao-thit-bo.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Đậm đà",
+        "Thơm ngát"
+      ],
+      "en": [
+        "Home Cook",
+        "Savory",
+        "Herbal"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 240,
+    "protein": 24,
+    "fat": 12,
+    "carbs": 9,
+    "servingSize": {
+      "vi": "1 đĩa (~280g)",
+      "en": "1 plate (~280g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Vùng Cao Tây Bắc",
+      "en": "Northwest Highlands Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt bắp bò thái mỏng",
+          "en": "Thinly sliced beef"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Măng trúc tươi luộc sạch thái lát",
+          "en": "Boiled mountain bamboo shoots"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Lá lốt tươi thái sợi",
+          "en": "Lolot leaves shredded"
+        },
+        "amount": "10 lá"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm, hạt tiêu, nước mắm",
+          "en": "Garlic, pepper, fish sauce"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt bò ướp tỏi băm, dầu hào và tiêu 10 phút. Măng trúc luộc kỹ nhiều nước rồi vắt ráo.",
+        "Phi thơm tỏi, xào thịt bò trên lửa lớn vừa chín tới thì trút riêng ra đĩa.",
+        "Cho măng trúc vào chảo xào săn với chút hạt nêm và nước mắm khoảng 3 phút cho ngấm đậm đà.",
+        "Trút thịt bò trở lại chảo cùng lá lốt thái sợi đảo nhanh tay 30 giây dậy mùi thơm lừng.",
+        "Múc ra đĩa rắc tiêu thưởng thức cùng cơm nóng."
+      ],
+      "en": [
+        "Marinate beef with garlic, oyster sauce, and pepper. Boil bamboo shoots thoroughly; drain.",
+        "Quickly sear beef in garlic oil over high heat; remove.",
+        "Stir-fry bamboo shoots with fish sauce for 3 mins until flavorful.",
+        "Return beef and add shredded lolot leaves; toss for 30s.",
+        "Serve hot with cracked black pepper."
+      ]
+    }
+  },
+  {
+    "id": "vn-su-su-xao-trung",
+    "title": {
+      "vi": "Su Su Bào Sợi Xào Trứng Gà Bùi Béo",
+      "en": "Stir-fried Chayote Shreds with Eggs"
+    },
+    "image": "/dishes/vn-su-su-xao-trung.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Dân dã",
+        "Tiết kiệm"
+      ],
+      "en": [
+        "Budget Friendly",
+        "Home Cook",
+        "Quick"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 160,
+    "protein": 9,
+    "fat": 10,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 đĩa (~220g)",
+      "en": "1 plate (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Su su gọt vỏ bào sợi mỏng",
+          "en": "Chayote peeled & julienned"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà ta",
+          "en": "Eggs"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, hành hoa",
+          "en": "Shallots & scallions"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Hạt nêm, nước mắm, tiêu",
+          "en": "Seasonings"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Su su gọt vỏ rửa sạch mủ, bào sợi mỏng vừa phải.",
+        "Phi thơm hành tím, cho su su vào xào trên lửa vừa khoảng 3 phút cho chín tới giữ độ giòn ngọt.",
+        "Gạt su su sang một bên chảo, đập trứng gà vào dùng đũa khuấy tơi cho trứng chín xốp.",
+        "Đảo đều su su quyện cùng trứng, nêm nước mắm và tiêu xay vừa miệng.",
+        "Rắc hành hoa thái nhỏ, múc ra đĩa ăn kèm cơm nóng."
+      ],
+      "en": [
+        "Peel chayote under running water, julienne into strips.",
+        "Sauté shallots, cook chayote over medium heat for 3 mins until tender-crisp.",
+        "Push chayote aside, crack eggs directly into skillet and scramble softly.",
+        "Toss chayote and eggs together; season with fish sauce and pepper.",
+        "Garnish with scallions and serve hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-ngo-sen-xao-tom-thit",
+    "title": {
+      "vi": "Ngó Sen Xào Tôm Thịt Thanh Giòn",
+      "en": "Stir-fried Lotus Stem with Shrimp and Pork"
+    },
+    "image": "/dishes/vn-ngo-sen-xao-tom-thit.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Thanh giòn",
+        "Đẹp mắt",
+        "Giàu dinh dưỡng"
+      ],
+      "en": [
+        "Crunchy",
+        "Colorful",
+        "Nutritious"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 20,
+    "fat": 10,
+    "carbs": 12,
+    "servingSize": {
+      "vi": "1 đĩa (~280g)",
+      "en": "1 plate (~280g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Tây Nam Bộ",
+      "en": "Mekong Delta Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Ngó sen tươi chẻ đôi ngâm giấm",
+          "en": "Fresh lotus stems halved"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Tôm sú bóc vỏ",
+          "en": "Peeled tiger prawns"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Thịt nạc dăm heo thái mỏng",
+          "en": "Sliced lean pork"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt thái sợi, cần tây",
+          "en": "Carrot julienne & celery"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm, nước mắm, tiêu",
+          "en": "Garlic, fish sauce, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ngó sen cắt khúc ngâm nước chanh loãng cho trắng giòn, vớt ra để ráo.",
+        "Phi thơm tỏi, xào thịt heo và tôm chín săn thơm.",
+        "Cho ngó sen và cà rốt vào xào nhanh tay trên lửa lớn trong 2 phút để ngó sen giữ trọn độ giòn mát.",
+        "Nêm nước mắm ngon và hạt nêm vừa vị, cho cần tây cắt khúc vào đảo đều.",
+        "Bày ra đĩa rắc tiêu đen dùng nóng."
+      ],
+      "en": [
+        "Cut lotus stems into batons, soak in lemon water to keep pearly white and crisp.",
+        "Sauté garlic, cook pork and shrimp until seared.",
+        "Add lotus stems and carrots; stir-fry over high heat for 2 mins to retain crunch.",
+        "Season with fish sauce, toss in celery stalks.",
+        "Serve hot sprinkled with ground pepper."
+      ]
+    }
+  },
+  {
+    "id": "vn-dua-chua-xao-top-mo",
+    "title": {
+      "vi": "Dưa Cải Chua Xào Tóp Mỡ Hành Hoa Béo Giòn",
+      "en": "Stir-fried Pickled Mustard Greens with Crispy Pork Cracklings"
+    },
+    "image": "/dishes/vn-dua-chua-xao-top-mo.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Ký ức tuổi thơ",
+        "Siêu hao cơm"
+      ],
+      "en": [
+        "Comfort Food",
+        "Crispy Cracklings",
+        "Tangy"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 260,
+    "protein": 10,
+    "fat": 22,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa xào (~220g)",
+      "en": "1 plate (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hà Nội Cũ",
+      "en": "Old Hanoi Family Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Dưa cải chua muối vàng giòn",
+          "en": "Pickled mustard greens"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Tóp mỡ heo giòn rụm",
+          "en": "Crispy pork cracklings"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Mỡ heo nước",
+          "en": "Rendered pork lard"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Hành khô băm, hành hoa cắt khúc",
+          "en": "Shallots & scallions"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, ớt hiểm, tiêu",
+          "en": "Fish sauce, chili, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Dưa chua rửa sơ vắt ráo nước để giảm bớt độ chua mặn gắt.",
+        "Phi thơm hành khô với mỡ heo trong chảo nóng già.",
+        "Trút dưa cải chua vào xào kỹ trên lửa vừa trong 5-7 phút cho dưa ngấm mỡ bóng bẩy săn lại.",
+        "Nêm 1 thìa nước mắm ngon, chút đường và ớt thái lát cho vị chua mặn ngọt cay hòa quyện.",
+        "Cho tóp mỡ giòn và hành hoa vào đảo nhanh 1 phút cho tóp mỡ ngấm sốt mà vẫn giữ độ giòn tan.",
+        "Múc ra đĩa rắc tiêu, ăn cùng cơm nóng vét sạch nồi."
+      ],
+      "en": [
+        "Rinse pickled mustard greens, squeeze gently to temper sharp acidity.",
+        "Sauté shallots in rendered pork lard until golden.",
+        "Add pickled greens and fry for 5-7 mins until deeply infused and translucent.",
+        "Season with fish sauce, a pinch of sugar, and chili slices.",
+        "Toss in crispy pork cracklings and scallions for 1 minute so cracklings stay crisp.",
+        "Serve hot with plenty of steamed rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-mi-chao-ha-noi",
+    "title": {
+      "vi": "Bánh Mì Chảo Hà Nội Pâté Trứng Xúc Xích",
+      "en": "Hanoi Sizzling Pan Bread with Pâté, Eggs & Sausage"
+    },
+    "image": "/dishes/vn-banh-mi-chao-ha-noi.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Ăn sáng hot",
+        "Đặc sản Hà Nội",
+        "Béo ngậy"
+      ],
+      "en": [
+        "Hanoi Breakfast",
+        "Street Food",
+        "Savory"
+      ]
+    },
+    "time": "20m",
+    "servings": 2,
+    "calories": 520,
+    "protein": 26,
+    "fat": 32,
+    "carbs": 35,
+    "servingSize": {
+      "vi": "1 chảo gang kèm 1 bánh mì",
+      "en": "1 skillet with baguette"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Cổ Hà Nội",
+      "en": "Hanoi Street Bites"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bánh mì Việt Nam giòn rụm",
+          "en": "Crispy baguettes"
+        },
+        "amount": "2 ổ"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà ốp la lòng đào",
+          "en": "Sunny-side eggs"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Pâté gan heo béo ngậy",
+          "en": "Pork liver pâté"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Xúc xích khía vảy rồng",
+          "en": "Sausages scored"
+        },
+        "amount": "2 cây"
+      },
+      {
+        "name": {
+          "vi": "Thịt bò thái mỏng xào tái",
+          "en": "Seared beef"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Nước sốt tiêu đen hoặc sốt cà chua sánh đỏ",
+          "en": "Rich pepper tomato gravy"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Làm nóng chảo gang con bò trên bếp, quết lớp bơ thơm tan chảy.",
+        "Đập trứng gà ốp la giữ lòng đào béo ngậy, chiên xúc xích và thịt bò chín tới.",
+        "Xắt lát dày pâté gan đặt vào chảo, rưới nước sốt sánh mịn sủi tăm xung quanh.",
+        "Rắc tiêu đen, hành lá, ớt tỉa hoa, phục vụ chảo gang nóng xèo xèo.",
+        "Bẻ bánh mì giòn rụm quẹt đẫm pâté, lòng đào và nước sốt đậm đà."
+      ],
+      "en": [
+        "Heat cast-iron skillet, melt a knob of fragrant butter.",
+        "Fry eggs sunny-side up with runny yolks; sear sausages and beef.",
+        "Add a thick slice of rich pâté, pour simmering savory tomato gravy around.",
+        "Sprinkle with cracked black pepper and scallions, serve sizzling hot.",
+        "Dip warm crispy baguette into runny yolk, creamy pâté, and rich sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-da-cua-hai-phong",
+    "title": {
+      "vi": "Bánh Đa Cua Đỏ Hải Phòng Chả Lá Lốt",
+      "en": "Hai Phong Red Noodle Soup with Crab & Lolot Rolls"
+    },
+    "image": "/dishes/vn-banh-da-cua-hai-phong.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản đất Cảng",
+        "Nước dùng cua đồng",
+        "Bánh đa đỏ"
+      ],
+      "en": [
+        "Hai Phong Icon",
+        "Crab Broth",
+        "Red Noodles"
+      ]
+    },
+    "time": "45m",
+    "servings": 4,
+    "calories": 460,
+    "protein": 26,
+    "fat": 16,
+    "carbs": 53,
+    "servingSize": {
+      "vi": "1 tô lớn (~650g)",
+      "en": "1 large bowl (~650g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hải Phòng Đất Cảng",
+      "en": "Hai Phong Port City Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bánh đa đỏ Hải Phòng",
+          "en": "Hai Phong brown/red rice noodles"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Cua đồng giã lọc lấy nước riêu",
+          "en": "Field crab broth & meat paste"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Chả lá lốt chiên vàng",
+          "en": "Fried lolot pork rolls"
+        },
+        "amount": "8 cuốn"
+      },
+      {
+        "name": {
+          "vi": "Chả cá Hải Phòng",
+          "en": "Hai Phong fish cakes"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Rau muống chần giòn, rau rút",
+          "en": "Blanched water spinach & water mimosa"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Hành phi mỡ nước, tóp mỡ, ớt chí chương",
+          "en": "Fried shallots, pork cracklings, chili paste"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Nấu nước cua đồng với chút muối trên lửa nhỏ, khuấy nhẹ cho mảng riêu cua kết tảng nổi lên mặt thì vớt riêng ra bát.",
+        "Chưng gạch cua với mỡ hành cho thơm lừng óng vàng rồi trút vào nồi nước dùng cùng cà chua xào.",
+        "Ngâm bánh đa đỏ trong nước lạnh 5 phút, chần qua nước sôi rồi xếp vào tô.",
+        "Xếp rau muống chần, chả lá lốt, chả cá, mảng riêu cua và tóp mỡ giòn lên trên.",
+        "Chan nước dùng cua ngọt thanh đậm đà đang sôi sùng sục vào tô, thêm hành phi và ớt chí chương Hải Phòng cay xé."
+      ],
+      "en": [
+        "Gently simmer crab water with salt until crab meat rafts float to surface; gently scoop into a bowl.",
+        "Sauté crab roe with shallot oil and add into broth with softened tomatoes.",
+        "Soak red noodles in cold water, blanch in boiling water, place into bowls.",
+        "Top with blanched water spinach, lolot pork rolls, fish cakes, crab meat, and crispy cracklings.",
+        "Ladle piping hot crab broth over noodles, serve with Hai Phong chí chương chili paste."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-canh-trang-bang",
+    "title": {
+      "vi": "Bánh Canh Trảng Bàng Giò Heo Tây Ninh",
+      "en": "Trang Bang Thick Rice Noodle Soup with Pork Hock"
+    },
+    "image": "/dishes/vn-banh-canh-trang-bang.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Tây Ninh",
+        "Nước dùng trong veo",
+        "Rau rừng"
+      ],
+      "en": [
+        "Tay Ninh Icon",
+        "Clear Broth",
+        "Wild Herbs"
+      ]
+    },
+    "time": "60m",
+    "servings": 4,
+    "calories": 470,
+    "protein": 30,
+    "fat": 18,
+    "carbs": 48,
+    "servingSize": {
+      "vi": "1 tô bánh canh (~600g)",
+      "en": "1 bowl (~600g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Trảng Bàng Tây Ninh",
+      "en": "Trang Bang Culinary Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sợi bánh canh Trảng Bàng bột gạo",
+          "en": "Trang Bang rice noodles"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Khoanh giò heo hoặc bắp giò luộc",
+          "en": "Boiled pork hock rounds"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Xương ống hầm nước dùng trong",
+          "en": "Pork marrow bones for clear stock"
+        },
+        "amount": "800g"
+      },
+      {
+        "name": {
+          "vi": "Rau rừng Tây Ninh tổng hợp (lá cóc, quế vị, sao nhái...)",
+          "en": "Tay Ninh wild forest herbs"
+        },
+        "amount": "1 rổ lớn"
+      },
+      {
+        "name": {
+          "vi": "Hành tím phi, ớt hiểm ngâm mắm",
+          "en": "Fried shallots, chili fish sauce"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hầm xương ống và bắp giò heo trên lửa nhỏ liu riu, thường xuyên hớt bọt để nước dùng trong vắt, ngọt thanh từ tủy xương.",
+        "Vớt giò heo ra ngâm nước lạnh cho da giòn trắng rồi thái khoanh vừa ăn.",
+        "Trụng sợi bánh canh qua nước sôi rồi chia đều vào các tô.",
+        "Xếp giò heo, rắc hành phi thơm nức và hành hoa thái nhỏ lên trên.",
+        "Chan nước dùng sôi sùng sục vào tô, ăn kèm rổ rau rừng Tây Ninh tươi mát và chấm nước mắm tiêu ớt."
+      ],
+      "en": [
+        "Simmer pork bones and hock over gentle heat, skimming continuously for crystal-clear sweet broth.",
+        "Ice bath the cooked pork hock, slice into rounds.",
+        "Blanch thick rice noodles and divide into bowls.",
+        "Arrange pork hock slices, crispy shallots, and scallions on top.",
+        "Ladle scalding clear broth over, serve with a basket of fresh wild herbs and dipping fish sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-bun-sua-quy-nhon",
+    "title": {
+      "vi": "Bún Sứa Quy Nhơn Nước Dùng Trong Veo",
+      "en": "Quy Nhon Jellyfish & Fish Cake Noodle Soup"
+    },
+    "image": "/dishes/vn-bun-sua-quy-nhon.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Quy Nhơn",
+        "Thanh mát giòn sần sật",
+        "Ít béo"
+      ],
+      "en": [
+        "Coastal Specialty",
+        "Crunchy Jellyfish",
+        "Low Fat"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 360,
+    "protein": 24,
+    "fat": 8,
+    "carbs": 49,
+    "servingSize": {
+      "vi": "1 tô bún sứa (~600g)",
+      "en": "1 bowl (~600g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đất Võ Bình Định",
+      "en": "Quy Nhon Coastal Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sứa biển tươi ngâm giòn",
+          "en": "Crisp fresh jellyfish"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Chả cá thu Quy Nhơn chiên và hấp",
+          "en": "Quy Nhon fried & steamed fish cakes"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Bún tươi sợi nhỏ",
+          "en": "Fresh rice vermicelli"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng cá liệt hoặc cá thu ngọt thanh",
+          "en": "Fish bone clear stock"
+        },
+        "amount": "1.2 lít"
+      },
+      {
+        "name": {
+          "vi": "Cà chua, dứa chín, hành lá, rau thơm ghém",
+          "en": "Tomato, pineapple, herbs"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Sứa ngâm xả sạch vị mặn, chần sơ qua nước sôi ngâm ngay vào nước đá để giữ độ giòn sần sật.",
+        "Nấu nước dùng từ xương cá biển ngọt thanh với dứa chín và cà chua.",
+        "Chả cá hấp và chiên thái miếng vừa ăn.",
+        "Cho bún vào tô, xếp chả cá và sứa giòn lên trên.",
+        "Chan nước dùng nóng hổi, rắc hành ngò thái nhỏ và thưởng thức cùng rau ghém chuối chát, chấm mắm ớt tỏi."
+      ],
+      "en": [
+        "Rinse jellyfish thoroughly, quickly scald and shock in ice water for crunchy texture.",
+        "Simmer fish stock with pineapple and tomatoes for a light, aromatic broth.",
+        "Slice fish cakes into strips.",
+        "Place vermicelli in bowls, top with fish cakes and crisp jellyfish.",
+        "Pour hot clear broth over, garnish with herbs, and serve with shredded banana blossom and chili fish sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-bun-cha-ca-quy-nhon",
+    "title": {
+      "vi": "Bún Chả Cá Quy Nhơn Đậm Vị Biển Miền Trung",
+      "en": "Quy Nhon Fish Cake Rice Vermicelli Soup"
+    },
+    "image": "/dishes/vn-bun-cha-ca-quy-nhon.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Miền Trung",
+        "Đậm đà",
+        "Chả cá dai giòn"
+      ],
+      "en": [
+        "Central Vietnam",
+        "Seafood",
+        "Chewy Fish Cakes"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 410,
+    "protein": 26,
+    "fat": 12,
+    "carbs": 50,
+    "servingSize": {
+      "vi": "1 tô bún (~600g)",
+      "en": "1 bowl (~600g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Trung",
+      "en": "Central Vietnamese Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Chả cá nhồng / cá thu quết dai",
+          "en": "Hand-pounded bouncy fish cakes"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Bún tươi",
+          "en": "Fresh vermicelli"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Nước hầm đầu xương cá ngọt lịm",
+          "en": "Fish stock"
+        },
+        "amount": "1.2 lít"
+      },
+      {
+        "name": {
+          "vi": "Bí đỏ, bắp cải thái miếng vuông",
+          "en": "Pumpkin & cabbage pieces"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Hành hoa, ớt sa tế, mắm ruốc dầm",
+          "en": "Scallions, sate chili, shrimp paste"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Nấu nước hầm từ xương cá tươi lọc sạch, cho bí đỏ và bắp cải vào nấu ngọt nước tự nhiên.",
+        "Chả cá chiên vàng cắt lát tam giác xếp vào tô bún đã chần nóng.",
+        "Chan nước dùng sôi sùng sục, rắc hành lá và tiêu sọ.",
+        "Thêm thìa sa tế cay nồng đặc trưng xứ miền Trung và rau sống ghém."
+      ],
+      "en": [
+        "Simmer fresh fish bones, add pumpkin and cabbage for natural sweetness.",
+        "Slice fried fish cakes into wedges and arrange over blanched noodles in bowls.",
+        "Ladle boiling broth over, garnish with scallions and white pepper.",
+        "Serve with fiery lemongrass chili paste and fresh salad greens."
+      ]
+    }
+  },
+  {
+    "id": "vn-bun-quay-phu-quoc",
+    "title": {
+      "vi": "Bún Quậy Phú Quốc Chả Tôm Chả Mực Tươi",
+      "en": "Phu Quoc Stirred Noodle Soup with Fresh Shrimp & Squid Paste"
+    },
+    "image": "/dishes/vn-bun-quay-phu-quoc.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Phú Quốc",
+        "Tươi sống tại chỗ",
+        "Nước chấm tự quậy"
+      ],
+      "en": [
+        "Phu Quoc Island",
+        "Super Fresh Seafood",
+        "Custom Dipping Dip"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 420,
+    "protein": 28,
+    "fat": 8,
+    "carbs": 58,
+    "servingSize": {
+      "vi": "1 tô bún quậy (~600g)",
+      "en": "1 bowl (~600g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đảo Ngọc Phú Quốc",
+      "en": "Phu Quoc Island Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt tôm tươi quết nhuyễn dẻo quánh",
+          "en": "Fresh pounded shrimp paste"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Thịt mực tươi quết nhuyễn",
+          "en": "Fresh pounded squid paste"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Bún tươi ép tại chỗ",
+          "en": "Freshly extruded rice vermicelli"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Nước luộc bún nóng hổi",
+          "en": "Hot noodle broth"
+        },
+        "amount": "1 lít"
+      },
+      {
+        "name": {
+          "vi": "Hành lá, hạt tiêu Phú Quốc",
+          "en": "Scallions, Phu Quoc black pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Muối, đường, bột ngọt, quất (tắc), ớt cay để tự quậy nước chấm",
+          "en": "Salt, sugar, calamansi, chili for sauce"
+        },
+        "amount": "1 bộ chén"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Phết mỏng chả tôm và chả mực tươi vào đáy và thành tô sứ.",
+        "Chan ngay nước dùng sôi sùng sục vào tô rồi dùng đũa quậy nhanh tay cho chả tôm mực vừa chín tới giữ trọn vị ngọt tươi nguyên bản.",
+        "Cho bún tươi vừa ép nóng vào tô, rắc nhiều hành hoa và hạt tiêu cay nồng Phú Quốc.",
+        "Tự pha chén nước chấm: cho muối, đường, ớt xay, vắt tắc vào chén rồi quậy thật mạnh tay đến khi sủi bọt sánh đỏ.",
+        "Vừa húp bún vừa chấm chả tôm mực vào chén nước chấm quậy thần thánh."
+      ],
+      "en": [
+        "Smear fresh raw shrimp and squid paste along the inner bottom and walls of ceramic bowls.",
+        "Pour scalding hot broth directly into the bowl and stir briskly ('quậy') to gently poach the seafood paste.",
+        "Add warm noodles, top with plenty of chopped scallions and aromatic Phu Quoc pepper.",
+        "Self-mix the iconic sauce: vigorously whip sugar, salt, chili, and calamansi juice until frothy and thick.",
+        "Sip the naturally sweet broth and dip poached seafood into the tangy spicy sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-mi-vit-tiem",
+    "title": {
+      "vi": "Mì Vịt Tiềm Thuốc Bắc Nấm Đông Cô Chợ Lớn",
+      "en": "Cholon Braised Herbal Duck Leg with Egg Noodles"
+    },
+    "image": "/dishes/vn-mi-vit-tiem.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Ẩm thực Chợ Lớn",
+        "Bổ dưỡng",
+        "Thịt mềm rục"
+      ],
+      "en": [
+        "Cantonese Heritage",
+        "Herbal Broth",
+        "Tender Duck"
+      ]
+    },
+    "time": "60m",
+    "servings": 4,
+    "calories": 580,
+    "protein": 34,
+    "fat": 26,
+    "carbs": 52,
+    "servingSize": {
+      "vi": "1 tô lớn gồm 1 đùi vịt tiềm",
+      "en": "1 large bowl with duck leg"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Người Hoa Sài Gòn",
+      "en": "Cholon Saigon Chinese Food"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đùi vịt góc tư to",
+          "en": "Whole duck leg quarters"
+        },
+        "amount": "4 chiếc (~1kg)"
+      },
+      {
+        "name": {
+          "vi": "Mì trứng sợi nhỏ dai vàng",
+          "en": "Thin egg noodles"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Gói gia vị tiềm thuốc bắc (thục địa, hoài sơn, kỷ tử, hoa hồi, quế)",
+          "en": "Herbal stew pouch"
+        },
+        "amount": "1 gói"
+      },
+      {
+        "name": {
+          "vi": "Nấm đông cô ngâm nở",
+          "en": "Shiitake mushrooms"
+        },
+        "amount": "12 tai"
+      },
+      {
+        "name": {
+          "vi": "Cải thìa chần xanh giòn",
+          "en": "Blanched baby bok choy"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Xì dầu, hắc xì dầu, rượu mai quế lộ",
+          "en": "Soy sauce, dark soy, rose wine"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đùi vịt ướp rượu mai quế lộ, ngũ vị hương, xì dầu rồi chiên ngập dầu cho da vịt căng giòn màu nâu đỏ sẫm.",
+        "Cho vịt vào nồi hầm cùng túi thuốc bắc, nấm đông cô và nước dừa tươi trên lửa nhỏ liu riu trong 45-50 phút đến khi thịt vịt mềm rục thấm đượm thảo mộc.",
+        "Trụng mì trứng qua nước sôi rồi nhúng qua nước lạnh cho sợi mì dai giòn sần sật.",
+        "Xếp mì vào tô lớn, đặt đùi vịt tiềm óng ả lên trên cùng nấm đông cô và cải thìa xanh mướt.",
+        "Chan nước dùng thuốc bắc màu nâu đen sóng sánh thơm nồng, ăn kèm đu đủ chua ngâm giấm."
+      ],
+      "en": [
+        "Marinate duck legs in rose wine and spices; deep fry until skin is deep mahogany brown and crispy.",
+        "Simmer duck in herbal broth with shiitake and coconut water for 45-50 mins until fork-tender.",
+        "Blanch egg noodles, shock in cold water for springy bite, place into bowls.",
+        "Top with tender braised duck quarter, mushrooms, and vibrant baby bok choy.",
+        "Ladle aromatic dark herbal broth over, serve with pickled green papaya."
+      ]
+    }
+  },
+  {
+    "id": "vn-mi-hoanh-thanh-xa-xiu",
+    "title": {
+      "vi": "Mì Hoành Thánh Xá Xíu Sườn Non Sài Gòn",
+      "en": "Saigon Wonton Noodle Soup with Char Siu & Pork Ribs"
+    },
+    "image": "/dishes/vn-mi-hoanh-thanh-xa-xiu.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Ẩm thực Sài Gòn",
+        "Hoành thánh tôm thịt",
+        "Đậm đà"
+      ],
+      "en": [
+        "Saigon Classic",
+        "Wontons",
+        "Char Siu"
+      ]
+    },
+    "time": "45m",
+    "servings": 4,
+    "calories": 490,
+    "protein": 30,
+    "fat": 16,
+    "carbs": 56,
+    "servingSize": {
+      "vi": "1 tô mì thập cẩm (~650g)",
+      "en": "1 combo bowl (~650g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Mì Chợ Lớn",
+      "en": "Saigon Noodle Houses"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Mì trứng tươi sợi vàng",
+          "en": "Fresh egg noodles"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Hoành thánh nhân tôm thịt",
+          "en": "Handmade shrimp & pork wontons"
+        },
+        "amount": "16 chiếc"
+      },
+      {
+        "name": {
+          "vi": "Thịt xá xíu thái lát mỏng",
+          "en": "Sliced red char siu pork"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Nước hầm xương heo ngọt trong vắt",
+          "en": "Pork bone clear broth"
+        },
+        "amount": "1.2 lít"
+      },
+      {
+        "name": {
+          "vi": "Hẹ lá, cải ngọt, tóp mỡ, hành phi",
+          "en": "Chives, choy sum, cracklings, fried shallots"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Luộc hoành thánh trong nồi nước sôi đến khi nổi lên trên mặt nước và vỏ bánh trong suốt thì vớt ra.",
+        "Trụng mì trứng dai giòn, xóc đều với chút mỡ tỏi phi cho sợi mì bóng mượt thơm ngậy.",
+        "Xếp mì vào tô, bày hoành thánh, vài lát thịt xá xíu đỏ au, cải ngọt và hẹ cắt khúc lên trên.",
+        "Chan nước dùng xương hầm trong vắt ngọt lịm vào tô.",
+        "Rắc tóp mỡ giòn và hành phi thơm lừng, thưởng thức cùng dấm đỏ Tiều và sa tế."
+      ],
+      "en": [
+        "Boil wontons until they float and skins turn translucent; remove.",
+        "Blanch springy egg noodles, toss lightly with garlic oil for gloss and aroma.",
+        "Arrange noodles, wontons, sweet char siu slices, greens, and chives in bowls.",
+        "Pour clear, naturally sweet pork bone stock over.",
+        "Top with crispy pork cracklings, fried shallots, and serve with red vinegar and chili sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-hu-tieu-kho-sa-dec",
+    "title": {
+      "vi": "Hủ Tiếu Khô Sa Đéc Nước Sốt Đậm Đà",
+      "en": "Sa Dec Dry Rice Noodles with Savory Dark Glaze"
+    },
+    "image": "/dishes/vn-hu-tieu-kho-sa-dec.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Sa Đéc",
+        "Hủ tiếu khô",
+        "Sốt đặc chế"
+      ],
+      "en": [
+        "Sa Dec Legend",
+        "Dry Tossed Noodles",
+        "Rich Glaze"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 450,
+    "protein": 26,
+    "fat": 14,
+    "carbs": 55,
+    "servingSize": {
+      "vi": "1 tô hủ tiếu kèm 1 chén súp",
+      "en": "1 noodle bowl with side soup"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đồng Tháp Mười",
+      "en": "Dong Thap Culinary Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sợi hủ tiếu Sa Đéc dai giòn đặc trưng",
+          "en": "Sa Dec chewy rice noodles"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Tôm sú luộc nõn, thịt xá xíu, thịt băm",
+          "en": "Prawns, char siu, minced pork"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Trứng cút luộc",
+          "en": "Hard-boiled quail eggs"
+        },
+        "amount": "8 quả"
+      },
+      {
+        "name": {
+          "vi": "Sốt trộn hủ tiếu khô (xì dầu, dầu hào, đường, tương đen, giấm tiều)",
+          "en": "Signature dark sweet savory sauce"
+        },
+        "amount": "1 bát"
+      },
+      {
+        "name": {
+          "vi": "Hành phi, tóp mỡ, cần tây, hẹ, giá đỗ",
+          "en": "Shallots, cracklings, celery, chives, bean sprouts"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Chén súp xương sườn ăn kèm",
+          "en": "Side bowl of hot rib broth"
+        },
+        "amount": "4 chén"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trụng sợi hủ tiếu Sa Đéc với giá đỗ vào tô, xóc đều với mỡ tỏi cho sợi hủ tiếu không dính và bóng bẩy.",
+        "Nấu sốt trộn: đun sôi xì dầu, tương đen, dầu hào, đường và giấm tiều cho sệt lại.",
+        "Rưới 2-3 thìa sốt đậm đà lên trên sợi hủ tiếu.",
+        "Xếp tôm nõn, thịt xá xíu, thịt băm, trứng cút, cần tây, hẹ lá, tóp mỡ và thật nhiều hành phi giòn.",
+        "Trộn đều trước khi thưởng thức, húp kèm chén nước dùng sườn heo thanh ngọt bốc khói."
+      ],
+      "en": [
+        "Blanch chewy Sa Dec rice noodles and bean sprouts; toss with garlic oil.",
+        "Simmer soy sauce, sweet bean paste, oyster sauce, sugar, and vinegar into a rich dark glaze.",
+        "Drizzle signature sauce generously over noodles.",
+        "Garnish with peeled prawns, char siu slices, minced pork, quail eggs, celery, chives, cracklings, and fried shallots.",
+        "Toss well to coat every strand, savor alongside a piping-hot bowl of clear rib broth."
+      ]
+    }
+  },
+  {
+    "id": "vn-pho-chien-phong",
+    "title": {
+      "vi": "Phở Chiên Phồng Bò Xào Rau Cải Ngũ Xã",
+      "en": "Ngu Xa Puffed Crispy Pho Squares with Stir-fried Beef"
+    },
+    "image": "/dishes/vn-pho-chien-phong.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Hà Nội",
+        "Giòn rụm phồng xốp",
+        "Sốt sánh đậm đà"
+      ],
+      "en": [
+        "Hanoi Specialty",
+        "Puffed Noodles",
+        "Savory Beef Glaze"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 520,
+    "protein": 28,
+    "fat": 24,
+    "carbs": 48,
+    "servingSize": {
+      "vi": "1 đĩa phở chiên phồng (~400g)",
+      "en": "1 plate (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Làng Phở Ngũ Xã Hà Nội",
+      "en": "Ngu Xa Pho Village Hanoi"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bánh phở vuông xếp lớp",
+          "en": "Layered flat pho sheets cut in squares"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Thịt thăn bò thái mỏng",
+          "en": "Thinly sliced beef sirloin"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Rau cải ngọt cắt khúc",
+          "en": "Choy sum greens"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Cà chua, hành tây, tỏi băm",
+          "en": "Tomatoes, onion, garlic"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, nước tương, bột năng tạo sốt sệt",
+          "en": "Oyster sauce, soy sauce, starch slurry"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn chiên phồng",
+          "en": "Oil for deep frying"
+        },
+        "amount": "300ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bánh phở cắt thành từng miếng vuông 3x3cm (chập 3-4 lớp mỏng).",
+        "Thả bánh phở vào chảo dầu sôi già, bánh phở sẽ lập tức phồng to thành chiếc gối vuông rỗng ruột vàng giòn rụm, vớt ra để ráo dầu trên giấy thấm.",
+        "Phi thơm tỏi, xào thịt bò trên lửa lớn vừa chín tới thì trút riêng.",
+        "Xào rau cải ngọt, cà chua và hành tây, nêm dầu hào xì dầu, rót bột năng vào khuấy đều tạo sốt sánh sệt nâu bóng.",
+        "Trút thịt bò vào chảo rau đảo nhanh rồi rưới toàn bộ sốt bò rau cải nóng hổi lên trên đĩa bánh phở chiên phồng giòn tan."
+      ],
+      "en": [
+        "Cut layered pho sheets into 3x3cm squares.",
+        "Drop into hot oil; watch them puff instantly into golden, crispy hollow pillows; drain.",
+        "Quickly sear beef with garlic over high heat; remove.",
+        "Stir-fry choy sum, tomato, and onion; season with oyster sauce and thicken with starch slurry.",
+        "Return beef to wok, then ladle the savory, glossy stir-fry over the crispy puffed pho pillows."
+      ]
+    }
+  },
+  {
+    "id": "vn-pho-tron-ga-ha-noi",
+    "title": {
+      "vi": "Phở Trộn Thịt Gà Đậu Phộng Hành Phi Hà Nội",
+      "en": "Hanoi Chicken Tossed Dry Pho with Peanuts & Fried Shallots"
+    },
+    "image": "/dishes/vn-pho-tron-ga-ha-noi.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Phố Cổ Hà Nội",
+        "Thanh mát",
+        "Chua ngọt hài hòa"
+      ],
+      "en": [
+        "Hanoi Old Quarter",
+        "Refreshing",
+        "Sweet & Sour"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 430,
+    "protein": 27,
+    "fat": 11,
+    "carbs": 56,
+    "servingSize": {
+      "vi": "1 tô phở trộn (~450g)",
+      "en": "1 bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Cổ Hà Nội",
+      "en": "Hanoi Culinary Culture"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bánh phở tươi",
+          "en": "Fresh flat pho noodles"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Thịt gà ta luộc xé miếng da giòn",
+          "en": "Shredded poached chicken with crisp skin"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Nước sốt trộn chua ngọt đặc chế (xì dầu, giấm gạo, đường, chanh)",
+          "en": "Sweet tangy soy dressing"
+        },
+        "amount": "1 bát"
+      },
+      {
+        "name": {
+          "vi": "Lạc rang giã dập, hành khô phi vàng giòn",
+          "en": "Crushed peanuts & golden shallots"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Rau húng Láng, ngò rí, giá đỗ chần",
+          "en": "Mint, cilantro, blanched bean sprouts"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bánh phở tươi và giá đỗ chần sơ qua nước sôi xếp vào tô lớn.",
+        "Xếp thịt gà ta xé phay da vàng giòn sần sật lên trên.",
+        "Rưới 3 thìa nước sốt xì dầu chua ngọt pha tỏi ớt thanh nhã.",
+        "Rắc nhiều hành phi giòn, đậu phộng rang giã dập và rau thơm ngát húng Láng.",
+        "Trộn đều tay rồi thưởng thức từng sợi phở trơn mượt ngấm đẫm sốt đậm đà."
+      ],
+      "en": [
+        "Quickly blanch pho noodles and bean sprouts; transfer to bowls.",
+        "Top with shredded free-range chicken boasting crisp golden skin.",
+        "Drizzle with savory sweet-and-sour soy dressing.",
+        "Scatter generous heaps of crispy fried shallots, crushed peanuts, and fresh herbs.",
+        "Toss thoroughly and savor the harmonious balance of textures and vibrant flavors."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-gio-cha-com",
+    "title": {
+      "vi": "Bánh Giò Nóng Chả Cốm Nem Chua Giòn Cay",
+      "en": "Steamed Rice Pyramid Dumpling with Green Rice Sausage"
+    },
+    "image": "/dishes/vn-banh-gio-cha-com.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Ăn vặt Hà Nội",
+        "Ấm nóng mùa đông",
+        "Mềm mịn"
+      ],
+      "en": [
+        "Hanoi Street Snack",
+        "Steamed",
+        "Silky Smooth"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 390,
+    "protein": 18,
+    "fat": 20,
+    "carbs": 34,
+    "servingSize": {
+      "vi": "1 dĩa bánh giò đầy đủ topping",
+      "en": "1 plate with toppings"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đường Phố Hà Nội",
+      "en": "Hanoi Street Bites"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bánh giò lá chuối nóng hổi nhân thịt mộc nhĩ",
+          "en": "Steamed banana leaf rice pyramid cake"
+        },
+        "amount": "4 chiếc"
+      },
+      {
+        "name": {
+          "vi": "Chả cốm chiên giòn",
+          "en": "Fried green rice pork sausage"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Nem chua rán giòn rụm",
+          "en": "Fried fermented pork rolls"
+        },
+        "amount": "4 chiếc"
+      },
+      {
+        "name": {
+          "vi": "Dưa chuột muối chua ngọt",
+          "en": "Quick pickled cucumbers"
+        },
+        "amount": "1 bát"
+      },
+      {
+        "name": {
+          "vi": "Tương ớt xào cay nồng",
+          "en": "Hanoi spicy chili sauce"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hấp bánh giò nóng hổi trong xửng hấp cho vỏ bột gạo mềm tan thơm lừng mùi lá chuối.",
+        "Chiên giòn chả cốm và nem chua, thái lát xéo vừa ăn.",
+        "Bóc bánh giò đặt lên đĩa, dùng dao khía nhẹ mặt trên xòe ra lớp nhân thịt băm mộc nhĩ tiêu đen thơm phức.",
+        "Xếp chả cốm, nem chua rán và dưa góp xung quanh.",
+        "Rưới đẫm tương ớt cay nồng lên trên, ăn nóng béo bùi xao xuyến."
+      ],
+      "en": [
+        "Steam banana-leaf wrapped dumplings until soft, silky, and fragrant.",
+        "Fry green rice sausage (chả cốm) and fermented pork rolls (nem chua) until golden; slice.",
+        "Unwrap dumpling onto plate, split top to reveal steaming savory minced pork and wood ear filling.",
+        "Arrange toppings and sweet pickled cucumbers around.",
+        "Drizzle with fiery chili sauce and dig in while hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-uot-long-ga",
+    "title": {
+      "vi": "Bánh Ướt Lòng Gà Trứng Non Đà Lạt",
+      "en": "Da Lat Steamed Rice Sheets with Chicken Giblets & Young Eggs"
+    },
+    "image": "/dishes/vn-banh-uot-long-ga.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Đà Lạt",
+        "Lòng gà giòn sần sật",
+        "Nước mắm chua ngọt"
+      ],
+      "en": [
+        "Da Lat Icon",
+        "Savory Chicken Giblets",
+        "Delicate Rice Crepes"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 420,
+    "protein": 26,
+    "fat": 14,
+    "carbs": 48,
+    "servingSize": {
+      "vi": "1 đĩa bánh ướt thập cẩm (~400g)",
+      "en": "1 combo plate (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Núi Đà Lạt",
+      "en": "Da Lat Highland Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bánh ướt tráng mỏng mềm mượt",
+          "en": "Silky thin steamed rice sheets"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Lòng mề gà xào chín giòn",
+          "en": "Stir-fried crunchy chicken giblets"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà non luộc lòng đào",
+          "en": "Soft-cooked young chicken eggs"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Thịt gà ta xé phay",
+          "en": "Shredded chicken"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Hành tây ngâm chua, rau răm, hành phi",
+          "en": "Pickled onion, Vietnamese coriander, fried shallots"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm tỏi ớt chua ngọt",
+          "en": "Sweet garlic chili dipping sauce"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bánh ướt giữ ấm mềm mượt, cắt miếng vừa ăn xếp dàn đều ra đĩa lớn.",
+        "Lòng gà làm sạch, ướp tiêu nước mắm rồi xào chín săn giòn với hành tím.",
+        "Trứng gà non luộc vừa chín tới dẻo bùi không bị khô xác.",
+        "Xếp thịt gà xé, lòng mề gà xào, trứng non vàng óng lên trên lớp bánh ướt.",
+        "Thêm hành tây ngâm giấm giòn, rau răm xắt nhỏ và hành phi thơm lừng.",
+        "Chan nước mắm tỏi ớt chua ngọt đậm đà, trộn nhẹ thưởng thức trọn vẹn hương vị phố núi mộng mơ."
+      ],
+      "en": [
+        "Arrange warm silky steamed rice sheets on a wide plate.",
+        "Stir-fry cleaned chicken giblets with shallots and fish sauce until tender-crunchy.",
+        "Poach young chicken eggs until soft and golden.",
+        "Top rice sheets with shredded chicken, sautéed giblets, and sunny young eggs.",
+        "Add pickled onions, chopped Vietnamese coriander, and crispy fried shallots.",
+        "Pour sweet-tangy garlic chili sauce over and gently mix before eating."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-trang-cuon-thit-heo",
+    "title": {
+      "vi": "Bánh Tráng Cuốn Thịt Heo Hai Đầu Da Đà Nẵng",
+      "en": "Da Nang Rice Paper Pork Rolls with Two-skin Pork Belly"
+    },
+    "image": "/dishes/vn-banh-trang-cuon-thit-heo.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 99,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Đà Nẵng",
+        "Mắm nêm trứ danh",
+        "Rau rừng bạt ngàn"
+      ],
+      "en": [
+        "Da Nang Icon",
+        "Mắm Nêm Dip",
+        "Two-skin Pork"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 440,
+    "protein": 26,
+    "fat": 25,
+    "carbs": 28,
+    "servingSize": {
+      "vi": "1 phần cuốn mẹt (~400g)",
+      "en": "1 platter (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đà Nẵng",
+      "en": "Da Nang Culinary Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt ba chỉ heo hai đầu da luộc chuẩn",
+          "en": "Boiled pork belly with two skin edges"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Bánh tráng phơi sương Đại Lộc",
+          "en": "Sun-dried rice paper"
+        },
+        "amount": "1 xấp"
+      },
+      {
+        "name": {
+          "vi": "Bánh phở cuốn mỏng đi kèm",
+          "en": "Thin pho sheets"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Mâm rau ghém đa dạng (xà lách, diếp cá, quế, tía tô, dưa leo, xoài xanh, chuối chát)",
+          "en": "Abundant greens, green mango, green banana"
+        },
+        "amount": "1 mẹt lớn"
+      },
+      {
+        "name": {
+          "vi": "Mắm nêm cá cơm nguyên chất pha dứa băm",
+          "en": "Fermented anchovy sauce mixed with crushed pineapple"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt ba chỉ chọn miếng nạc mỡ đan xen đều, luộc chín tới trong nước có hành đập dập và chút muối để giữ thịt ngọt trắng.",
+        "Vớt thịt ngâm nước đá lạnh rồi dùng dao thật sắc thái lát mỏng có cả hai đầu da giòn bóng.",
+        "Pha mắm nêm: mắm nêm Đà Nẵng pha với dứa băm nhuyễn, tỏi ớt giã, đường và nước cốt chanh đánh tan sóng sánh thơm lừng.",
+        "Rửa sạch để ráo rổ rau sống phong phú cùng dưa leo, chuối xanh và xoài xanh thái lát mỏng.",
+        "Trải bánh tráng phơi sương, đặt lớp lá phở mỏng, xếp rau sống, lát thịt heo cuộn chặt chấm ngập chén mắm nêm đậm đà."
+      ],
+      "en": [
+        "Select pork belly with even layers, boil gently until just cooked and sweet.",
+        "Shock in ice water, then slice thinly with distinct crispy skin on both edges.",
+        "Mix artisanal fermented anchovy sauce with finely mashed pineapple, garlic, chili, sugar, and lime.",
+        "Wash a colorful platter of herbs, cucumber ribbons, green mango, and astringent green banana.",
+        "Lay rice paper, add a delicate pho sheet, herbs, and pork; roll tightly and submerge in flavorful mắm nêm."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-mi-xiu-mai-da-lat",
+    "title": {
+      "vi": "Bánh Mì Xíu Mại Chén Nóng Hổi Đà Lạt",
+      "en": "Da Lat Meatball Soup in Ceramic Bowl with Baguette"
+    },
+    "image": "/dishes/vn-banh-mi-xiu-mai-da-lat.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "dinner",
+      "snack"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Đà Lạt",
+        "Ấm áp sương mù",
+        "Nước súp ngọt thanh"
+      ],
+      "en": [
+        "Da Lat Morning",
+        "Cozy",
+        "Tender Meatballs"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 460,
+    "protein": 24,
+    "fat": 20,
+    "carbs": 45,
+    "servingSize": {
+      "vi": "1 chén xíu mại + 1 bánh mì giòn",
+      "en": "1 meatball bowl + baguette"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Sương Đà Lạt",
+      "en": "Da Lat Mountain Bites"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt heo nạc dăm xay nhuyễn",
+          "en": "Minced pork shoulder"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Bì heo luộc chín giòn hoặc da heo",
+          "en": "Crunchy boiled pork skin"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Chả lụa xắt con chì",
+          "en": "Pork sausage sticks"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng xương hầm trong ngọt",
+          "en": "Clear pork bone broth"
+        },
+        "amount": "800ml"
+      },
+      {
+        "name": {
+          "vi": "Hành hoa, ngò rí, ớt sa tế cay xé",
+          "en": "Scallions, cilantro, hot chili paste"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Bánh mì giòn nóng hổi",
+          "en": "Crusty warm baguettes"
+        },
+        "amount": "4 ổ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trộn thịt heo xay với củ sắn vắt ráo, hành tím băm, tiêu đen và hạt nêm rồi vo thành từng viên tròn đều.",
+        "Thả các viên xíu mại vào nồi nước dùng xương heo đun nhỏ lửa cho xíu mại chín mềm ngọt mọng nước.",
+        "Múc 2-3 viên xíu mại vào từng chén nhỏ, thêm vài miếng da heo giòn sần sật và chả lụa.",
+        "Chan nước dùng ngọt thanh nóng hổi ngập chén, rắc thật nhiều hành hoa thái nhỏ và thìa sa tế đỏ rực cay nồng.",
+        "Xé từng miếng bánh mì giòn rụm chấm ngập chén súp xíu mại nóng bỏng xua tan cái lạnh cao nguyên."
+      ],
+      "en": [
+        "Mix minced pork with drained jicama shreds, shallots, pepper, and seasoning; shape into meatballs.",
+        "Poach meatballs in simmering clear bone broth until floating and juicy.",
+        "Ladle 2-3 meatballs into small ceramic bowls, add bouncy pork skin and pork sausage.",
+        "Pour piping hot sweet broth over, scatter abundant scallions and a spoonful of fiery sate chili.",
+        "Tear warm crusty bread and dip into the spicy, comforting broth."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-tam-bi-nam-bo",
+    "title": {
+      "vi": "Bánh Tằm Bì Nước Cốt Dừa Nam Bộ",
+      "en": "Southern Thick Rice Noodles with Shredded Pork Skin & Coconut Cream"
+    },
+    "image": "/dishes/vn-banh-tam-bi-nam-bo.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Miền Tây",
+        "Béo ngậy cốt dừa",
+        "Mặn ngọt độc đáo"
+      ],
+      "en": [
+        "Mekong Classic",
+        "Coconut Cream",
+        "Unique Texture"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 430,
+    "protein": 19,
+    "fat": 16,
+    "carbs": 52,
+    "servingSize": {
+      "vi": "1 dĩa bánh tằm (~350g)",
+      "en": "1 plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Tây",
+      "en": "Mekong Delta Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sợi bánh tằm bột gạo se tay dai mềm",
+          "en": "Hand-rolled thick rice noodles"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Bì heo trộn thính gạo thơm",
+          "en": "Shredded pork skin tossed in toasted rice powder"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Thịt nạc heo ram thái sợi",
+          "en": "Shredded braised pork loin"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa sánh béo nấu chín",
+          "en": "Cooked thick coconut cream"
+        },
+        "amount": "200ml"
+      },
+      {
+        "name": {
+          "vi": "Rau thơm ghém, dưa leo băm, giá đỗ",
+          "en": "Herbs, cucumber shreds, bean sprouts"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm tỏi ớt chua ngọt",
+          "en": "Garlic chili fish sauce"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hấp nóng sợi bánh tằm cho mềm dẻo, xếp vào từng đĩa.",
+        "Bày bì heo thơm bùi, thịt nạc ram xé sợi và rau thơm dưa leo xung quanh.",
+        "Rưới một muôi nước cốt dừa béo ngậy nấu sánh với chút muối đường lên trên bánh tằm.",
+        "Chan thêm nước mắm chua ngọt tỏi ớt đậm đà.",
+        "Trộn đều thưởng thức sự kết hợp kỳ diệu giữa vị béo bùi của cốt dừa quyện cùng nước mắm chua ngọt mằn mặn khó quên."
+      ],
+      "en": [
+        "Steam thick hand-rolled noodles until chewy-soft; place on plates.",
+        "Top with aromatic shredded pork skin, braised pork strips, cucumber, and fresh herbs.",
+        "Ladle creamy cooked coconut cream over noodles.",
+        "Drizzle sweet-and-sour garlic fish sauce on top.",
+        "Toss together to experience the unforgettable harmony of rich coconut and savory dipping sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-duc-nong-ha-noi",
+    "title": {
+      "vi": "Bánh Đúc Nóng Thịt Băm Mộc Nhĩ Hành Phi Hà Nội",
+      "en": "Hanoi Hot Savory Rice Custard with Minced Pork & Shallots"
+    },
+    "image": "/dishes/vn-banh-duc-nong-ha-noi.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "snack",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Ăn vặt Hà Nội",
+        "Mềm dẻo nóng hổi",
+        "Ấm lòng mùa đông"
+      ],
+      "en": [
+        "Hanoi Winter Snack",
+        "Warm & Silky",
+        "Savory Custard"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 320,
+    "protein": 15,
+    "fat": 12,
+    "carbs": 38,
+    "servingSize": {
+      "vi": "1 bát bánh đúc nóng (~300g)",
+      "en": "1 bowl (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Cổ Hà Nội",
+      "en": "Hanoi Traditional Treats"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bột gạo tẻ và bột năng khuấy dẻo quánh",
+          "en": "Rice & tapioca starch paste"
+        },
+        "amount": "200g bột"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo xay xào mộc nhĩ hành tím",
+          "en": "Minced pork stir-fried with wood ear"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Đậu phụ rán cắt hạt lựu nhỏ",
+          "en": "Fried tofu diced small"
+        },
+        "amount": "1 bìa"
+      },
+      {
+        "name": {
+          "vi": "Hành phi mỡ giòn rụm",
+          "en": "Golden crispy fried shallots"
+        },
+        "amount": "4 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm chan ấm ngọt dịu",
+          "en": "Warm sweet-savory fish sauce broth"
+        },
+        "amount": "1 bát to"
+      },
+      {
+        "name": {
+          "vi": "Rau mùi ta (ngò rí) thái nhỏ",
+          "en": "Fresh cilantro chopped"
+        },
+        "amount": "1 nắm"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Khuấy bột gạo và bột năng với nước lọc trên lửa nhỏ, đảo liên tục đến khi bột trong vắt, dẻo quánh và sánh mịn không vón cục.",
+        "Thêm chút dầu ăn hoặc mỡ heo vào nồi bột quậy đều cho bóng mượt.",
+        "Múc bột bánh đúc nóng hổi còn bốc khói vào từng bát sứ nhỏ.",
+        "Xúc thịt băm xào mộc nhĩ đậm đà, đậu phụ rán giòn và thật nhiều hành phi vàng ruộm lên trên.",
+        "Chan nước mắm ấm chua ngọt dịu nhẹ ngập bánh, rắc rau mùi ta thơm ngát thưởng thức ngay khi còn nóng bỏng."
+      ],
+      "en": [
+        "Cook rice and tapioca flour with water over gentle heat, stirring constantly until translucent, thick, and stretchy.",
+        "Beat in a spoonful of lard/oil for glossy silkiness.",
+        "Scoop piping-hot rice custard into small ceramic bowls.",
+        "Top with savory minced pork with wood ear mushrooms, fried tofu cubes, and crispy shallots.",
+        "Ladle warm, mildly sweet-and-savory fish sauce broth over, finish with cilantro; eat piping hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-chao-vit-co-mang",
+    "title": {
+      "vi": "Cháo Vịt Cỏ Măng Tươi Nước Mắm Gừng",
+      "en": "Free-range Duck Congee with Fresh Bamboo Shoots"
+    },
+    "image": "/dishes/vn-chao-vit-co-mang.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Ấm bụng",
+        "Thịt vịt ngọt mềm",
+        "Măng giòn"
+      ],
+      "en": [
+        "Comfort Food",
+        "Tender Duck",
+        "Ginger Dip"
+      ]
+    },
+    "time": "45m",
+    "servings": 4,
+    "calories": 420,
+    "protein": 26,
+    "fat": 16,
+    "carbs": 43,
+    "servingSize": {
+      "vi": "1 tô cháo lớn (~500g)",
+      "en": "1 bowl (~500g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Cháo Vịt Đồng Quê",
+      "en": "Countryside Duck Congee"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Gạo tẻ thơm pha nếp",
+          "en": "Fragrant rice & sticky rice mix"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Thịt vịt cỏ luộc xé miếng",
+          "en": "Poached free-range duck meat"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Măng tươi tước sợi xào thơm",
+          "en": "Fresh shredded bamboo shoots sautéed"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Nước luộc vịt béo ngọt",
+          "en": "Duck poaching broth"
+        },
+        "amount": "1.2 lít"
+      },
+      {
+        "name": {
+          "vi": "Hành hoa, tía tô, rau răm, tiêu xay",
+          "en": "Scallions, perilla, Vietnamese coriander, pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm gừng ớt tỏi chấm vịt",
+          "en": "Ginger chili fish sauce"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Rang sơ gạo cho thơm rồi cho vào nồi nước luộc vịt nấu nhừ thành cháo sánh mịn.",
+        "Măng tươi luộc kỹ, xào thơm với hành tím rồi trút vào nồi cháo đun sôi.",
+        "Thịt vịt chặt miếng hoặc xé phay xếp lên đĩa riêng.",
+        "Múc cháo măng nóng hổi ra tô, rắc hành hoa, tía tô, rau răm thái nhỏ và nhiều tiêu xay.",
+        "Ăn kèm thịt vịt chấm ngập bát nước mắm gừng cay nồng ấm bụng."
+      ],
+      "en": [
+        "Lightly toast rice, simmer in duck broth until velvety and broken down.",
+        "Boil bamboo shoots, sauté with shallots, and stir into the simmering congee.",
+        "Plate sliced or shredded poached duck separately.",
+        "Ladle steaming congee into bowls, garnish with perilla, scallions, cilantro, and black pepper.",
+        "Dip tender duck slices into zesty ginger chili fish sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-chao-hau-sua",
+    "title": {
+      "vi": "Cháo Hàu Sữa Biển Hành Phi Tiêu Đen",
+      "en": "Pacific Oyster Congee with Crispy Shallots & Black Pepper"
+    },
+    "image": "/dishes/vn-chao-hau-sua.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Bổ dưỡng",
+        "Giàu kẽm",
+        "Ngọt lịm tự nhiên"
+      ],
+      "en": [
+        "Zinc Rich",
+        "Seafood Congee",
+        "Nourishing"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 340,
+    "protein": 22,
+    "fat": 9,
+    "carbs": 42,
+    "servingSize": {
+      "vi": "1 tô cháo (~450g)",
+      "en": "1 bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Biển",
+      "en": "Coastal Seafood Congee"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Ruột hàu sữa tươi béo múp",
+          "en": "Fresh plump milky oysters"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Gạo tẻ ngon nấu nhừ",
+          "en": "Steamed rice cooked into porridge"
+        },
+        "amount": "1 nồi (~1 lít)"
+      },
+      {
+        "name": {
+          "vi": "Hành tím phi vàng giòn rụm",
+          "en": "Crispy fried shallots"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Hành hoa, ngò rí, tiêu sọ xay",
+          "en": "Scallions, cilantro, white pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, bơ thơm",
+          "en": "Fish sauce, butter"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hàu sữa rửa thật nhẹ tay với nước muối loãng tránh vỡ bụng sữa béo, để ráo.",
+        "Phi thơm hành tím và chút bơ, xào nhanh hàu trên lửa lớn trong 1 phút với nước mắm và tiêu cho hàu căng mọng chín tới.",
+        "Trút toàn bộ hàu và nước xào ngọt lịm vào nồi cháo trắng đang sôi lăn tăn, khuấy nhẹ đều tay.",
+        "Nêm nếm lại gia vị cho vừa miệng rồi tắt bếp ngay giữ hàu mềm ngọt không bị teo.",
+        "Múc ra tô rắc nhiều hành phi giòn, hành hoa, ngò rí và tiêu đen thơm nức."
+      ],
+      "en": [
+        "Gently wash plump oysters in light salt water, preserving their delicate milky bellies.",
+        "Flash-sauté oysters in shallot butter over high heat for 1 min with fish sauce and pepper.",
+        "Fold oysters and their sweet pan juices directly into simmering white congee.",
+        "Adjust seasoning and turn off heat immediately so oysters remain succulent.",
+        "Ladle into bowls, top with crispy shallots, scallions, cilantro, and cracked black pepper."
+      ]
+    }
+  },
+  {
+    "id": "vn-chao-ech-singapore",
+    "title": {
+      "vi": "Cháo Trắng Lá Dứa Ếch Kho Niêu Đất Đậm Đà",
+      "en": "Claypot Braised Frog Legs with Pandan Congee"
+    },
+    "image": "/dishes/vn-chao-ech-singapore.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "dinner",
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Món đêm Sài Gòn",
+        "Cay xé đậm đà",
+        "Lá dứa thơm lừng"
+      ],
+      "en": [
+        "Late Night Favorite",
+        "Spicy Claypot",
+        "Pandan Aroma"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 430,
+    "protein": 29,
+    "fat": 11,
+    "carbs": 54,
+    "servingSize": {
+      "vi": "1 niêu ếch + 1 tô cháo trắng lá dứa",
+      "en": "1 claypot frog + pandan congee"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Đêm Sài Gòn",
+      "en": "Saigon Night Food Scene"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt ếch đồng làm sạch chặt miếng",
+          "en": "Fresh cleaned frog legs & meat"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Cháo trắng nấu nhuyễn thơm lá dứa",
+          "en": "Pandan infused silky congee"
+        },
+        "amount": "1 nồi lớn"
+      },
+      {
+        "name": {
+          "vi": "Hắc xì dầu, dầu hào, đường phèn",
+          "en": "Dark sweet soy, oyster sauce, rock sugar"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Ớt khô, ớt tươi, hành boa-rô, gừng",
+          "en": "Dried chilies, fresh chili, leek, ginger"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Bột năng hòa nước tạo sốt sệt bóng",
+          "en": "Starch slurry"
+        },
+        "amount": "1 thìa canh"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ướp thịt ếch với hắc xì dầu, dầu hào, rượu mai quế lộ, gừng và ớt trong 20 phút.",
+        "Phi thơm tỏi ớt trong niêu đất, trút ếch vào xào săn trên lửa lớn.",
+        "Đổ nước sốt kho vào đun sôi, hạ nhỏ lửa kho liu riu trong niêu đất khoảng 15 phút.",
+        "Rót nước bột năng vào khuấy đều cho nước sốt keo lại sánh đặc sẫm màu cánh gián bám óng quanh đùi ếch.",
+        "Rắc nhiều ớt khô và hành hoa, múc thìa sốt ếch cay nồng đậm đà rưới lên tô cháo trắng lá dứa dẻo thơm húp xì xụp."
+      ],
+      "en": [
+        "Marinate frog meat with dark soy sauce, oyster sauce, wine, ginger, and chili for 20 mins.",
+        "Sear frog legs in a smoking hot claypot with garlic and chilies.",
+        "Simmer in braising sauce for 15 minutes until tender and deeply caramelized.",
+        "Stir in starch slurry to create a glossy, thick, spicy dark glaze.",
+        "Scatter scallions and dried chilies; spoon the fiery savory frog stew over fragrant pandan congee."
+      ]
+    }
+  },
+  {
+    "id": "vn-chao-thit-bam-tia-to",
+    "title": {
+      "vi": "Cháo Thịt Băm Cà Rốt Tía Tô Giải Cảm",
+      "en": "Healing Pork & Carrot Congee with Perilla Leaves"
+    },
+    "image": "/dishes/vn-chao-thit-bam-tia-to.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Giải cảm hạ sốt",
+        "Dễ tiêu hóa"
+      ],
+      "en": [
+        "Cold Remedy",
+        "Healing",
+        "Comfort Food"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 250,
+    "protein": 16,
+    "fat": 7,
+    "carbs": 32,
+    "servingSize": {
+      "vi": "1 tô cháo (~400g)",
+      "en": "1 bowl (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bài Thuốc Dân Gian Việt",
+      "en": "Traditional Folk Remedies"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Gạo tẻ nấu cháo",
+          "en": "Rice cooked into soft porridge"
+        },
+        "amount": "1 nồi"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo nạc xay",
+          "en": "Minced lean pork"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt băm hạt lựu nhỏ",
+          "en": "Carrot finely diced"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Lá tía tô, hành lá thái chỉ nhỏ",
+          "en": "Fresh perilla leaves & scallions shredded"
+        },
+        "amount": "1 bát con"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi thái sợi, tiêu đen xay",
+          "en": "Ginger julienne & black pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà ta (tùy thích thả lòng đỏ)",
+          "en": "Egg yolk (optional)"
+        },
+        "amount": "2 quả"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Xào thơm thịt băm và cà rốt với hành tím và chút nước mắm.",
+        "Trút thịt xào vào nồi cháo trắng đang sôi lăn tăn, khuấy đều nấu thêm 5 phút cho cà rốt chín mềm ngọt nước.",
+        "Xếp lá tía tô thái chỉ, hành hoa và gừng sợi dưới đáy tô.",
+        "Múc cháo thịt băm nóng hổi chan trực tiếp lên trên rau cho chín tái giữ trọn tinh dầu thơm.",
+        "Thả lòng đỏ trứng gà vào giữa, rắc nhiều tiêu xay, quấy đều húp nóng toát mồ hôi giải cảm ngay tức thì."
+      ],
+      "en": [
+        "Sauté minced pork and diced carrots with shallots and fish sauce.",
+        "Add meat to simmering congee, cooking 5 mins until carrots are tender and sweet.",
+        "Place shredded perilla leaves, scallions, and ginger shreds in bottom of serving bowls.",
+        "Ladle boiling-hot porridge directly over herbs to gently wilt and activate aromatic essential oils.",
+        "Drop in a raw egg yolk and generous black pepper; stir and eat piping hot for instant revitalization."
+      ]
+    }
+  },
+  {
+    "id": "vn-xoi-bap-nhao",
+    "title": {
+      "vi": "Xôi Bắp Hầm Mỡ Hành Đậu Xanh Bào",
+      "en": "Southern Steamed Hominy Corn Sticky Rice with Mung Bean"
+    },
+    "image": "/dishes/vn-xoi-bap-nhao.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Ăn sáng bình dân",
+        "Ký ức tuổi thơ",
+        "Bùi béo"
+      ],
+      "en": [
+        "Traditional Breakfast",
+        "Childhood Memory",
+        "Vegan Friendly"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 360,
+    "protein": 9,
+    "fat": 10,
+    "carbs": 60,
+    "servingSize": {
+      "vi": "1 gói xôi lá chuối (~250g)",
+      "en": "1 banana leaf packet (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Nam Bộ",
+      "en": "Southern Street Breakfast"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bắp nếp hầm dẻo mềm bung nở",
+          "en": "Cooked white hominy corn"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Gạo nếp cái hoa vàng",
+          "en": "Sticky rice"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Đậu xanh hấp chín nắm tròn bào mỏng",
+          "en": "Steamed mung bean paste shaved"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Mỡ hành phi thơm",
+          "en": "Scallion oil"
+        },
+        "amount": "4 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Hành phi vàng giòn, muối mè đường",
+          "en": "Crispy shallots, sesame peanut sugar mix"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hấp chung bắp nếp đã ninh bung hạt cùng gạo nếp cho hạt xôi dẻo quánh quyện chặt cùng bắp bùi ngọt.",
+        "Xới xôi bắp nóng hổi ra đĩa hoặc gói lá chuối tiêu.",
+        "Dùng dao sắc bào từng lát mỏng đậu xanh tán mịn phủ kín mặt xôi bắp.",
+        "Rưới muỗng mỡ hành xanh mướt bóng ngậy lên trên.",
+        "Rắc hành phi giòn tan và muối mè đường thơm nức mũi, thưởng thức bữa sáng giản dị mà ấm áp."
+      ],
+      "en": [
+        "Steam cooked hominy corn kernels together with glutinous rice until soft and sticky.",
+        "Scoop hot corn sticky rice onto a banana leaf or plate.",
+        "Use a knife to shave silky steamed mung bean paste in fine ribbons over the rice.",
+        "Drizzle glistening scallion oil over the top.",
+        "Sprinkle with crunchy fried shallots and sweet crushed sesame peanut salt."
+      ]
+    }
+  },
+  {
+    "id": "vn-xoi-vo-hat-sen",
+    "title": {
+      "vi": "Xôi Vò Hạt Sen Thơm Dẻo Từng Hạt Vàng Ươm",
+      "en": "Northern Loose Mung Bean Sticky Rice with Lotus Seeds"
+    },
+    "image": "/dishes/vn-xoi-vo-hat-sen.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Mâm cỗ truyền thống",
+        "Từng hạt tơi vàng",
+        "Bùi ngọt thanh"
+      ],
+      "en": [
+        "Festive",
+        "Golden Rice",
+        "Lotus Seeds"
+      ]
+    },
+    "time": "45m",
+    "servings": 6,
+    "calories": 330,
+    "protein": 8,
+    "fat": 7,
+    "carbs": 60,
+    "servingSize": {
+      "vi": "1 đĩa xôi vò (~200g)",
+      "en": "1 plate (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Thăng Long Hà Nội",
+      "en": "Hanoi Heritage Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Gạo nếp cái hoa vàng",
+          "en": "Premium sticky rice"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Đậu xanh đãi sạch vỏ hấp chín giã nhuyễn",
+          "en": "Steamed peeled mung beans pounded"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Hạt sen tươi hấp chín bở",
+          "en": "Steamed tender lotus seeds"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Mỡ gà hoặc dầu ăn, chút muối tinh",
+          "en": "Chicken fat or oil, salt"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Gạo nếp ngâm kỹ, để thật ráo nước rồi trộn cùng một nửa phần đậu xanh giã nhuyễn và chút muối, dùng tay vò đều để đậu bao quanh từng hạt gạo.",
+        "Đồ xôi trên xửng hấp lửa vừa trong 20 phút cho hạt nếp chín trong dẻo.",
+        "Đổ xôi ra mâm, cho hạt sen hấp và nửa phần đậu xanh còn lại cùng 1 thìa mỡ gà vào vò xoa nhẹ tay cho từng hạt xôi tơi xốp, bám đều màu vàng óng ả.",
+        "Đồ lại lần 2 thêm 5 phút cho xôi dẻo mềm hoàn hảo.",
+        "Đơm xôi ra đĩa gấm, ăn bùi ngọt dịu thanh tao ăn kèm chè hoa cau hoặc giò lụa."
+      ],
+      "en": [
+        "Soak rice, drain bone-dry, toss with half of mashed mung beans and salt, rubbing so bean powder coats each grain.",
+        "Steam in a steamer for 20 mins until grains turn translucent and tender.",
+        "Spread onto tray, mix with steamed lotus seeds, remaining mung bean powder, and chicken fat, rubbing gently so grains stay separate and golden.",
+        "Steam a second time for 5 mins for ultimate softness.",
+        "Plate neatly; savor the gentle, fragrant nuttiness alongside sweet dessert soup or silk pork roll."
+      ]
+    }
+  },
+  {
+    "id": "vn-xoi-man-thap-cam",
+    "title": {
+      "vi": "Xôi Mặn Thập Cẩm Lạp Xưởng Chà Bông Hành Phi",
+      "en": "Saigon Savory Sticky Rice with Chinese Sausage & Pork Floss"
+    },
+    "image": "/dishes/vn-xoi-man-thap-cam.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Ăn sáng Sài Gòn",
+        "Đầy đặn topping",
+        "Đậm đà"
+      ],
+      "en": [
+        "Saigon Breakfast",
+        "Loaded Toppings",
+        "Savory"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 490,
+    "protein": 20,
+    "fat": 21,
+    "carbs": 56,
+    "servingSize": {
+      "vi": "1 hộp xôi đầy đặn (~300g)",
+      "en": "1 box (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đường Phố Sài Gòn",
+      "en": "Saigon Street Food Culture"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Xôi nếp dẻo thơm nấu chín",
+          "en": "Steamed glutinous rice"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Lạp xưởng Mai Quế Lộ chiên thái lát",
+          "en": "Fried Chinese sausage sliced"
+        },
+        "amount": "2 cây"
+      },
+      {
+        "name": {
+          "vi": "Chà bông (ruốc) thịt heo tơi xốp",
+          "en": "Fluffy pork floss"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Trứng cút chiên hoặc luộc",
+          "en": "Quail eggs"
+        },
+        "amount": "8 quả"
+      },
+      {
+        "name": {
+          "vi": "Pâté gan, mỡ hành, đậu phộng rang, nước tương sốt",
+          "en": "Pâté, scallion oil, peanuts, savory soy glaze"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Xới xôi nếp nóng dẻo ra đĩa hoặc hộp xôi.",
+        "Phết một lớp mỏng pâté gan béo ngậy thơm lừng lên mặt xôi.",
+        "Xếp lát lạp xưởng chiên óng ả, trứng cút, chà bông heo tơi xốp.",
+        "Rưới muỗng mỡ hành xanh ngắt và chút sốt tương đậm đà.",
+        "Rắc đậu phộng rang giòn và hành phi thơm phức, thưởng thức bữa ăn sáng chắc bụng ngập tràn năng lượng."
+      ],
+      "en": [
+        "Spoon steaming hot sticky rice onto a plate or paper wrap.",
+        "Smear a spoonful of rich savory liver pâté across the warm rice.",
+        "Layer sliced sweet Chinese sausage, quail eggs, and golden fluffy pork floss.",
+        "Drizzle glistening scallion oil and seasoned savory soy reduction.",
+        "Top with crushed roasted peanuts and crispy shallots; a powerhouse Saigon street breakfast."
+      ]
+    }
+  },
+  {
+    "id": "vn-xoi-gac-dau-xanh",
+    "title": {
+      "vi": "Xôi Gấc Đỏ Tươi Nhân Đậu Xanh Thơm Dẻo",
+      "en": "Red Gac Fruit Sticky Rice with Sweet Mung Bean Filling"
+    },
+    "image": "/dishes/vn-xoi-gac-dau-xanh.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "May mắn ngày Tết",
+        "Mâm cỗ lễ tiệc",
+        "Đỏ au tự nhiên"
+      ],
+      "en": [
+        "Festive",
+        "Good Fortune",
+        "Natural Red Color"
+      ]
+    },
+    "time": "45m",
+    "servings": 6,
+    "calories": 350,
+    "protein": 8,
+    "fat": 9,
+    "carbs": 61,
+    "servingSize": {
+      "vi": "1 đĩa xôi đóng khuôn hoa (~250g)",
+      "en": "1 floral mold plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Lễ Tết Việt Nam",
+      "en": "Traditional Vietnamese Festive Dishes"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Gạo nếp ngon",
+          "en": "Glutinous rice"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Thịt quả gấc tươi bóp với rượu trắng",
+          "en": "Fresh gac fruit pulp mixed with rice wine"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Đậu xanh sên đường dẻo mịn",
+          "en": "Sweetened mashed mung bean filling"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa sánh béo",
+          "en": "Coconut cream"
+        },
+        "amount": "50ml"
+      },
+      {
+        "name": {
+          "vi": "Đường cát trắng",
+          "en": "Sugar"
+        },
+        "amount": "60g"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt gấc bóp nhuyễn cùng rượu trắng để lên màu đỏ tươi rực rỡ, trộn đều cùng gạo nếp ngâm và chút muối.",
+        "Đồ xôi trên xửng hấp khoảng 25-30 phút cho hạt nếp chín dẻo bóng bẩy.",
+        "Rưới nước cốt dừa và đường cát vào xôi, đảo đều tay rồi đồ thêm 5 phút cho đường tan ngấm đều.",
+        "Dùng khuôn hoa đóng xôi: cho một lớp xôi gấc đỏ xuống dưới, một lớp đậu xanh vàng ở giữa và phủ thêm lớp xôi gấc lên trên ép chặt.",
+        "Úp ra đĩa đơm xôi đỏ au rực rỡ tượng trưng cho may mắn, thịnh vượng và hạnh phúc."
+      ],
+      "en": [
+        "Mash gac aril with rice wine to activate its fiery red pigment; toss evenly into soaked rice with salt.",
+        "Steam in a steamer for 25-30 mins until rice grains are plump, red, and tender.",
+        "Drizzle with coconut cream and sugar, stir gently and steam 5 mins more.",
+        "Assemble in a floral press mold: layer red gac rice, sweet golden mung bean paste, and more red rice.",
+        "Invert onto platter displaying the festive, ruby-red symbol of prosperity and happiness."
+      ]
+    }
+  },
+  {
+    "id": "vn-nom-hoa-chuoi-tai-heo",
+    "title": {
+      "vi": "Nộm Hoa Chuối Tai Heo Đậu Phộng Chua Ngọt",
+      "en": "Banana Blossom Salad with Crunchy Pork Ears & Peanuts"
+    },
+    "image": "/dishes/vn-nom-hoa-chuoi-tai-heo.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Dân dã",
+        "Thanh giòn",
+        "Món nhắm"
+      ],
+      "en": [
+        "Crisp",
+        "Tangy",
+        "Traditional Salad"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 16,
+    "fat": 11,
+    "carbs": 14,
+    "servingSize": {
+      "vi": "1 đĩa nộm lớn (~350g)",
+      "en": "1 large salad plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Mẹ Nấu - Món Nộm Việt",
+      "en": "Traditional Salad Masters"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Hoa chuối tây thái mỏng ngâm chanh",
+          "en": "Finely shredded banana blossom soaked in lemon"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Tai heo luộc chín giòn thái sợi mỏng",
+          "en": "Boiled crunchy pork ear strips"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt thái sợi, giá đỗ",
+          "en": "Carrot shreds, bean sprouts"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Rau kinh giới, húng quế, ngò gai",
+          "en": "Vietnamese mint, basil, culantro"
+        },
+        "amount": "1 nắm"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm tỏi ớt chua ngọt đánh sánh",
+          "en": "Sweet sour garlic chili dressing"
+        },
+        "amount": "1 bát"
+      },
+      {
+        "name": {
+          "vi": "Lạc rang giã dập",
+          "en": "Crushed roasted peanuts"
+        },
+        "amount": "50g"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hoa chuối bào mỏng ngâm ngay vào chậu nước có pha nước cốt chanh và muối để không bị thâm đen, giữ màu trắng tinh và độ giòn.",
+        "Vớt hoa chuối, giá đỗ và cà rốt vẩy thật ráo nước.",
+        "Cho hoa chuối, tai heo thái lát mỏng, cà rốt và rau thơm vào âu lớn.",
+        "Rưới nước mắm chua ngọt pha tỏi ớt đường chanh vào bóp trộn nhẹ tay cho ngấm đều gia vị.",
+        "Bày ra đĩa rắc đậu phộng rang giã dập lên trên, ăn giòn sần sật mát lành đưa miệng."
+      ],
+      "en": [
+        "Shred banana blossom directly into water with lemon juice and salt to prevent browning and keep crisp.",
+        "Drain banana blossoms, bean sprouts, and carrots thoroughly.",
+        "Combine in a large bowl with thinly sliced crunchy pork ears and fresh herbs.",
+        "Drizzle sweet-and-sour garlic chili dressing, toss gently to absorb flavors.",
+        "Mound onto a platter, top with crushed roasted peanuts; delivers refreshing, crunchy delight."
+      ]
+    }
+  },
+  {
+    "id": "vn-goi-bo-bop-thau",
+    "title": {
+      "vi": "Gỏi Bò Bóp Thấu Khế Chua Chuối Chát Mè Rang",
+      "en": "Beef Salad with Starfruit, Green Banana & Toasted Sesame"
+    },
+    "image": "/dishes/vn-goi-bo-bop-thau.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Mâm cỗ tiệc",
+        "Chua chát ngọt bùi",
+        "Món nhắm kinh điển"
+      ],
+      "en": [
+        "Festive Salad",
+        "Complex Flavors",
+        "Tender Beef"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 260,
+    "protein": 26,
+    "fat": 10,
+    "carbs": 16,
+    "servingSize": {
+      "vi": "1 đĩa gỏi (~350g)",
+      "en": "1 plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Tiệc Cưới Việt Nam",
+      "en": "Vietnamese Banquet Dishes"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt bắp bò thái mỏng chần tái",
+          "en": "Tender beef sirloin thinly sliced & rare blanched"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Khế chua thái lát hình ngôi sao",
+          "en": "Sour starfruit star slices"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Chuối xanh tước vỏ thái lát ngâm giấm",
+          "en": "Astringent green banana sliced"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Hành tây ngâm chua ngọt giòn",
+          "en": "Pickled crunchy white onion"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Mè trắng rang thơm, hành phi, bánh phồng tôm",
+          "en": "Toasted sesame, fried shallots, prawn crackers"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt bò thái mỏng, chần sơ nước sôi pha chút giấm cho vừa chín tái giữ độ mềm ngọt mọng nước.",
+        "Khế chua và chuối xanh thái mỏng vắt nhẹ cho bớt vị chát gắt.",
+        "Cho thịt bò, khế chua, chuối chát, hành tây và các loại rau thơm (ngò gai, húng quế) vào âu lớn.",
+        "Rưới nước sốt nước mắm chua ngọt pha tỏi ớt vào bóp trộn đều tay trong 2-3 phút.",
+        "Bày gỏi ra đĩa lớn rắc nhiều mè rang thơm và hành phi, xúc ăn kèm bánh phồng tôm giòn rụm."
+      ],
+      "en": [
+        "Slice beef thinly; quickly flash-blanch in boiling water with a touch of vinegar so it remains juicy and rare.",
+        "Slice starfruit and green bananas thinly; squeeze gently to tame sharp tartness.",
+        "In a large bowl, combine rare beef, starfruit, green banana, onions, and fragrant herbs.",
+        "Drizzle seasoned tangy fish sauce dressing, toss gently for 2-3 mins.",
+        "Garnish with fragrant toasted sesame and fried shallots; scoop up with crispy prawn crackers."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-troi-nuoc-gung",
+    "title": {
+      "vi": "Chè Trôi Nước Gừng Đường Phèn Nước Cốt Dừa",
+      "en": "Glutinous Rice Balls in Sweet Ginger Syrup with Coconut Cream"
+    },
+    "image": "/dishes/vn-che-troi-nuoc-gung.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Tráng miệng truyền thống",
+        "Ấm áp gừng cay",
+        "Dẻo mềm béo ngậy"
+      ],
+      "en": [
+        "Traditional Dessert",
+        "Warming Ginger",
+        "Chewy Mochi"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 320,
+    "protein": 6,
+    "fat": 8,
+    "carbs": 58,
+    "servingSize": {
+      "vi": "1 chén chè (2 viên lớn + viên ỉ)",
+      "en": "1 bowl (2 balls + mini pearls)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Nam Bộ",
+      "en": "Southern Sweet Soups"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bột nếp nhồi dẻo mịn",
+          "en": "Glutinous rice dough"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Đậu xanh sên hành phi mặn béo",
+          "en": "Sweet & savory mung bean filling"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Đường thốt nốt hoặc đường phèn",
+          "en": "Palm sugar or rock sugar"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi thái sợi đập dập",
+          "en": "Fresh ginger crushed & julienned"
+        },
+        "amount": "2 củ to"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa sánh béo, mè trắng rang",
+          "en": "Thick coconut cream & toasted sesame"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Chia bột nếp thành từng viên tròn, dẹt mỏng bọc kín viên nhân đậu xanh sên hành phi thơm béo.",
+        "Luộc các viên chè trong nồi nước sôi đến khi nổi lên trên mặt nước thì vớt ra thả vào thau nước lạnh.",
+        "Nấu nước đường thốt nốt với 500ml nước lọc và thật nhiều gừng tươi thái sợi đun sôi liu riu cho dậy hương cay ấm.",
+        "Thả các viên trôi nước vào nồi nước đường gừng đun nhỏ lửa 10 phút cho ngấm vị ngọt thơm.",
+        "Múc từng viên chè óng ả ra chén, chan nước đường gừng nóng hổi, rưới nước cốt dừa và rắc mè rang thơm bùi."
+      ],
+      "en": [
+        "Divide dough into rounds, flatten and wrap tightly around savory-sweet mung bean balls.",
+        "Boil balls in water until they float; transfer to cold water.",
+        "Simmer palm sugar with water and generous julienned ginger into a fragrant golden syrup.",
+        "Add rice balls to ginger syrup and simmer on low for 10 mins until thoroughly infused.",
+        "Ladle glossy balls into bowls, spoon warm ginger syrup, drizzle coconut cream, and top with toasted sesame."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-dau-xanh-danh",
+    "title": {
+      "vi": "Chè Đậu Xanh Đánh Bột Báng Cốt Dừa Phố Hội",
+      "en": "Whipped Mung Bean Sweet Soup with Tapioca Pearls"
+    },
+    "image": "/dishes/vn-che-dau-xanh-danh.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Hội An",
+        "Mịn màng tan trong miệng",
+        "Thanh mát"
+      ],
+      "en": [
+        "Hoi An Specialty",
+        "Smooth Velvet",
+        "Sweet Treat"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 270,
+    "protein": 7,
+    "fat": 6,
+    "carbs": 48,
+    "servingSize": {
+      "vi": "1 ly chè (~250g)",
+      "en": "1 glass (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Cổ Hội An",
+      "en": "Hoi An Heritage Desserts"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đậu xanh cà vỏ nấu chín mềm",
+          "en": "Split yellow mung beans cooked soft"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Bột báng luộc trong suốt",
+          "en": "Cooked translucent tapioca pearls"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Đường cát trắng hoặc đường phèn",
+          "en": "Rock sugar"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa đậm đặc",
+          "en": "Rich coconut cream"
+        },
+        "amount": "150ml"
+      },
+      {
+        "name": {
+          "vi": "Đậu phộng rang giã nhỏ",
+          "en": "Crushed peanuts"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đậu xanh đãi sạch, nấu chín nhừ với lượng nước vừa phải.",
+        "Dùng đũa bếp hoặc máy đánh nhuyễn mịn đậu xanh ngay trong nồi khi còn nóng cùng với đường cho đến khi sánh đặc mượt mà không còn gợn hạt.",
+        "Múc chè đậu xanh đánh vàng ươm mịn màng ra ly hoặc chén.",
+        "Thêm bột báng dai dai, rưới lớp nước cốt dừa trắng muốt béo ngậy lên trên.",
+        "Rắc đậu phộng rang giòn, ăn nóng hoặc thêm đá bào giải nhiệt mùa hè."
+      ],
+      "en": [
+        "Cook peeled mung beans until very soft with just enough water.",
+        "Vigorously whip hot mung beans with sugar until silky, smooth, and pudding-like.",
+        "Spoon velvety golden mung bean cream into glasses or bowls.",
+        "Add chewy tapioca pearls and spoon thick coconut cream on top.",
+        "Sprinkle with crushed roasted peanuts; serve warm or with shaved ice."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-suong-sa-hat-luu",
+    "title": {
+      "vi": "Chè Sương Sa Hạt Lựu Củ Năng Lá Dứa Nam Bộ",
+      "en": "Southern Rainbow Jelly Sweet Soup with Water Chestnut Rubies"
+    },
+    "image": "/dishes/vn-che-suong-sa-hat-luu.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Tráng miệng Sài Gòn",
+        "Đẹp mắt giòn sần sật",
+        "Giải nhiệt"
+      ],
+      "en": [
+        "Colorful",
+        "Crunchy Rubies",
+        "Refreshing"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 290,
+    "protein": 4,
+    "fat": 7,
+    "carbs": 54,
+    "servingSize": {
+      "vi": "1 ly chè đầy đủ (~300g)",
+      "en": "1 glass (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Nam Bộ",
+      "en": "Southern Vietnamese Desserts"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Hạt lựu củ năng bọc bột năng giòn sần sật",
+          "en": "Water chestnut ruby pearls coated in tapioca"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Sương sa thạch trắng giòn",
+          "en": "White agar-agar jelly cubes"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Thạch sương sáo đen mát lành",
+          "en": "Black grass jelly"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Đậu xanh đánh nhuyễn mịn",
+          "en": "Smooth mashed mung beans"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa thơm béo, nước đường phèn lá dứa",
+          "en": "Coconut cream & pandan syrup"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Củ năng thái hạt lựu, ngâm màu củ dền/hoa đậu biếc rồi áo bột năng luộc chín trong suốt.",
+        "Xắt thạch sương sa và sương sáo đen thành sợi hoặc hạt lựu.",
+        "Cho từng lớp đậu xanh đánh, thạch sương sa, sương sáo và hạt lựu giòn giòn nhiều màu sắc vào ly.",
+        "Chan nước đường phèn thơm lá dứa và rưới đẫm nước cốt dừa béo ngậy.",
+        "Thêm đá bào nhuyễn, trộn đều thưởng thức từng ngụm mát lạnh giòn sần sật vui tai."
+      ],
+      "en": [
+        "Dice water chestnuts, color naturally, coat in tapioca starch and boil into crunchy jewels.",
+        "Cut white agar jelly and black grass jelly into cubes.",
+        "Layer mashed mung beans, translucent jellies, and crunchy ruby gems into tall glasses.",
+        "Pour pandan rock sugar syrup and generous thick coconut milk.",
+        "Top with shaved ice, stir and enjoy the symphony of refreshing crunchy textures."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-chuoi-nuong",
+    "title": {
+      "vi": "Chè Chuối Nếp Nướng Nước Cốt Dừa Mè Rang",
+      "en": "Grilled Banana Wrapped in Sticky Rice with Coconut Cream"
+    },
+    "image": "/dishes/vn-che-chuoi-nuong.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 99,
+    "dietaryTags": {
+      "vi": [
+        "Top món tráng miệng thế giới",
+        "Thơm lừng lá chuối",
+        "Béo ngậy"
+      ],
+      "en": [
+        "World Famous Street Food",
+        "Smoky Banana",
+        "Crispy Sticky Rice"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 360,
+    "protein": 5,
+    "fat": 10,
+    "carbs": 64,
+    "servingSize": {
+      "vi": "1 dĩa chuối nướng kèm nước cốt dừa",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Đường Phố Nam Bộ",
+      "en": "Southern Street Sweets"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Chuối sứ (chuối xiêm) chín ngọt",
+          "en": "Ripe sweet baby bananas"
+        },
+        "amount": "4 quả"
+      },
+      {
+        "name": {
+          "vi": "Xôi nếp dẻo trộn nước cốt dừa",
+          "en": "Sticky rice infused with coconut milk"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Lá chuối tươi để gói nướng",
+          "en": "Fresh banana leaves"
+        },
+        "amount": "4 miếng"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa nấu bột báng sánh béo",
+          "en": "Thick coconut sauce with tapioca pearls"
+        },
+        "amount": "200ml"
+      },
+      {
+        "name": {
+          "vi": "Mè trắng rang thơm, đậu phộng rang",
+          "en": "Toasted sesame & peanuts"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bọc kín từng quả chuối sứ bằng một lớp xôi nếp dẻo thơm quanh thân chuối.",
+        "Dùng lá chuối cuộn chặt bên ngoài quả chuối bọc nếp.",
+        "Nướng trên than hoa hoặc nồi chiên không dầu khoảng 15-20 phút đến khi lá chuối xém thơm, vỏ xôi nếp bên ngoài vàng giòn rụm còn chuối bên trong nóng mềm ứa mật ngọt.",
+        "Cắt chuối nếp nướng thành từng khoanh tròn xếp ra đĩa sâu lòng.",
+        "Chan ngập nước cốt dừa nấu bột báng ấm nóng béo ngậy, rắc mè rang và đậu phộng thơm nức thưởng thức ngay."
+      ],
+      "en": [
+        "Encase ripe sweet bananas in a tender layer of coconut-scented sticky rice.",
+        "Wrap tightly in fresh banana leaves.",
+        "Grill over charcoal or bake until banana leaves are charred and sticky rice crust is golden-crisp.",
+        "Snip grilled banana logs into rounds and plate.",
+        "Ladle warm, rich coconut tapioca sauce generously over, top with toasted sesame and crushed peanuts."
+      ]
+    }
+  },
+  {
+    "id": "vn-sua-chua-nep-cam",
+    "title": {
+      "vi": "Sữa Chua Nếp Cẩm Điện Biên Chua Dịu Dẻo Bùi",
+      "en": "Black Sticky Rice with Creamy Yogurt"
+    },
+    "image": "/dishes/vn-sua-chua-nep-cam.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Thanh nhiệt",
+        "Tốt cho tiêu hóa",
+        "Chua ngọt hài hòa"
+      ],
+      "en": [
+        "Probiotic",
+        "Healthy Dessert",
+        "Black Sticky Rice"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 260,
+    "protein": 7,
+    "fat": 5,
+    "carbs": 48,
+    "servingSize": {
+      "vi": "1 ly sữa chua nếp cẩm (~250g)",
+      "en": "1 glass (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hà Nội Phố",
+      "en": "Hanoi Modern Desserts"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Gạo nếp cẩm Điện Biên tím biếc",
+          "en": "Purple sticky rice (nếp cẩm)"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Sữa chua lên men tự nhiên có đường",
+          "en": "Creamy whole milk yogurt"
+        },
+        "amount": "4 hộp"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa thơm béo",
+          "en": "Coconut cream"
+        },
+        "amount": "50ml"
+      },
+      {
+        "name": {
+          "vi": "Lá dứa, đường phèn",
+          "en": "Pandan leaves, rock sugar"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Nếp cẩm ngâm nước ấm 4 tiếng, nấu chín cùng lá dứa và nước lọc trên lửa nhỏ đến khi hạt nếp nở bung dẻo mềm.",
+        "Thêm đường phèn nấu liu riu cho nếp cẩm sánh kẹo màu tím than óng ả, để nguội hoàn toàn.",
+        "Múc 2-3 muỗng nếp cẩm dẻo bùi vào đáy ly thủy tinh.",
+        "Đổ 1 hộp sữa chua mát lạnh sánh mịn lên trên lớp nếp cẩm.",
+        "Rưới thêm chút nước cốt dừa béo ngậy và thêm đá bào nếu thích, trộn đều thưởng thức vị chua dịu ngọt bùi mê ly."
+      ],
+      "en": [
+        "Soak purple glutinous rice; simmer with pandan leaves until soft and bursting.",
+        "Stir in rock sugar and simmer into a thick, glossy purple jam; let cool.",
+        "Spoon 2-3 tablespoons of sweet purple rice into a glass.",
+        "Pour chilled creamy yogurt over the sticky rice layer.",
+        "Drizzle a touch of coconut milk, add shaved ice, stir and enjoy the balanced creamy tartness."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-ba-ba",
+    "title": {
+      "vi": "Chè Bà Ba Nam Bộ Khoai Mì Hạt Sen Bột Khoai",
+      "en": "Southern Ba Ba Sweet Soup with Sweet Potato, Taro & Lotus Seeds"
+    },
+    "image": "/dishes/vn-che-ba-ba.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Nam Bộ",
+        "Đa dạng củ quả",
+        "Béo ngậy nước cốt dừa"
+      ],
+      "en": [
+        "Southern Classic",
+        "Rich Roots",
+        "Coconut Milk"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 340,
+    "protein": 6,
+    "fat": 12,
+    "carbs": 55,
+    "servingSize": {
+      "vi": "1 chén chè (~300g)",
+      "en": "1 bowl (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Tây Nam Bộ",
+      "en": "Mekong Delta Desserts"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Khoai lang vàng, khoai môn, khoai mì cắt khối",
+          "en": "Sweet potato, taro & cassava cubes"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Hạt sen tươi luộc chín",
+          "en": "Boiled lotus seeds"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Bột khoai, bột báng ngâm mềm",
+          "en": "Tapioca strips & pearls"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa nguyên chất",
+          "en": "Pure coconut cream"
+        },
+        "amount": "250ml"
+      },
+      {
+        "name": {
+          "vi": "Đường thốt nốt, lá dứa",
+          "en": "Palm sugar, pandan leaves"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Nấu nước dão dừa với lá dứa và đường thốt nốt đun sôi.",
+        "Cho khoai mì, khoai môn và khoai lang vào nấu nhỏ lửa cho chín mềm bở.",
+        "Thêm hạt sen, bột khoai và bột báng vào nấu chín trong suốt.",
+        "Rót nước cốt dừa đặc sánh vào khuấy đều, thêm chút xíu muối dằn vị ngọt béo hài hòa.",
+        "Múc ra chén ăn nóng hoặc ấm, hương vị bùi bùi của các loại khoai quyện nước dừa thơm ngát."
+      ],
+      "en": [
+        "Boil light coconut milk with pandan leaves and palm sugar.",
+        "Add cassava, taro, and sweet potato cubes; simmer gently until tender.",
+        "Add lotus seeds, tapioca strips, and pearls; cook until clear.",
+        "Pour in rich coconut cream with a pinch of salt to balance sweetness.",
+        "Serve warm, relishing the creamy melody of slow-cooked tropical tubers."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-dau-den-nuoc-dua",
+    "title": {
+      "vi": "Chè Đậu Đen Nấu Đường Phèn Nước Cốt Dừa",
+      "en": "Classic Black Bean Sweet Soup with Coconut Cream"
+    },
+    "image": "/dishes/vn-che-dau-den-nuoc-dua.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Món chè quốc dân",
+        "Giải nhiệt ngày hè",
+        "Bùi béo"
+      ],
+      "en": [
+        "National Dessert",
+        "Summer Cool Down",
+        "Antioxidant Rich"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 250,
+    "protein": 9,
+    "fat": 5,
+    "carbs": 45,
+    "servingSize": {
+      "vi": "1 ly chè đầy đá (~300g)",
+      "en": "1 glass (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Sweets"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đậu đen xanh lòng ngâm mềm",
+          "en": "Green-kernel black beans soaked"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Đường cát hoặc đường phèn",
+          "en": "Sugar or rock sugar"
+        },
+        "amount": "180g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa thơm béo",
+          "en": "Rich coconut cream"
+        },
+        "amount": "100ml"
+      },
+      {
+        "name": {
+          "vi": "Dừa non nạo sợi, dầu chuối, đậu phộng",
+          "en": "Fresh shredded coconut, banana extract, peanuts"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đậu đen hầm với nước đến khi hạt đậu mềm bở tơi thì chắt riêng nước đậu ra bát.",
+        "Cho đường vào xào rim kỹ với hạt đậu trên lửa nhỏ 10 phút cho đường ngấm sâu vào từng hạt đậu dẻo ngọt đậm đà mà không bị nát.",
+        "Đổ nước đậu đen trở lại nồi đun sôi lăn tăn hòa quyện vị ngọt.",
+        "Múc chè đậu đen ra ly, thêm đá lạnh hoặc đá bào.",
+        "Rưới lớp nước cốt dừa béo ngậy, rắc dừa nạo sợi và đậu phộng rang giòn thơm lừng."
+      ],
+      "en": [
+        "Simmer black beans until soft and tender; drain and reserve liquid.",
+        "Simmer sugar with the soft beans over low heat for 10 mins so sweetness penetrates deep inside without breaking them.",
+        "Reunite bean broth with sweetened beans; bring to a gentle simmer.",
+        "Ladle into glasses, add crushed ice.",
+        "Top with thick coconut cream, fresh shredded coconut, and toasted peanuts."
+      ]
+    }
+  },
+  {
+    "id": "vn-tau-hu-nuoc-duong-gung",
+    "title": {
+      "vi": "Tàu Hũ Nước Đường Gừng Nóng Mềm Mịn",
+      "en": "Warm Silken Tofu Pudding in Sweet Ginger Syrup"
+    },
+    "image": "/dishes/vn-tau-hu-nuoc-duong-gung.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Tuổi thơ gánh rong",
+        "Mềm tan như nhung",
+        "Ấm áp"
+      ],
+      "en": [
+        "Street Cart Classic",
+        "Velvety Soft",
+        "Comfort Food"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 180,
+    "protein": 8,
+    "fat": 4,
+    "carbs": 29,
+    "servingSize": {
+      "vi": "1 chén tàu hũ nóng (~200g)",
+      "en": "1 bowl (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Gánh Tàu Hũ Cổ Truyền",
+      "en": "Traditional Tofu Pudding Cart"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đậu nành nguyên chất làm tàu hũ non",
+          "en": "Fresh soybean milk coagulated into pudding"
+        },
+        "amount": "1 tô lớn (~600g)"
+      },
+      {
+        "name": {
+          "vi": "Đường thốt nốt nâu thơm",
+          "en": "Palm sugar"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi thái lát và đập dập",
+          "en": "Fresh ginger slices bruised"
+        },
+        "amount": "2 củ"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa thơm béo",
+          "en": "Coconut cream"
+        },
+        "amount": "100ml"
+      },
+      {
+        "name": {
+          "vi": "Trân châu đường đen dẻo dai",
+          "en": "Chewy tapioca pearls"
+        },
+        "amount": "80g"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tàu hũ non giữ nóng trong nồi ủ ấm cho mềm mượt như lụa.",
+        "Nấu nước đường thốt nốt với gừng tươi đập dập đun nhỏ lửa cho sánh thơm cay nồng ấm.",
+        "Dùng thìa vỏ trai hoặc muôi dẹt hớt từng lớp mỏng tàu hũ trắng muốt xếp vào chén nhỏ.",
+        "Chan nước đường gừng nóng hổi thơm nức lên trên.",
+        "Thêm một thìa nước cốt dừa béo ngậy và trân châu dẻo dai thưởng thức từng muỗng mềm tan trên đầu lưỡi."
+      ],
+      "en": [
+        "Keep freshly coagulated soybean pudding warm and velvety in an insulated pot.",
+        "Boil brown palm sugar with bruised ginger slices until aromatic and warm.",
+        "Use a flat spoon to skim paper-thin sheets of silken tofu into small bowls.",
+        "Ladle hot ginger syrup over the delicate tofu layers.",
+        "Drizzle coconut cream and add chewy boba pearls; melts on the tongue like a warm cloud."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-chep-gion-xao-can-toi",
+    "title": {
+      "vi": "Cá Chép Giòn Xào Cần Tỏi Thì Là",
+      "en": "Stir-fried Crunchy Carp with Celery, Garlic & Dill"
+    },
+    "image": "/dishes/vn-ca-chep-gion-xao-can-toi.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Thịt giòn sần sật",
+        "Món nhắm",
+        "Đậm vị"
+      ],
+      "en": [
+        "Crunchy Fish",
+        "Aromatic Herbs",
+        "Savory"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 240,
+    "protein": 27,
+    "fat": 10,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 đĩa xào (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Sông Hồng",
+      "en": "Red River Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Phi lê cá chép giòn thái lát mỏng",
+          "en": "Crispy carp fillet sliced"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Cần tây, thì là, hành hoa cắt khúc",
+          "en": "Celery, fresh dill, scallions"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi tép đập dập, ớt sừng",
+          "en": "Garlic, red chili"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, nước mắm, tiêu sọ xay",
+          "en": "Oyster sauce, fish sauce, white pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt cá chép giòn ướp với chút hạt nêm, tiêu, gừng băm và dầu ăn 10 phút.",
+        "Phi thơm tỏi trong chảo dầu nóng, xào cá trên lửa cực lớn trong 2-3 phút cho từng miếng cá săn giòn sần sật đặc trưng.",
+        "Cho cần tây, hành hoa, thì là và ớt sừng vào đảo nhanh tay thêm 1 phút.",
+        "Nêm dầu hào và nước mắm vừa vị, rắc tiêu đen tắt bếp trút ra đĩa dùng nóng ngay."
+      ],
+      "en": [
+        "Marinate carp slices with broth powder, white pepper, ginger, and a little oil for 10 mins.",
+        "Sear fish in smoking garlic oil over high heat for 2-3 mins until exceptionally crunchy-firm.",
+        "Add celery, scallions, fresh dill, and red chili; toss for 1 minute.",
+        "Season with oyster sauce and fish sauce, finish with black pepper, and serve hot."
+      ]
+    }
+  },
+  {
+    "id": "vn-ca-bong-lau-kho-to",
+    "title": {
+      "vi": "Cá Bông Lau Kho Tộ Đậm Vị Nam Bộ",
+      "en": "Mekong Pangasius Catfish Braised in Claypot"
+    },
+    "image": "/dishes/vn-ca-bong-lau-kho-to.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Đặc sản Miền Tây",
+        "Béo ngọt đậm đà"
+      ],
+      "en": [
+        "Claypot",
+        "Mekong Delta",
+        "Caramelized"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 310,
+    "protein": 26,
+    "fat": 19,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 tộ kho (~300g)",
+      "en": "1 clay pot (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Tây Nam Bộ",
+      "en": "Mekong Delta Home Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá bông lau cắt khoanh tươi béo",
+          "en": "Fresh pangasius catfish steaks"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Nước dừa xiêm tươi",
+          "en": "Fresh coconut water"
+        },
+        "amount": "150ml"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, nước màu dừa Bến Tre",
+          "en": "Fish sauce, Ben Tre coconut caramel"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Ớt hiểm đỏ, hành tím băm, tiêu sọ",
+          "en": "Hot chilies, shallots, peppercorns"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Tóp mỡ giòn",
+          "en": "Pork cracklings"
+        },
+        "amount": "50g"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá bông lau rửa sạch với nước muối chanh, thấm khô, ướp nước mắm, hành tím, nước màu dừa 20 phút.",
+        "Xếp cá vào tộ đất, đun lửa lớn cho thịt cá săn và ngấm màu cánh gián óng ả.",
+        "Đổ nước dừa tươi xâm xấp mặt cá, đun sôi rồi hạ nhỏ lửa kho liu riu trong 25 phút.",
+        "Khi nước kho cạn sánh sệt keo lại, rải tóp mỡ giòn, ớt hiểm nguyên trái và tiêu sọ đập dập lên trên.",
+        "Dọn nguyên tộ cá nóng hổi bốc khói ăn kèm cơm trắng và đĩa rau luộc chấm nước cá."
+      ],
+      "en": [
+        "Clean catfish steaks with lime salt; marinate with fish sauce, shallots, and coconut caramel for 20 mins.",
+        "Sear in a clay pot over high heat to seal the fish and coat in caramel glaze.",
+        "Add fresh coconut water, bring to boil, then simmer on low for 25 mins.",
+        "When sauce turns syrupy and glossy, scatter crispy cracklings, whole chilies, and cracked pepper.",
+        "Serve bubbling in claypot alongside steamed rice and boiled greens."
+      ]
+    }
+  },
+  {
+    "id": "vn-hen-xuc-banh-da",
+    "title": {
+      "vi": "Hến Xào Xúc Bánh Đa Đô Lương Nghệ An",
+      "en": "Stir-fried Baby River Mussels with Crispy Rice Crackers"
+    },
+    "image": "/dishes/vn-hen-xuc-banh-da.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Xứ Nghệ",
+        "Món nhắm kinh điển",
+        "Giòn rụm"
+      ],
+      "en": [
+        "Central Vietnam",
+        "Crispy Crackers",
+        "Savory Mussels"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 21,
+    "fat": 9,
+    "carbs": 15,
+    "servingSize": {
+      "vi": "1 đĩa hến xào + 2 bánh đa mè",
+      "en": "1 plate mussels + 2 rice crackers"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Xứ Nghệ",
+      "en": "Nghe An Heritage Foods"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt hến sông tươi luộc đãi sạch cát",
+          "en": "Fresh river mussel meat"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Bánh đa Đô Lương nướng giòn rụm",
+          "en": "Do Luong toasted sesame rice crackers"
+        },
+        "amount": "4 cái"
+      },
+      {
+        "name": {
+          "vi": "Hành tăm (củ nén) đập dập",
+          "en": "Crushed white chive bulbs (hành tăm)"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Rau răm, ớt hiểm, đậu phộng rang giã dập",
+          "en": "Vietnamese coriander, chili, crushed peanuts"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, bột canh, dầu ăn",
+          "en": "Fish sauce, seasoning, oil"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hến rửa sạch vắt nhẹ ráo nước.",
+        "Phi thơm ngập hành tăm đập dập với dầu ăn cho dậy mùi thơm nồng nàn đặc trưng xứ Nghệ.",
+        "Trút thịt hến vào xào săn nhanh tay trên lửa lớn trong 2-3 phút, nêm nước mắm ngon và tiêu ớt.",
+        "Cho rau răm thái nhỏ vào đảo đều rồi tắt bếp.",
+        "Múc hến ra đĩa rắc đậu phộng rang giòn, bẻ từng miếng bánh đa mè giòn rụm xúc hến thưởng thức ngay."
+      ],
+      "en": [
+        "Rinse river mussel meat and gently drain.",
+        "Sauté crushed local white chives (hành tăm) in oil until intoxicatingly fragrant.",
+        "Add mussel meat and stir-fry briskly over high heat for 2-3 mins; season with fish sauce and pepper.",
+        "Toss in chopped Vietnamese coriander and turn off heat.",
+        "Plate, sprinkle with crushed roasted peanuts, break crispy sesame rice crackers and scoop up the mussels."
+      ]
+    }
+  },
+  {
+    "id": "vn-oc-nhoi-thit-hap-sa",
+    "title": {
+      "vi": "Ốc Bươu Nhồi Thịt Hấp Lá Sả Chấm Mắm Gừng",
+      "en": "Steamed Stuffed Apple Snails with Lemongrass & Pork"
+    },
+    "image": "/dishes/vn-oc-nhoi-thit-hap-sa.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Hà Nội",
+        "Giòn sần sật",
+        "Thơm lừng mùi sả"
+      ],
+      "en": [
+        "Hanoi Specialty",
+        "Crunchy Snail Meat",
+        "Aromatic Lemongrass"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 270,
+    "protein": 22,
+    "fat": 14,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "12-16 con ốc nhồi (~350g)",
+      "en": "12-16 snails (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Cổ Hà Nội",
+      "en": "Hanoi Heritage Eateries"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt ốc bươu băm hạt lựu giòn sần sật",
+          "en": "Minced crunchy apple snail meat"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Giò sống và thịt heo xay",
+          "en": "Pork paste & minced pork"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Vỏ ốc bươu làm sạch khử trùng",
+          "en": "Cleaned apple snail shells"
+        },
+        "amount": "16 vỏ"
+      },
+      {
+        "name": {
+          "vi": "Lá sả non tươi",
+          "en": "Fresh lemongrass leaf ribbons"
+        },
+        "amount": "16 dải"
+      },
+      {
+        "name": {
+          "vi": "Mộc nhĩ, nấm hương băm, hạt tiêu",
+          "en": "Wood ear, shiitake, pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm gừng lá chanh chấm kèm",
+          "en": "Ginger lime leaf fish sauce"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trộn đều thịt ốc băm giòn cùng giò sống, thịt xay, mộc nhĩ nấm hương băm, tiêu và chút nước mắm.",
+        "Gập đôi dải lá sả đặt luồn vào trong lòng vỏ ốc, để hai đầu lá sả thò ra ngoài làm tay cầm.",
+        "Nhồi nhân thịt ốc chặt vào miệng vỏ ốc cho tròn đầy.",
+        "Xếp ốc vào xửng hấp cách thủy trên lửa lớn trong 15 phút đến khi chín thơm nức mũi.",
+        "Cầm hai đầu lá sả rút nhẹ viên chả ốc ra, chấm ngập chén nước mắm gừng tỏi ớt lá chanh chua ngọt cay nồng."
+      ],
+      "en": [
+        "Mix minced snail meat with silky pork paste, ground pork, mushrooms, pepper, and fish sauce.",
+        "Fold a lemongrass ribbon into each cleaned snail shell leaving ends protruding as pulling tabs.",
+        "Stuff pork-snail mixture firmly into the shell cavity.",
+        "Steam over high heat for 15 minutes until fragrant and springy.",
+        "Pull lemongrass tabs to pop out the juicy snail meatball; dip in zesty lime-leaf ginger fish sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-bap-bo-cu-sen",
+    "title": {
+      "vi": "Canh Bắp Bò Hầm Củ Sen Ngô Ngọt Bổ Dưỡng",
+      "en": "Nourishing Beef Shank Soup with Lotus Root & Sweet Corn"
+    },
+    "image": "/dishes/vn-canh-bap-bo-cu-sen.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Bồi bổ sức khỏe",
+        "Ngọt mát tự nhiên",
+        "Thanh nhiệt"
+      ],
+      "en": [
+        "Nutritious",
+        "Lotus Root",
+        "Sweet Corn"
+      ]
+    },
+    "time": "50m",
+    "servings": 4,
+    "calories": 320,
+    "protein": 28,
+    "fat": 14,
+    "carbs": 18,
+    "servingSize": {
+      "vi": "1 tô canh hầm (~450g)",
+      "en": "1 bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Bổ Dưỡng Gia Đình",
+      "en": "Vietnamese Wholesome Soups"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bắp bò hoa thái khoanh dày",
+          "en": "Beef shank cut into thick discs"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Củ sen tươi gọt vỏ cắt lát tròn có lỗ",
+          "en": "Fresh lotus root sliced in rounds"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Ngô ngọt cắt khúc",
+          "en": "Sweet corn cob pieces"
+        },
+        "amount": "1 bắp"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt tỉa hoa",
+          "en": "Carrots sliced"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Gừng lát, hành hoa, mùi tàu, tiêu",
+          "en": "Ginger, scallions, culantro, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bắp bò chần nước sôi khử bọt, cho vào nồi hầm cùng 1.2 lít nước và gừng lát trên lửa nhỏ trong 30 phút.",
+        "Cho củ sen và ngô ngọt vào hầm cùng thêm 15 phút cho củ sen giòn bùi, ngô tiết vị ngọt lịm vào nước dùng.",
+        "Thêm cà rốt hầm tiếp 5 phút, nêm nước mắm ngon và chút muối vừa miệng.",
+        "Múc ra tô lớn, rắc hành hoa, mùi tàu và tiêu xay thưởng thức nóng bồi bổ cơ thể."
+      ],
+      "en": [
+        "Blanch beef shank, simmer in 1.2L water with ginger slices over low heat for 30 mins.",
+        "Add lotus root slices and sweet corn chunks; simmer 15 mins until tender.",
+        "Add carrots for 5 mins; season with fish sauce and sea salt.",
+        "Ladle into large bowls, garnish with scallions, culantro, and pepper."
+      ]
+    }
+  },
+  {
+    "id": "vn-cai-ngong-xao-thit-bo",
+    "title": {
+      "vi": "Cải Ngồng Xào Thịt Bò Dầu Hào Giòn Ngọt",
+      "en": "Stir-fried Choy Sum Tips with Beef in Oyster Sauce"
+    },
+    "image": "/dishes/vn-cai-ngong-xao-thit-bo.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Nhanh gọn",
+        "Giòn ngọt"
+      ],
+      "en": [
+        "Quick",
+        "Crispy Greens",
+        "Home Cook"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 230,
+    "protein": 24,
+    "fat": 10,
+    "carbs": 7,
+    "servingSize": {
+      "vi": "1 đĩa xào (~280g)",
+      "en": "1 plate (~280g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt thăn bò thái mỏng",
+          "en": "Beef sirloin sliced"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Cải ngồng non tước xơ cắt khúc",
+          "en": "Young choy sum flowering stems"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi tép đập dập",
+          "en": "Crushed garlic"
+        },
+        "amount": "1 củ to"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, nước tương, tiêu xay",
+          "en": "Oyster sauce, soy sauce, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt bò ướp tỏi băm, dầu hào, tiêu và 1 thìa cà phê dầu ăn.",
+        "Phi thơm tỏi, xào bò trên lửa lớn vừa chín tái thì trút riêng ra đĩa.",
+        "Cho cọng cải ngồng vào xào trước 1 phút, sau đó cho lá và ngọn hoa vào đảo nhanh trên lửa lớn.",
+        "Nêm dầu hào vừa ăn, trút thịt bò vào đảo đều 30 giây rồi tắt bếp trút ra đĩa dùng ngay."
+      ],
+      "en": [
+        "Marinate beef with garlic, oyster sauce, pepper, and a splash of oil.",
+        "Quickly sear beef in garlic oil over roaring heat; set aside.",
+        "Stir-fry stems first for 1 min, then add leafy tops over high heat.",
+        "Add oyster sauce, toss beef back in for 30s, and plate immediately."
+      ]
+    }
+  },
+  {
+    "id": "vn-bun-ken-kien-giang",
+    "title": {
+      "vi": "Bún Kèn Kiên Giang Cá Lóc Nước Cốt Dừa",
+      "en": "Kien Giang Coconut Fish Curry Rice Vermicelli"
+    },
+    "image": "/dishes/vn-bun-ken-kien-giang.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Hà Tiên - Kiên Giang",
+        "Cá lóc xay nhuyễn",
+        "Cốt dừa béo bùi"
+      ],
+      "en": [
+        "Kien Giang Icon",
+        "Flaked Fish Curry",
+        "Rich Coconut"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 450,
+    "protein": 25,
+    "fat": 16,
+    "carbs": 52,
+    "servingSize": {
+      "vi": "1 tô bún kèn (~500g)",
+      "en": "1 bowl (~500g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hà Tiên Kiên Giang",
+      "en": "Kien Giang Culinary Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá lóc đồng luộc gỡ thịt giã nhuyễn sên vàng",
+          "en": "Pounded flaked snakehead fish"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa sánh béo",
+          "en": "Coconut cream"
+        },
+        "amount": "250ml"
+      },
+      {
+        "name": {
+          "vi": "Bột nghệ, bột cà ri, sả băm",
+          "en": "Turmeric, mild curry powder, lemongrass"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Bún tươi sợi nhỏ",
+          "en": "Fresh vermicelli"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Đu đủ xanh bào sợi, dưa leo băm, rau thơm",
+          "en": "Papaya shreds, cucumber, herbs"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá lóc luộc chín, gỡ lấy thịt giã tơi rồi xào thơm với sả băm, bột cà ri, bột nghệ và ớt cho thịt cá khô tơi màu vàng óng.",
+        "Nấu nước luộc cá với nước cốt dừa và phần cá xào trên lửa nhỏ tạo nước sốt kèn sánh vàng béo ngậy thơm nức mũi.",
+        "Cho bún tươi vào tô, phủ lớp đu đủ xanh giòn, dưa leo băm và rau thơm ghém.",
+        "Chan nước sốt cá cốt dừa vàng óng nóng hổi lên trên, thêm thìa nước mắm chua ngọt trộn đều thưởng thức."
+      ],
+      "en": [
+        "Flake cooked snakehead fish, pound into fibers, sauté with lemongrass, curry powder, and turmeric until golden and fluffy.",
+        "Simmer fish stock with coconut cream and sautéed fish into a rich, fragrant golden curry gravy.",
+        "Place rice noodles in bowls, top with crunchy shredded green papaya, cucumber, and fresh herbs.",
+        "Ladle creamy golden fish curry broth over, drizzle seasoned fish sauce, and mix well."
+      ]
+    }
+  },
+  {
+    "id": "vn-pho-kho-gia-lai",
+    "title": {
+      "vi": "Phở Khô Gia Lai Hai Tô Nước Lèo Béo Ngậy",
+      "en": "Gia Lai Dry Two-Bowl Pho with Rich Broth"
+    },
+    "image": "/dishes/vn-pho-kho-gia-lai.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodle Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Tây Nguyên",
+        "Ăn hai tô độc đáo",
+        "Tương đen đậm đà"
+      ],
+      "en": [
+        "Highland Icon",
+        "Two-bowl Serving",
+        "Fermented Soy Sauce"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 490,
+    "protein": 29,
+    "fat": 16,
+    "carbs": 58,
+    "servingSize": {
+      "vi": "1 tô phở khô + 1 tô nước lèo bò",
+      "en": "1 dry pho bowl + 1 beef soup bowl"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Núi Pleiku Gia Lai",
+      "en": "Pleiku Highland Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sợi phở khô Gia Lai tròn dai",
+          "en": "Round chewy Gia Lai dried pho noodles"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Thịt bò tái, nạm bò, bò viên",
+          "en": "Rare beef, brisket, beef meatballs"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo băm xào thơm",
+          "en": "Minced pork topping"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Tương đen (tương hạt lên men) Gia Lai",
+          "en": "Gia Lai fermented dark bean paste"
+        },
+        "amount": "1 chén"
+      },
+      {
+        "name": {
+          "vi": "Hành phi, tóp mỡ, giá đỗ, húng quế",
+          "en": "Fried shallots, cracklings, bean sprouts, basil"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng xương bò ngọt lịm",
+          "en": "Rich beef bone stock"
+        },
+        "amount": "1.2 lít"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trụng sợi phở khô Gia Lai qua nước sôi cho sợi dai giòn, cho vào tô cùng giá chần và thịt băm xào.",
+        "Rắc nhiều tóp mỡ giòn và hành phi thơm lừng vào tô phở khô.",
+        "Múc nước dùng bò nóng hổi thơm nức mùi quế hồi vào tô thứ hai cùng thịt bò tái, nạm bò và bò viên thái đôi.",
+        "Khi ăn, nêm tương đen đặc sản Pleiku, tương ớt vào tô phở khô trộn đều tay.",
+        "Gắp một đũa phở khô đậm đà rồi húp một thìa nước dùng bò béo ngậy ngọt lịm."
+      ],
+      "en": [
+        "Blanch round dry pho noodles until chewy-firm; place in bowl with bean sprouts and minced pork.",
+        "Top with crispy pork cracklings and fried shallots.",
+        "Ladle scalding aromatic beef broth into a second bowl containing rare beef, brisket, and meatballs.",
+        "Toss dry noodles with signature local sweet fermented bean paste and chili sauce.",
+        "Take a bite of savory noodles followed by a sip of steaming, rich bone broth."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-khot-mien-tay",
+    "title": {
+      "vi": "Bánh Khọt Miền Tây Nước Cốt Dừa Tép Đồng",
+      "en": "Mekong Mini Savory Crispy Pancakes with Coconut & Shrimp"
+    },
+    "image": "/dishes/vn-banh-khot-mien-tay.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Bánh dân gian",
+        "Giòn rụm",
+        "Béo ngậy nước cốt dừa"
+      ],
+      "en": [
+        "Crispy Mini Pancakes",
+        "Coconut Cream",
+        "Mekong Shrimps"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 380,
+    "protein": 16,
+    "fat": 18,
+    "carbs": 40,
+    "servingSize": {
+      "vi": "8-10 chiếc bánh khọt (~300g)",
+      "en": "8-10 mini cakes (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Bánh Dân Gian Nam Bộ",
+      "en": "Southern Traditional Cakes"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bột gạo pha cốt dừa và bột nghệ vàng",
+          "en": "Rice flour with coconut milk & turmeric"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Tép đồng hoặc tôm đất tươi",
+          "en": "Fresh river shrimps"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Đậu xanh hấp chín nguyên hạt",
+          "en": "Steamed whole mung beans"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa đặc rưới mặt bánh",
+          "en": "Thick coconut cream drizzle"
+        },
+        "amount": "100ml"
+      },
+      {
+        "name": {
+          "vi": "Mỡ hành, bột tôm chấy đỏ",
+          "en": "Scallion oil, dried shrimp powder"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Rau sống cuốn bánh và nước mắm chua ngọt",
+          "en": "Herbs for wrapping & dipping sauce"
+        },
+        "amount": "1 mẹt"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Làm nóng khuôn bánh khọt bằng gang, quết dầu ăn vào từng lỗ khuôn.",
+        "Rót bột vào 2/3 khuôn xèo xèo, đặt con tôm tươi và vài hạt đậu xanh vào giữa.",
+        "Đậy nắp vung nướng 3 phút cho viền bánh vàng ruộm giòn tan.",
+        "Mở nắp rưới thìa nước cốt dừa sánh béo và mỡ hành lên mặt bánh.",
+        "Lấy bánh ra đĩa rắc bột tôm chấy đỏ rực, cuốn cùng lá cải bẹ xanh rau thơm chấm nước mắm chua ngọt."
+      ],
+      "en": [
+        "Heat cast-iron mini pancake molds; brush generously with oil.",
+        "Pour turmeric coconut batter sizzlingly into molds; place fresh shrimp and mung beans on top.",
+        "Cover and cook for 3 mins until the outer rim is deep golden-crisp.",
+        "Drizzle thick coconut cream and scallion oil on top.",
+        "Pop cakes out, dust with dried shrimp powder; wrap in mustard greens and dip in sweet fish sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-can-da-lat",
+    "title": {
+      "vi": "Bánh Căn Trứng Cút Xíu Mại Mỡ Hành Đà Lạt",
+      "en": "Da Lat Mini Rice Cakes with Quail Eggs & Meatball Broth"
+    },
+    "image": "/dishes/vn-banh-can-da-lat.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "dinner",
+      "snack"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Đà Lạt",
+        "Nướng khuôn đất không dầu",
+        "Xíu mại nóng hổi"
+      ],
+      "en": [
+        "Da Lat Icon",
+        "Clay Baked",
+        "Quail Eggs"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 360,
+    "protein": 18,
+    "fat": 15,
+    "carbs": 38,
+    "servingSize": {
+      "vi": "1 phần (5 cặp bánh căn + chén xíu mại)",
+      "en": "1 serving (5 pairs + sauce bowl)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Phố Núi Đà Lạt",
+      "en": "Da Lat Street Food"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bột gạo tẻ ngâm xay nước",
+          "en": "Wet-milled rice batter"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Trứng cút tươi đập trực tiếp",
+          "en": "Fresh quail eggs"
+        },
+        "amount": "15 quả"
+      },
+      {
+        "name": {
+          "vi": "Xíu mại viên xốt nóng",
+          "en": "Hot savory meatballs"
+        },
+        "amount": "8 viên"
+      },
+      {
+        "name": {
+          "vi": "Nước chấm mắm nêm hoặc mắm ớt hành hoa ngập bát",
+          "en": "Scallion dipping broth"
+        },
+        "amount": "4 chén"
+      },
+      {
+        "name": {
+          "vi": "Mỡ hành thơm ngậy",
+          "en": "Scallion oil"
+        },
+        "amount": "4 thìa canh"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đốt nóng khuôn đất nung chuyên dụng không dùng dầu mỡ.",
+        "Đổ bột bánh căn vào từng chén đất, đập ngay 1 quả trứng cút vào giữa rồi đậy nắp đất nung.",
+        "Nướng khoảng 2-3 phút đến khi đáy bánh vàng giòn, mặt trên mềm xốp thơm mùi khói đất nung.",
+        "Cạy hai chiếc bánh úp vào nhau thành một cặp, quết mỡ hành bóng lộn.",
+        "Thả ngập cặp bánh căn nóng bỏng vào chén súp xíu mại ngập tràn hành hoa và sa tế cay xè, vừa thổi vừa ăn."
+      ],
+      "en": [
+        "Heat unglazed earthenware pancake molds dry without any oil.",
+        "Pour rice batter into each cup, crack a quail egg inside, cover with clay lids.",
+        "Bake 2-3 mins until bottoms are crispy and tops are fluffy with an earthy aroma.",
+        "Pair two cakes together and brush with scallion oil.",
+        "Dunk cakes directly into a hot bowl of meatball scallion broth spiked with chili."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-xeo-mien-trung",
+    "title": {
+      "vi": "Bánh Xèo Miền Trung Vỏ Giòn Chấm Nước Lèo Đậu Phộng",
+      "en": "Central Crispy Mini Pancakes with Peanut Liver Dipping Sauce"
+    },
+    "image": "/dishes/vn-banh-xeo-mien-trung.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Miền Trung",
+        "Vỏ giòn rụm",
+        "Nước lèo gan béo bùi"
+      ],
+      "en": [
+        "Central Vietnam",
+        "Ultra Crispy",
+        "Peanut Liver Sauce"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 420,
+    "protein": 21,
+    "fat": 22,
+    "carbs": 36,
+    "servingSize": {
+      "vi": "3-4 chiếc bánh xèo (~300g)",
+      "en": "3-4 pancakes (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Xứ Huế & Đà Nẵng",
+      "en": "Hue & Da Nang Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bột gạo pha nghệ và nước cốt dừa",
+          "en": "Turmeric rice batter"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Tôm đất, thịt ba chỉ thái lát mỏng",
+          "en": "Shrimp & pork belly slices"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Giá đỗ tươi",
+          "en": "Fresh bean sprouts"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nước lèo đậu phộng gan heo béo bùi",
+          "en": "Peanut & pork liver dipping sauce"
+        },
+        "amount": "1 bát"
+      },
+      {
+        "name": {
+          "vi": "Bánh tráng cuốn, rau cải con, chuối chát, khế chua",
+          "en": "Rice paper, greens, starfruit"
+        },
+        "amount": "1 mẹt"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đun nóng chảo gang nhỏ với dầu, xào săn vài miếng tôm thịt.",
+        "Múc muôi bột tráng đều quanh chảo xèo xèo, rải giá đỗ vào giữa đậy nắp 2 phút.",
+        "Mở nắp rưới thêm chút dầu viền chảo chiên cho đáy bánh giòn tan vàng rộm rồi gấp đôi lại.",
+        "Nấu nước lèo: xay nhuyễn gan heo, đậu phộng rang, mè trắng, tương nếp đun sánh đặc béo ngậy.",
+        "Cuốn bánh xèo giòn rụm vào bánh tráng cùng rau sống, chấm ngập chén nước lèo gan đậu phộng thần thánh."
+      ],
+      "en": [
+        "Heat a small iron pan with oil, sear a few shrimps and pork slices.",
+        "Ladle batter sizzlingly around the pan, add bean sprouts, cover for 2 mins.",
+        "Uncover, drizzle oil around rim until the shell turns exceptionally crispy and golden; fold in half.",
+        "Simmer ground pork liver, roasted peanuts, sesame, and soybean paste into a thick luscious dip.",
+        "Roll crispy pancake with fresh herbs in rice paper; dip deep into the rich peanut liver sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-banh-hoi-thit-nuong",
+    "title": {
+      "vi": "Bánh Hỏi Thịt Nướng Mỡ Hành Lá Hẹ",
+      "en": "Fine Rice Vermicelli Weave with Grilled Pork & Chive Oil"
+    },
+    "image": "/dishes/vn-banh-hoi-thit-nuong.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Bình Định",
+        "Mềm mướt từng thớ",
+        "Thịt nướng thơm lừng"
+      ],
+      "en": [
+        "Fine Woven Vermicelli",
+        "Smoky Pork",
+        "Central Icon"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 450,
+    "protein": 26,
+    "fat": 19,
+    "carbs": 45,
+    "servingSize": {
+      "vi": "1 đĩa bánh hỏi thịt nướng (~350g)",
+      "en": "1 platter (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Bình Định",
+      "en": "Binh Dinh Culinary Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bánh hỏi sợi mảnh đan lưới mềm mịn",
+          "en": "Fine woven rice vermicelli sheets"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Thịt nạc dăm ướp sả ớt nướng than hoa",
+          "en": "Charcoal grilled lemongrass pork"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Dầu lá hẹ thái nhỏ (mỡ hẹ)",
+          "en": "Chive infused oil"
+        },
+        "amount": "4 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Đậu phộng rang, rau sống, dưa leo",
+          "en": "Roasted peanuts, herbs, cucumber"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm tỏi ớt chua ngọt",
+          "en": "Sweet garlic chili dipping sauce"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bánh hỏi hấp nóng lại cho mềm mướt, thoa đều lớp dầu lá hẹ xanh mướt thơm dịu lên từng miếng bánh.",
+        "Thịt heo thái mỏng ướp mật ong, sả băm, nước mắm, tiêu nướng trên than hoa cháy xém vàng ruộm thơm nức.",
+        "Xếp bánh hỏi thoa mỡ hẹ ra đĩa, đặt xiên thịt nướng vàng ươm bên cạnh.",
+        "Rắc đậu phộng rang giòn lên trên mặt bánh hỏi.",
+        "Cuốn bánh hỏi cùng thịt nướng và rau sống chấm nước mắm tỏi ớt đậm đà."
+      ],
+      "en": [
+        "Steam woven rice sheets until tender; brush glistening emerald chive oil over each sheet.",
+        "Grill marinated lemongrass pork slices over hot charcoal until caramelized and smoky.",
+        "Arrange chive-brushed vermicelli sheets on a platter next to skewers of golden grilled pork.",
+        "Garnish with crushed roasted peanuts.",
+        "Wrap with fresh herbs and dip in sweet-and-sour garlic chili fish sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-mien-xao-long-ga",
+    "title": {
+      "vi": "Miến Xào Lòng Mề Gà Nấm Mèo Rau Răm",
+      "en": "Stir-fried Glass Noodles with Chicken Giblets & Wood Ear"
+    },
+    "image": "/dishes/vn-mien-xao-long-ga.jpg",
+    "category": {
+      "vi": "Món Xào",
+      "en": "Stir-fry"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 91,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Miến dong dai ráo",
+        "Đậm đà"
+      ],
+      "en": [
+        "Glass Noodles",
+        "Chewy Giblets",
+        "Home Cook"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 310,
+    "protein": 21,
+    "fat": 10,
+    "carbs": 35,
+    "servingSize": {
+      "vi": "1 đĩa miến xào (~280g)",
+      "en": "1 plate (~280g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Miến dong sạch sợi dai ngâm mềm",
+          "en": "Chewy dong glass noodles soaked"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Lòng mề gà làm sạch thái miếng",
+          "en": "Cleaned chicken giblets sliced"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Mộc nhĩ, nấm hương thái sợi",
+          "en": "Shredded wood ear & shiitake"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím, rau răm, mùi tàu, hành hoa",
+          "en": "Shallots, Vietnamese coriander, culantro"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, nước mắm, tiêu đen",
+          "en": "Oyster sauce, fish sauce, black pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Miến ngâm nước ấm vừa mềm, vớt ra cắt ngắn, trộn chút dầu ăn và lòng trắng trứng để xào tơi ráo không dính bết.",
+        "Phi thơm hành tím, xào lòng mề gà với mộc nhĩ nấm hương chín giòn sần sật, trút ra đĩa riêng.",
+        "Cho miến vào chảo đảo nhanh tay trên lửa lớn cùng chút nước dùng và dầu hào cho sợi miến trong veo, săn dai ráo sợi.",
+        "Trút lòng gà trở lại đảo đều tay cùng rau răm, hành hoa và mùi tàu thái nhỏ.",
+        "Múc ra đĩa rắc nhiều tiêu đen xay, ăn nóng sợi miến dai giòn thơm nức."
+      ],
+      "en": [
+        "Soak glass noodles until pliable; snip shorter and toss with a drop of oil to keep strands separate.",
+        "Sauté shallots, stir-fry giblets and mushrooms until crunchy-tender; set aside.",
+        "Toss glass noodles in wok with oyster sauce and a splash of broth until glossy, translucent, and dry.",
+        "Reunite giblets with noodles, fold in Vietnamese coriander, culantro, and scallions.",
+        "Serve hot with cracked black pepper."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-khoai-deo",
+    "title": {
+      "vi": "Chè Khoai Dẻo Lá Dứa Nước Cốt Dừa",
+      "en": "Chewy Sweet Potato & Taro Balls in Pandan Coconut Soup"
+    },
+    "image": "/dishes/vn-che-khoai-deo.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Món tráng miệng hot",
+        "Dai dẻo nhiều màu",
+        "Béo ngậy"
+      ],
+      "en": [
+        "Chewy Tapioca Balls",
+        "Colorful Dessert",
+        "Coconut Cream"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 310,
+    "protein": 3,
+    "fat": 8,
+    "carbs": 58,
+    "servingSize": {
+      "vi": "1 ly chè đầy đủ (~300g)",
+      "en": "1 glass (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Trẻ Hiện Đại",
+      "en": "Modern Vietnamese Sweets"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Khoai lang vàng, khoai lang tím hấp nghiền nhồi bột năng",
+          "en": "Yellow & purple sweet potato chewy dough"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa thơm béo",
+          "en": "Creamy coconut milk"
+        },
+        "amount": "200ml"
+      },
+      {
+        "name": {
+          "vi": "Nước đường lá dứa thơm dịu",
+          "en": "Pandan rock sugar syrup"
+        },
+        "amount": "1 bát"
+      },
+      {
+        "name": {
+          "vi": "Mè trắng rang, thạch sương sáo đen",
+          "en": "Toasted sesame & black grass jelly"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Khoai lang hấp chín nghiền mịn, nhồi cùng bột năng cắt thành từng khúc vuông nhỏ xinh nhiều màu sắc.",
+        "Luộc các viên khoai dẻo trong nước sôi đến khi nổi lên thì vớt thả vào bát nước đá lạnh cho dai giòn sần sật.",
+        "Cho các viên khoai dẻo tím, vàng óng cùng thạch sương sáo vào ly.",
+        "Chan nước đường phèn lá dứa và rưới nước cốt dừa sánh béo lên trên.",
+        "Rắc mè rang thơm, thêm đá bào thưởng thức từng viên khoai dẻo quánh dẻo dai vui miệng."
+      ],
+      "en": [
+        "Mash steamed sweet potatoes, knead with tapioca starch, and cut into vibrant bite-sized nuggets.",
+        "Boil chewy balls until floating; shock in ice water for bouncy texture.",
+        "Layer purple and golden chewy balls with black grass jelly in glasses.",
+        "Pour pandan syrup and rich coconut cream over.",
+        "Top with toasted sesame and shaved ice for a delightful chewy treat."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-sam-bo-luong",
+    "title": {
+      "vi": "Chè Sâm Bổ Lượng Rong Biển Củ Sen Nhãn Nhục",
+      "en": "Ching Bo Leung Cooling Herbal Sweet Soup"
+    },
+    "image": "/dishes/vn-che-sam-bo-luong.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Thanh nhiệt giải độc",
+        "Bổ dưỡng thảo mộc",
+        "Thơm ngọt thanh"
+      ],
+      "en": [
+        "Detox",
+        "Herbal Refreshment",
+        "Saigon Classic"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 4,
+    "fat": 1,
+    "carbs": 49,
+    "servingSize": {
+      "vi": "1 ly chè đầy đá (~350g)",
+      "en": "1 glass (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Người Hoa Chợ Lớn Sài Gòn",
+      "en": "Cholon Saigon Herbal Sweets"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Rong sụn biển (phổ tai) ngâm giòn",
+          "en": "Crunchy seaweed strips (phổ tai)"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Củ sen tươi thái lát nấu đường",
+          "en": "Sweet candied lotus root slices"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Nhãn nhục (long nhãn khô) nâu đen ngọt đậm",
+          "en": "Dried longan pulp"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Hạt bo bo (ý dĩ) hầm chín mềm",
+          "en": "Cooked pearl barley / job's tears"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Táo đỏ, hạt sen tươi, đường phèn",
+          "en": "Red dates, lotus seeds, rock sugar"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Nấu hạt sen, ý dĩ và táo đỏ với 1 lít nước lọc đến khi mềm chín tới.",
+        "Thêm đường phèn và củ sen thái lát vào đun sôi liu riu cho ngấm vị ngọt thanh.",
+        "Cho nhãn nhục và phổ tai thái sợi vào đun sôi bùng lại 2 phút là tắt bếp ngay để phổ tai giữ độ giòn sần sật không bị nhớt.",
+        "Để nguội rồi cất ngăn mát tủ lạnh.",
+        "Múc ra ly thủy tinh cùng nhiều đá bào, húp từng ngụm nước sâm ngọt thanh mát lịm giải nhiệt tức thì."
+      ],
+      "en": [
+        "Simmer lotus seeds, pearl barley, and red dates in 1L water until tender.",
+        "Add rock sugar and lotus root slices; simmer gently until infused.",
+        "Toss in dried longan and crunchy seaweed strips for just 2 mins; remove from heat to preserve crunch.",
+        "Chill completely.",
+        "Serve in tall glasses with crushed ice; deliciously sweet, herbal, and profoundly refreshing."
+      ]
+    }
+  },
+  {
+    "id": "vn-thit-kho-trung-cut",
+    "title": {
+      "vi": "Thịt Nạc Kho Trứng Cút Rim Tiêu Đậm Vị",
+      "en": "Braised Pork Loin with Quail Eggs & Black Pepper"
+    },
+    "image": "/dishes/vn-thit-kho-trung-cut.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Trẻ em thích",
+        "Đậm đà"
+      ],
+      "en": [
+        "Home Cook",
+        "Savory",
+        "Kid Friendly"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 320,
+    "protein": 26,
+    "fat": 20,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 tô kho (~250g)",
+      "en": "1 bowl (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Mẹ Nấu",
+      "en": "Mom's Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt nạc vai hoặc ba chỉ",
+          "en": "Pork shoulder or belly"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Trứng cút luộc bóc vỏ",
+          "en": "Hard-boiled quail eggs"
+        },
+        "amount": "15 quả"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, nước hàng, tiêu",
+          "en": "Fish sauce, caramel, pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Hành tím, tỏi, ớt",
+          "en": "Shallots, garlic, chili"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt heo cắt con chì, ướp nước mắm, hành tím, tiêu và nước hàng 15 phút.",
+        "Trứng cút có thể chiên sơ cho phồng rộp vỏ hoặc để nguyên.",
+        "Phi thơm tỏi, xào thịt săn trên lửa vừa rồi cho nước sôi xâm xấp mặt thịt.",
+        "Cho trứng cút vào kho cùng trên lửa nhỏ trong 20 phút đến khi nước cạn sệt sánh óng màu cánh gián.",
+        "Rắc nhiều tiêu xay, dùng nóng với cơm trắng."
+      ],
+      "en": [
+        "Cut pork into cubes, marinate with fish sauce, shallots, pepper, and caramel for 15 mins.",
+        "Optionally flash-fry quail eggs for blistered skins.",
+        "Sauté garlic, sear pork, add boiling water to cover.",
+        "Add quail eggs and simmer for 20 mins until sauce reduces into a thick mahogany glaze.",
+        "Finish with fresh black pepper and serve with warm rice."
+      ]
+    }
+  },
+  {
+    "id": "vn-suon-xao-chua-ngot-mien-nam",
+    "title": {
+      "vi": "Sườn Xào Chua Ngọt Dứa Cà Chua Nam Bộ",
+      "en": "Southern Sweet & Sour Ribs with Pineapple & Tomato"
+    },
+    "image": "/dishes/vn-suon-xao-chua-ngot-mien-nam.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "south",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Chua ngọt đậm đà",
+        "Đầy màu sắc"
+      ],
+      "en": [
+        "Home Cook",
+        "Sweet & Sour",
+        "Vibrant"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 340,
+    "protein": 23,
+    "fat": 22,
+    "carbs": 12,
+    "servingSize": {
+      "vi": "1 đĩa sườn (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Miền Nam",
+      "en": "Southern Vietnamese Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Sườn non chặt khúc",
+          "en": "Pork ribs sectioned"
+        },
+        "amount": "500g"
+      },
+      {
+        "name": {
+          "vi": "Dứa (thơm) chín thái lát",
+          "en": "Pineapple slices"
+        },
+        "amount": "1/4 quả"
+      },
+      {
+        "name": {
+          "vi": "Cà chua bổ múi cau, ớt chuông",
+          "en": "Tomatoes wedged & bell peppers"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Hành tây, tỏi băm",
+          "en": "Onion, garlic"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Sốt chua ngọt: giấm, đường, nước mắm, tương cà",
+          "en": "Sweet sour sauce blend"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Sườn non chiên vàng giòn hai mặt.",
+        "Phi thơm tỏi, xào thơm dứa, cà chua và ớt chuông chín tới.",
+        "Đổ bát sốt chua ngọt vào đun sôi sủi bọt sánh mịn.",
+        "Trút sườn chiên và hành tây vào đảo đều trên lửa lớn 2-3 phút cho sốt áo đều khắp từng miếng sườn.",
+        "Bày ra đĩa rắc ngò rí và tiêu đen dùng nóng."
+      ],
+      "en": [
+        "Pan-fry pork ribs until golden brown.",
+        "Sauté garlic, then cook pineapple, tomatoes, and bell peppers until tender.",
+        "Pour in sweet-and-sour sauce mixture and bring to a simmer.",
+        "Add ribs and onions; toss over high heat for 2-3 mins until generously coated.",
+        "Plate and garnish with fresh cilantro and black pepper."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-ca-ro-dong-rau-cai",
+    "title": {
+      "vi": "Canh Cá Rô Đồng Nấu Rau Cải Gừng Ấm",
+      "en": "Field Anabas Fish Soup with Mustard Greens & Ginger"
+    },
+    "image": "/dishes/vn-canh-ca-ro-dong-rau-cai.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản đồng quê",
+        "Ấm bụng",
+        "Ngọt lịm"
+      ],
+      "en": [
+        "Countryside Classic",
+        "Warming Ginger",
+        "Sweet Fish Broth"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 190,
+    "protein": 20,
+    "fat": 6,
+    "carbs": 7,
+    "servingSize": {
+      "vi": "1 tô canh lớn (~400g)",
+      "en": "1 bowl (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Bếp Quê Đồng Bằng Bắc Bộ",
+      "en": "Northern Countryside Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cá rô đồng tươi luộc gỡ thịt",
+          "en": "Fresh climbing perch (cá rô đồng) flaked"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Rau cải bẹ xanh hoặc cải cúc thái nhỏ",
+          "en": "Mustard greens chopped"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi đập dập thái chỉ",
+          "en": "Ginger julienned"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng từ xương cá giã lọc",
+          "en": "Strained fish bone broth"
+        },
+        "amount": "800ml"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, hạt tiêu, hành khô",
+          "en": "Fish sauce, pepper, shallots"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cá rô đồng luộc chín, khéo léo gỡ lấy thịt phi lê, phần xương và đầu cá đem giã nhuyễn lọc lấy nước ngọt trong vắt.",
+        "Phi thơm hành khô, xào thịt cá rô với chút nước mắm, tiêu và gừng sợi cho săn thơm đậm đà.",
+        "Đun sôi nồi nước lọc xương cá cùng gừng đập dập, hớt sạch bọt.",
+        "Thả rau cải vào nấu sôi bùng 1-2 phút, trút thịt cá rô xào thơm vào nồi canh.",
+        "Nêm lại vừa khẩu vị ngọt thanh đậm đà, múc ra tô húp nóng xua tan cảm giác ớn lạnh."
+      ],
+      "en": [
+        "Boil fish, carefully flake fillets; pound head and bones to extract clear sweet fish essence.",
+        "Sauté shallots, stir-fry fish fillets with fish sauce, pepper, and ginger until firm.",
+        "Bring fish stock to a boil with ginger, skimming foam.",
+        "Add mustard greens and cook 1-2 mins, gently slide in sautéed fish.",
+        "Adjust seasoning; serve piping hot with soothing ginger heat."
+      ]
+    }
+  },
+  {
+    "id": "vn-canh-bi-xanh-thit-bam",
+    "title": {
+      "vi": "Canh Bí Đao Nấu Thịt Băm Thanh Mát",
+      "en": "Winter Melon Soup with Minced Pork"
+    },
+    "image": "/dishes/vn-canh-bi-xanh-thit-bam.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Cơm nhà",
+        "Thanh nhiệt",
+        "Nhanh gọn 15 phút"
+      ],
+      "en": [
+        "Home Cook",
+        "Cooling",
+        "15 Minutes"
+      ]
+    },
+    "time": "15m",
+    "servings": 4,
+    "calories": 140,
+    "protein": 13,
+    "fat": 6,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 tô canh (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Mỗi Ngày",
+      "en": "Daily Delicious VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bí đao (bí xanh) gọt vỏ thái mỏng",
+          "en": "Winter melon sliced"
+        },
+        "amount": "400g"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo nạc xay",
+          "en": "Minced pork"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm, hành lá, mùi tàu",
+          "en": "Shallots, scallions, culantro"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm, muối, tiêu xay",
+          "en": "Fish sauce, salt, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bí xanh gọt vỏ, bỏ ruột, thái lát mỏng vừa ăn.",
+        "Phi thơm hành tím, xào thịt băm chín săn với chút nước mắm tiêu.",
+        "Đổ 800ml nước lọc vào đun sôi bùng, hớt sạch bọt.",
+        "Thả bí xanh vào nấu sôi lại trong 2-3 phút đến khi lát bí trong suốt vừa chín tới giòn ngọt mát.",
+        "Nêm gia vị vừa ăn, rắc hành lá và mùi tàu thái nhỏ, múc ra tô dùng nóng."
+      ],
+      "en": [
+        "Peel winter melon, core, and slice into thin crescents.",
+        "Sauté shallots, cook minced pork with fish sauce and pepper until browned.",
+        "Add 800ml water and bring to a boil, skimming foam.",
+        "Add winter melon slices and boil 2-3 mins until translucent and sweet.",
+        "Season with salt and fish sauce, finish with scallions and culantro."
+      ]
+    }
+  },
+  {
+    "id": "vn-nem-thinh-nam-dinh",
+    "title": {
+      "vi": "Nem Thính Tai Heo Gạo Rang Nam Định Cuốn Lá Sung",
+      "en": "Nam Dinh Toasted Rice Powder Pork Ear Salad with Fig Leaves"
+    },
+    "image": "/dishes/vn-nem-thinh-nam-dinh.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "north",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Đặc sản Nam Định",
+        "Thính gạo thơm phức",
+        "Món nhắm kinh điển"
+      ],
+      "en": [
+        "Nam Dinh Icon",
+        "Toasted Rice Fragrance",
+        "Beer Bite"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 240,
+    "protein": 22,
+    "fat": 12,
+    "carbs": 11,
+    "servingSize": {
+      "vi": "1 đĩa nem thính (~250g)",
+      "en": "1 plate (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Nam Định Cổ Truyền",
+      "en": "Nam Dinh Culinary Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Tai heo và thịt bì heo luộc giòn thái sợi mỏng",
+          "en": "Boiled crunchy pork ears & skin sliced paper-thin"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Thính gạo rang xay thơm lừng",
+          "en": "Artisan toasted rice powder"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi tép băm nhuyễn, ớt hiểm, lá chanh",
+          "en": "Garlic, chili, lime leaves"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Lá sung non tươi, lá đinh lăng",
+          "en": "Young fig leaves & polyscias leaves"
+        },
+        "amount": "1 rổ nhỏ"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm tỏi ớt chua ngọt chấm nem",
+          "en": "Sweet garlic chili fish sauce"
+        },
+        "amount": "1 bát"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tai heo và bì luộc chín giòn, thái sợi thật mỏng đều tay, thấm thật khô ráo.",
+        "Bóp trộn tai heo với tỏi băm nhuyễn, nước mắm ngon và chút hạt nêm cho ngấm đều vị mặn mòi.",
+        "Rắc từ từ thính gạo rang thơm nức mũi vào bóp tơi đều tay sao cho từng sợi tai bì được áo một lớp bột thính vàng mơ khô ráo.",
+        "Rắc thêm lá chanh thái chỉ và vài lát ớt hiểm tươi.",
+        "Khi ăn, đặt lá sung non, thêm lá đinh lăng, gắp nem thính cuộn chặt chấm nước mắm tỏi ớt cay nồng đậm đà giòn rụm sần sật."
+      ],
+      "en": [
+        "Boil pork ears and skin until tender-crisp; slice paper-thin and dry completely.",
+        "Toss pork shreds with minced garlic, premium fish sauce, and seasoning until flavorful.",
+        "Gradually sprinkle freshly toasted rice powder while tossing so every strand is evenly coated in a fragrant golden crust.",
+        "Fold in finely julienned lime leaves and sliced chilies.",
+        "Wrap in fresh young fig leaves and polyscias leaves; dip in zesty garlic chili sauce."
+      ]
+    }
+  },
+  {
+    "id": "vn-che-dau-ngu",
+    "title": {
+      "vi": "Chè Đậu Ngự Hạt Sen Nước Cốt Dừa Cố Đô Huế",
+      "en": "Hue Imperial Sweet Soup with Lima Beans & Lotus Seeds"
+    },
+    "image": "/dishes/vn-che-dau-ngu.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "central",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Ẩm thực Cung đình Huế",
+        "Hạt đậu bở tơi béo ngậy",
+        "Thanh tao"
+      ],
+      "en": [
+        "Hue Royal Cuisine",
+        "Velvety Lima Beans",
+        "Refined Sweet"
+      ]
+    },
+    "time": "40m",
+    "servings": 4,
+    "calories": 270,
+    "protein": 8,
+    "fat": 6,
+    "carbs": 48,
+    "servingSize": {
+      "vi": "1 chén chè Cung đình (~250g)",
+      "en": "1 imperial bowl (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia",
+      "en": "National Institute of Nutrition"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Chè Cung Đình Huế",
+      "en": "Hue Royal Sweet Soups"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Hạt đậu ngự tươi bóc vỏ lụa",
+          "en": "Fresh peeled royal lima beans"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Hạt sen tươi hồ Tịnh Tâm Huế",
+          "en": "Fresh Hue lotus seeds"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Đường phèn kết tinh thanh ngọt",
+          "en": "Pure rock sugar"
+        },
+        "amount": "160g"
+      },
+      {
+        "name": {
+          "vi": "Lá dứa thơm",
+          "en": "Fresh pandan leaves"
+        },
+        "amount": "3 lá"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt dừa thơm béo",
+          "en": "Rich coconut cream"
+        },
+        "amount": "100ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hạt đậu ngự ngâm nước bóc bỏ lớp vỏ lụa ngoài, để lại hạt đậu trắng ngà căng mọng.",
+        "Hấp cách thủy đậu ngự và hạt sen khoảng 20 phút cho chín bở tơi mà hạt đậu vẫn nguyên vẹn không bị nát.",
+        "Nấu nước đường phèn với lá dứa đun sôi cho đường tan trong vắt ngọt thanh.",
+        "Thả đậu ngự và hạt sen đã hấp vào nồi nước đường đun nhỏ lửa 10 phút cho đường ngấm sâu vào từng hạt đậu bùi béo.",
+        "Múc ra chén nhỏ kiểu Cung đình, chan nước cốt dừa, ăn nóng thanh tao hoặc ăn lạnh cùng đá bào thanh mát."
+      ],
+      "en": [
+        "Soak fresh lima beans and peel off the outer membrane to reveal pearly white beans.",
+        "Steam lima beans and lotus seeds for 20 mins until melt-in-the-mouth tender yet keeping their elegant whole shape.",
+        "Simmer clear rock sugar with fragrant pandan leaves into a crystal syrup.",
+        "Add steamed beans and lotus seeds; simmer on low for 10 mins so sweetness infuses deeply.",
+        "Serve in delicate ceramic bowls with a touch of coconut cream; sublime hot or chilled."
+      ]
+    }
   }
 ];
