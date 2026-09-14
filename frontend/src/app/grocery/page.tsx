@@ -36,7 +36,8 @@ export default function GroceryPage() {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+    document.title = language === 'vi' ? 'Giỏ Đi Chợ Thông Minh | QMeal' : 'Grocery List | QMeal';
+  }, [language]);
 
   const currentLang = mounted ? language : 'vi';
 

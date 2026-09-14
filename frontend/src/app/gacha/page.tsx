@@ -92,7 +92,8 @@ export default function GachaPage() {
 
   useEffect(() => {
     setReelItems(prepareReel());
-  }, [mealFilter]);
+    document.title = language === 'vi' ? 'Vòng Quay Ăn Gì? | QMeal' : 'Meal Gacha | QMeal';
+  }, [mealFilter, language]);
 
   const startSpin = () => {
     if (isSpinning) return;

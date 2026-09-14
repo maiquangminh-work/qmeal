@@ -10,7 +10,8 @@ export default function FavoritesPage() {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+    document.title = language === 'vi' ? 'Món Ăn Đã Lưu | QMeal' : 'Saved Recipes | QMeal';
+  }, [language]);
 
   const currentLang = mounted ? language : 'vi';
 

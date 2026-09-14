@@ -81,6 +81,11 @@ export default function FridgePage() {
     }
   }[language];
 
+  // Update browser tab title
+  useEffect(() => {
+    document.title = language === 'vi' ? 'Tủ Lạnh Thông Minh | QMeal' : 'Smart Fridge | QMeal';
+  }, [language]);
+
   // Shelves definition from master ingredients
   const shelvesData = useMemo(() => {
     return {

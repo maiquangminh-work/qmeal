@@ -61,6 +61,9 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
       .then(json => {
         if(json.success) {
           setRecipe(json.data);
+          if (json.data.title) {
+            document.title = `${json.data.title} | QMeal`;
+          }
           if (json.data.servings) setServings(json.data.servings);
           if (json.data.id) recordRecipeView(json.data.id);
         }
