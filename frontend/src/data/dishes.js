@@ -18,7 +18,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: false,
     tags: ['home', 'dry', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Thit_kho_tau.jpg/800px-Thit_kho_tau.jpg',
     author: 'Luke Nguyen (SBS Food)',
     description: 'Thịt ba chỉ thái vuông vức kho mềm rục cùng nước dừa xiêm béo ngọt thanh, ngấm đều vào từng quả trứng cút nâu bóng đậm đà đưa cơm.',
     recipeSource: {
@@ -52,20 +52,24 @@ export const DISHES_DATA = [
     ],
     nearbyRestaurants: [
       {
-        name: 'Quán Cơm Niêu Sài Gòn',
-        address: '27 Tú Xương, P.7, Q.3, TP.HCM',
-        distance: '1.2 km',
-        priceRange: '60.000đ - 120.000đ',
-        rating: 4.8,
-        openHours: '10:00 - 22:00'
+        name: 'Bánh Mì Huỳnh Hoa',
+        address: '26 Lê Thị Riêng, Quận 1, TP.HCM',
+        distance: '2.0 km',
+        rating: 4.7,
+        reviewsCount: 12500,
+        tiktokHearts: '1.2M',
+        openHours: '14:00 - 23:00',
+        priceRange: '65.000đ - 70.000đ'
       },
       {
-        name: 'Bếp Cơm Gia Đình Cô Ba',
-        address: '15 Huỳnh Thúc Kháng, Đống Đa, Hà Nội',
-        distance: '0.9 km',
-        priceRange: '45.000đ - 70.000đ',
+        name: 'Bánh Mì Chảo Hòa Mã',
+        address: '53 Cao Thắng, Quận 3, TP.HCM',
+        distance: '3.1 km',
         rating: 4.6,
-        openHours: '10:30 - 21:00'
+        reviewsCount: 3400,
+        tiktokHearts: '210K',
+        openHours: '06:00 - 11:00',
+        priceRange: '50.000đ - 70.000đ'
       }
     ]
   },
@@ -85,7 +89,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: false,
     tags: ['home', 'dry', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sweet_and_sour_pork_ribs.jpg/800px-Sweet_and_sour_pork_ribs.jpg',
     author: 'Serious Eats Culinary',
     description: 'Từng miếng sườn non chặt khúc vàng rộm, áo lớp sốt dấm đường cà chua sánh kẹo, chua thanh ngọt dịu kích thích vị giác cả người lớn lẫn trẻ nhỏ.',
     recipeSource: {
@@ -144,7 +148,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: true,
     tags: ['home', 'dry', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/C%C3%A1_l%C3%B3c_kho_t%E1%BB%99.jpg/800px-C%C3%A1_l%C3%B3c_kho_t%E1%BB%99.jpg',
     author: 'Andrea Nguyen (NYT Cooking)',
     description: 'Thịt cá lóc chắc nịch, ướp nước mắm cốt đậm đà, kho trong tộ đất riu riu cùng thịt mỡ và tiêu xanh cay nồng thơm lừng.',
     recipeSource: {
@@ -203,7 +207,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: true,
     tags: ['home', 'quick', 'budget'],
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Stuffed_Tofu_in_Tomato_Sauce.jpg/800px-Stuffed_Tofu_in_Tomato_Sauce.jpg',
     author: 'Culinary Institute of America (CIA)',
     description: 'Miếng đậu phụ vàng ươm nhồi đầy ắp nhân thịt băm nấm mộc nhĩ giòn sần sật, áo đẫm nước sốt cà chua đỏ au thơm ngát mùi hành ngò.',
     recipeSource: {
@@ -262,7 +266,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: false,
     tags: ['home', 'quick', 'budget'],
-    image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Trung_Chien.jpg/800px-Trung_Chien.jpg',
     author: 'Viện Văn Hóa Ẩm Thực VN (VCCA)',
     description: 'Món ăn siêu nhanh chỉ mất 15 phút: trứng vịt hoặc gà đánh bông cùng thịt băm thơm phức, mộc nhĩ giòn dai, viền mép vàng ruộm béo ngậy.',
     recipeSource: {
@@ -321,7 +325,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: false,
     tags: ['home', 'dry', 'quick'],
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Thit_rang_chay_canh.jpg/800px-Thit_rang_chay_canh.jpg',
     author: 'Michelin Guide Hanoi Bib Gourmand',
     description: 'Thịt ba chỉ thái mỏng đảo sém vàng giòn rụm cạnh, tươm mỡ béo ngậy quyện nước mắm đường mặn ngọt và thoang thoảng hương lá chanh tươi nức mũi.',
     recipeSource: {
@@ -381,7 +385,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: true,
     tags: ['home', 'soup', 'healthy', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Canh_cua_rau_day.jpg/800px-Canh_cua_rau_day.jpg',
     author: 'BBC Travel Food & NIN',
     description: 'Món canh linh hồn của mâm cơm hè miền Bắc: riêu cua đóng bánh chắc nịch, nước canh ngọt lịm từ cua đồng xay cùng rau đay mướp hương mướt mát, ăn kèm cà pháo giòn rụm.',
     recipeSource: {
@@ -440,7 +444,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: true,
     tags: ['home', 'soup', 'healthy', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/a/a0/Canhchua2.jpg',
     author: 'Luke Nguyen (SBS Food)',
     description: 'Vị chua thanh mát của nước me hòa cùng vị ngọt tự nhiên của khóm dứa, cà chua, dọc mùng giòn xốp và cá lóc đồng tươi roi rói thơm lừng ngò om ngò gai.',
     recipeSource: {
@@ -500,7 +504,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: true,
     tags: ['home', 'soup', 'quick', 'budget'],
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Canh_ngheu.jpg/800px-Canh_ngheu.jpg',
     author: 'Saveur Magazine Culinary',
     description: 'Món canh chua thanh tao nhẹ bụng: nước ngao luộc ngọt lịm tự nhiên hòa cùng dứa thơm và cà chua, thêm chút thì là hành hoa thơm lừng.',
     recipeSource: {
@@ -559,7 +563,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: true,
     tags: ['home', 'soup', 'quick', 'healthy'],
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Canh_cai_ngot.jpg/800px-Canh_cai_ngot.jpg',
     author: 'WHO Healthy Diet Guidelines',
     description: 'Món canh nhanh gọn 10 phút ấm bụng: cải ngọt xanh giòn nấu thịt nạc băm ngọt nước, điểm xuyết vài lát gừng tươi thơm nồng ấm áp.',
     recipeSource: {
@@ -620,7 +624,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: true,
     tags: ['home', 'quick', 'budget', 'healthy'],
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Tumis_kangkung_Makassar.JPG',
     author: 'Serious Eats & Michelin Guide',
     description: 'Món rau xào quốc dân xuất hiện trên mọi bàn ăn Việt: cọng rau muống giòn sần sật, xanh ngắt óng ả, ngập tràn tỏi phi thơm nức mũi.',
     recipeSource: {
@@ -676,7 +680,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: true,
     tags: ['home', 'quick', 'budget', 'healthy'],
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Stir_fried_cabbage.jpg/800px-Stir_fried_cabbage.jpg',
     author: 'FAO Sustainable Diet',
     description: 'Món rau xào thanh đạm giá rẻ: bắp cải thái sợi giòn ngọt tự nhiên quyện vị chua thanh của cà chua, thơm mùi hành hoa tươi rói.',
     recipeSource: {
@@ -737,7 +741,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: false,
     tags: ['soup', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Ph%E1%BB%9F_b%C3%B2%2C_C%E1%BA%A7u_Gi%E1%BA%A5y%2C_H%C3%A0_N%E1%BB%99i.jpg',
     author: 'Michelin Guide Hanoi & NYT',
     description: 'Thịt bò tươi xào lăn nhanh trên lửa lớn cùng tỏi thơm nức, chan nước dùng ninh xương đậm đà thơm mùi quế hồi và ngập tràn hành hoa tươi rói.',
     recipeSource: {
@@ -793,7 +797,7 @@ export const DISHES_DATA = [
     name: 'Cơm Tấm Sườn Bì Chả Trứng',
     englishName: 'Saigon Broken Rice with Grilled Pork Chop',
     mealCategory: 'lunch',
-    dishType: 'man',
+    dishType: 'an_sang',
     prepTime: 25,
     cookTime: 20,
     difficulty: 'Vừa',
@@ -803,7 +807,7 @@ export const DISHES_DATA = [
     isPopular: true,
     isHealthy: false,
     tags: ['dry', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/C%C6%A1m_T%E1%BA%A5m%2C_Da_Nang%2C_Vietnam.jpg',
     author: 'TasteAtlas & Michelin Saigon',
     description: 'Hạt cơm tấm thơm dẻo ăn cùng sườn cốt lết nướng than hoa vàng óng ngấm gia vị sả mật ong, chả trứng hấp béo ngậy, bì dai giòn và nước mắm kẹo pha chuẩn vị miền Nam.',
     recipeSource: {
@@ -865,11 +869,11 @@ export const DISHES_DATA = [
     difficulty: 'Dễ',
     calories: 460,
     popularityScore: 94,
-    isHomeCooked: true,
+    isHomeCooked: false,
     isPopular: true,
     isHealthy: false,
     tags: ['quick', 'budget'],
-    image: 'https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Banh_mi_chao.jpg/800px-Banh_mi_chao.jpg',
     author: 'CNN Travel & Helen Recipes',
     description: 'Chiếc chảo gang nóng xèo xèo với trứng ốp la lòng đào, pate béo ngậy rán cháy cạnh, xúc xích, bò lát mềm mọng cùng sốt cà chua tiêu đen đậm đà chấm cùng bánh mì giòn rụm.',
     recipeSource: {
@@ -923,11 +927,11 @@ export const DISHES_DATA = [
     difficulty: 'Dễ',
     calories: 260,
     popularityScore: 96,
-    isHomeCooked: true,
+    isHomeCooked: false,
     isPopular: true,
     isHealthy: true,
     tags: ['healthy', 'quick', 'specialty'],
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Summer_roll.jpg',
     author: 'CNN World Top 50 Foods',
     description: 'Thanh đạm, ít calo, nhiều chất xơ: tôm sú luộc đỏ au chẻ đôi cùng lát thịt ba chỉ mỏng tang, bún tươi và ngập tràn rau sống cuốn trong bánh tráng dẻo thơm, chấm tương đen xay bùi béo.',
     recipeSource: {

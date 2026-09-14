@@ -6,7 +6,6 @@ import RecipeOfDay from './components/RecipeOfDay';
 import CategoryBanners from './components/CategoryBanners';
 import MealTabs from './components/MealTabs';
 import DishCard from './components/DishCard';
-import MealCombosSection from './components/MealCombosSection';
 import DishDetailModal from './components/DishDetailModal';
 import GachaModal from './components/GachaModal';
 import FridgeModal from './components/FridgeModal';
@@ -21,7 +20,7 @@ import { Sparkles, UtensilsCrossed, ArrowRight, ChevronRight } from 'lucide-reac
 export default function App() {
   const timeContext = useMemo(() => getTimeContext(), []);
   const [searchTerm, setSearchTerm] = useState('');
-  // Top-level View Tab: 'all' | 'breakfast' | 'lunch' | 'snack' | 'dinner' | 'combos' | 'specialty' | 'healthy'
+  const [intent, setIntent] = useState('cook_home'); // 'cook_home' | 'eat_out'
   const [activeTab, setActiveTab] = useState('all');
   const [activeTag, setActiveTag] = useState('all');
 
@@ -195,13 +194,21 @@ export default function App() {
         if (!matchName && !matchEng && !matchDesc && !matchIng) return false;
       }
 
-      // 2. Tab Filter
-      if (['breakfast', 'lunch', 'snack', 'dinner'].includes(activeTab)) {
-        if (dish.mealCategory !== activeTab) return false;
-      } else if (activeTab === 'specialty') {
-        if (!dish.tags.includes('specialty')) return false;
-      } else if (activeTab === 'healthy') {
-        if (!dish.tags.includes('healthy') && !dish.isHealthy) return false;
+      // Filter by Intent
+      if (intent === 'cook_home' && !dish.isHomeCooked) return false;
+      if (intent === 'eat_out' && dish.isHomeCooked) return false;
+
+      // Tab Filter
+      if (activeTab !== 'all') {
+        if (intent === 'cook_home' && ['man', 'canh', 'xao', 'an_vat'].includes(activeTab)) {
+          if (dish.dishType !== activeTab) return false;
+        }
+        if (intent === 'eat_out' && ['an_sang', 'an_trua', 'an_toi'].includes(activeTab)) {
+          // Simplistic mapping for Eat Out
+          if (activeTab === 'an_sang' && dish.mealCategory !== 'breakfast') return false;
+          if (activeTab === 'an_trua' && dish.mealCategory !== 'lunch') return false;
+          if (activeTab === 'an_toi' && dish.mealCategory !== 'dinner') return false;
+        }
       }
 
       // 3. Sub-Tag Filter
@@ -237,32 +244,14 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Tab Header Details
   const tabTitles = {
-    breakfast: {
-      title: 'Bữa Sáng Năng Lượng 🌅',
-      subtitle: 'Nạp năng lượng với phở bò, bánh mì chảo, hủ tiếu khởi đầu ngày mới tỉnh táo',
-    },
-    lunch: {
-      title: 'Bữa Trưa Đậm Đà ☀️',
-      subtitle: 'Cơm tấm, bún chả, bún bò - tiếp thêm năng lượng cho cả buổi chiều làm việc',
-    },
-    snack: {
-      title: 'Ăn Vặt & Trà Chiều ☕',
-      subtitle: 'Bánh tráng nướng, bánh xèo, gỏi cuốn giải lao và tụ tập cùng bạn bè',
-    },
-    dinner: {
-      title: 'Bữa Tối Ấm Cúng 🌙',
-      subtitle: 'Lẩu nấm gà, bò lúc lắc, canh chua - trọn vị sum vầy bên gia đình',
-    },
-    specialty: {
-      title: 'Đặc Sản 3 Miền Nổi Tiếng ⭐',
-      subtitle: 'Hương vị tinh hoa ẩm thực truyền thống trứ danh Bắc - Trung - Nam',
-    },
-    healthy: {
-      title: 'Món Ăn Healthy & Thanh Đạm 🥗',
-      subtitle: 'Ít dầu mỡ, nhiều chất xơ, cân bằng vóc dáng và sức khỏe',
-    }
+    man: { title: 'Món Mặn Đưa Cơm 🍲', subtitle: 'Kho, rim, chiên, rán - linh hồn của mâm cơm gia đình Việt' },
+    canh: { title: 'Canh Thanh Mát & Bổ Dưỡng 🥣', subtitle: 'Giải nhiệt, dễ tiêu, ngọt thanh từ xương nạc và rau củ tươi' },
+    xao: { title: 'Rau Xanh Cân Bằng 🥬', subtitle: 'Xào tỏi, luộc chấm kho quẹt giúp cân bằng dinh dưỡng, nhiều chất xơ' },
+    an_vat: { title: 'Ăn Vặt & Tráng Miệng 🍮', subtitle: 'Gỏi cuốn, chè, đồ ngọt giải lao nhẹ nhàng' },
+    an_sang: { title: 'Ăn Sáng Năng Lượng 🌅', subtitle: 'Bắt đầu ngày mới với phở, bún, bánh mì chảo' },
+    an_trua: { title: 'Bữa Trưa Nhanh Gọn ☀️', subtitle: 'Cơm tấm, bún chả - nạp năng lượng buổi trưa' },
+    an_toi: { title: 'Bữa Tối Tụ Tập 🌙', subtitle: 'Ăn ngoài cùng bạn bè và gia đình' }
   };
 
   return (
@@ -277,6 +266,11 @@ export default function App() {
         onOpenGroceryList={() => setIsGroceryOpen(true)}
         favoriteCount={favoriteIds.length}
         groceryCount={groceryItems.length}
+        intent={intent}
+        setIntent={(val) => {
+          setIntent(val);
+          setActiveTab('all');
+        }}
         activeTab={activeTab}
         onSelectTab={handleSelectTab}
       />
@@ -345,12 +339,6 @@ export default function App() {
                   onSelectTag={(tag) => handleSelectTab(tag)}
                 />
 
-                {/* Combos Preview Snippet */}
-                <MealCombosSection
-                  onAddComboToGrocery={handleAddComboToGrocery}
-                  onOpenGroceryList={() => setIsGroceryOpen(true)}
-                />
-
                 {/* Explore Grid Heading */}
                 <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-16 space-y-6">
                   <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-stone-200 pb-4">
@@ -359,11 +347,11 @@ export default function App() {
                         KHÁM PHÁ THỰC ĐƠN
                       </span>
                       <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 font-heading">
-                        Tất Cả Món Ăn Gợi Ý
+                        {intent === 'cook_home' ? 'Gợi Ý Món Ngon Cho Gia Đình' : 'Địa Điểm & Món Ngon Bên Ngoài'}
                       </h2>
                     </div>
                     <p className="text-xs sm:text-sm text-stone-500 font-medium">
-                      <strong className="text-brand-600 font-bold">{displayDishes.length}</strong> món ăn đặc sắc
+                      <strong className="text-brand-600 font-bold">{displayDishes.length}</strong> gợi ý
                     </p>
                   </div>
 
@@ -399,18 +387,8 @@ export default function App() {
               </div>
             )}
 
-            {/* TAB: 'combos' (Mâm Cơm Gia Đình - Clean Standalone View) */}
-            {activeTab === 'combos' && (
-              <div className="pt-2 pb-16">
-                <MealCombosSection
-                  onAddComboToGrocery={handleAddComboToGrocery}
-                  onOpenGroceryList={() => setIsGroceryOpen(true)}
-                />
-              </div>
-            )}
-
-            {/* TAB: MEALS & TOPIC TABS ('breakfast', 'lunch', 'snack', 'dinner', 'specialty', 'healthy') */}
-            {['breakfast', 'lunch', 'snack', 'dinner', 'specialty', 'healthy'].includes(activeTab) && (
+            {/* TAB: MEALS & TOPIC TABS */}
+            {['man', 'canh', 'xao', 'an_vat', 'an_sang', 'an_trua', 'an_toi'].includes(activeTab) && (
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 pb-16">
                 {/* Tab Clean Header */}
                 <div className="border-b border-stone-200 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">

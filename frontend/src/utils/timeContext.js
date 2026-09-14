@@ -7,7 +7,7 @@ export function getTimeContext() {
   if (hour >= 5 && hour < 10) {
     return {
       period: 'breakfast',
-      suggestedTab: 'breakfast',
+      suggestedTab: 'an_sang',
       greeting: 'Chào buổi sáng! Nạp năng lượng khởi đầu ngày mới 🌅',
       subGreeting: 'Phở bò tái lăn, bánh mì chảo, xôi nóng - nhanh gọn, ấm bụng và tỉnh táo.',
       badgeText: '🌅 Giờ Bữa Sáng (05:00 - 10:00)',
@@ -16,38 +16,38 @@ export function getTimeContext() {
   } else if (hour >= 10 && hour < 14) {
     return {
       period: 'lunch',
-      suggestedTab: 'lunch',
-      greeting: 'Đến giờ cơm trưa rồi! Nghỉ tay nạp năng lượng tiếp sức ☀️',
-      subGreeting: 'Cơm tấm sườn bì chả, đậu sốt cà chua, canh ngao chua thanh mát đưa cơm.',
-      badgeText: '☀️ Giờ Bữa Trưa (10:00 - 14:00)',
-      ctaText: 'Xem Món Cơm Trưa'
+      suggestedTab: 'all',
+      greeting: 'Đến giờ trưa rồi! Nghỉ tay nạp năng lượng tiếp sức ☀️',
+      subGreeting: 'Ăn ngoài quán hay tự nấu mâm cơm gia đình?',
+      badgeText: '☀️ Giờ Cơm Trưa (10:00 - 14:00)',
+      ctaText: 'Xem Món Trưa'
     };
   } else if (hour >= 14 && hour < 17) {
     return {
       period: 'snack',
-      suggestedTab: 'snack',
+      suggestedTab: 'an_vat',
       greeting: 'Giờ trà chiều & ăn xế nhẹ nhàng cùng bạn bè ☕',
-      subGreeting: 'Gỏi cuốn tôm thịt thanh mát, đồ ăn nhẹ lành mạnh giải lao chiều.',
+      subGreeting: 'Gỏi cuốn tôm thịt thanh mát, đồ ăn vặt đổi vị giữa giờ.',
       badgeText: '☕ Giờ Ăn Xế / Chiều (14:00 - 17:00)',
-      ctaText: 'Xem Món Ăn Vặt'
+      ctaText: 'Xem Quà Chiều'
     };
   } else if (hour >= 17 && hour < 21) {
     return {
       period: 'dinner',
-      suggestedTab: 'combos',
-      greeting: 'Bữa tối sum vầy - Ấm cúng bên mâm cơm gia đình 🌙',
-      subGreeting: 'Thịt kho tàu, canh cua mồng tơi, sườn chua ngọt, rau muống xào tỏi.',
-      badgeText: '🌙 Mâm Cơm Gia Đình (17:00 - 21:00)',
-      ctaText: 'Xem Mâm Cơm Tối'
+      suggestedTab: 'all',
+      greeting: 'Bữa tối thư giãn sau một ngày dài 🌙',
+      subGreeting: 'Bạn muốn tự nấu mâm cơm ấm cúng hay ra ngoài ăn cùng bạn bè?',
+      badgeText: '🌙 Bữa Tối (17:00 - 21:00)',
+      ctaText: 'Khám Phá Món Tối'
     };
   } else {
     return {
       period: 'night',
-      suggestedTab: 'snack',
+      suggestedTab: 'all',
       greeting: 'Gợi ý món ăn khuya ấm bụng, nhẹ tiêu cho đêm muộn 🍜',
       subGreeting: 'Món nước nóng hổi, thanh đạm dễ tiêu hóa giúp bạn ngủ ngon.',
       badgeText: '🌙 Ăn Đêm Nhẹ Bụng (Sau 21:00)',
-      ctaText: 'Xem Món Ăn Khuya'
+      ctaText: 'Xem Món Ăn Đêm'
     };
   }
 }

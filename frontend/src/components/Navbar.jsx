@@ -20,21 +20,24 @@ export default function Navbar({
   onOpenGroceryList,
   favoriteCount = 0,
   groceryCount = 0,
+  intent = 'cook_home',
+  setIntent,
   activeTab = 'all',
   onSelectTab
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Tab definitions (Tab-based SPA View Switcher)
-  const navTabs = [
-    { id: 'all', label: 'Tất Cả' },
-    { id: 'breakfast', label: 'Bữa Sáng' },
-    { id: 'lunch', label: 'Bữa Trưa' },
-    { id: 'snack', label: 'Ăn Vặt / Xế' },
-    { id: 'dinner', label: 'Bữa Tối' },
-    { id: 'combos', label: 'Mâm Cơm Gia Đình' },
-    { id: 'specialty', label: 'Đặc Sản 3 Miền' },
-    { id: 'healthy', label: 'Món Healthy' },
+  // Tabs based on intent
+  const navTabs = intent === 'cook_home' ? [
+    { id: 'all', label: 'Tất Cả Món Nhà' },
+    { id: 'man', label: 'Món Mặn' },
+    { id: 'canh', label: 'Món Canh' },
+    { id: 'xao', label: 'Rau Xào & Luộc' },
+    { id: 'an_vat', label: 'Ăn Vặt/Tráng Miệng' },
+  ] : [
+    { id: 'all', label: 'Gợi Ý Tất Cả' },
+    { id: 'an_sang', label: 'Ăn Sáng Ngoài' },
+    { id: 'an_toi', label: 'Bữa Tối Quán Xá' },
   ];
 
   const handleTabClick = (tabId) => {
@@ -62,7 +65,7 @@ export default function Navbar({
             <div 
               className="cursor-pointer"
               onClick={() => {
-                onSelectTab('all');
+                onSelectTab('combos');
                 setSearchTerm('');
               }}
             >
@@ -70,30 +73,25 @@ export default function Navbar({
             </div>
           </div>
 
-          {/* Centered Spacious Search Bar (Desktop) */}
-          <div className="hidden md:flex flex-1 max-w-xl mx-auto">
-            <div className="relative w-full">
-              <input
-                type="text"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Bạn muốn nấu hoặc ăn món gì hôm nay?"
-                className="w-full pl-11 pr-20 py-2.5 bg-stone-100/80 hover:bg-stone-100 border border-stone-200/80 rounded-full text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 focus:bg-white transition-all shadow-sm"
-              />
-              <Search className="w-4 h-4 text-stone-400 absolute left-4 top-3" />
-              
-              {searchTerm ? (
-                <button
-                  onClick={() => setSearchTerm('')}
-                  className="absolute right-3.5 top-2.5 text-xs text-stone-400 hover:text-stone-600 bg-stone-200/60 hover:bg-stone-200 rounded-full w-5 h-5 flex items-center justify-center transition-colors"
-                >
-                  ✕
-                </button>
-              ) : (
-                <span className="hidden lg:inline-flex items-center absolute right-3.5 top-2.5 px-2 py-0.5 text-[10px] font-bold text-stone-400 bg-stone-200/60 rounded-md">
-                  ⌘K
-                </span>
-              )}
+          {/* Centered Intent Toggle (Desktop) */}
+          <div className="hidden md:flex flex-1 max-w-sm mx-auto justify-center">
+            <div className="flex items-center bg-stone-100 p-1 rounded-full shadow-inner border border-stone-200">
+              <button
+                onClick={() => setIntent('cook_home')}
+                className={`flex items-center gap-2 px-6 py-2 rounded-full text-sm font-bold transition-all ${
+                  intent === 'cook_home' ? 'bg-white text-brand-600 shadow-sm' : 'text-stone-500 hover:text-stone-700'
+                }`}
+              >
+                🍳 Tự Nấu
+              </button>
+              <button
+                onClick={() => setIntent('eat_out')}
+                className={`flex items-center gap-2 px-6 py-2 rounded-full text-sm font-bold transition-all ${
+                  intent === 'eat_out' ? 'bg-white text-brand-600 shadow-sm' : 'text-stone-500 hover:text-stone-700'
+                }`}
+              >
+                🛵 Ăn Ngoài
+              </button>
             </div>
           </div>
 
@@ -149,6 +147,28 @@ export default function Navbar({
 
           </div>
 
+        </div>
+
+        {/* Mobile Intent Toggle */}
+        <div className="md:hidden pb-3 flex justify-center">
+          <div className="flex items-center bg-stone-100 p-1 rounded-full shadow-inner border border-stone-200 w-full max-w-[280px]">
+            <button
+              onClick={() => setIntent('cook_home')}
+              className={`flex-1 flex justify-center items-center gap-1.5 py-2 rounded-full text-xs font-bold transition-all ${
+                intent === 'cook_home' ? 'bg-white text-brand-600 shadow-sm' : 'text-stone-500 hover:text-stone-700'
+              }`}
+            >
+              🍳 Tự Nấu
+            </button>
+            <button
+              onClick={() => setIntent('eat_out')}
+              className={`flex-1 flex justify-center items-center gap-1.5 py-2 rounded-full text-xs font-bold transition-all ${
+                intent === 'eat_out' ? 'bg-white text-brand-600 shadow-sm' : 'text-stone-500 hover:text-stone-700'
+              }`}
+            >
+              🛵 Ăn Ngoài
+            </button>
+          </div>
         </div>
 
         {/* Mobile Search Bar Row (shown only on mobile screens) */}
