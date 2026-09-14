@@ -257,6 +257,56 @@
 - **Thanh Danh Mục Cuộn Ngang (Horizontal Swipe):**
   - Danh sách các danh mục món ăn trên điện thoại được cấu hình `overflow-x-auto no-scrollbar whitespace-nowrap`, cho phép người dùng vuốt ngang mượt mà bằng ngón tay cái như ứng dụng native, không bị chiếm 4-5 dòng màn hình như dạng wrap cũ.
 
+---
+
+### 3.16. Kho Nguyên Liệu Chuẩn Hóa Khổng Lồ (Master Ingredients Knowledgebase - `masterIngredients.ts`)
+- **Vấn đề giải quyết:** Trước đây người dùng gõ từ khóa nguyên liệu tự do không có gợi ý khiến việc tìm kiếm dễ sai chính tả hoặc lệch từ ngữ ẩm thực (ví dụ gõ "bò" không khớp với "thịt thăn bò tươi").
+- **Kho 180+ Nguyên liệu chuẩn ẩm thực Việt:**
+  - Phân loại rõ ràng thành 8 danh mục khoa học: Thịt gia súc/gia cầm (`meat`), Thủy hải sản (`seafood`), Rau củ quả (`vegetable`), Nấm tươi & khô (`mushroom`), Trứng & Đậu phụ (`egg_tofu`), Tinh bột / Bún / Phở / Miến (`carb`), Rau thơm & Gia vị tươi (`herb_spice`), Gia vị bếp đặc trưng (`pantry`).
+  - Mỗi nguyên liệu có định danh canonical ID, icon trực quan, tên song ngữ Việt - Anh, và hệ thống từ đồng nghĩa / bí danh phong phú (`aliases`).
+- **Bộ Gõ Typeahead Autocomplete Thông Minh (`IngredientAutocomplete.tsx`):**
+  - Hỗ trợ gõ tiếng Việt không dấu (gõ "thit bo", "tom", "nam", "rau muong" lập tức hiển thị gợi ý chuẩn xác).
+  - Điều hướng bằng bàn phím (Mũi tên lên/xuống, Enter để chọn, Esc để đóng).
+  - Tích hợp trực tiếp tại cả 2 trang trọng yếu: **Tủ Lạnh Thông Minh (`/fridge`)** và **Giỏ Đi Chợ (`/grocery`)**.
+
+---
+
+### 3.17. App Shell Hiện Đại & Sidebar Điều Hướng Đa Năng (`AppSidebar.tsx`)
+- **Vấn đề giải quyết:** Tận dụng tối đa không gian màn hình lớn của desktop và cung cấp trải nghiệm điều hướng ngăn kéo (Drawer) chuẩn mobile, không chỉ dựa vào Navbar đơn giản.
+- **Tính năng nổi bật của Sidebar:**
+  - **Menu Điều Hướng Toàn Diện:** Khám phá thực đơn, Tủ lạnh thông minh, Giỏ đi chợ (có huy hiệu số lượng món mua dở theo thời gian thực), Món ăn yêu thích, và Vòng quay ăn gì (Gacha).
+  - **Widget Theo Dõi Vị Trí & Đổi Nhanh:** Hiển thị phường/quận hiện tại, 1-click mở modal chuyển đổi địa bàn.
+  - **Mini Grocery Tracker:** Hiển thị 3 nguyên liệu hàng đầu cần mua kèm nút check nhanh mà không cần rời trang hiện tại.
+  - **Mini Fridge Tracker:** Đếm số lượng nguyên liệu sẵn có trong tủ và liên kết thẳng tới trang chế biến.
+  - **Món Xem Gần Đây (Recently Viewed):** Thumbnail 3 món ăn người dùng vừa bấm xem chi tiết.
+  - **Desktop Collapsible & Mobile Drawer:** Thu nhỏ mượt mà trên desktop để mở rộng không gian đọc, trượt mượt kèm lớp nền làm mờ (backdrop blur) trên điện thoại với nút Hamburger trên Navbar.
+
+---
+
+### 3.18. Giỏ Đi Chợ Phân Nhóm Theo Quầy Hàng Siêu Thị (`/grocery`)
+- **Phân loại tự động theo Quầy Đi Chợ Thực Tế:**
+  - Thay vì danh sách lộn xộn, hệ thống tự động bóc tách nguyên liệu vào 3 quầy hàng chuẩn:
+    1. 🥬 **Quầy Rau Củ Quả & Nấm Tươi**
+    2. 🥩 **Quầy Thịt Cá, Thủy Hải Sản & Trứng**
+    3. 🧂 **Quầy Đồ Khô, Đậu Phụ & Gia Vị Bếp**
+- **Sao Chép Gửi Zalo / SMS Đi Chợ Hộ 1 Chạm:**
+  - Nút *"Copy Gửi Zalo / SMS"* tự động format danh sách gọn gàng, chia theo quầy hàng kèm emoji để người dùng gửi thẳng cho người thân đi chợ hộ qua Zalo/Tin nhắn.
+- **Phân tách Đang Mua vs. Đã Mua:**
+  - Các món tích chọn hoàn thành tự động chuyển xuống mục *"Đã mua xong"*, gạch ngang tinh tế và có nút dọn dẹp hàng loạt.
+
+---
+
+### 3.19. Tủ Lạnh Thông Minh Nâng Cấp (`/fridge`)
+- **Ngăn Trữ Đồ Tiện Lợi (Pantry Shelves):**
+  - Chia 4 khay trực quan: Khay Thịt & Hải sản, Khay Rau củ & Nấm, Khay Trứng & Đậu, Khay Bún & Tinh bột. Bấm chọn nhanh nguyên liệu trong tủ 1 chạm.
+- **Công Tắc Gia Vị Bếp Nhà (Pantry Staples Switch):**
+  - Mặc định bật chế độ coi các gia vị cơ bản (mắm, muối, tiêu, đường, hạt nêm, dầu ăn, tỏi, hành khô) là luôn sẵn có, giúp thuật toán so khớp không đánh trượt các món ăn truyền thống chỉ vì người dùng quên tích "Nước mắm".
+- **Bộ Lọc Phân Tầng Kết Quả:**
+  - Tab `Nấu được ngay (100% Đủ nguyên liệu)`: Món có thể nấu lập tức mà không cần bước chân ra chợ.
+  - Tab `Chỉ thiếu 1-2 món`: Món gợi ý đi chợ siêu tốc, có nút 1-chạm `[+ Thêm đồ thiếu vào Giỏ Đi Chợ]` để người dùng lên đường mua ngay.
+
+---
+
 ## 4. MÔ HÌNH DỮ LIỆU & SCHEMA (DATA STRUCTURES)
 
 ### 4.1. TypeScript Interface Chuẩn (`vietnameseRecipes.ts`)

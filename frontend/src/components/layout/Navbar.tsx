@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useStore } from '@/store/useStore';
 import { useEffect, useState, useRef } from 'react';
+import { Menu } from 'lucide-react';
 
 export default function Navbar() {
   const router = useRouter();
-  const { language, setLanguage, favorites, groceryItems } = useStore();
+  const { language, setLanguage, favorites, groceryItems, toggleSidebar } = useStore();
   const [mounted, setMounted] = useState(false);
 
   // Search state
@@ -97,14 +98,27 @@ export default function Navbar() {
   const groceryCount = mounted ? groceryItems.length : 0;
 
   return (
-    <nav className="w-full bg-white py-3.5 px-4 sm:px-6 md:px-12 flex items-center justify-between shadow-sm sticky top-0 z-50">
-      {/* Logo */}
-      <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
-        <div className="w-10 h-10 rounded-xl overflow-hidden shadow-sm shadow-orange-500/20 group-hover:shadow-md transition-all">
-          <img src="/logo.jpg" alt="QMeal Logo" className="w-full h-full object-cover" />
-        </div>
-        <span className="text-2xl font-black text-orange-600 hidden sm:block tracking-tighter">QMeal</span>
-      </Link>
+    <nav className="w-full bg-white py-3 px-4 sm:px-6 md:px-8 flex items-center justify-between shadow-2xs border-b border-stone-200/80 sticky top-0 z-30">
+      <div className="flex items-center gap-3">
+        {/* Sidebar Trigger Button */}
+        <button
+          onClick={toggleSidebar}
+          className="p-2 -ml-1.5 rounded-xl text-stone-700 hover:bg-stone-100 active:scale-95 transition-all cursor-pointer"
+          title="Mở menu điều hướng (Sidebar)"
+        >
+          <Menu className="w-5 h-5 text-stone-800" />
+        </button>
+
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2.5 group flex-shrink-0">
+          <div className="w-9 h-9 rounded-xl overflow-hidden shadow-xs group-hover:scale-105 transition-all">
+            <img src="/logo.jpg" alt="QMeal Logo" className="w-full h-full object-cover" />
+          </div>
+          <span className="text-xl font-extrabold text-stone-900 tracking-tight flex items-center gap-1">
+            QMeal
+          </span>
+        </Link>
+      </div>
 
       {/* Live Search Bar with Dropdown */}
       <div ref={searchContainerRef} className="hidden md:flex flex-1 max-w-md mx-6 relative">

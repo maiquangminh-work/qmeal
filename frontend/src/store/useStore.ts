@@ -24,11 +24,21 @@ interface UserState {
   isFavorite: (id: number | string) => boolean;
   
   groceryItems: GroceryItem[];
-  addIngredientsToGrocery: (recipeTitle: string, ingredients: { name: string; measure?: string; amount?: string }[]) => void;
+  addIngredientsToGrocery: (recipeTitle: string, ingredients: any[]) => void;
   toggleGroceryItem: (id: string) => void;
   removeGroceryItem: (id: string) => void;
   clearCompletedGrocery: () => void;
   clearAllGrocery: () => void;
+
+  pantryIngredients: string[];
+  setPantryIngredients: (list: string[]) => void;
+  togglePantryIngredient: (item: string) => void;
+
+  isSidebarOpen: boolean;
+  setSidebarOpen: (open: boolean) => void;
+  toggleSidebar: () => void;
+  isSidebarCollapsed: boolean;
+  toggleSidebarCollapsed: () => void;
 
   language: 'vi' | 'en';
   setLanguage: (lang: 'vi' | 'en') => void;
@@ -76,14 +86,22 @@ export const useStore = create<UserState>()(
       groceryItems: [],
       addIngredientsToGrocery: (recipeTitle, ingredients) => set((state) => {
         const newItems: GroceryItem[] = ingredients
-          .filter(ing => ing.name && ing.name.trim() !== '')
-          .map((ing, idx) => ({
-            id: `${Date.now()}-${idx}-${Math.random().toString(36).substr(2, 4)}`,
-            name: ing.name.trim(),
-            amount: ing.measure || ing.amount || 'Đủ dùng',
-            recipeTitle: recipeTitle || 'Món ăn',
-            checked: false,
-          }));
+          .map((ing, idx) => {
+            const rawName = typeof ing.name === 'string' 
+              ? ing.name 
+              : (ing.name?.vi || ing.name?.en || '');
+            if (!rawName.trim()) return null;
+
+            return {
+              id: `${Date.now()}-${idx}-${Math.random().toString(36).substr(2, 4)}`,
+              name: rawName.trim(),
+              amount: ing.measure || ing.amount || 'Đủ dùng',
+              recipeTitle: recipeTitle || 'Món ăn',
+              checked: false,
+            };
+          })
+          .filter(Boolean) as GroceryItem[];
+
         return { groceryItems: [...state.groceryItems, ...newItems] };
       }),
       toggleGroceryItem: (id) => set((state) => ({
@@ -98,6 +116,23 @@ export const useStore = create<UserState>()(
         groceryItems: state.groceryItems.filter(item => !item.checked)
       })),
       clearAllGrocery: () => set({ groceryItems: [] }),
+
+      pantryIngredients: ['Thịt ba chỉ (ba rọi)', 'Trứng gà', 'Cà chua'],
+      setPantryIngredients: (list) => set({ pantryIngredients: list }),
+      togglePantryIngredient: (item) => set((state) => {
+        const exists = state.pantryIngredients.includes(item);
+        if (exists) {
+          return { pantryIngredients: state.pantryIngredients.filter(i => i !== item) };
+        } else {
+          return { pantryIngredients: [...state.pantryIngredients, item] };
+        }
+      }),
+
+      isSidebarOpen: false,
+      setSidebarOpen: (open) => set({ isSidebarOpen: open }),
+      toggleSidebar: () => set((state) => ({ isSidebarOpen: !state.isSidebarOpen })),
+      isSidebarCollapsed: false,
+      toggleSidebarCollapsed: () => set((state) => ({ isSidebarCollapsed: !state.isSidebarCollapsed })),
 
       language: 'vi',
       setLanguage: (lang) => set({ language: lang }),

@@ -1,21 +1,17 @@
 import { NextResponse, NextRequest } from 'next/server';
 import { vietnameseRecipes } from '@/data/vietnameseRecipes';
+import { MASTER_INGREDIENTS, matchRecipeIngredient, removeVietnameseDiacritics } from '@/data/masterIngredients';
 
-function normalize(str: string): string {
-  return (str || '')
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/đ/g, 'd')
-    .replace(/Đ/g, 'd')
-    .trim();
-}
+const BASIC_STAPLES_VI = [
+  'nước mắm', 'muối', 'đường', 'tiêu', 'hạt nêm', 'bột ngọt', 'dầu ăn', 'tỏi', 'hành khô', 'hành tím'
+];
 
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
     const ingredientsStr = searchParams.get('i');
     const lang = (searchParams.get('lang') || 'vi') as 'vi' | 'en';
+    const includeStaples = searchParams.get('staples') !== 'false'; // Default to true
     
     if (!ingredientsStr || ingredientsStr.trim() === '') {
       return NextResponse.json({ success: true, data: [] });
@@ -26,9 +22,17 @@ export async function GET(request: NextRequest) {
       .map(s => s.trim())
       .filter(s => s.length > 0);
 
-    const normalizedUserIngredients = rawUserIngredients.map(normalize);
+    // If staples included, add them to user's virtual pantry
+    const effectiveUserIngredients = [...rawUserIngredients];
+    if (includeStaples) {
+      for (const staple of BASIC_STAPLES_VI) {
+        if (!effectiveUserIngredients.some(ui => removeVietnameseDiacritics(ui) === removeVietnameseDiacritics(staple))) {
+          effectiveUserIngredients.push(staple);
+        }
+      }
+    }
 
-    // 1. Match against Curated Vietnamese Master Database (NIN Verified)
+    // 1. Match against Curated Vietnamese Master Database (123 recipes)
     const vnMatches: any[] = [];
 
     for (const recipe of vietnameseRecipes) {
@@ -36,18 +40,11 @@ export async function GET(request: NextRequest) {
       const missingIngredients: { name: string; amount: string }[] = [];
 
       for (const ing of recipe.ingredients) {
-        const ingViNorm = normalize(ing.name.vi);
-        const ingEnNorm = normalize(ing.name.en);
+        const ingNameVi = ing.name.vi;
+        const ingNameEn = ing.name.en;
 
-        const isMatched = normalizedUserIngredients.some(userNorm => {
-          if (!userNorm) return false;
-          // Check substring inclusion both ways, or single-word token inclusion
-          if (ingViNorm.includes(userNorm) || ingEnNorm.includes(userNorm) || userNorm.includes(ingViNorm)) {
-            return true;
-          }
-          // Split multi-word user ingredient (e.g. "thit bo" -> check "bo")
-          const userTokens = userNorm.split(/\s+/).filter(t => t.length >= 2);
-          return userTokens.some(token => ingViNorm.includes(token) || ingEnNorm.includes(token));
+        const isMatched = effectiveUserIngredients.some(userIng => {
+          return matchRecipeIngredient(ingNameVi, userIng) || matchRecipeIngredient(ingNameEn, userIng);
         });
 
         const ingData = {
@@ -80,23 +77,27 @@ export async function GET(request: NextRequest) {
           matchedIngredients,
           missingIngredients,
           matchCount: count,
+          missingCount: missingIngredients.length,
           totalIngredients: total,
           matchPercentage: percentage,
+          isComplete: missingIngredients.length === 0,
           isVietnamese: true,
           verified: true
         });
       }
     }
 
-    // Sort Vietnamese matches: highest match count first, then highest percentage
+    // Sort: 0 missing first, then highest percentage, then highest count
     vnMatches.sort((a, b) => {
-      if (b.matchCount !== a.matchCount) {
-        return b.matchCount - a.matchCount;
+      if (a.missingCount !== b.missingCount) {
+        return a.missingCount - b.missingCount;
       }
-      return b.matchPercentage - a.matchPercentage;
+      if (b.matchPercentage !== a.matchPercentage) {
+        return b.matchPercentage - a.matchPercentage;
+      }
+      return b.matchCount - a.matchCount;
     });
 
-    // 2. If we found Vietnamese matches, return them immediately
     if (vnMatches.length > 0) {
       return NextResponse.json({ success: true, data: vnMatches, total: vnMatches.length });
     }
