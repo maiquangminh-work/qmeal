@@ -10,7 +10,7 @@ export interface MasterRecipe {
     en: string;
   };
   mealType: ('breakfast' | 'lunch' | 'dinner' | 'snack')[];
-  region: 'north' | 'central' | 'south' | 'national';
+  region: 'north' | 'central' | 'south' | 'national' | 'korea' | 'international';
   diningType: ('home_cook' | 'eat_out')[];
   isPopular?: boolean;
   popularityScore?: number;
@@ -25645,6 +25645,2823 @@ export const vietnameseRecipes: MasterRecipe[] = [
         "Simmer clear rock sugar with fragrant pandan leaves into a crystal syrup.",
         "Add steamed beans and lotus seeds; simmer on low for 10 mins so sweetness infuses deeply.",
         "Serve in delicate ceramic bowls with a touch of coconut cream; sublime hot or chilled."
+      ]
+    }
+  },
+  {
+    "id": "oat-chao-yen-mach-thit-bam",
+    "title": {
+      "vi": "Cháo Yến Mạch Thịt Băm Cà Rốt Thanh Ngọt",
+      "en": "Savory Minced Pork & Carrot Oatmeal Porridge"
+    },
+    "image": "/dishes/oat-chao-yen-mach-thit-bam.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Porridge & Soups"
+    },
+    "mealType": [
+      "breakfast",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Eat Clean",
+        "Giảm cân",
+        "Dễ tiêu hóa",
+        "Bữa sáng nhanh"
+      ],
+      "en": [
+        "Oatmeal",
+        "Eat Clean",
+        "Weight Loss",
+        "Healthy",
+        "Quick Breakfast"
+      ]
+    },
+    "time": "15m",
+    "servings": 2,
+    "calories": 280,
+    "protein": 18,
+    "fat": 8,
+    "carbs": 34,
+    "servingSize": {
+      "vi": "1 tô cháo (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia (NIN) & USDA Food Data Central",
+      "en": "National Institute of Nutrition (NIN) & USDA Food Data Central"
+    },
+    "recipeSource": {
+      "vi": "Bếp Eat Clean & Healthy Việt Nam (Savoury Days)",
+      "en": "Savoury Days Healthy Kitchen Vietnam"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt (Rolled oats)",
+          "en": "Rolled oats"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Thịt nạc heo xay",
+          "en": "Minced lean pork"
+        },
+        "amount": "120g"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt băm hạt lựu nhỏ",
+          "en": "Carrot finely diced"
+        },
+        "amount": "1/2 củ (~50g)"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm nhỏ",
+          "en": "Minced shallot"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Hành lá, ngò rí thái nhỏ",
+          "en": "Scallions & cilantro"
+        },
+        "amount": "2 nhánh"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng hoặc nước lọc",
+          "en": "Broth or water"
+        },
+        "amount": "500ml"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm ngon, hạt tiêu đen",
+          "en": "Fish sauce, black pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ướp thịt nạc xay với chút hành tím băm, 1 thìa cà phê nước mắm và tiêu xay trong 10 phút.",
+        "Phi thơm hành tím với 1 thìa cà phê dầu ô-liu, cho thịt băm và cà rốt vào xào chín săn.",
+        "Đổ 500ml nước lọc hoặc nước dùng vào nồi đun sôi bùng, hớt bọt.",
+        "Hạ lửa vừa, trút yến mạch cán dẹt vào khuấy đều tay. Nấu trong khoảng 4-5 phút đến khi yến mạch nở bung mềm mịn, sánh dẻo thơm ngát.",
+        "Nêm lại chút nước mắm cho vừa miệng, múc ra tô rắc hành hoa, ngò rí và tiêu đen thơm nức thưởng thức nóng."
+      ],
+      "en": [
+        "Season minced pork with shallots, fish sauce, and black pepper for 10 minutes.",
+        "Sauté shallots in olive oil, then add minced pork and carrots and stir-fry until cooked.",
+        "Pour in 500ml broth or water and bring to a boil; skim any foam.",
+        "Lower heat, stir in rolled oats and cook gently for 4-5 minutes until tender and creamy.",
+        "Adjust seasoning with fish sauce, ladle into bowls, top with scallions, cilantro, and freshly cracked pepper."
+      ]
+    }
+  },
+  {
+    "id": "oat-chao-yen-mach-tom-bi-do",
+    "title": {
+      "vi": "Cháo Yến Mạch Tôm Tươi Bí Đỏ Bổ Dưỡng",
+      "en": "Nourishing Oatmeal Porridge with Fresh Shrimp & Pumpkin"
+    },
+    "image": "/dishes/oat-chao-yen-mach-tom-bi-do.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Porridge & Soups"
+    },
+    "mealType": [
+      "breakfast",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Bổ não",
+        "Giàu Vitamin A",
+        "Trẻ em & người lớn thích"
+      ],
+      "en": [
+        "Oatmeal",
+        "Brain Food",
+        "Vitamin A",
+        "Family Friendly"
+      ]
+    },
+    "time": "20m",
+    "servings": 2,
+    "calories": 260,
+    "protein": 19,
+    "fat": 5,
+    "carbs": 35,
+    "servingSize": {
+      "vi": "1 tô cháo vàng óng (~350g)",
+      "en": "1 golden bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia (NIN)",
+      "en": "National Institute of Nutrition (NIN)"
+    },
+    "recipeSource": {
+      "vi": "Cẩm Nang Dinh Dưỡng Gia Đình & Bếp Mẹ Bé",
+      "en": "Family Nutrition & Healthy Mom Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt",
+          "en": "Rolled oats"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Tôm sú tươi bóc vỏ băm nhỏ",
+          "en": "Fresh peeled shrimp chopped"
+        },
+        "amount": "120g"
+      },
+      {
+        "name": {
+          "vi": "Bí đỏ gọt vỏ hấp chín tán nhuyễn",
+          "en": "Pumpkin steamed & pureed"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Hành tím băm",
+          "en": "Minced shallot"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ô-liu hoặc bơ lạt",
+          "en": "Olive oil or butter"
+        },
+        "amount": "1 thìa cà phê"
+      },
+      {
+        "name": {
+          "vi": "Nước lọc",
+          "en": "Water"
+        },
+        "amount": "500ml"
+      },
+      {
+        "name": {
+          "vi": "Gia vị mắm muối tiêu",
+          "en": "Seasonings"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Tôm bóc vỏ, rút chỉ đen, băm nhỏ ướp chút đầu hành lá và tiêu.",
+        "Bí đỏ cắt miếng nhỏ luộc hoặc hấp chín tới rồi dùng thìa tán mịn.",
+        "Phi thơm hành tím với chút dầu ô-liu, xào nhanh tôm săn đỏ hồng.",
+        "Đun sôi 500ml nước, cho bí đỏ tán mịn và yến mạch vào khuấy đều trên lửa nhỏ vừa trong 4 phút.",
+        "Trút tôm xào vào nồi cháo đảo đều thêm 1 phút, nêm chút nước mắm thanh ngọt tự nhiên từ bí và tôm rồi tắt bếp."
+      ],
+      "en": [
+        "Peel and devein shrimp, roughly mince and season with scallions and pepper.",
+        "Steam pumpkin chunks until tender and mash into a smooth puree.",
+        "Sauté shallots in olive oil, quickly cook shrimp until pink.",
+        "Bring 500ml water to boil, stir in mashed pumpkin and rolled oats; simmer for 4 minutes.",
+        "Fold in sautéed shrimp, cook 1 min more, season with fish sauce, and serve warm."
+      ]
+    }
+  },
+  {
+    "id": "oat-chao-yen-mach-uc-ga-nam",
+    "title": {
+      "vi": "Cháo Yến Mạch Ức Gà Nấm Hương Giàu Đạm",
+      "en": "High Protein Chicken Breast & Shiitake Oatmeal Congee"
+    },
+    "image": "/dishes/oat-chao-yen-mach-uc-ga-nam.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Porridge & Soups"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "High Protein",
+        "Tăng cơ giảm mỡ",
+        "Eat Clean"
+      ],
+      "en": [
+        "Oatmeal",
+        "High Protein",
+        "Fitness",
+        "Clean Eating"
+      ]
+    },
+    "time": "20m",
+    "servings": 2,
+    "calories": 310,
+    "protein": 29,
+    "fat": 6,
+    "carbs": 34,
+    "servingSize": {
+      "vi": "1 tô cháo (~380g)",
+      "en": "1 bowl (~380g)"
+    },
+    "nutritionSource": {
+      "vi": "USDA Food Data Central & Viện Dinh Dưỡng Quốc Gia",
+      "en": "USDA Food Data Central & NIN"
+    },
+    "recipeSource": {
+      "vi": "Bếp Eat Clean & Fitness Nutrition Vietnam",
+      "en": "Fitness Nutrition & Healthy Lifestyle Vietnam"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt",
+          "en": "Rolled oats"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Ức gà phi lê thái hạt lựu hoặc xé phay",
+          "en": "Chicken breast diced or shredded"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nấm hương tươi hoặc nấm đông cô thái lát",
+          "en": "Fresh shiitake mushrooms sliced"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Gừng tươi đập dập băm nhỏ",
+          "en": "Fresh ginger minced"
+        },
+        "amount": "1 lát"
+      },
+      {
+        "name": {
+          "vi": "Hành hoa, ngò rí, tiêu đen",
+          "en": "Scallions, cilantro, black pepper"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng gà trong",
+          "en": "Clear chicken stock"
+        },
+        "amount": "500ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Ức gà rửa sạch cắt hạt lựu, ướp chút gừng băm, muối và tiêu.",
+        "Xào thơm ức gà cùng nấm hương trên chảo chống dính với 1/2 thìa cà phê dầu mè cho thơm.",
+        "Đun sôi nước dùng gà, cho yến mạch vào khuấy đều tay trên lửa nhỏ vừa trong 4 phút.",
+        "Trút gà và nấm hương vào nấu cùng thêm 2 phút cho thịt gà mềm ngọt ngấm đều vào cháo yến mạch.",
+        "Múc ra tô, rắc nhiều hành hoa, tiêu đen ấm bụng, lý tưởng cho người tập gym và ăn kiêng."
+      ],
+      "en": [
+        "Dice chicken breast, season with minced ginger, salt, and pepper.",
+        "Sauté chicken and sliced shiitake in sesame oil until fragrant and cooked.",
+        "Bring chicken broth to a boil, stir in rolled oats and simmer for 4 minutes.",
+        "Add chicken and mushrooms, simmer 2 mins until rich and creamy.",
+        "Ladle into bowls, top with fresh scallions and black pepper; perfect muscle-fuel meal."
+      ]
+    }
+  },
+  {
+    "id": "oat-chao-yen-mach-trung-pho-mai",
+    "title": {
+      "vi": "Cháo Yến Mạch Trứng Gà Phô Mai Béo Bùi",
+      "en": "Creamy Egg & Cheese Savory Breakfast Oatmeal"
+    },
+    "image": "/dishes/oat-chao-yen-mach-trung-pho-mai.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Porridge & Soups"
+    },
+    "mealType": [
+      "breakfast"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 94,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Bữa sáng 5 phút",
+        "Béo ngậy",
+        "Giàu canxi"
+      ],
+      "en": [
+        "Oatmeal",
+        "5-Min Breakfast",
+        "Calcium Rich",
+        "Comfort Food"
+      ]
+    },
+    "time": "8m",
+    "servings": 1,
+    "calories": 320,
+    "protein": 16,
+    "fat": 14,
+    "carbs": 32,
+    "servingSize": {
+      "vi": "1 tô nhỏ (~300g)",
+      "en": "1 bowl (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia (NIN)",
+      "en": "National Institute of Nutrition (NIN)"
+    },
+    "recipeSource": {
+      "vi": "Món Ngon Dinh Dưỡng Cho Gia Đình",
+      "en": "Family Nutrition & Quick Breakfasts"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt",
+          "en": "Rolled oats"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà ta",
+          "en": "Farm fresh egg"
+        },
+        "amount": "1 quả"
+      },
+      {
+        "name": {
+          "vi": "Phô mai con bò cười hoặc Cheddar",
+          "en": "Laughing Cow cheese / Cheddar"
+        },
+        "amount": "1 viên (~15g)"
+      },
+      {
+        "name": {
+          "vi": "Nước lọc hoặc sữa tươi không đường",
+          "en": "Water or unsweetened milk"
+        },
+        "amount": "250ml"
+      },
+      {
+        "name": {
+          "vi": "Hạt tiêu, hành lá, chút muối",
+          "en": "Pepper, scallions, pinch of salt"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đun sôi 250ml nước hoặc sữa tươi không đường trong nồi nhỏ.",
+        "Cho yến mạch vào khuấy đều trên lửa nhỏ trong 3 phút cho yến mạch nở dẻo mịn.",
+        "Đập 1 quả trứng gà vào nồi, nhanh tay dùng đũa khuấy tơi cho trứng hòa quyện tạo thành những sợi vân trứng mềm mượt.",
+        "Thả viên phô mai vào dầm tan cho cháo ngậy béo ngào ngạt.",
+        "Nêm chút muối tiêu, rắc hành hoa thái nhỏ, dùng nóng ngay cho bữa sáng tràn đầy năng lượng."
+      ],
+      "en": [
+        "Bring water or unsweetened milk to a gentle simmer in a small pot.",
+        "Add rolled oats and stir on low heat for 3 minutes until smooth and thickened.",
+        "Crack in an egg and whisk vigorously to create silky, tender egg ribbons throughout.",
+        "Melt cheese wedge into the warm oatmeal for a rich, luscious creaminess.",
+        "Season with salt and cracked pepper, garnish with scallions, and enjoy immediately."
+      ]
+    }
+  },
+  {
+    "id": "oat-chao-yen-mach-bo-bam-dau-ha-lan",
+    "title": {
+      "vi": "Cháo Yến Mạch Thịt Bò Bằm Đậu Hà Lan Bổ Máu",
+      "en": "Minced Beef & Green Pea Iron-Rich Oatmeal Porridge"
+    },
+    "image": "/dishes/oat-chao-yen-mach-bo-bam-dau-ha-lan.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Porridge & Soups"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Bổ máu giàu sắt",
+        "Dinh dưỡng cao"
+      ],
+      "en": [
+        "Oatmeal",
+        "Iron Rich",
+        "Nutrient Dense",
+        "Healthy"
+      ]
+    },
+    "time": "20m",
+    "servings": 2,
+    "calories": 330,
+    "protein": 26,
+    "fat": 9,
+    "carbs": 36,
+    "servingSize": {
+      "vi": "1 tô cháo (~350g)",
+      "en": "1 bowl (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Bảng Thành Phần Thực Phẩm Việt Nam - Viện Dinh Dưỡng NIN",
+      "en": "Vietnam Food Composition Table - NIN"
+    },
+    "recipeSource": {
+      "vi": "Viện Dinh Dưỡng Ứng Dụng (NIN Vietnam)",
+      "en": "Applied Nutrition Institute Vietnam"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt",
+          "en": "Rolled oats"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Thịt thăn bò băm nhỏ",
+          "en": "Minced beef tenderloin"
+        },
+        "amount": "120g"
+      },
+      {
+        "name": {
+          "vi": "Đậu Hà Lan tươi",
+          "en": "Fresh green peas"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm, gừng tươi",
+          "en": "Minced garlic, ginger"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng hoặc nước lọc",
+          "en": "Broth or water"
+        },
+        "amount": "500ml"
+      },
+      {
+        "name": {
+          "vi": "Dầu hào, nước mắm, tiêu",
+          "en": "Oyster sauce, fish sauce, pepper"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Thịt bò băm ướp với tỏi băm, 1/2 thìa cà phê dầu hào và tiêu trong 10 phút.",
+        "Xào thịt bò nhanh tay trên lửa lớn vừa chín tái thì trút riêng ra đĩa.",
+        "Đun sôi nước, cho đậu Hà Lan và yến mạch vào nấu nhỏ lửa trong 4 phút đến khi hạt đậu mềm ngọt, cháo nở sánh.",
+        "Trút thịt bò vào đảo đều 1 phút cho thịt chín mềm mọng nước.",
+        "Nêm lại gia vị vừa ăn, múc ra tô rắc ngò rí và tiêu đen dùng nóng."
+      ],
+      "en": [
+        "Marinate minced beef with garlic, oyster sauce, and pepper for 10 mins.",
+        "Flash-sear beef in skillet over high heat until just cooked; set aside.",
+        "Boil broth, add green peas and rolled oats; simmer for 4 minutes until peas are sweet and tender.",
+        "Return minced beef to the porridge, stir for 1 minute.",
+        "Season to taste, garnish with cilantro and black pepper; serve hot."
+      ]
+    }
+  },
+  {
+    "id": "oat-overnight-oats-hoa-qua",
+    "title": {
+      "vi": "Yến Mạch Ngâm Sữa Chua Qua Đêm (Overnight Oats) Hoa Quả & Hạt Chia",
+      "en": "Berry & Chia Overnight Oats with Greek Yogurt"
+    },
+    "image": "/dishes/oat-overnight-oats-hoa-qua.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "international",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 99,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Overnight Oats",
+        "Eat Clean",
+        "Không cần nấu",
+        "Giảm cân"
+      ],
+      "en": [
+        "Overnight Oats",
+        "No Cook",
+        "High Fiber",
+        "Clean Eating",
+        "Probiotic"
+      ]
+    },
+    "time": "5m (ủ qua đêm)",
+    "servings": 1,
+    "calories": 310,
+    "protein": 14,
+    "fat": 7,
+    "carbs": 48,
+    "servingSize": {
+      "vi": "1 hũ thủy tinh (~300g)",
+      "en": "1 mason jar (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "USDA Food Data Central",
+      "en": "USDA Food Data Central"
+    },
+    "recipeSource": {
+      "vi": "Savoury Days - Healthy Breakfast Ideas",
+      "en": "Savoury Days Healthy Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt (Rolled oats)",
+          "en": "Rolled oats"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Sữa tươi không đường hoặc sữa hạt",
+          "en": "Unsweetened or almond milk"
+        },
+        "amount": "100ml"
+      },
+      {
+        "name": {
+          "vi": "Sữa chua Hy Lạp hoặc sữa chua không đường",
+          "en": "Greek yogurt"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Hạt chia",
+          "en": "Chia seeds"
+        },
+        "amount": "1 thìa cà phê (~5g)"
+      },
+      {
+        "name": {
+          "vi": "Mật ong nguyên chất",
+          "en": "Pure honey"
+        },
+        "amount": "1 thìa cà phê"
+      },
+      {
+        "name": {
+          "vi": "Trái cây tươi (chuối, dâu tây, việt quất)",
+          "en": "Fresh berries & sliced banana"
+        },
+        "amount": "60g"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cho yến mạch cán dẹt, hạt chia vào hũ thủy tinh sạch.",
+        "Rót sữa tươi không đường, sữa chua Hy Lạp và mật ong vào hũ.",
+        "Dùng thìa khuấy thật đều cho các nguyên liệu hòa quyện vào nhau.",
+        "Đậy kín nắp hũ thủy tinh, cất vào ngăn mát tủ lạnh ủ ít nhất 4 tiếng hoặc qua đêm (để hạt yến mạch và hạt chia nở dẻo mịn mát lạnh tự nhiên mà không cần nấu nướng).",
+        "Sáng hôm sau lấy hũ ra, xếp trái cây tươi thái lát lên trên cùng, có thể rắc thêm chút hạnh nhân lát và thưởng thức ngay."
+      ],
+      "en": [
+        "Add rolled oats and chia seeds into a clean mason jar.",
+        "Pour in milk, Greek yogurt, and honey.",
+        "Stir thoroughly until completely combined.",
+        "Seal tightly and refrigerate overnight (or at least 4 hours) to allow oats and chia to soften into a pudding.",
+        "In the morning, top with fresh berries, sliced banana, and toasted almond flakes. Enjoy chilled!"
+      ]
+    }
+  },
+  {
+    "id": "oat-banh-chuoi-yen-mach-noi-chien",
+    "title": {
+      "vi": "Bánh Chuối Yến Mạch Nướng Nồi Chiên Không Dầu",
+      "en": "Healthy Air-Fryer Banana Oat Baked Bread"
+    },
+    "image": "/dishes/oat-banh-chuoi-yen-mach-noi-chien.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "international",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Không bột mì",
+        "Không đường tinh luyện",
+        "Eat Clean"
+      ],
+      "en": [
+        "Flourless",
+        "No Refined Sugar",
+        "Clean Eating",
+        "Baked Oats"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 220,
+    "protein": 8,
+    "fat": 6,
+    "carbs": 34,
+    "servingSize": {
+      "vi": "1 miếng bánh (~120g)",
+      "en": "1 slice (~120g)"
+    },
+    "nutritionSource": {
+      "vi": "USDA Food Data Central",
+      "en": "USDA Food Data Central"
+    },
+    "recipeSource": {
+      "vi": "Bếp Bánh Healthy Savoury Days",
+      "en": "Savoury Days Healthy Bakery"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Chuối tiêu chín ngọt",
+          "en": "Ripe sweet bananas"
+        },
+        "amount": "2 quả lớn"
+      },
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt xay thô",
+          "en": "Rolled oats coarsely ground"
+        },
+        "amount": "120g"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà",
+          "en": "Egg"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Sữa tươi không đường",
+          "en": "Unsweetened milk"
+        },
+        "amount": "50ml"
+      },
+      {
+        "name": {
+          "vi": "Bột nở (baking powder), bột quế",
+          "en": "Baking powder, cinnamon"
+        },
+        "amount": "1 thìa cà phê"
+      },
+      {
+        "name": {
+          "vi": "Hạnh nhân lát, nho khô",
+          "en": "Almond slices, raisins"
+        },
+        "amount": "30g"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Dùng nĩa dầm nhuyễn 1.5 quả chuối chín trong tô (nửa quả còn lại thái lát mỏng để trang trí mặt bánh).",
+        "Đập 2 quả trứng gà và rót sữa tươi vào tô chuối, đánh đều tay.",
+        "Cho bột yến mạch xay, bột nở và chút bột quế vào trộn đều thành hỗn hợp sệt mịn.",
+        "Lót giấy nến vào khuôn nướng, đổ bột bánh vào, xếp các lát chuối và rắc hạnh nhân, nho khô lên mặt.",
+        "Cho vào nồi chiên không dầu nướng ở nhiệt độ 160°C trong 20-25 phút đến khi bánh chín vàng ruộm, xiên tăm rút ra khô ráo thơm nức mùi chuối quế."
+      ],
+      "en": [
+        "Mash 1.5 ripe bananas in a bowl with a fork; slice the remaining half for topping.",
+        "Whisk eggs and milk into the mashed bananas until smooth.",
+        "Fold in ground rolled oats, baking powder, and a dash of ground cinnamon.",
+        "Line a baking pan with parchment paper, pour batter in, arrange banana slices and sprinkle almonds on top.",
+        "Air fry at 160°C (320°F) for 20-25 minutes until golden brown and a toothpick inserted comes out clean."
+      ]
+    }
+  },
+  {
+    "id": "oat-pancake-chuoi-yen-mach",
+    "title": {
+      "vi": "Bánh Pancake Yến Mạch Chuối Sữa Chua Giảm Cân",
+      "en": "Fluffy Banana Oat Protein Pancakes"
+    },
+    "image": "/dishes/oat-pancake-chuoi-yen-mach.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "international",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Ăn sáng healthy",
+        "Không dầu mỡ",
+        "Dễ làm 10 phút"
+      ],
+      "en": [
+        "Pancakes",
+        "Healthy Breakfast",
+        "Quick & Easy",
+        "Fitness"
+      ]
+    },
+    "time": "15m",
+    "servings": 2,
+    "calories": 240,
+    "protein": 10,
+    "fat": 5,
+    "carbs": 39,
+    "servingSize": {
+      "vi": "3-4 chiếc bánh nhỏ (~150g)",
+      "en": "3-4 mini pancakes (~150g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia (NIN)",
+      "en": "National Institute of Nutrition (NIN)"
+    },
+    "recipeSource": {
+      "vi": "Eat Clean Vui Khỏe - Healthy Lifestyle VN",
+      "en": "Clean Eating & Healthy Lifestyle VN"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt",
+          "en": "Rolled oats"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Chuối tiêu chín",
+          "en": "Ripe banana"
+        },
+        "amount": "1 quả"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà",
+          "en": "Egg"
+        },
+        "amount": "1 quả"
+      },
+      {
+        "name": {
+          "vi": "Sữa tươi không đường",
+          "en": "Unsweetened milk"
+        },
+        "amount": "60ml"
+      },
+      {
+        "name": {
+          "vi": "Mật ong, việt quất tươi ăn kèm",
+          "en": "Honey, fresh blueberries"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cho yến mạch, chuối chín, trứng gà và sữa tươi vào máy xay sinh tố xay nhuyễn mịn trong 1 phút.",
+        "Làm nóng chảo chống dính trên lửa nhỏ vừa, không cần dùng dầu mỡ hoặc chỉ quét lớp dầu mỏng.",
+        "Múc một muôi bột đổ vào giữa chảo tạo hình tròn bánh pancake xinh xắn.",
+        "Khi mặt bánh xuất hiện các bọt khí li ti (khoảng 2 phút), khéo léo lật mặt bánh và rán thêm 1-2 phút cho vàng đều hai mặt.",
+        "Xếp các lớp bánh chồng lên nhau, rưới mật ong và thêm hoa quả tươi thưởng thức nóng hổi."
+      ],
+      "en": [
+        "Add oats, banana, egg, and milk into a blender; blend on high for 1 minute until smooth.",
+        "Heat a non-stick skillet over medium-low heat without oil.",
+        "Ladle small circles of batter onto the hot pan.",
+        "When bubbles form on the surface (about 2 mins), flip gently and cook for 1-2 minutes until golden on both sides.",
+        "Stack high, drizzle pure honey, and garnish with fresh blueberries."
+      ]
+    }
+  },
+  {
+    "id": "oat-sup-yen-mach-cua-nam-tuyet",
+    "title": {
+      "vi": "Súp Yến Mạch Cua Bể Nấm Tuyết Thanh Nhẹ",
+      "en": "Light Crab & Snow Fungus Oatmeal Soup"
+    },
+    "image": "/dishes/oat-sup-yen-mach-cua-nam-tuyet.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Porridge & Soups"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 92,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Thanh nhẹ",
+        "Giàu canxi",
+        "Món khai vị"
+      ],
+      "en": [
+        "Seafood Soup",
+        "Oatmeal",
+        "Appetizer",
+        "Light"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 190,
+    "protein": 16,
+    "fat": 4,
+    "carbs": 23,
+    "servingSize": {
+      "vi": "1 chén súp (~250g)",
+      "en": "1 bowl (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia (NIN)",
+      "en": "National Institute of Nutrition (NIN)"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Dinh Dưỡng Khách Sạn & Cơm Gia Đình",
+      "en": "Vietnamese Healthy Banquet Cuisine"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt",
+          "en": "Rolled oats"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Thịt cua bể tươi gỡ sẵn",
+          "en": "Fresh crab meat"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nấm tuyết ngâm nở cắt nhỏ",
+          "en": "Snow fungus soaked & chopped"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Lòng trắng trứng gà đánh tan",
+          "en": "Egg whites"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng gà trong ngọt",
+          "en": "Chicken broth"
+        },
+        "amount": "700ml"
+      },
+      {
+        "name": {
+          "vi": "Hành ngò, tiêu trắng, dầu mè",
+          "en": "Cilantro, white pepper, sesame oil"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Xào thịt cua với chút hành khô và dầu mè cho thơm.",
+        "Đun sôi nước dùng gà, cho nấm tuyết và yến mạch vào khuấy đều trên lửa nhỏ trong 5 phút.",
+        "Hạ nhỏ lửa, rót từ từ lòng trắng trứng vào nồi súp đồng thời dùng đũa khuấy một chiều tạo vân mây trắng đẹp mắt.",
+        "Trút thịt cua xào vào súp, nêm chút muối và hạt nêm vừa vị thanh ngọt tự nhiên.",
+        "Múc ra chén rắc tiêu sọ trắng và ngò rí, dùng nóng khai vị cực kỳ bổ dưỡng."
+      ],
+      "en": [
+        "Sauté fresh crab meat lightly with shallots and a drop of sesame oil.",
+        "Bring chicken stock to a simmer, add snow fungus and rolled oats; cook gently for 5 minutes.",
+        "Slowly swirl in egg whites in a circular motion to create delicate white ribbon clouds.",
+        "Gently fold in cooked crab meat; season delicately with salt and white pepper.",
+        "Serve steaming hot garnished with fresh cilantro."
+      ]
+    }
+  },
+  {
+    "id": "oat-granola-mat-ong-hat-dinh-duong",
+    "title": {
+      "vi": "Granola Yến Mạch Mật Ong & Hạt Dinh Dưỡng Nướng Giòn",
+      "en": "Homemade Crunchy Honey Nut Oat Granola"
+    },
+    "image": "/dishes/oat-granola-mat-ong-hat-dinh-duong.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "international",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Granola",
+        "Giòn rụm",
+        "Ăn vặt lành mạnh",
+        "Bảo quản lâu"
+      ],
+      "en": [
+        "Granola",
+        "High Fiber",
+        "Healthy Snack",
+        "Crunchy",
+        "Meal Prep"
+      ]
+    },
+    "time": "30m",
+    "servings": 8,
+    "calories": 240,
+    "protein": 7,
+    "fat": 11,
+    "carbs": 29,
+    "servingSize": {
+      "vi": "1 khẩu phần (~50g)",
+      "en": "1 serving (~50g)"
+    },
+    "nutritionSource": {
+      "vi": "USDA Food Data Central",
+      "en": "USDA Food Data Central"
+    },
+    "recipeSource": {
+      "vi": "Bếp Nhà Healthy - Tự Làm Granola Tại Nhà",
+      "en": "Homemade Granola & Clean Eating Guide"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt nguyên hạt",
+          "en": "Rolled oats"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Hạt hạnh nhân, hạt điều, hạt bí xanh",
+          "en": "Almonds, cashews, pumpkin seeds"
+        },
+        "amount": "120g"
+      },
+      {
+        "name": {
+          "vi": "Nho khô hoặc nam việt quất sấy",
+          "en": "Dried cranberries or raisins"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Mật ong nguyên chất",
+          "en": "Pure honey"
+        },
+        "amount": "60ml"
+      },
+      {
+        "name": {
+          "vi": "Dầu dừa tinh khiết",
+          "en": "Melted coconut oil"
+        },
+        "amount": "30ml"
+      },
+      {
+        "name": {
+          "vi": "Bột quế thơm, chút muối hồng",
+          "en": "Cinnamon powder, pinch of salt"
+        },
+        "amount": "1 thìa cà phê"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trộn đều yến mạch, các loại hạt dinh dưỡng (hạnh nhân, hạt điều cắt đôi, hạt bí), bột quế và chút muối trong âu lớn.",
+        "Hòa tan mật ong và dầu dừa, rưới đều lên hỗn hợp hạt rồi đảo thật kỹ cho từng hạt yến mạch thấm đẫm lớp áo bóng.",
+        "Dàn đều granola lên khay nướng có lót giấy nến.",
+        "Nướng ở 150°C trong lò hoặc nồi chiên không dầu khoảng 20-25 phút, cứ mỗi 8 phút lại đảo đều một lần cho hạt vàng giòn đều.",
+        "Lấy ra để nguội hoàn toàn cho granola thật giòn rụm, trộn nho khô vào rồi cất hũ thủy tinh kín ăn dần cùng sữa chua hoặc sữa tươi."
+      ],
+      "en": [
+        "Combine rolled oats, mixed nuts (almonds, cashews, pumpkin seeds), cinnamon, and salt in a large bowl.",
+        "Whisk honey and melted coconut oil, pour over oat mixture, and toss thoroughly until glistening.",
+        "Spread evenly on a parchment-lined baking sheet.",
+        "Bake at 150°C (300°F) for 20-25 minutes, stirring every 8 minutes for even golden crispiness.",
+        "Cool completely so it hardens to maximum crunch, mix in dried cranberries, and store in airtight jars."
+      ]
+    }
+  },
+  {
+    "id": "oat-sua-yen-mach-hat-sen",
+    "title": {
+      "vi": "Sữa Yến Mạch Hạt Sen Mật Ong Nấu Ấm Ngủ Ngon",
+      "en": "Warm Lotus Seed & Oat Milk for Restful Sleep"
+    },
+    "image": "/dishes/oat-sua-yen-mach-hat-sen.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Porridge & Soups"
+    },
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "region": "national",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 93,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Sữa hạt thuần chay",
+        "Ngủ ngon",
+        "Tốt cho tim mạch"
+      ],
+      "en": [
+        "Oat Milk",
+        "Plant Based",
+        "Sleep Aid",
+        "Heart Healthy"
+      ]
+    },
+    "time": "20m",
+    "servings": 4,
+    "calories": 140,
+    "protein": 5,
+    "fat": 3,
+    "carbs": 24,
+    "servingSize": {
+      "vi": "1 ly ấm (~250ml)",
+      "en": "1 warm glass (~250ml)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Dinh Dưỡng Quốc Gia (NIN)",
+      "en": "National Institute of Nutrition (NIN)"
+    },
+    "recipeSource": {
+      "vi": "Cẩm Nang Sữa Hạt Dinh Dưỡng Gia Đình",
+      "en": "Family Plant Milk Guide"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt",
+          "en": "Rolled oats"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Hạt sen tươi bỏ tâm",
+          "en": "Fresh lotus seeds cored"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Nước lọc",
+          "en": "Filtered water"
+        },
+        "amount": "800ml"
+      },
+      {
+        "name": {
+          "vi": "Mật ong hoặc đường phèn",
+          "en": "Honey or rock sugar"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Lá dứa (lá nếp)",
+          "en": "Pandan leaves"
+        },
+        "amount": "2 lá"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Hạt sen luộc chín mềm bở với lá dứa trong 15 phút.",
+        "Yến mạch ngâm nước ấm 10 phút cho mềm rồi vớt ra xả nhẹ.",
+        "Cho hạt sen, yến mạch và nước ấm vào máy xay sinh tố xay thật nhuyễn mịn.",
+        "Lọc qua rây hoặc túi lọc lấy sữa sánh mịn, cho vào nồi đun lăn tăn cùng mật ong hoặc đường phèn nhỏ lửa trong 3 phút.",
+        "Rót ra ly uống ấm vào buổi tối giúp an thần, thư thái tinh thần và ngủ ngon giấc."
+      ],
+      "en": [
+        "Boil lotus seeds with pandan leaves for 15 minutes until tender and soft.",
+        "Soak rolled oats in warm water for 10 minutes; drain gently.",
+        "Blend lotus seeds, oats, and warm water in a high-speed blender until silky smooth.",
+        "Strain through a fine mesh, gently simmer with honey or rock sugar for 3 minutes on low.",
+        "Serve warm before bedtime for a comforting and deeply restorative sleep."
+      ]
+    }
+  },
+  {
+    "id": "oat-banh-quy-yen-mach-nho-kho",
+    "title": {
+      "vi": "Bánh Quy Yến Mạch Hạnh Nhân Nho Khô Giòn Thơm",
+      "en": "Chewy & Crispy Oatmeal Raisin Almond Cookies"
+    },
+    "image": "/dishes/oat-banh-quy-yen-mach-nho-kho.jpg",
+    "category": {
+      "vi": "Món Tráng Miệng",
+      "en": "Dessert"
+    },
+    "mealType": [
+      "snack"
+    ],
+    "region": "international",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Yến mạch",
+        "Bánh quy healthy",
+        "Ăn vặt văn phòng",
+        "Dễ làm"
+      ],
+      "en": [
+        "Oatmeal Cookies",
+        "Healthy Baking",
+        "Snack",
+        "High Fiber"
+      ]
+    },
+    "time": "25m",
+    "servings": 6,
+    "calories": 180,
+    "protein": 5,
+    "fat": 7,
+    "carbs": 26,
+    "servingSize": {
+      "vi": "2 chiếc bánh quy (~60g)",
+      "en": "2 cookies (~60g)"
+    },
+    "nutritionSource": {
+      "vi": "USDA Food Data Central",
+      "en": "USDA Food Data Central"
+    },
+    "recipeSource": {
+      "vi": "Savoury Days Bakeshop & Healthy Treats",
+      "en": "Savoury Days Bakeshop"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Yến mạch cán dẹt",
+          "en": "Rolled oats"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nho khô hoặc quả nam việt quất",
+          "en": "Raisins or cranberries"
+        },
+        "amount": "50g"
+      },
+      {
+        "name": {
+          "vi": "Hạnh nhân băm nhỏ",
+          "en": "Chopped almonds"
+        },
+        "amount": "40g"
+      },
+      {
+        "name": {
+          "vi": "Bơ lạt đun chảy hoặc dầu dừa",
+          "en": "Melted butter or coconut oil"
+        },
+        "amount": "40g"
+      },
+      {
+        "name": {
+          "vi": "Mật ong hoặc đường nâu",
+          "en": "Honey or brown sugar"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà",
+          "en": "Egg"
+        },
+        "amount": "1 quả"
+      },
+      {
+        "name": {
+          "vi": "Bột quế, vani, muối",
+          "en": "Cinnamon, vanilla, pinch of salt"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đánh tan trứng gà với bơ lạt đun chảy, mật ong và vani trong âu.",
+        "Trút yến mạch, nho khô, hạnh nhân băm, bột quế và chút muối vào trộn đều thành khối kết dính dẻo quánh.",
+        "Múc từng viên bột tròn đặt lên khay nướng có lót giấy nến, dùng thìa ấn hơi dẹt xuống thành hình bánh quy.",
+        "Nướng ở 170°C trong 12-15 phút đến khi viền bánh vàng nâu giòn rụm.",
+        "Để bánh nguội trên giá cho bánh giòn tan bên ngoài, dẻo bùi ngọt ngào bên trong."
+      ],
+      "en": [
+        "Whisk egg, melted butter, honey, and vanilla extract together in a bowl.",
+        "Fold in rolled oats, raisins, chopped almonds, cinnamon, and a pinch of salt until a sticky dough forms.",
+        "Scoop spoonfuls onto a parchment-lined baking sheet and flatten into cookie rounds.",
+        "Bake at 170°C (340°F) for 12-15 minutes until edges are golden and crisp.",
+        "Cool on a wire rack to achieve a crispy exterior and chewy, satisfying center."
+      ]
+    }
+  },
+  {
+    "id": "kr-tokbokki-pho-mai",
+    "title": {
+      "vi": "Bánh Gạo Cay Hàn Quốc Phô Mai Kéo Sợi (Tteokbokki)",
+      "en": "Korean Spicy Cheesy Rice Cakes (Tteokbokki)"
+    },
+    "image": "/dishes/kr-tokbokki-pho-mai.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 99,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Món hot giới trẻ",
+        "Cay ngọt",
+        "Phô mai kéo sợi"
+      ],
+      "en": [
+        "Korean Street Food",
+        "Spicy Sweet",
+        "Cheesy",
+        "Popular"
+      ]
+    },
+    "time": "20m",
+    "servings": 3,
+    "calories": 450,
+    "protein": 16,
+    "fat": 14,
+    "carbs": 65,
+    "servingSize": {
+      "vi": "1 dĩa lớn (~350g)",
+      "en": "1 plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Bộ Nông nghiệp & Thực phẩm Hàn Quốc (MAFRA)",
+      "en": "Ministry of Agriculture, Food and Rural Affairs (Korea)"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Hàn Quốc - Maangchi & Bếp Hàn Quốc Tại Nhà",
+      "en": "Maangchi Authentic Korean Street Food"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Bánh gạo Hàn Quốc (Tteokbokki tteok)",
+          "en": "Korean rice cake sticks"
+        },
+        "amount": "350g"
+      },
+      {
+        "name": {
+          "vi": "Chả cá Hàn Quốc (Eomuk / Odeng) thái miếng",
+          "en": "Korean fish cakes sliced"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Phô mai Mozzarella bào sợi kéo màng",
+          "en": "Shredded Mozzarella cheese"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Tương ớt Hàn Quốc (Gochujang)",
+          "en": "Korean red chili paste (Gochujang)"
+        },
+        "amount": "2.5 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Ớt bột Hàn Quốc (Gochugaru)",
+          "en": "Korean red chili flakes"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước tương, đường cát, tỏi băm",
+          "en": "Soy sauce, sugar, minced garlic"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng cá cơm hoặc nước lọc",
+          "en": "Anchovy kelp stock or water"
+        },
+        "amount": "400ml"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà luộc, hành boa-rô, mè trắng rang",
+          "en": "Boiled egg, leek, toasted sesame"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Bánh gạo ngâm nước ấm 10 phút cho mềm dẻo. Chả cá cắt miếng tam giác vừa ăn.",
+        "Hòa tan tương ớt Gochujang, ớt bột Gochugaru, nước tương, đường và tỏi băm vào 400ml nước dùng cá cơm trong chảo sâu lòng.",
+        "Đun sôi nước sốt đỏ rực trên lửa vừa, cho bánh gạo và chả cá vào đảo đều.",
+        "Đun liu riu trong 6-8 phút đến khi nước sốt keo lại sóng sánh bám đều quanh từng thỏi bánh gạo dai dẻo.",
+        "Cho hành boa-rô cắt vát và trứng luộc bổ đôi vào chảo.",
+        "Rải phô mai Mozzarella lên trên mặt bánh, đậy nắp 2 phút cho phô mai tan chảy béo ngậy kéo sợi, rắc mè rang thưởng thức nóng hổi."
+      ],
+      "en": [
+        "Soak rice cakes in warm water for 10 minutes until pliable; slice fish cakes into triangles.",
+        "In a deep skillet, mix Gochujang, chili flakes, soy sauce, sugar, and garlic into anchovy stock.",
+        "Bring sauce to a lively simmer, then add rice cakes and fish cakes.",
+        "Cook over medium-low heat for 6-8 minutes until sauce reduces to a glossy, thick crimson glaze.",
+        "Add sliced scallions/leeks and halved boiled eggs.",
+        "Scatter mozzarella cheese on top, cover for 2 minutes until bubbly and melted. Garnish with sesame seeds."
+      ]
+    }
+  },
+  {
+    "id": "kr-kimbap-truyen-thong",
+    "title": {
+      "vi": "Cơm Cuộn Rong Biển Kimbap Truyền Thống Hàn Quốc (Gimbap)",
+      "en": "Traditional Korean Seaweed Rice Rolls (Gimbap)"
+    },
+    "image": "/dishes/kr-kimbap-truyen-thong.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 99,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Cơm cuộn dã ngoại",
+        "Đủ dinh dưỡng",
+        "Đẹp mắt"
+      ],
+      "en": [
+        "Korean Classic",
+        "Picnic Food",
+        "Nutritious Roll",
+        "Balanced Meal"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 380,
+    "protein": 15,
+    "fat": 10,
+    "carbs": 58,
+    "servingSize": {
+      "vi": "1 cuộn cắt khoanh (~250g)",
+      "en": "1 roll sliced (~250g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Korean Bapsang - Authentic Home Cooking",
+      "en": "Korean Bapsang Traditional Kitchen"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Lá rong biển cuộn kimbap (Gim)",
+          "en": "Roasted seaweed sheets (Gim)"
+        },
+        "amount": "4 lá"
+      },
+      {
+        "name": {
+          "vi": "Cơm dẻo trộn dầu mè và chút muối",
+          "en": "Warm cooked rice seasoned with sesame oil & salt"
+        },
+        "amount": "3 chén (~400g)"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà chiên thái sợi dài",
+          "en": "Rolled egg strips"
+        },
+        "amount": "3 quả"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt xào chín tới",
+          "en": "Julienned carrot sautéed"
+        },
+        "amount": "1 củ"
+      },
+      {
+        "name": {
+          "vi": "Rau bina (cải bó xôi) chần bóp dầu mè",
+          "en": "Blanched spinach seasoned with sesame oil"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Củ cải vàng muối Hàn Quốc (Danmuji)",
+          "en": "Yellow pickled radish strips"
+        },
+        "amount": "4 dải"
+      },
+      {
+        "name": {
+          "vi": "Xúc xích hoặc thanh cua / chả cá",
+          "en": "Sausage, crab sticks or ham"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Dầu mè thơm quết mặt bánh, mè rang",
+          "en": "Sesame oil for brushing & seeds"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cơm nóng trộn đều với 1 thìa canh dầu mè và chút xíu muối cho dậy mùi thơm mộc mạc.",
+        "Cà rốt thái sợi xào sơ, rau chân vịt chần nước sôi vắt ráo bóp chút muối dầu mè, trứng chiên thái dải dài.",
+        "Đặt lá rong biển lên mành tre cuộn kimbap, mặt nhám ngửa lên trên.",
+        "Dàn đều một lớp cơm mỏng phủ 2/3 bề mặt lá rong biển.",
+        "Xếp lần lượt trứng, củ cải vàng, cà rốt, rau chân vịt, thanh cua/xúc xích vào giữa.",
+        "Dùng tay và mành tre cuộn tròn thật chặt và đều tay.",
+        "Thoa lớp dầu mè bóng bẩy lên thân cuộn kimbap, rắc mè rang rồi dùng dao sắc thoa dầu cắt thành từng khoanh tròn dày 1.5cm đẹp mắt."
+      ],
+      "en": [
+        "Toss freshly cooked warm rice with sesame oil and a pinch of salt.",
+        "Prepare fillings: sauté carrot strips, blanch and season spinach with sesame oil, slice rolled omelet into ribbons.",
+        "Place a seaweed sheet shiny side down onto a bamboo rolling mat.",
+        "Spread a thin, even layer of rice over two-thirds of the seaweed.",
+        "Line up egg strips, yellow pickled radish, carrots, spinach, and crab sticks across the center.",
+        "Roll tightly and firmly using the bamboo mat.",
+        "Brush roll with toasted sesame oil, sprinkle sesame seeds, and slice into 1.5cm rounds with an oiled sharp knife."
+      ]
+    }
+  },
+  {
+    "id": "kr-bibimbap-com-tron",
+    "title": {
+      "vi": "Cơm Trộn Hàn Quốc Thố Đá Sốt Gochujang (Bibimbap)",
+      "en": "Korean Stone Pot Mixed Rice Bowl (Dolsot Bibimbap)"
+    },
+    "image": "/dishes/kr-bibimbap-com-tron.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 99,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Quốc hồn ẩm thực",
+        "Đầy đủ 5 màu ngũ hành",
+        "Nhiều rau củ"
+      ],
+      "en": [
+        "Korean National Dish",
+        "Bibimbap",
+        "Nutrient Balanced",
+        "Gochujang Sauce"
+      ]
+    },
+    "time": "30m",
+    "servings": 2,
+    "calories": 520,
+    "protein": 26,
+    "fat": 16,
+    "carbs": 68,
+    "servingSize": {
+      "vi": "1 thố đá lớn (~450g)",
+      "en": "1 stone bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Cung Đình Jeonju & Maangchi",
+      "en": "Jeonju Bibimbap Heritage & Maangchi"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Cơm trắng nóng dẻo",
+          "en": "Warm steamed rice"
+        },
+        "amount": "2 bát"
+      },
+      {
+        "name": {
+          "vi": "Thịt thăn bò băm xào tương tỏi",
+          "en": "Ground beef sautéed with soy garlic"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Trứng gà ốp la lòng đào hoặc lòng đỏ sống",
+          "en": "Sunny-side egg with runny yolk"
+        },
+        "amount": "2 quả"
+      },
+      {
+        "name": {
+          "vi": "Nấm đông cô thái sợi xào",
+          "en": "Shiitake mushroom strips"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt xào giòn",
+          "en": "Julienned carrot"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Giá đỗ Hàn Quốc chần bóp dầu mè",
+          "en": "Soybean sprouts seasoned"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Rau cải bó xôi chần",
+          "en": "Seasoned blanched spinach"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Kim chi cải thảo cắt nhỏ",
+          "en": "Chopped Napa cabbage kimchi"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Sốt Bibimbap đặc chế (Gochujang, dầu mè, mật ong, giấm, tỏi băm)",
+          "en": "Bibimbap sauce (Gochujang, honey, sesame oil)"
+        },
+        "amount": "4 thìa canh"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Xào riêng từng loại rau củ (cà rốt, nấm hương, giá đỗ, rau bina) với chút muối và dầu mè để giữ màu sắc tươi tắn.",
+        "Thịt bò băm xào chín thơm với xì dầu, tỏi băm và đường.",
+        "Quết lớp dầu mè quanh thố đá hoặc âu sứ lớn, xới cơm trắng nóng vào giữa.",
+        "Xếp các loại rau củ, kim chi và thịt bò thành từng góc tròn xung quanh mặt cơm tạo 5 màu sắc ngũ hành rực rỡ.",
+        "Đặt quả trứng gà ốp la lòng đào vào chính giữa, rắc mè rang thơm phức.",
+        "Rưới đẫm sốt tương ớt Gochujang chua cay mặn ngọt, dùng thìa trộn đều toàn bộ từ dưới lên trên và thưởng thức nóng hổi xèo xèo."
+      ],
+      "en": [
+        "Sauté each vegetable topping separately (carrots, mushrooms, bean sprouts, spinach) with sesame oil and salt.",
+        "Stir-fry ground beef with soy sauce, garlic, and a hint of sugar until savory.",
+        "Brush an earthenware bowl with sesame oil, add warm rice in the center.",
+        "Arrange the colorful vegetables, kimchi, and beef in radiant sections atop the rice.",
+        "Place a sunny-side egg right in the center and sprinkle with toasted sesame seeds.",
+        "Add the sweet, spicy Gochujang bibimbap sauce; stir vigorously together and enjoy piping hot."
+      ]
+    }
+  },
+  {
+    "id": "kr-canh-kim-chi-thit-ba-chi",
+    "title": {
+      "vi": "Canh Kim Chi Hầm Thịt Ba Chỉ Đậu Phụ Non (Kimchi Jjigae)",
+      "en": "Rich Kimchi Stew with Pork Belly & Tofu (Kimchi Jjigae)"
+    },
+    "image": "/dishes/kr-canh-kim-chi-thit-ba-chi.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Ấm áp ngày đông",
+        "Chua cay đậm đà",
+        "Hao cơm"
+      ],
+      "en": [
+        "Kimchi Stew",
+        "Cozy",
+        "Spicy & Sour",
+        "Comfort Food"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 340,
+    "protein": 22,
+    "fat": 22,
+    "carbs": 12,
+    "servingSize": {
+      "vi": "1 nồi canh nóng (~450g)",
+      "en": "1 stew bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Baek Jong-won Korean Home Cuisine & Korean Bapsang",
+      "en": "Baek Jong-won Authentic Korean Home Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Kim chi cải thảo chua vừa thái khúc",
+          "en": "Aged sour Napa cabbage kimchi"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt kim chi",
+          "en": "Kimchi brine"
+        },
+        "amount": "100ml"
+      },
+      {
+        "name": {
+          "vi": "Thịt ba chỉ heo thái mỏng",
+          "en": "Pork belly sliced"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Đậu hũ non cắt lát vuông",
+          "en": "Silken tofu sliced"
+        },
+        "amount": "1 hộp (~250g)"
+      },
+      {
+        "name": {
+          "vi": "Hành boa-rô, hành tây thái múi cau",
+          "en": "Leek & onion wedged"
+        },
+        "amount": "1 cây"
+      },
+      {
+        "name": {
+          "vi": "Tương ớt Gochujang, ớt bột Gochugaru, tỏi băm",
+          "en": "Gochujang, Gochugaru, garlic"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng cá cơm hoặc nước hầm xương",
+          "en": "Anchovy broth or water"
+        },
+        "amount": "600ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Cho thịt ba chỉ vào nồi xào trên lửa vừa cho săn lại và tiết mỡ tự nhiên.",
+        "Trút kim chi chua vào xào cùng thịt trong 4-5 phút cho ngấm đẫm vị béo của thịt.",
+        "Thêm 1 thìa canh tương ớt Gochujang, ớt bột và tỏi băm đảo đều.",
+        "Đổ nước dùng và nước cốt kim chi vào đun sôi bùng, hạ nhỏ lửa đậy nắp hầm trong 15 phút cho thịt mềm rục, nước canh chua cay đậm đà.",
+        "Xếp đậu hũ non và hành boa-rô lên trên, đun sôi thêm 2-3 phút, dùng nóng sôi sùng sục cùng cơm trắng."
+      ],
+      "en": [
+        "Sauté sliced pork belly in a pot over medium heat until browned and fat renders.",
+        "Add kimchi and stir-fry for 4-5 minutes so it soaks in the pork juices.",
+        "Add Gochujang, chili flakes, and minced garlic; stir thoroughly.",
+        "Pour in broth and kimchi juice, bring to boil, then simmer covered for 15 minutes.",
+        "Gently slide in silken tofu slices and leeks; cook for 2-3 minutes more and serve bubbling hot with white rice."
+      ]
+    }
+  },
+  {
+    "id": "kr-canh-rong-bien-thit-bo",
+    "title": {
+      "vi": "Canh Rong Biển Thịt Bò Hàn Quốc (Miyeok-guk)",
+      "en": "Traditional Korean Seaweed Beef Soup (Miyeok-guk)"
+    },
+    "image": "/dishes/kr-canh-rong-bien-thit-bo.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Canh sinh nhật truyền thống",
+        "Bổ máu",
+        "Tốt cho phụ nữ sau sinh"
+      ],
+      "en": [
+        "Birthday Soup",
+        "Seaweed Soup",
+        "Postpartum Healing",
+        "Nourishing"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 180,
+    "protein": 19,
+    "fat": 8,
+    "carbs": 8,
+    "servingSize": {
+      "vi": "1 tô canh (~400g)",
+      "en": "1 bowl (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Viện Nghiên cứu Thực phẩm Hàn Quốc (KFRI)",
+      "en": "Korea Food Research Institute (KFRI)"
+    },
+    "recipeSource": {
+      "vi": "Korean Bapsang - Traditional Birthday Soup Guide",
+      "en": "Korean Bapsang Traditional Soups"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Rong biển khô Hàn Quốc (Miyeok)",
+          "en": "Dried Korean sea mustard (Miyeok)"
+        },
+        "amount": "25g"
+      },
+      {
+        "name": {
+          "vi": "Thịt thăn bò hoặc bắp bò thái mỏng",
+          "en": "Beef sirloin sliced thinly"
+        },
+        "amount": "180g"
+      },
+      {
+        "name": {
+          "vi": "Dầu mè thơm Hàn Quốc nguyên chất",
+          "en": "Pure Korean sesame oil"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm nhuyễn",
+          "en": "Minced garlic"
+        },
+        "amount": "1.5 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Xì dầu súp Hàn Quốc (Guk-ganjang)",
+          "en": "Korean soup soy sauce"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước lọc",
+          "en": "Water"
+        },
+        "amount": "1 lít"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Rong biển khô ngâm nước lạnh 15 phút cho nở to mềm, bóp rửa sạch rồi cắt khúc 4-5cm, vắt ráo nước.",
+        "Cho dầu mè thơm vào nồi, xào thơm tỏi băm và thịt bò trên lửa vừa cho thịt săn chín tái.",
+        "Trút rong biển vào xào cùng thịt bò trong 2-3 phút, nêm xì dầu súp Guk-ganjang đảo đều cho ngấm vị mộc mạc thơm lừng dầu mè.",
+        "Đổ 1 lít nước lọc vào đun sôi, hớt bọt rồi hạ nhỏ lửa đun liu riu trong 15-20 phút cho nước canh chuyển sang màu trắng đục ngọt lịm từ thịt và rong biển.",
+        "Nếm lại vừa khẩu vị thanh tao, múc ra tô húp nóng bồi bổ sức khỏe."
+      ],
+      "en": [
+        "Soak dried seaweed in cold water for 15 mins; rinse, chop into bite-sized lengths, and drain.",
+        "Heat sesame oil in a pot; sauté minced garlic and sliced beef over medium heat until browned.",
+        "Add seaweed and stir-fry with beef for 2-3 minutes; season with soup soy sauce.",
+        "Pour in 1 liter of water, bring to boil, skim foam, and simmer gently for 15-20 minutes until the broth turns milky and rich.",
+        "Adjust seasoning and ladle into warm bowls for deep, restorative nourishment."
+      ]
+    }
+  },
+  {
+    "id": "kr-thit-nuong-samgyeopsal",
+    "title": {
+      "vi": "Thịt Ba Chỉ Nướng Hàn Quốc Cuốn Lá Mè Sốt Ssamjang (Samgyeopsal)",
+      "en": "Korean Grilled Pork Belly Lettuce Wraps (Samgyeopsal)"
+    },
+    "image": "/dishes/kr-thit-nuong-samgyeopsal.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 99,
+    "dietaryTags": {
+      "vi": [
+        "K-BBQ",
+        "Món nướng quốc dân",
+        "Sốt Ssamjang",
+        "Tụ tập bạn bè"
+      ],
+      "en": [
+        "K-BBQ",
+        "Grilled Pork",
+        "Ssamjang Dip",
+        "Crowd Pleaser"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 460,
+    "protein": 28,
+    "fat": 36,
+    "carbs": 6,
+    "servingSize": {
+      "vi": "1 phần nướng đầy đủ (~300g)",
+      "en": "1 wrap platter (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Bộ Nông nghiệp & Thực phẩm Hàn Quốc (MAFRA)",
+      "en": "Ministry of Agriculture, Food and Rural Affairs (Korea)"
+    },
+    "recipeSource": {
+      "vi": "Ẩm thực Nướng Hàn Quốc - K-BBQ Guide & Maangchi",
+      "en": "Authentic Korean BBQ Guide"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Thịt ba chỉ heo tươi thái dải dày",
+          "en": "Fresh pork belly strips (thick cut)"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Sốt chấm thịt nướng Ssamjang",
+          "en": "Ssamjang dipping sauce"
+        },
+        "amount": "1 bát"
+      },
+      {
+        "name": {
+          "vi": "Lá mè Hàn Quốc (Kkaennip) & xà lách tươi",
+          "en": "Korean perilla leaves & fresh lettuce"
+        },
+        "amount": "1 rổ lớn"
+      },
+      {
+        "name": {
+          "vi": "Tỏi tép thái lát, ớt sừng xanh cắt khoanh",
+          "en": "Sliced garlic & green Korean chili"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Kim chi cải thảo nướng kèm",
+          "en": "Grilled kimchi side"
+        },
+        "amount": "1 đĩa"
+      },
+      {
+        "name": {
+          "vi": "Dầu mè pha muối tiêu để chấm thịt",
+          "en": "Sesame oil with salt & pepper dip"
+        },
+        "amount": "1 đĩa nhỏ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Làm nóng chảo nướng hoặc bếp nướng không khói trên bàn ăn.",
+        "Xếp các dải thịt ba chỉ heo, tép tỏi và kim chi lên mặt chảo nướng xèo xèo.",
+        "Nướng vàng giòn cạnh một mặt rồi lật mặt kia, dùng kéo cắt thịt thành từng miếng vuông vừa ăn.",
+        "Khi thịt xém vàng giòn bì mà mọng nước, gắp ra cuốn cùng lá xà lách và lá mè.",
+        "Thêm lát tỏi nướng, kim chi nướng và quệt một thìa sốt Ssamjang đậm đà, cuộn tròn thưởng thức trọn vẹn miếng nướng béo giòn thơm lừng."
+      ],
+      "en": [
+        "Preheat a Korean tabletop grill pan or cast-iron skillet.",
+        "Lay thick pork belly strips, whole garlic cloves, and kimchi on the sizzling grill.",
+        "Grill until golden-crisp on both sides, then use kitchen shears to cut into bite-sized pieces.",
+        "Pick a fresh lettuce leaf, top with a Korean perilla leaf, a piece of sizzling pork, grilled garlic, and kimchi.",
+        "Dollop savory sweet Ssamjang paste on top, wrap into a single bite, and savor the explosive burst of flavors."
+      ]
+    }
+  },
+  {
+    "id": "kr-ga-ran-sot-cay-ngot",
+    "title": {
+      "vi": "Gà Rán Giòn Sốt Cay Ngọt Hàn Quốc (Yangnyeom Chicken)",
+      "en": "Korean Sweet & Spicy Crispy Fried Chicken (Yangnyeom)"
+    },
+    "image": "/dishes/kr-ga-ran-sot-cay-ngot.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Gà rán giòn rụm",
+        "Sốt cay ngọt",
+        "Chimaek"
+      ],
+      "en": [
+        "Korean Fried Chicken",
+        "Ultra Crispy",
+        "Sweet & Spicy",
+        "Yangnyeom"
+      ]
+    },
+    "time": "35m",
+    "servings": 4,
+    "calories": 480,
+    "protein": 31,
+    "fat": 26,
+    "carbs": 32,
+    "servingSize": {
+      "vi": "1 đĩa gà sốt (~350g)",
+      "en": "1 plate (~350g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Maangchi's Famous Korean Fried Chicken & Bếp Hàn",
+      "en": "Maangchi Authentic Korean Fried Chicken"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Đùi gà cánh gà chặt khúc vừa ăn",
+          "en": "Chicken wings & drumsticks"
+        },
+        "amount": "600g"
+      },
+      {
+        "name": {
+          "vi": "Bột bắp hoặc tinh bột khoai tây chiên giòn",
+          "en": "Potato starch / cornstarch"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Tương ớt Hàn Quốc Gochujang",
+          "en": "Gochujang paste"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tương cà (ketchup), mật ong hoặc siro bắp",
+          "en": "Ketchup, honey / corn syrup"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Tỏi băm nhuyễn, dầu mè, mè rang",
+          "en": "Minced garlic, sesame oil, toasted sesame"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Dầu ăn chiên gà 2 lần",
+          "en": "Frying oil"
+        },
+        "amount": "300ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Gà ướp chút muối tiêu và gừng băm trong 15 phút, áo đều một lớp tinh bột khoai tây khô.",
+        "Chiên gà lần 1 ngập dầu ở nhiệt độ 160°C trong 8 phút cho chín tới, vớt ra để ráo dầu 5 phút.",
+        "Chiên gà lần 2 ở 180°C trong 2-3 phút cho lớp vỏ ngoài giòn tan siêu rụm, vàng ươm không ỉu.",
+        "Pha sốt Yangnyeom: phi thơm tỏi băm, đun sôi tương ớt Gochujang, tương cà, mật ong và chút nước cho sệt lại bóng mượt.",
+        "Trút gà chiên vào chảo đảo nhanh tay trong 30 giây cho lớp sốt đỏ au bám đều quanh từng miếng gà, rắc mè rang và thưởng thức giòn tan."
+      ],
+      "en": [
+        "Season chicken with salt, pepper, and ginger; coat thoroughly in potato starch.",
+        "First fry: deep fry at 160°C (320°F) for 8 minutes until cooked through; rest for 5 mins.",
+        "Second fry: flash-fry at 180°C (350°F) for 2-3 minutes for extreme, long-lasting crunch.",
+        "Make Yangnyeom glaze: simmer minced garlic, Gochujang, ketchup, honey, and a splash of water until syrupy.",
+        "Toss crispy chicken briskly in the sauce for 30s until thoroughly glazed; scatter toasted sesame and serve."
+      ]
+    }
+  },
+  {
+    "id": "kr-mi-tron-tuong-den",
+    "title": {
+      "vi": "Mì Trộn Tương Đen Hàn Quốc (Jajangmyeon)",
+      "en": "Korean Black Bean Sauce Noodles (Jajangmyeon)"
+    },
+    "image": "/dishes/kr-mi-tron-tuong-den.jpg",
+    "category": {
+      "vi": "Món Nước",
+      "en": "Noodles"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Sốt tương đen Chunjang",
+        "Đậm đà",
+        "Món ăn quốc dân"
+      ],
+      "en": [
+        "Black Bean Noodles",
+        "Jajangmyeon",
+        "Savory Sweet",
+        "Comfort Food"
+      ]
+    },
+    "time": "25m",
+    "servings": 2,
+    "calories": 510,
+    "protein": 22,
+    "fat": 16,
+    "carbs": 68,
+    "servingSize": {
+      "vi": "1 tô mì lớn (~450g)",
+      "en": "1 large bowl (~450g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Incheon Chinatown Heritage & Baek Jong-won",
+      "en": "Incheon Chinese-Korean Culinary Heritage"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Mì tươi sợi to Hàn Quốc",
+          "en": "Fresh thick wheat noodles"
+        },
+        "amount": "300g"
+      },
+      {
+        "name": {
+          "vi": "Sốt tương đen Hàn Quốc (Chunjang)",
+          "en": "Korean black bean paste (Chunjang)"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Thịt ba chỉ heo thái hạt lựu",
+          "en": "Diced pork belly"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Hành tây, bắp cải, bí ngòi thái hạt lựu",
+          "en": "Diced onion, cabbage, zucchini"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Bột năng hòa nước tạo độ sánh",
+          "en": "Starch slurry"
+        },
+        "amount": "1 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Đường cát, dầu ăn, dưa chuột thái sợi",
+          "en": "Sugar, oil, julienned cucumber"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Xào tương đen Chunjang với 2 thìa dầu ăn trên lửa nhỏ trong 2-3 phút để khử vị chát đắng, dậy mùi thơm béo ngậy.",
+        "Xào thịt ba chỉ săn thơm, cho hành tây, bắp cải và bí ngòi vào xào chín tới.",
+        "Trút tương đen đã xào vào chảo rau thịt, thêm chút nước và đường đun sôi lăn tăn.",
+        "Rót từ từ nước bột năng vào khuấy đều cho sốt tương đen sẫm màu óng ánh sánh đặc.",
+        "Luộc mì tươi dai mềm, vớt ra tô, rưới đẫm sốt tương đen nóng hổi lên trên, xếp dưa leo thái sợi thanh mát và trộn đều thưởng thức."
+      ],
+      "en": [
+        "Fry black bean paste (Chunjang) in oil over low heat for 2-3 mins to remove bitterness and unlock rich umami.",
+        "Brown diced pork belly in a wok; add diced onion, cabbage, and zucchini; stir-fry until tender.",
+        "Mix fried black bean paste into vegetables, add water and sugar; bring to a simmer.",
+        "Stir in starch slurry to transform into a glossy, velvety black gravy.",
+        "Cook fresh chewy noodles, place in bowls, spoon generous black bean sauce over, top with fresh cucumber ribbons, and toss thoroughly."
+      ]
+    }
+  },
+  {
+    "id": "kr-mien-tron-japchae",
+    "title": {
+      "vi": "Miến Trộn Hàn Quốc Thịt Bò Rau Củ Dầu Mè (Japchae)",
+      "en": "Korean Stir-fried Glass Noodles with Beef & Veggies (Japchae)"
+    },
+    "image": "/dishes/kr-mien-tron-japchae.jpg",
+    "category": {
+      "vi": "Món Cuốn & Trộn",
+      "en": "Rolls & Salads"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 98,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Miến khoai lang dai mềm",
+        "Thơm lừng dầu mè",
+        "Mâm tiệc"
+      ],
+      "en": [
+        "Korean Glass Noodles",
+        "Sweet Potato Noodles",
+        "Sesame Oil",
+        "Party Dish"
+      ]
+    },
+    "time": "30m",
+    "servings": 4,
+    "calories": 380,
+    "protein": 18,
+    "fat": 12,
+    "carbs": 52,
+    "servingSize": {
+      "vi": "1 đĩa miến trộn (~300g)",
+      "en": "1 plate (~300g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Korean Bapsang - Festive Royal Japchae",
+      "en": "Korean Bapsang Festive Recipes"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Miến khoai lang Hàn Quốc (Dangmyeon)",
+          "en": "Korean sweet potato glass noodles"
+        },
+        "amount": "250g"
+      },
+      {
+        "name": {
+          "vi": "Thịt thăn bò thái sợi mỏng",
+          "en": "Beef sirloin strips"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Nấm hương nấm mộc nhĩ thái sợi",
+          "en": "Shiitake & wood ear strips"
+        },
+        "amount": "60g"
+      },
+      {
+        "name": {
+          "vi": "Cà rốt, hành tây, ớt chuông đỏ thái sợi",
+          "en": "Julienned carrot, onion, bell pepper"
+        },
+        "amount": "150g"
+      },
+      {
+        "name": {
+          "vi": "Rau cải bó xôi chần bóp dầu mè",
+          "en": "Blanched seasoned spinach"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Nước tương xì dầu, đường nâu, dầu mè, tỏi băm, mè rang",
+          "en": "Soy sauce, brown sugar, sesame oil, garlic, sesame"
+        },
+        "amount": "Vừa đủ"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Luộc miến khoai lang trong nước sôi 6-7 phút cho sợi trong veo dai mềm, vớt ra xả nước lạnh rồi xóc với 1 thìa dầu mè và xì dầu.",
+        "Xào thịt bò và nấm với tỏi băm, nước tương và đường cho chín tới.",
+        "Xào riêng từng loại rau củ (cà rốt, hành tây, ớt chuông) giữ độ giòn ngọt và màu sắc tươi sáng.",
+        "Cho miến, thịt bò, nấm và tất cả rau củ vào âu lớn.",
+        "Rưới hỗn hợp sốt xì dầu, đường nâu, dầu mè thơm lừng, dùng tay đeo găng bóp trộn nhẹ nhàng cho thấm đều từng sợi miến.",
+        "Bày ra đĩa rắc nhiều mè rang thơm nức, ăn nóng hoặc ăn nguội đều tuyệt ngon."
+      ],
+      "en": [
+        "Boil sweet potato noodles for 6-7 mins until chewy-translucent; shock in cold water and toss with sesame oil.",
+        "Stir-fry beef strips and mushrooms with soy sauce, garlic, and sugar until tender.",
+        "Sauté carrots, onions, and bell peppers separately to preserve their crisp texture and vibrant colors.",
+        "Combine noodles, beef, mushrooms, seasoned spinach, and stir-fried vegetables in a large bowl.",
+        "Pour seasoned soy sauce, brown sugar, and generous sesame oil; toss gently by hand.",
+        "Mound onto a platter, shower with toasted sesame seeds, and serve warm or at room temperature."
+      ]
+    }
+  },
+  {
+    "id": "kr-banh-xeo-kim-chi",
+    "title": {
+      "vi": "Bánh Xèo Kim Chi Giòn Rụm Hàn Quốc (Kimchijeon)",
+      "en": "Crispy Korean Kimchi Pancakes (Kimchijeon)"
+    },
+    "image": "/dishes/kr-banh-xeo-kim-chi.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 95,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Bánh xèo giòn tan",
+        "Chua cay đậm đà",
+        "Món nhắm"
+      ],
+      "en": [
+        "Kimchi Pancake",
+        "Crispy Edges",
+        "Appetizer",
+        "Rainy Day Food"
+      ]
+    },
+    "time": "20m",
+    "servings": 3,
+    "calories": 290,
+    "protein": 10,
+    "fat": 12,
+    "carbs": 36,
+    "servingSize": {
+      "vi": "1 chiếc bánh lớn (~220g)",
+      "en": "1 large pancake (~220g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Maangchi Easy Korean Pancakes & Bếp Nhà",
+      "en": "Maangchi Classic Korean Pancakes"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Kim chi cải thảo chua thái nhỏ",
+          "en": "Sour kimchi finely chopped"
+        },
+        "amount": "200g"
+      },
+      {
+        "name": {
+          "vi": "Nước cốt kim chi",
+          "en": "Kimchi juice"
+        },
+        "amount": "50ml"
+      },
+      {
+        "name": {
+          "vi": "Bột mì đa dụng và bột bắp giòn",
+          "en": "All-purpose flour & cornstarch"
+        },
+        "amount": "120g"
+      },
+      {
+        "name": {
+          "vi": "Hành lá, hành tây thái mỏng",
+          "en": "Scallions & sliced onion"
+        },
+        "amount": "1 nhánh"
+      },
+      {
+        "name": {
+          "vi": "Thịt heo ba chỉ băm nhỏ hoặc mực xắt lát (tùy thích)",
+          "en": "Minced pork or squid strips"
+        },
+        "amount": "80g"
+      },
+      {
+        "name": {
+          "vi": "Nước chấm: xì dầu pha giấm, mè rang và ớt",
+          "en": "Soy vinegar dipping sauce"
+        },
+        "amount": "1 chén"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Trộn đều bột mì, bột bắp, nước cốt kim chi, kim chi băm nhỏ, hành lá và thịt băm trong âu thành hỗn hợp sệt vừa phải.",
+        "Làm nóng chảo chống dính với 2 thìa canh dầu ăn trên lửa vừa lớn.",
+        "Múc bột đổ vào chảo, dùng muôi dàn thật mỏng đều khắp mặt chảo.",
+        "Chiên trong 3-4 phút đến khi viền bánh vàng ruộm giòn tan, lật mặt bánh và chiên tiếp mặt còn lại cho giòn rụm.",
+        "Cắt bánh thành từng miếng vuông vừa ăn, chấm nước tương chua ngọt pha giấm tỏi ớt mè rang."
+      ],
+      "en": [
+        "In a mixing bowl, combine chopped kimchi, kimchi juice, flour, cornstarch, scallions, and pork into a batter.",
+        "Heat a generous amount of oil in a non-stick skillet over medium-high heat.",
+        "Pour in batter and spread thinly and evenly across the pan.",
+        "Fry for 3-4 minutes until the edges are sizzling, golden, and ultra-crisp; flip and crisp the second side.",
+        "Cut into squares, serve with seasoned soy-vinegar dipping sauce."
+      ]
+    }
+  },
+  {
+    "id": "kr-canh-tuong-doenjang",
+    "title": {
+      "vi": "Canh Tương Đậu Bí Ngòi Nấm Kim Châm Hàn Quốc (Doenjang Jjigae)",
+      "en": "Korean Fermented Soybean Paste Stew (Doenjang Jjigae)"
+    },
+    "image": "/dishes/kr-canh-tuong-doenjang.jpg",
+    "category": {
+      "vi": "Món Canh",
+      "en": "Soup"
+    },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook"
+    ],
+    "isPopular": true,
+    "popularityScore": 96,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Tương đậu lên men",
+        "Mộc mạc ấm bụng",
+        "Tốt cho tiêu hóa"
+      ],
+      "en": [
+        "Doenjang Jjigae",
+        "Fermented Stew",
+        "Comfort Food",
+        "Probiotic"
+      ]
+    },
+    "time": "25m",
+    "servings": 4,
+    "calories": 190,
+    "protein": 15,
+    "fat": 7,
+    "carbs": 16,
+    "servingSize": {
+      "vi": "1 tô đất nóng (~400g)",
+      "en": "1 bowl (~400g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Bếp Cơm Gia Đình Hàn Quốc - Korean Bapsang",
+      "en": "Korean Bapsang Home Cooking"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Tương đậu Hàn Quốc (Doenjang)",
+          "en": "Korean fermented soybean paste (Doenjang)"
+        },
+        "amount": "3 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Đậu phụ trắng cắt khối vuông",
+          "en": "Firm tofu cubed"
+        },
+        "amount": "1 bìa (~200g)"
+      },
+      {
+        "name": {
+          "vi": "Bí ngòi Hàn Quốc cắt lát",
+          "en": "Korean zucchini sliced"
+        },
+        "amount": "1/2 quả (~100g)"
+      },
+      {
+        "name": {
+          "vi": "Khoai tây cắt khối nhỏ, nấm kim châm",
+          "en": "Potato cubes & enoki mushrooms"
+        },
+        "amount": "100g"
+      },
+      {
+        "name": {
+          "vi": "Hành boa-rô, ớt xanh cắt lát, tỏi băm",
+          "en": "Leek, green chili, minced garlic"
+        },
+        "amount": "Vừa đủ"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng cá cơm khô và rong biển",
+          "en": "Anchovy kelp stock"
+        },
+        "amount": "600ml"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Nấu sôi nước dùng cá cơm và rong biển trong thố đất, vớt bỏ xác cá cơm.",
+        "Dùng rây tán tan tương đậu Doenjang vào nồi nước dùng đun sôi.",
+        "Cho khoai tây và bí ngòi vào nấu trong 6-8 phút cho củ mềm ngọt.",
+        "Thêm nấm kim châm, đậu phụ cắt khối, tỏi băm và ớt xanh vào nấu sôi bùng thêm 3 phút.",
+        "Rắc hành boa-rô thái vát, nhấc thố đất còn sôi lục bục ra bàn ăn cùng cơm nóng và kim chi."
+      ],
+      "en": [
+        "Simmer anchovy and kelp stock in an earthenware pot, remove solids.",
+        "Dissolve fermented soybean paste (Doenjang) through a strainer into the bubbling stock.",
+        "Add potato cubes and zucchini slices; simmer for 6-8 minutes until tender.",
+        "Add tofu cubes, enoki mushrooms, minced garlic, and green chili; boil for 3 minutes.",
+        "Finish with sliced leeks; serve bubbling hot at the table alongside rice and kimchi."
+      ]
+    }
+  },
+  {
+    "id": "kr-trung-hap-gyeran-jjim",
+    "title": {
+      "vi": "Trứng Hấp Thố Hàn Quốc Bồng Bềnh Như Mây (Gyeran Jjim)",
+      "en": "Korean Volcano Steamed Egg Soufflé (Gyeran Jjim)"
+    },
+    "image": "/dishes/kr-trung-hap-gyeran-jjim.jpg",
+    "category": {
+      "vi": "Món Mặn",
+      "en": "Savory Dish"
+    },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "region": "korea",
+    "diningType": [
+      "home_cook",
+      "eat_out"
+    ],
+    "isPopular": true,
+    "popularityScore": 97,
+    "dietaryTags": {
+      "vi": [
+        "Hàn Quốc",
+        "Bồng bềnh xốp mịn",
+        "Món ăn kèm K-BBQ",
+        "Nhanh gọn"
+      ],
+      "en": [
+        "Korean Steamed Egg",
+        "Soufflé",
+        "Fluffy Cloud",
+        "K-BBQ Side"
+      ]
+    },
+    "time": "10m",
+    "servings": 2,
+    "calories": 180,
+    "protein": 15,
+    "fat": 12,
+    "carbs": 3,
+    "servingSize": {
+      "vi": "1 thố đất (~200g)",
+      "en": "1 bowl (~200g)"
+    },
+    "nutritionSource": {
+      "vi": "Korean Food Composition Database (RDA Korea)",
+      "en": "Korean Food Composition Database (RDA Korea)"
+    },
+    "recipeSource": {
+      "vi": "Baek Jong-won Classic Diner Recipes & Bếp Hàn",
+      "en": "Baek Jong-won Korean Diner Classics"
+    },
+    "ingredients": [
+      {
+        "name": {
+          "vi": "Trứng gà tươi",
+          "en": "Fresh eggs"
+        },
+        "amount": "4 quả"
+      },
+      {
+        "name": {
+          "vi": "Nước dùng cá cơm hoặc nước lọc",
+          "en": "Anchovy broth or water"
+        },
+        "amount": "120ml"
+      },
+      {
+        "name": {
+          "vi": "Dầu mè thơm Hàn Quốc",
+          "en": "Sesame oil"
+        },
+        "amount": "1 thìa cà phê"
+      },
+      {
+        "name": {
+          "vi": "Hành boa-rô thái nhỏ, cà rốt băm nhuyễn",
+          "en": "Scallions & minced carrot"
+        },
+        "amount": "2 thìa canh"
+      },
+      {
+        "name": {
+          "vi": "Nước mắm tôm tép muối Hàn Quốc (Saeujeot) hoặc muối, tiêu",
+          "en": "Salted shrimp (Saeujeot) or salt, pepper"
+        },
+        "amount": "1 thìa cà phê"
+      }
+    ],
+    "instructions": {
+      "vi": [
+        "Đập 4 quả trứng vào thố đất nhỏ, thêm nước dùng cá cơm, mắm tép Saeujeot và dầu mè đánh tan đều.",
+        "Đặt thố đất trực tiếp lên bếp đun trên lửa vừa nhỏ, liên tục dùng thìa khuấy đều từ đáy lên thành thố trong 2-3 phút cho trứng bắt đầu đông đặc sền sệt khoảng 70-80%.",
+        "Rắc hành hoa và cà rốt băm lên mặt.",
+        "Lấy một chiếc thố hoặc bát tô úp ngược lên miệng thố đất tạo vòm kín giữ nhiệt.",
+        "Hạ lửa nhỏ nhất nấu thêm 2 phút, trứng sẽ nở phồng bồng bềnh hình vòm nón như đám mây xốp mịn, mở nắp dùng ngay khi còn bốc khói ngào ngạt."
+      ],
+      "en": [
+        "Whisk eggs, anchovy broth, salted shrimp (or salt), and sesame oil together in a small earthenware pot.",
+        "Place pot directly over medium-low heat; stir continuously from the bottom for 2-3 mins until curdled and 80% set.",
+        "Scatter minced scallions and carrots on top.",
+        "Cover with an inverted dome bowl of the same size to trap steam.",
+        "Lower heat to minimum for 2 minutes; the egg will expand into a spectacular puffy soufflé volcano. Serve immediately while steaming!"
       ]
     }
   }

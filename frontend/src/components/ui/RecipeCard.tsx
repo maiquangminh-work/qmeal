@@ -12,7 +12,7 @@ interface RecipeCardProps {
   rating?: number | string;
   tags?: string[];
   calories?: number;
-  region?: 'north' | 'central' | 'south' | 'national';
+  region?: 'north' | 'central' | 'south' | 'national' | 'korea' | 'international';
   diningType?: ('home_cook' | 'eat_out')[];
   nutritionSource?: string;
   recipeSource?: string;
@@ -24,7 +24,7 @@ interface RecipeCardProps {
     rating: number | string;
     tags: string[];
     calories?: number;
-    region?: 'north' | 'central' | 'south' | 'national';
+    region?: 'north' | 'central' | 'south' | 'national' | 'korea' | 'international';
     diningType?: ('home_cook' | 'eat_out')[];
     nutritionSource?: string;
     recipeSource?: string;
@@ -65,7 +65,9 @@ export default function RecipeCard(props: RecipeCardProps) {
     north: 'Hà Nội & Bắc Bộ',
     central: 'Miền Trung',
     south: 'Nam Bộ',
-    national: 'Cơm Nhà'
+    national: 'Cơm Nhà',
+    korea: 'Hàn Quốc',
+    international: 'Healthy & Eat Clean'
   };
 
   const getSafeImageUrl = (url: string) => {

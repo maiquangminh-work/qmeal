@@ -4819,6 +4819,227 @@ export const MASTER_INGREDIENTS: MasterIngredient[] = [
     ],
     "category": "pantry"
   }
+,
+  {
+    "id": "banh-gao-han-quoc",
+    "name": {
+      "vi": "Bánh gạo Hàn Quốc (Tokbokki / Tteok)",
+      "en": "Korean rice cakes (Tteokbokki)"
+    },
+    "icon": "🍢",
+    "commonStaple": true,
+    "aliases": [
+      "banh gao",
+      "bánh gạo",
+      "tokbokki",
+      "tteokbokki",
+      "tok",
+      "topokki",
+      "bánh gạo tokbokki"
+    ],
+    "category": "carb"
+  },
+  {
+    "id": "kim-chi",
+    "name": {
+      "vi": "Kim chi cải thảo Hàn Quốc",
+      "en": "Napa cabbage kimchi"
+    },
+    "icon": "🥬",
+    "commonStaple": true,
+    "aliases": [
+      "kim chi",
+      "kimchi",
+      "kim chi cai thao",
+      "cải thảo muối"
+    ],
+    "category": "vegetable"
+  },
+  {
+    "id": "tuong-ot-gochujang",
+    "name": {
+      "vi": "Tương ớt Hàn Quốc Gochujang",
+      "en": "Korean chili paste (Gochujang)"
+    },
+    "icon": "🌶️",
+    "commonStaple": true,
+    "aliases": [
+      "gochujang",
+      "tuong ot han quoc",
+      "tương ớt hàn quốc",
+      "sot gochujang"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "la-rong-bien-kimbap",
+    "name": {
+      "vi": "Lá rong biển cuộn cơm (Gim / Nori)",
+      "en": "Seaweed sheets for Kimbap"
+    },
+    "icon": "🍱",
+    "commonStaple": true,
+    "aliases": [
+      "rong bien cuon com",
+      "lá rong biển",
+      "la rong bien",
+      "kimbap",
+      "gim",
+      "nori"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "cha-ca-han-quoc",
+    "name": {
+      "vi": "Chả cá Hàn Quốc (Eomuk / Odeng)",
+      "en": "Korean fish cakes (Eomuk)"
+    },
+    "icon": "🍢",
+    "aliases": [
+      "cha ca han quoc",
+      "chả cá hàn quốc",
+      "eomuk",
+      "odeng",
+      "cha ca xien"
+    ],
+    "category": "seafood"
+  },
+  {
+    "id": "cu-cai-vang-danmuji",
+    "name": {
+      "vi": "Củ cải vàng muối Hàn Quốc (Danmuji)",
+      "en": "Yellow pickled radish (Danmuji)"
+    },
+    "icon": "🥕",
+    "aliases": [
+      "cu cai vang",
+      "củ cải vàng",
+      "danmuji",
+      "cu cai muoi han quoc"
+    ],
+    "category": "vegetable"
+  },
+  {
+    "id": "tuong-dau-doenjang",
+    "name": {
+      "vi": "Tương đậu lên men Hàn Quốc (Doenjang)",
+      "en": "Fermented soybean paste (Doenjang)"
+    },
+    "icon": "🫘",
+    "aliases": [
+      "doenjang",
+      "tuong dau han quoc",
+      "tương đậu hàn quốc"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "sot-tuong-den-chunjang",
+    "name": {
+      "vi": "Sốt tương đen Hàn Quốc (Chunjang)",
+      "en": "Black bean paste (Chunjang)"
+    },
+    "icon": "🍜",
+    "aliases": [
+      "chunjang",
+      "tuong den",
+      "tương đen",
+      "jajang",
+      "sot jajang"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "mi-khoai-lang-dangmyeon",
+    "name": {
+      "vi": "Miến khoai lang Hàn Quốc (Dangmyeon)",
+      "en": "Korean sweet potato starch noodles (Dangmyeon)"
+    },
+    "icon": "🍜",
+    "aliases": [
+      "dangmyeon",
+      "mien khoai lang",
+      "miến khoai lang",
+      "mien japchae"
+    ],
+    "category": "carb"
+  },
+  {
+    "id": "thanh-cua",
+    "name": {
+      "vi": "Thanh cua Surimi (Kani)",
+      "en": "Crab sticks (Surimi)"
+    },
+    "icon": "🦀",
+    "aliases": [
+      "thanh cua",
+      "surimi",
+      "crab stick",
+      "kani"
+    ],
+    "category": "seafood"
+  },
+  {
+    "id": "sua-chua-hy-lap",
+    "name": {
+      "vi": "Sữa chua Hy Lạp (Greek Yogurt)",
+      "en": "Greek yogurt"
+    },
+    "icon": "🥛",
+    "commonStaple": true,
+    "aliases": [
+      "sua chua hy lap",
+      "sữa chua hy lạp",
+      "greek yogurt",
+      "sua chua khong duong"
+    ],
+    "category": "egg_tofu"
+  },
+  {
+    "id": "hat-chia",
+    "name": {
+      "vi": "Hạt chia hữu cơ",
+      "en": "Organic chia seeds"
+    },
+    "icon": "🌱",
+    "aliases": [
+      "hat chia",
+      "hạt chia",
+      "chia seeds"
+    ],
+    "category": "egg_tofu"
+  },
+  {
+    "id": "trai-cay-say",
+    "name": {
+      "vi": "Trái cây sấy khô (nho khô, việt quất sấy)",
+      "en": "Dried fruits & berries"
+    },
+    "icon": "🍇",
+    "aliases": [
+      "nho kho",
+      "nho khô",
+      "viet quat say",
+      "trai cay say",
+      "nam viet quat"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "bot-que",
+    "name": {
+      "vi": "Bột quế thơm nguyên chất",
+      "en": "Ground cinnamon powder"
+    },
+    "icon": "🪵",
+    "aliases": [
+      "bot que",
+      "bột quế",
+      "cinnamon"
+    ],
+    "category": "herb_spice"
+  }
 ];
 
 // Helper: Strip Vietnamese diacritics for fast fuzzy matching
