@@ -76,6 +76,7 @@ export default function Navbar() {
       explore: 'Khám phá',
       gacha: 'Gacha Món Ăn',
       fridge: 'Tủ lạnh có gì',
+      dineOut: 'Ăn ngoài',
       favorites: 'Món đã lưu',
       grocery: 'Giỏ đi chợ',
       viewAll: 'Xem tất cả kết quả cho',
@@ -87,6 +88,7 @@ export default function Navbar() {
       explore: 'Explore',
       gacha: 'Meal Gacha',
       fridge: 'Smart Fridge',
+      dineOut: 'Dine Out',
       favorites: 'Saved Recipes',
       grocery: 'Grocery List',
       viewAll: 'View all results for',
@@ -199,6 +201,10 @@ export default function Navbar() {
           <Link href="/" className="hover:text-orange-500 transition-colors">{t.explore}</Link>
           <Link href="/gacha" className="hover:text-orange-500 transition-colors">{t.gacha}</Link>
           <Link href="/fridge" className="hover:text-orange-500 transition-colors">{t.fridge}</Link>
+          <Link href="/dine-out" className="hover:text-orange-500 transition-colors flex items-center gap-1">
+            <span className="text-xs">🔥</span>
+            <span>{t.dineOut}</span>
+          </Link>
         </div>
 
         {/* Favorites Heart Icon */}

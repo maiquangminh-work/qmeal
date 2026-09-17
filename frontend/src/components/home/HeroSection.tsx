@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getTimeContext, TimeContextInfo } from '@/utils/timeContext';
-import { Sparkles, Dices, Refrigerator } from 'lucide-react';
+import { Sparkles, Dices, Refrigerator, UtensilsCrossed } from 'lucide-react';
 
 export default function HeroSection({ language }: { language: 'vi' | 'en' }) {
   const [timeContext, setTimeContext] = useState<TimeContextInfo | null>(null);
@@ -18,7 +18,8 @@ export default function HeroSection({ language }: { language: 'vi' | 'en' }) {
       title2: 'Món ngon Việt Nam',
       desc: 'Giải quyết bài toán "Hôm nay ăn gì?" với các công thức chuẩn vị và địa điểm quán ăn hấp dẫn dành riêng cho bạn.',
       btnGacha: '🎲 Gacha Món Ngẫu Nhiên',
-      btnFridge: '🥬 Tủ Lạnh Có Gì?'
+      btnFridge: '🥬 Tủ Lạnh Có Gì?',
+      btnDineOut: '🔥 Đi Ăn Ngoài (Lẩu, Nướng, Ốc...)'
     },
     en: {
       trending: '🍲 Trending Today',
@@ -26,7 +27,8 @@ export default function HeroSection({ language }: { language: 'vi' | 'en' }) {
       title2: 'Vietnamese Cuisine',
       desc: 'Solve the daily "What to eat?" dilemma with authentic recipes and restaurant recommendations just for you.',
       btnGacha: '🎲 Random Meal Gacha',
-      btnFridge: "🥬 What's in my Fridge?"
+      btnFridge: "🥬 What's in my Fridge?",
+      btnDineOut: '🔥 Dine Out (Hotpot, BBQ...)'
     }
   }[language];
 
@@ -52,20 +54,27 @@ export default function HeroSection({ language }: { language: 'vi' | 'en' }) {
         </p>
         
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-2 w-full sm:w-auto">
           <Link 
             href="/gacha"
-            className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-7 py-3.5 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:scale-95"
+            className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-3.5 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:scale-95"
           >
             <Dices className="w-5 h-5" />
             <span>{t.btnGacha}</span>
           </Link>
           <Link 
             href="/fridge"
-            className="bg-white hover:bg-stone-50 text-stone-800 border-2 border-stone-200 hover:border-orange-300 px-7 py-3.5 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-xs hover:shadow-sm flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:scale-95"
+            className="bg-white hover:bg-stone-50 text-stone-800 border-2 border-stone-200 hover:border-orange-300 px-6 py-3.5 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-xs hover:shadow-sm flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:scale-95"
           >
             <Refrigerator className="w-5 h-5 text-emerald-600" />
             <span>{t.btnFridge}</span>
+          </Link>
+          <Link 
+            href="/dine-out"
+            className="bg-amber-50 hover:bg-amber-100/80 text-amber-950 border-2 border-amber-300/80 px-5 py-3.5 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-xs hover:shadow-sm flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:scale-95"
+          >
+            <UtensilsCrossed className="w-5 h-5 text-amber-700" />
+            <span>{t.btnDineOut}</span>
           </Link>
         </div>
       </div>

@@ -75,6 +75,13 @@ export default function AppSidebar() {
       badgeColor: 'bg-amber-100 text-amber-800 border-amber-300'
     },
     {
+      href: '/dine-out',
+      label: 'Ăn Ngoài & Đi Ăn Hàng',
+      icon: UtensilsCrossed,
+      badge: 'MỚI',
+      badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-300'
+    },
+    {
       href: '/favorites',
       label: 'Món Yêu Thích',
       icon: Heart,
