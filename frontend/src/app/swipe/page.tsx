@@ -129,7 +129,14 @@ export default function SwipePage() {
   );
 }
 
-function SwipeCard({ recipe, isTop, onSwipe, language }: any) {
+interface SwipeCardProps {
+  recipe: MasterRecipe;
+  isTop: boolean;
+  onSwipe: (dir: 'left' | 'right') => void;
+  language: 'vi' | 'en';
+}
+
+function SwipeCard({ recipe, isTop, onSwipe, language }: SwipeCardProps) {
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-200, 200], [-8, 8]);
   const scale = isTop ? 1 : 0.95;
