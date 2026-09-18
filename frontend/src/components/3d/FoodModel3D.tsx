@@ -16,6 +16,11 @@ import { RotateCw, Sparkles, Eye, Link as LinkIcon, Check, Settings, X, External
 // Preset curated public Sketchfab 3D models for instant demo
 export const SKETCHFAB_FOOD_PRESETS = [
   {
+    id: '669181a7d4554068ba4e43bfee948e1e',
+    name: 'Món Ăn Thực Tế (Scan 3D - EGFoodScans)',
+    author: 'Sketchfab Public'
+  },
+  {
     id: 'ba40c1157fbe4fecab76f82ea10fe40e',
     name: 'Tô Phở Bò Bốc Khói (Pho Bowl)',
     author: 'Sketchfab Public'
@@ -216,7 +221,7 @@ export interface FoodModel3DProps {
 
 export default function FoodModel3D({
   modelPath = '/models/food-item.glb',
-  sketchfabId: initialSketchfabId,
+  sketchfabId: initialSketchfabId = '669181a7d4554068ba4e43bfee948e1e',
   className = 'w-full h-80 sm:h-96',
   dishName = 'Món Ăn 3D',
   autoRotate: defaultAutoRotate = true
@@ -253,7 +258,7 @@ export default function FoodModel3D({
             title={dishName}
             src={`https://sketchfab.com/models/${activeSketchfabId}/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=0&ui_stop=0&ui_theatre=1&ui_watermark=0`}
             className="w-full h-full border-0"
-            allow="autoplay; fullscreen; xr-spatial-tracking"
+            allow="autoplay; fullscreen; xr-spatial-tracking; web-share"
             allowFullScreen
           />
         </div>
