@@ -75,6 +75,7 @@ export default function Navbar() {
       search: 'Tìm kiếm món ăn...',
       explore: 'Khám phá',
       gacha: 'Gacha Món Ăn',
+      swipe: 'Lướt Món',
       fridge: 'Tủ lạnh có gì',
       dineOut: 'Ăn ngoài',
       favorites: 'Món đã lưu',
@@ -87,6 +88,7 @@ export default function Navbar() {
       search: 'Search recipes...',
       explore: 'Explore',
       gacha: 'Meal Gacha',
+      swipe: 'Swipe Food',
       fridge: 'Smart Fridge',
       dineOut: 'Dine Out',
       favorites: 'Saved Recipes',
@@ -200,6 +202,10 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-6 text-sm font-semibold text-stone-600">
           <Link href="/" className="hover:text-orange-500 transition-colors">{t.explore}</Link>
           <Link href="/gacha" className="hover:text-orange-500 transition-colors">{t.gacha}</Link>
+          <Link href="/swipe" className="hover:text-orange-500 transition-colors text-emerald-600 relative">
+            {t.swipe}
+            <span className="absolute -top-2 -right-3 bg-red-500 text-white text-[9px] font-black px-1 rounded-sm animate-pulse">HOT</span>
+          </Link>
           <Link href="/fridge" className="hover:text-orange-500 transition-colors">{t.fridge}</Link>
           <Link href="/dine-out" className="hover:text-orange-500 transition-colors flex items-center gap-1">
             <span className="text-xs">🔥</span>

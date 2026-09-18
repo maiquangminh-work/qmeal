@@ -1,8 +1,8 @@
-﻿'use client';
+'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useStore } from '@/store/useStore';
-import { Home, Refrigerator, Dices, ShoppingCart, Heart } from 'lucide-react';
+import { Home, Refrigerator, Dices, ShoppingCart, Heart, Sparkles } from 'lucide-react';
 
 export default function MobileBottomNav() {
   const pathname = usePathname();
@@ -12,14 +12,14 @@ export default function MobileBottomNav() {
     vi: {
       home: 'Trang chủ',
       fridge: 'Tủ lạnh',
-      gacha: 'Quay món',
+      swipe: 'Lướt Món',
       grocery: 'Đi chợ',
       favorites: 'Yêu thích'
     },
     en: {
       home: 'Home',
       fridge: 'Fridge',
-      gacha: 'Gacha',
+      swipe: 'Swipe',
       grocery: 'Grocery',
       favorites: 'Saved'
     }
@@ -31,7 +31,7 @@ export default function MobileBottomNav() {
   const navItems = [
     { href: '/', label: t.home, icon: Home },
     { href: '/fridge', label: t.fridge, icon: Refrigerator },
-    { href: '/gacha', label: t.gacha, icon: Dices, highlight: true },
+    { href: '/swipe', label: t.swipe, icon: Sparkles, highlight: true },
     { href: '/grocery', label: t.grocery, icon: ShoppingCart, badge: uncheckedGroceryCount },
     { href: '/favorites', label: t.favorites, icon: Heart, badge: favCount },
   ];

@@ -71,8 +71,15 @@ export default function AppSidebar() {
       href: '/gacha',
       label: 'Vòng Quay Gacha',
       icon: Dices,
-      badge: 'HOT',
+      badge: null,
       badgeColor: 'bg-amber-100 text-amber-800 border-amber-300'
+    },
+    {
+      href: '/swipe',
+      label: 'Quẹt Món Tinder',
+      icon: Sparkles,
+      badge: 'HOT',
+      badgeColor: 'bg-rose-100 text-rose-700 border-rose-300'
     },
     {
       href: '/dine-out',
