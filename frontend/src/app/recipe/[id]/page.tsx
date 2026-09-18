@@ -489,11 +489,12 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
               referrerPolicy="no-referrer"
               crossOrigin="anonymous"
               className="w-full h-full object-cover opacity-75"
+              style={{ viewTransitionName: `recipe-image-${recipe.id}` }}
               onError={(e) => {
                 e.currentTarget.src = 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop';
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/40 to-transparent pointer-events-none"></div>
           </>
         )}
 

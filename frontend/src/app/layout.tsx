@@ -33,14 +33,17 @@ export const metadata: Metadata = {
   },
 };
 
+import { ViewTransitions } from 'next-view-transitions';
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi">
-      <body className={`${inter.className} bg-[#faf9f6] min-h-screen flex flex-col`}>
+    <ViewTransitions>
+      <html lang="vi">
+        <body className={`${inter.className} bg-[#faf9f6] min-h-screen flex flex-col`}>
         <AppSidebar />
         <Navbar />
         <main className="flex-1 pb-16 sm:pb-0">
@@ -51,5 +54,6 @@ export default function RootLayout({
         <UserProfileModal />
       </body>
     </html>
+    </ViewTransitions>
   );
 }

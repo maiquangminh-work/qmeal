@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from 'next-view-transitions';
 import { useStore } from '@/store/useStore';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -104,6 +104,7 @@ export default function RecipeCard(props: RecipeCardProps) {
           referrerPolicy="no-referrer"
           crossOrigin="anonymous"
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          style={{ viewTransitionName: `recipe-image-${id}` }}
           loading="lazy"
           onError={() => {
             if (!hasError) {
