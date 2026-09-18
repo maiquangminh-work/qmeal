@@ -244,7 +244,7 @@ export async function detectUserLocation(): Promise<DetailedLocation> {
     try {
       const position = await new Promise<GeolocationPosition>((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject, {
-          timeout: 3500,
+          timeout: 15000,
           maximumAge: 3600000,
           enableHighAccuracy: false
         });

@@ -5,6 +5,7 @@ import { vietnameseRecipes } from '@/data/vietnameseRecipes';
 import RecipeCard from '@/components/ui/RecipeCard';
 import { detectUserLocation, VIETNAM_LOCATIONS } from '@/utils/geolocation';
 import { MapPin, Clock, ChefHat, Store, Utensils, CheckCircle2, Sparkles, Navigation, X, Compass, ChevronRight, Search } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface SmartRecommendationHeroProps {
   language: 'vi' | 'en';
@@ -259,7 +260,12 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
   ];
 
   return (
-    <section className="mb-12 bg-white rounded-2xl border border-stone-200/90 shadow-xs overflow-hidden">
+    <motion.section 
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="mb-12 bg-white rounded-3xl border border-stone-200/90 shadow-lg overflow-hidden"
+    >
       {/* Top Header Bar: Location Auto-Detected & Current Time Context */}
       <div className="p-6 md:p-8 bg-stone-900 text-stone-100 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
@@ -559,12 +565,27 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
         </div>
 
         {recommendedDishes.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            initial="hidden"
+            animate="show"
+            variants={{
+              hidden: { opacity: 0 },
+              show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+            }}
+          >
             {recommendedDishes.map(({ recipe, reason, badgeText }, index) => (
-              <div key={recipe.id} className="flex flex-col h-full relative group">
+              <motion.div 
+                key={recipe.id} 
+                className="flex flex-col h-full relative group"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 25 } }
+                }}
+              >
                 {/* Ranking Pill */}
                 <div className="absolute top-2 left-2 z-10">
-                  <span className="text-[10px] font-bold text-white bg-stone-900/85 backdrop-blur-md px-2 py-0.5 rounded shadow-xs border border-white/20">
+                  <span className="text-[10px] font-bold text-white bg-stone-900/85 backdrop-blur-md px-2 py-0.5 rounded shadow-sm border border-white/20">
                     Gợi ý #{index + 1} • {badgeText}
                   </span>
                 </div>
@@ -588,14 +609,14 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
                 </div>
 
                 {reason && (
-                  <div className="mt-2.5 px-3 py-1.5 bg-stone-50 rounded-lg text-[11px] text-stone-700 font-medium flex items-center gap-1.5 border border-stone-200/60">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                  <div className="mt-3 px-4 py-2.5 bg-orange-50/80 rounded-xl text-xs text-orange-900 font-semibold flex items-center gap-2 border border-orange-200 shadow-sm">
+                    <Sparkles className="w-4 h-4 text-orange-500 flex-shrink-0" />
                     <span className="truncate">{reason}</span>
                   </div>
                 )}
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         ) : (
           <div className="py-12 text-center text-stone-500">
             Không tìm thấy món ăn phù hợp với bộ lọc này. Hãy thử bỏ bớt tiêu chí.
