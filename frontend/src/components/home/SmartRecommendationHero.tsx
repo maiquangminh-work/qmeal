@@ -623,6 +623,6 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
           </div>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 }
