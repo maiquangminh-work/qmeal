@@ -5,6 +5,7 @@ import RecipeCard from '@/components/ui/RecipeCard';
 import SmartRecommendationHero from '@/components/home/SmartRecommendationHero';
 import { vietnameseRecipes } from '@/data/vietnameseRecipes';
 import { ChefHat, Store, Sparkles, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ITEMS_PER_PAGE = 8;
 
@@ -160,26 +161,44 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {paginatedRecipes.map((recipe) => (
-                <RecipeCard 
-                  key={recipe.id} 
-                  recipe={{
-                    id: recipe.id,
-                    title: recipe.title[language] || recipe.title.vi,
-                    image: recipe.image,
-                    time: recipe.time,
-                    rating: 4.9,
-                    tags: recipe.dietaryTags[language] || recipe.dietaryTags.vi,
-                    calories: recipe.calories,
-                    region: recipe.region,
-                    diningType: recipe.diningType,
-                    nutritionSource: recipe.nutritionSource[language] || recipe.nutritionSource.vi,
-                    recipeSource: recipe.recipeSource[language] || recipe.recipeSource.vi
-                  }} 
-                />
-              ))}
-            </div>
+            <motion.div 
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+              initial="hidden"
+              animate="show"
+              variants={{
+                hidden: { opacity: 0 },
+                show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+              }}
+            >
+              <AnimatePresence mode="popLayout">
+                {paginatedRecipes.map((recipe) => (
+                  <motion.div
+                    key={recipe.id}
+                    layout
+                    initial={{ opacity: 0, scale: 0.9, y: 15 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
+                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                  >
+                    <RecipeCard 
+                      recipe={{
+                        id: recipe.id,
+                        title: recipe.title[language] || recipe.title.vi,
+                        image: recipe.image,
+                        time: recipe.time,
+                        rating: 4.9,
+                        tags: recipe.dietaryTags[language] || recipe.dietaryTags.vi,
+                        calories: recipe.calories,
+                        region: recipe.region,
+                        diningType: recipe.diningType,
+                        nutritionSource: recipe.nutritionSource[language] || recipe.nutritionSource.vi,
+                        recipeSource: recipe.recipeSource[language] || recipe.recipeSource.vi
+                      }} 
+                    />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </motion.div>
 
             {/* Pagination Controls */}
             {totalPages > 1 && (
@@ -245,26 +264,42 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <motion.div 
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, margin: "-50px" }}
+                  variants={{
+                    hidden: { opacity: 0 },
+                    show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+                  }}
+                >
                   {homeCookingDishes.map((recipe) => (
-                    <RecipeCard 
-                      key={recipe.id} 
-                      recipe={{
-                        id: recipe.id,
-                        title: recipe.title[language] || recipe.title.vi,
-                        image: recipe.image,
-                        time: recipe.time,
-                        rating: 4.9,
-                        tags: recipe.dietaryTags[language] || recipe.dietaryTags.vi,
-                        calories: recipe.calories,
-                        region: recipe.region,
-                        diningType: recipe.diningType,
-                        nutritionSource: recipe.nutritionSource[language] || recipe.nutritionSource.vi,
-                        recipeSource: recipe.recipeSource[language] || recipe.recipeSource.vi
-                      }} 
-                    />
+                    <motion.div
+                      key={recipe.id}
+                      variants={{
+                        hidden: { opacity: 0, y: 20 },
+                        show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 25 } }
+                      }}
+                    >
+                      <RecipeCard 
+                        recipe={{
+                          id: recipe.id,
+                          title: recipe.title[language] || recipe.title.vi,
+                          image: recipe.image,
+                          time: recipe.time,
+                          rating: 4.9,
+                          tags: recipe.dietaryTags[language] || recipe.dietaryTags.vi,
+                          calories: recipe.calories,
+                          region: recipe.region,
+                          diningType: recipe.diningType,
+                          nutritionSource: recipe.nutritionSource[language] || recipe.nutritionSource.vi,
+                          recipeSource: recipe.recipeSource[language] || recipe.recipeSource.vi
+                        }} 
+                      />
+                    </motion.div>
                   ))}
-                </div>
+                </motion.div>
               </section>
             )}
 
@@ -286,26 +321,42 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <motion.div 
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, margin: "-50px" }}
+                  variants={{
+                    hidden: { opacity: 0 },
+                    show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+                  }}
+                >
                   {streetFoodDishes.map((recipe) => (
-                    <RecipeCard 
-                      key={recipe.id} 
-                      recipe={{
-                        id: recipe.id,
-                        title: recipe.title[language] || recipe.title.vi,
-                        image: recipe.image,
-                        time: recipe.time,
-                        rating: 4.9,
-                        tags: recipe.dietaryTags[language] || recipe.dietaryTags.vi,
-                        calories: recipe.calories,
-                        region: recipe.region,
-                        diningType: recipe.diningType,
-                        nutritionSource: recipe.nutritionSource[language] || recipe.nutritionSource.vi,
-                        recipeSource: recipe.recipeSource[language] || recipe.recipeSource.vi
-                      }} 
-                    />
+                    <motion.div
+                      key={recipe.id}
+                      variants={{
+                        hidden: { opacity: 0, y: 20 },
+                        show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 25 } }
+                      }}
+                    >
+                      <RecipeCard 
+                        recipe={{
+                          id: recipe.id,
+                          title: recipe.title[language] || recipe.title.vi,
+                          image: recipe.image,
+                          time: recipe.time,
+                          rating: 4.9,
+                          tags: recipe.dietaryTags[language] || recipe.dietaryTags.vi,
+                          calories: recipe.calories,
+                          region: recipe.region,
+                          diningType: recipe.diningType,
+                          nutritionSource: recipe.nutritionSource[language] || recipe.nutritionSource.vi,
+                          recipeSource: recipe.recipeSource[language] || recipe.recipeSource.vi
+                        }} 
+                      />
+                    </motion.div>
                   ))}
-                </div>
+                </motion.div>
               </section>
             )}
 
@@ -322,26 +373,44 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {paginatedRecipes.map((recipe) => (
-                  <RecipeCard 
-                    key={recipe.id} 
-                    recipe={{
-                      id: recipe.id,
-                      title: recipe.title[language] || recipe.title.vi,
-                      image: recipe.image,
-                      time: recipe.time,
-                      rating: 4.9,
-                      tags: recipe.dietaryTags[language] || recipe.dietaryTags.vi,
-                      calories: recipe.calories,
-                      region: recipe.region,
-                      diningType: recipe.diningType,
-                      nutritionSource: recipe.nutritionSource[language] || recipe.nutritionSource.vi,
-                      recipeSource: recipe.recipeSource[language] || recipe.recipeSource.vi
-                    }} 
-                  />
-                ))}
-              </div>
+              <motion.div 
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                initial="hidden"
+                animate="show"
+                variants={{
+                  hidden: { opacity: 0 },
+                  show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+                }}
+              >
+                <AnimatePresence mode="popLayout">
+                  {paginatedRecipes.map((recipe) => (
+                    <motion.div
+                      key={recipe.id}
+                      layout
+                      initial={{ opacity: 0, scale: 0.9, y: 15 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
+                      transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                    >
+                      <RecipeCard 
+                        recipe={{
+                          id: recipe.id,
+                          title: recipe.title[language] || recipe.title.vi,
+                          image: recipe.image,
+                          time: recipe.time,
+                          rating: 4.9,
+                          tags: recipe.dietaryTags[language] || recipe.dietaryTags.vi,
+                          calories: recipe.calories,
+                          region: recipe.region,
+                          diningType: recipe.diningType,
+                          nutritionSource: recipe.nutritionSource[language] || recipe.nutritionSource.vi,
+                          recipeSource: recipe.recipeSource[language] || recipe.recipeSource.vi
+                        }} 
+                      />
+                    </motion.div>
+                  ))}
+                </AnimatePresence>
+              </motion.div>
 
               {/* Clean Pagination Bar (8 items per page) */}
               {totalPages > 1 && (

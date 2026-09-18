@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useStore } from '@/store/useStore';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface RecipeCardProps {
   id?: number | string;
@@ -81,10 +82,20 @@ export default function RecipeCard(props: RecipeCardProps) {
   };
 
   return (
-    <Link 
-      href={`/recipe/${id}`} 
-      className="bg-white rounded-xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 cursor-pointer group border border-stone-200/80 flex flex-col h-full transform hover:-translate-y-0.5 relative block"
-    >
+    <Link href={`/recipe/${id}`} className="block h-full outline-none">
+      <motion.div 
+        whileHover={{ scale: 1.02, y: -4 }}
+        whileTap={{ scale: 0.98 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ 
+          type: "spring", 
+          stiffness: 300, 
+          damping: 25,
+          opacity: { duration: 0.3 }
+        }}
+        className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer group border border-stone-200/80 flex flex-col h-full relative"
+      >
       {/* Image Container with aspect ratio */}
       <div className="relative w-full aspect-[4/3] overflow-hidden bg-stone-100">
         <img 
@@ -180,6 +191,7 @@ export default function RecipeCard(props: RecipeCardProps) {
           </div>
         </div>
       </div>
+      </motion.div>
     </Link>
   );
 }
