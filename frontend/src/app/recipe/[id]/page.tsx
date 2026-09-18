@@ -18,8 +18,11 @@ import {
   MapPin,
   Clock,
   Flame,
-  Users
+  Users,
+  Box,
+  Image as ImageIcon
 } from 'lucide-react';
+import FoodModel3D from '@/components/3d/FoodModel3D';
 
 export default function RecipeDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const unwrappedParams = use(params);
@@ -27,6 +30,7 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
   const [activeTab, setActiveTab] = useState<'cook' | 'eat-out'>('cook');
   const [servings, setServings] = useState(4);
   const [cookingMode, setCookingMode] = useState(false);
+  const [viewMode3D, setViewMode3D] = useState(false);
   const [cookingStep, setCookingStep] = useState(0);
   const [cookingDone, setCookingDone] = useState(false);
   const [showCookingIngredients, setShowCookingIngredients] = useState(false);
@@ -467,29 +471,62 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
 
   return (
     <div className={`min-h-screen bg-white transition-opacity duration-500 ${isTranslating ? 'opacity-50 blur-sm pointer-events-none' : 'opacity-100'}`}>
-      {/* Hero Banner Image */}
-      <div className="relative w-full h-[40vh] md:h-[50vh] bg-stone-900">
-        <img 
-          src={recipe.image?.includes('wikimedia.org') || recipe.image?.includes('wikipedia.org')
-            ? `/api/image-proxy?url=${encodeURIComponent(recipe.image)}`
-            : recipe.image} 
-          alt={recipe.title} 
-          referrerPolicy="no-referrer"
-          crossOrigin="anonymous"
-          className="w-full h-full object-cover opacity-70"
-          onError={(e) => {
-            e.currentTarget.src = '/api/image-proxy';
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/40 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 max-w-7xl mx-auto">
-          <div className="flex flex-wrap gap-2 mb-4">
+      {/* Hero Banner Area: 2D Photo or 3D WebGL Canvas */}
+      <div className="relative w-full h-[45vh] md:h-[55vh] bg-stone-900 overflow-hidden">
+        {viewMode3D ? (
+          <FoodModel3D 
+            dishName={recipe.title} 
+            modelPath={`/models/${recipe.id}.glb`}
+            className="w-full h-full rounded-none border-0"
+          />
+        ) : (
+          <>
+            <img 
+              src={recipe.image?.includes('wikimedia.org') || recipe.image?.includes('wikipedia.org')
+                ? `/api/image-proxy?url=${encodeURIComponent(recipe.image)}`
+                : recipe.image} 
+              alt={recipe.title} 
+              referrerPolicy="no-referrer"
+              crossOrigin="anonymous"
+              className="w-full h-full object-cover opacity-75"
+              onError={(e) => {
+                e.currentTarget.src = 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop';
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/40 to-transparent"></div>
+          </>
+        )}
+
+        {/* Floating 2D / 3D Mode Toggle Switch */}
+        <div className="absolute top-5 right-5 z-20">
+          <button
+            type="button"
+            onClick={() => setViewMode3D(!viewMode3D)}
+            className="inline-flex items-center gap-2 bg-stone-900/90 hover:bg-stone-800 text-white px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold border border-stone-700/80 shadow-xl backdrop-blur-md transition-all cursor-pointer transform hover:scale-105 active:scale-95"
+          >
+            {viewMode3D ? (
+              <>
+                <ImageIcon className="w-4 h-4 text-orange-400" />
+                <span>Xem Ảnh 2D</span>
+              </>
+            ) : (
+              <>
+                <Box className="w-4 h-4 text-amber-400 animate-pulse" />
+                <span>Xem Mô Hình 3D (360°)</span>
+              </>
+            )}
+          </button>
+        </div>
+
+        {/* Bottom Hero Info */}
+        <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 max-w-7xl mx-auto z-10 pointer-events-none">
+          <div className="flex flex-wrap gap-2 mb-4 pointer-events-auto">
             {recipe.tags.map((tag: string, i: number) => (
               <span key={i} className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{tag}</span>
             ))}
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">{recipe.title}</h1>
-          <div className="flex items-center gap-6 text-stone-200 font-medium">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight drop-shadow">{recipe.title}</h1>
+          <div className="flex items-center gap-6 text-stone-200 font-medium drop-shadow">
             <div className="flex items-center gap-2">
               <span className="text-orange-400 text-xl">★</span> {recipe.rating} (1,284)
             </div>

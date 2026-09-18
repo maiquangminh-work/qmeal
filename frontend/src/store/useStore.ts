@@ -140,7 +140,7 @@ export const useStore = create<UserState>()(
 
       userProfile: {
         name: 'Quang Minh',
-        avatarUrl: '',
+        avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop',
       },
       setUserProfile: (patch) => set((state) => ({
         userProfile: { ...state.userProfile, ...patch }

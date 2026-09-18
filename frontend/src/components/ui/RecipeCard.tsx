@@ -70,8 +70,10 @@ export default function RecipeCard(props: RecipeCardProps) {
     international: 'Healthy & Eat Clean'
   };
 
+  const FALLBACK_FOOD_IMAGE = 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop';
+
   const getSafeImageUrl = (url: string) => {
-    if (!url) return '/api/image-proxy';
+    if (!url) return FALLBACK_FOOD_IMAGE;
     if (url.includes('wikimedia.org') || url.includes('wikipedia.org')) {
       return `/api/image-proxy?url=${encodeURIComponent(url)}`;
     }
@@ -84,13 +86,13 @@ export default function RecipeCard(props: RecipeCardProps) {
       className="bg-white rounded-xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 cursor-pointer group border border-stone-200/80 flex flex-col h-full transform hover:-translate-y-0.5 relative block"
     >
       {/* Image Container with aspect ratio */}
-      <div className="relative w-full pt-[70%] overflow-hidden bg-stone-100">
+      <div className="relative w-full aspect-[4/3] overflow-hidden bg-stone-100">
         <img 
-          src={hasError ? '/api/image-proxy' : getSafeImageUrl(imgSrc)} 
+          src={hasError ? FALLBACK_FOOD_IMAGE : getSafeImageUrl(imgSrc)} 
           alt={title} 
           referrerPolicy="no-referrer"
           crossOrigin="anonymous"
-          className="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
           onError={() => {
             if (!hasError) {
