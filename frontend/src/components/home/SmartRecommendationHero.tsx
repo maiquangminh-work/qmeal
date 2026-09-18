@@ -267,47 +267,66 @@ export default function SmartRecommendationHero({ language }: SmartRecommendatio
       className="mb-12 bg-white rounded-3xl border border-stone-200/90 shadow-lg overflow-hidden"
     >
       {/* Top Header Bar: Location Auto-Detected & Current Time Context */}
-      <div className="p-6 md:p-8 bg-stone-900 text-stone-100 flex flex-col md:flex-row md:items-center justify-between gap-6">
-        <div>
-          <div className="flex items-center gap-2 text-stone-400 text-xs font-semibold uppercase tracking-wider mb-2">
-            <Clock className="w-3.5 h-3.5 text-orange-400" />
-            <span>{timeContext.labelVi} ({currentHour}:00)</span>
-            <span className="text-stone-600">•</span>
-            <span className="text-stone-300 normal-case">{timeContext.descVi}</span>
-          </div>
-
-          <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
-            Hôm nay bạn muốn ăn gì?
-          </h1>
-          <p className="text-stone-400 text-sm mt-1">
-            Đề xuất 3 món ăn chuẩn vị theo vị trí thiết bị và thói quen ẩm thực của bạn.
-          </p>
+      <div className="relative p-6 md:p-10 text-stone-100 flex flex-col md:flex-row md:items-center justify-between gap-6 overflow-hidden min-h-[200px] md:min-h-[220px]">
+        {/* Background Image & Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop" 
+            alt="Food background" 
+            className="w-full h-full object-cover opacity-80" 
+          />
+          <div className="absolute inset-0 bg-stone-950/70 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-900/95 to-stone-900/40"></div>
         </div>
 
-        {/* Automatic Geolocation Badge with full location picker trigger */}
-        <div className="flex flex-col items-start md:items-end gap-2 self-start md:self-auto">
-          <button
-            onClick={() => setShowLocationModal(true)}
-            className="group flex items-center gap-2 bg-stone-800/90 hover:bg-stone-800 px-3.5 py-2 rounded-xl border border-stone-700/80 hover:border-orange-500/50 text-xs shadow-xs transition-all cursor-pointer text-left"
-            title="Nhấn để đổi vị trí cụ thể theo Phường, Quận, Tỉnh thành"
-          >
-            <span className="relative flex h-2 w-2 flex-shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-            <MapPin className="w-3.5 h-3.5 text-orange-400 flex-shrink-0" />
-            <span className="font-semibold text-stone-100 max-w-[220px] sm:max-w-[300px] truncate">
-              {isLocating ? 'Đang xác định GPS...' : userLocationName}
-            </span>
-            {isLocationAuto && (
-              <span className="text-[10px] text-emerald-300 bg-emerald-950/80 border border-emerald-800/50 px-1.5 py-0.5 rounded font-medium flex-shrink-0">
-                GPS
+        {/* Content */}
+        <div className="relative z-10 w-full flex flex-col md:flex-row md:items-start justify-between gap-6">
+          <div className="max-w-xl">
+            <div className="flex items-center gap-2 text-stone-300 text-xs font-bold uppercase tracking-widest mb-3">
+              <Clock className="w-4 h-4 text-orange-400" />
+              <span>{timeContext.labelVi} ({currentHour}:00)</span>
+              <span className="text-stone-500">•</span>
+              <span className="text-stone-400 normal-case font-medium">{timeContext.descVi}</span>
+            </div>
+
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-2 drop-shadow-md">
+              Hôm nay bạn muốn ăn gì?
+            </h1>
+            <p className="text-stone-300 text-sm md:text-base mt-2 font-medium">
+              Đề xuất 3 món ăn chuẩn vị theo vị trí thiết bị và thói quen ẩm thực của bạn.
+            </p>
+          </div>
+
+          {/* Automatic Geolocation Badge with full location picker trigger */}
+          <div className="flex flex-col items-start md:items-end gap-2 self-start md:self-auto mt-2 md:mt-0">
+            <button
+              onClick={() => setShowLocationModal(true)}
+              className="group flex items-center gap-2.5 bg-stone-900/60 hover:bg-stone-800/80 px-4 py-3 rounded-2xl border border-stone-700/80 hover:border-orange-500/60 shadow-xl backdrop-blur-md transition-all cursor-pointer text-left"
+              title="Nhấn để đổi vị trí cụ thể theo Phường, Quận, Tỉnh thành"
+            >
+              <span className="relative flex h-2 w-2 flex-shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-            )}
-            <span className="ml-1 text-[11px] font-bold text-orange-400 group-hover:text-orange-300 underline flex-shrink-0">
-              Đổi ▾
-            </span>
-          </button>
+              <MapPin className="w-4 h-4 text-orange-400 flex-shrink-0" />
+              <div className="flex flex-col">
+                <span className="text-[10px] text-stone-400 font-bold uppercase tracking-wider mb-0.5">Vị trí hiện tại</span>
+                <div className="flex items-center gap-1.5">
+                  <span className="font-bold text-stone-100 max-w-[200px] sm:max-w-[260px] truncate text-sm">
+                    {isLocating ? 'Đang xác định GPS...' : userLocationName}
+                  </span>
+                  {isLocationAuto && (
+                    <span className="text-[9px] text-emerald-300 bg-emerald-950/80 border border-emerald-800/50 px-1.5 py-0.5 rounded-sm font-bold flex-shrink-0">
+                      GPS
+                    </span>
+                  )}
+                  <span className="ml-1 text-xs font-bold text-orange-400 group-hover:text-orange-300 flex-shrink-0 transition-transform group-hover:translate-x-0.5">
+                    Đổi →
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
 
